@@ -1,0 +1,5 @@
+CHAVES.txt
+CREDENCIAIS.txt
+*.log
+gerado/
+__pycache__/
