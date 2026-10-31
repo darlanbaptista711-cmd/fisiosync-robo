@@ -123,5 +123,26 @@
   "janela": "manha",
   "eixo": "faltas",
   "pauta": "confirmar no dia anterior ou dois dias antes"
+ },
+ {
+  "data": "2026-10-31",
+  "janela": "tarde",
+  "tema": "Dupla marcação em agendas separadas",
+  "pauta": "dupla marcacao quando a agenda mora em dois lugares",
+  "eixo": "agenda",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Uma reserva em cada lugar pode virar dois atendimentos disputando o mesmo horário",
+  "chamada": "Duas agendas ocuparam o mesmo horário",
+  "conceito": "Duas agendas lado a lado mostram reservas diferentes na mesma posição, evidenciando como registros separados podem comprometer o mesmo horário.",
+  "composicao": "calibrado",
+  "estilo": "fotografia realista de produto",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_dupla-marcac-o-em-agendas-separadas_feed_1080x1350.jpg",
+   "fisiosync_dupla-marcac-o-em-agendas-separadas_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
