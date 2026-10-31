@@ -5,15 +5,15 @@
    "id": "faltas-001",
    "eixo": "faltas",
    "tema": "a falta que o paciente nao avisa",
-   "status": "livre",
-   "usado_em": null
+   "status": "parecida",
+   "usado_em": "2026-10-31"
   },
   {
    "id": "faltas-002",
    "eixo": "faltas",
    "tema": "quanto custa um horario vago no mes",
-   "status": "livre",
-   "usado_em": null
+   "status": "parecida",
+   "usado_em": "2026-10-31"
   },
   {
    "id": "faltas-003",

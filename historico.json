@@ -69,5 +69,23 @@
   ],
   "status": "rascunho",
   "modo": "molde"
+ },
+ {
+  "data": "2026-10-31",
+  "tema": "Antecedência da confirmação conforme a logística",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Use o tempo necessário para organizar transporte e acompanhante como critério, não uma regra única.",
+  "chamada": "Confirme na véspera ou dois dias antes?",
+  "conceito": "Duas sequências de calendário posicionam a confirmação um ou dois dias antes do atendimento, tornando visível a escolha de antecedência.",
+  "composicao": "calibrado",
+  "estilo": "checklist visual",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_anteced-ncia-da-confirmac-o-conforme-a-l_feed_1080x1350.jpg",
+   "fisiosync_anteced-ncia-da-confirmac-o-conforme-a-l_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
