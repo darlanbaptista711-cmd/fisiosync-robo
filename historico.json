@@ -87,5 +87,23 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-10-31",
+  "tema": "Confirmação sem pedidos duplicados",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Se o paciente confirmou dois dias antes, evite pedir a mesma resposta no dia seguinte.",
+  "chamada": "Confirmou antes? Não repita na véspera",
+  "conceito": "Dois balões de mensagem idênticos, com o segundo riscado, mostram que uma confirmação já recebida não precisa ser solicitada novamente.",
+  "composicao": "calibrado",
+  "estilo": "ilustracao 3D minimalista e sofisticada",
+  "objetivo": "iniciar teste",
+  "arquivos": [
+   "fisiosync_confirmac-o-sem-pedidos-duplicados_feed_1080x1350.jpg",
+   "fisiosync_confirmac-o-sem-pedidos-duplicados_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
