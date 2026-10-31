@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   # se uma rodada atrasar e encostar na outra, a segunda espera em vez
@@ -50,11 +51,27 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python postador.py
 
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create             --title "O post de $(date -u +%F) falhou"             --body "A rodada automatica nao publicou.
+
+          Veja o log em: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          Causas mais comuns, em ordem:
+          1. Token do Instagram expirado. Gere outro no Business Manager e
+             atualize o segredo IG_ACCESS_TOKEN.
+          2. Credito da OpenAI acabou. Veja em platform.openai.com.
+          3. A Meta recusou a imagem ou esta fora do ar. Costuma passar
+             sozinho na proxima rodada." || true
+
       - name: Guardar historico e pautas
         run: |
           git config user.name "FisioSync Robo"
           git config user.email "robo@users.noreply.github.com"
           git pull --rebase --autostash || true
           git add historico.json pautas.json || true
-          git commit -m "registro do post de $(date -u +%F\ %H:%M)" || exit 0
+          git commit -m "registro do post de $(date -u +%F-%H%M)" || exit 0
           git push
