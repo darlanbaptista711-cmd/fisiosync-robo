@@ -1,20 +1,22 @@
-name: Postagens diarias da FisioSync
+name: Post diario da FisioSync
 
-# Horarios em UTC. Brasilia e UTC-3.
-#   10:30 UTC = 07:30 Brasilia  -> story tipografico (sem custo de imagem)
-#   15:30 UTC = 12:30 Brasilia  -> POST DO FEED + story com ilustracao
-#   22:30 UTC = 19:30 Brasilia  -> story tipografico (sem custo de imagem)
+# Uma vez por dia: 1 post no feed + 1 story do mesmo tema.
 #
-# Para 3 posts de feed por dia, troque os args dos slots da manha e da
-# noite por: --layout calibrado      (cada um passa a gastar 1 imagem e
-# 1 pauta do banco). Leia o INSTRUCOES.md antes: o banco de 120 pautas
-# dura 40 dias nesse ritmo, em vez de 4 meses.
+# 15:30 UTC = 12:30 em Brasilia. O intervalo do almoco e quando o
+# fisioterapeuta para entre atendimentos.
+#
+# Para testar sem esperar, use a aba Actions e o botao Run workflow.
+#
+# Para mudar o horario, troque o numero do cron. Lembre que ele e em
+# UTC: Brasilia e UTC-3, entao 12:30 daqui e 15:30 la.
+#   07:30 Brasilia -> "30 10 * * *"
+#   19:30 Brasilia -> "30 22 * * *"
+#
+# Para pausar: aba Actions > este workflow > Disable workflow.
 
 on:
   schedule:
-    - cron: "30 10 * * *"
     - cron: "30 15 * * *"
-    - cron: "30 22 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,14 +32,6 @@ jobs:
           python-version: "3.11"
       - run: pip install requests pillow
 
-      - name: Definir o que publicar neste horario
-        id: slot
-        run: |
-          case "${{ github.event.schedule }}" in
-            "30 15 * * *") echo 'args=' >> $GITHUB_OUTPUT ;;
-            *)             echo 'args=--so-story --layout tipografico' >> $GITHUB_OUTPUT ;;
-          esac
-
       - name: Gerar e publicar
         env:
           ID: ${{ secrets.IG_USER_ID }}
@@ -46,7 +40,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python postador.py ${{ steps.slot.outputs.args }}
+        run: python postador.py
 
       - name: Guardar historico e pautas
         run: |
