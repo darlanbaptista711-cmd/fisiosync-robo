@@ -260,12 +260,64 @@ def ler_historico(limite=25):
 
 STATUS = ("rascunho", "aprovado", "publicado", "rejeitado")
 
+# -------------------------------------------------------------------
+# Janelas de publicacao
+#
+# O agendador do GitHub e "melhor esforco", nao promessa. Em 31/10/2026
+# o cron das 11:55 so disparou as 15:52, quase quatro horas atrasado, e
+# o das 18:25 nao disparou. Pedir o horario exato uma vez por dia e
+# apostar na sorte.
+#
+# A solucao: o workflow tenta MUITAS vezes dentro de cada janela, e e o
+# codigo que decide se ja publicou. A primeira tentativa que pega
+# publica; todas as outras saem na hora, sem gastar API nem pauta.
+# -------------------------------------------------------------------
+
+JANELAS = {
+    "manha": (10, 16),   # alvo 12:00 em Brasilia
+    "tarde": (17, 23),   # alvo 18:30 em Brasilia
+}
+
+
+def agora_brasilia():
+    return datetime.datetime.utcnow() - datetime.timedelta(hours=3)
+
+
+def janela_agora():
+    """Devolve (data em Brasilia, nome da janela) ou (data, None)."""
+    agora = agora_brasilia()
+    for nome, (ini, fim) in JANELAS.items():
+        if ini <= agora.hour <= fim:
+            return agora.date().isoformat(), nome
+    return agora.date().isoformat(), None
+
+
+def ja_publicou_nesta_janela():
+    """
+    True se esta janela de hoje ja tem post publicado.
+
+    E isto que impede a rajada de tentativas virar uma rajada de posts.
+    """
+    data, janela = janela_agora()
+    if not janela:
+        return False
+    for r in ler_historico(limite=40):
+        if (r.get("status") == "publicado"
+                and r.get("data") == data
+                and r.get("janela") == janela):
+            return True
+    return False
+
 
 def registro_completo(c, tema, arquivos, status="rascunho", modo="molde"):
     """Registro editorial exigido pelo projeto."""
+    data, janela = janela_agora()
     return {
-        "data": datetime.date.today().isoformat(),
+        "data": data or datetime.date.today().isoformat(),
+        "janela": janela or "",
         "tema": tema,
+        "pauta": c.get("pauta", tema),
+        "eixo": c.get("eixo", ""),
         "publico": c.get("publico", "fisioterapeutas e gestores de clinica"),
         "situacao": c.get("situacao", ""),
         "mensagem": c.get("mensagem", c.get("apoio", "")),
@@ -282,7 +334,9 @@ def registro_completo(c, tema, arquivos, status="rascunho", modo="molde"):
 
 def gravar_historico(registro):
     try:
-        PT.marcar_usada(registro.get("tema", ""), registro.get("status"))
+        # pela frase do BANCO, nao pelo tema reescrito pela IA
+        PT.marcar_usada(registro.get("pauta") or registro.get("tema", ""),
+                        registro.get("status"))
     except Exception:
         pass
     hist = []
@@ -394,6 +448,7 @@ def _extrair_json(texto):
 
 def gerar_conteudo(cfg, tema=None):
     hist = ler_historico(limite=500)
+    pauta_banco, eixo_banco = "", ""
 
     if not tema:
         # A pauta sai do banco, nao da cabeca do modelo. A trava contra
@@ -405,6 +460,11 @@ def gerar_conteudo(cfg, tema=None):
                  "calendario.\n  Abasteca o pautas.json com assuntos novos "
                  "e rode de novo.\n  Veja a situacao com: python pautas.py")
         tema = p["tema"]
+        # A frase original do banco e o eixo viajam junto com o
+        # conteudo. A IA reescreve o "tema"; a identidade da pauta nao
+        # pode depender desse texto reescrito, senao o banco nunca sabe
+        # o que ja saiu e o rodizio de eixo para de funcionar.
+        pauta_banco, eixo_banco = p["tema"], p.get("eixo", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
     pedido = _pedido_conteudo(tema)
 
@@ -420,6 +480,8 @@ def gerar_conteudo(cfg, tema=None):
         base = tema or escolher_tema()
         return {
             "tema": base,
+            "pauta": pauta_banco or base,
+            "eixo": eixo_banco,
             "objetivo": "salvar",
             "estilo": ESTILOS_ARTE[0],
             "titulo": base[:60].capitalize(),
@@ -458,7 +520,11 @@ def gerar_conteudo(cfg, tema=None):
         log(f"AVISO: a proposta repete o historico ({motivo}).")
         log("Mantendo o tema do banco de pautas e seguindo.")
         dados["tema"] = tema or dados.get("tema", "")
+    dados["pauta"] = pauta_banco or dados.get("tema", "")
+    dados["eixo"] = eixo_banco
     log(f"Tema escolhido: {dados['tema']}")
+    if eixo_banco:
+        log(f"Eixo: {eixo_banco}  (pauta do banco: {pauta_banco})")
     log(f"Objetivo: {dados['objetivo']} | Estilo: {dados['estilo']}")
     log(f"Titulo: {dados['titulo']}")
     return dados
@@ -1006,6 +1072,23 @@ def main():
     print("=" * 56)
     print(f"  ROBO FISIOSYNC - {datetime.date.today().isoformat()}")
     print("=" * 56)
+
+    # Trava de janela. A nuvem tenta varias vezes dentro de cada
+    # janela porque o cron do GitHub atrasa; quem garante um unico post
+    # por janela e esta checagem, nao o horario do agendador.
+    if not (args.previa or args.tema or args.brief):
+        data_br, janela = janela_agora()
+        hora = agora_brasilia().strftime("%H:%M")
+        if janela is None:
+            log(f"Fora das janelas de publicacao ({hora} em Brasilia). "
+                "Saindo sem fazer nada.")
+            return
+        if ja_publicou_nesta_janela():
+            log(f"A janela da {janela} de {data_br} ja foi publicada. "
+                "Saindo sem gerar imagem nem gastar pauta.")
+            return
+        log(f"Janela da {janela} de {data_br}, {hora} em Brasilia. "
+            "Ainda nao publicada: seguindo.")
 
     atualizar_logo(cfg)
 

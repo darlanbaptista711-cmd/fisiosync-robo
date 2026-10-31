@@ -14,7 +14,10 @@
    "fisiosync_a-falta-que-o-paciente-nao-avisa_feed_1080x1350.jpg"
   ],
   "status": "rascunho",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "faltas",
+  "pauta": "a falta que o paciente nao avisa"
  },
  {
   "data": "2026-10-31",
@@ -32,7 +35,10 @@
    "fisiosync_registrar-a-evoluc-o-com-a-voz_stories_1080x1920.jpg"
   ],
   "status": "rascunho",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "prontuario",
+  "pauta": ""
  },
  {
   "data": "2026-10-31",
@@ -50,7 +56,10 @@
    "fisiosync_o-trabalho-de-reunir-o-hist-rico-em-pape_stories_1080x1920.jpg"
   ],
   "status": "rascunho",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "prontuario",
+  "pauta": "prontuario em papel e o retrabalho invisivel"
  },
  {
   "data": "2026-10-31",
@@ -68,7 +77,10 @@
    "fisiosync_correc-es-repetidas-em-fichas-de-papel_stories_1080x1920.jpg"
   ],
   "status": "rascunho",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "prontuario",
+  "pauta": "prontuario em papel e o retrabalho invisivel"
  },
  {
   "data": "2026-10-31",
@@ -86,7 +98,10 @@
    "fisiosync_anteced-ncia-da-confirmac-o-conforme-a-l_stories_1080x1920.jpg"
   ],
   "status": "publicado",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "faltas",
+  "pauta": "confirmar no dia anterior ou dois dias antes"
  },
  {
   "data": "2026-10-31",
@@ -104,6 +119,9 @@
    "fisiosync_confirmac-o-sem-pedidos-duplicados_stories_1080x1920.jpg"
   ],
   "status": "publicado",
-  "modo": "molde"
+  "modo": "molde",
+  "janela": "manha",
+  "eixo": "faltas",
+  "pauta": "confirmar no dia anterior ou dois dias antes"
  }
 ]

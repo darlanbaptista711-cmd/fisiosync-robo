@@ -12,15 +12,14 @@
    "id": "faltas-002",
    "eixo": "faltas",
    "tema": "quanto custa um horario vago no mes",
-   "status": "parecida",
-   "usado_em": "2026-10-31"
+   "status": "livre"
   },
   {
    "id": "faltas-003",
    "eixo": "faltas",
    "tema": "confirmar no dia anterior ou dois dias antes",
-   "status": "livre",
-   "usado_em": null
+   "status": "publicado",
+   "usado_em": "2026-10-31"
   },
   {
    "id": "faltas-004",

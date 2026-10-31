@@ -3,22 +3,40 @@ name: Posts diarios da FisioSync
 # DUAS publicacoes por dia. Cada uma leva 1 post no feed + 1 story do
 # mesmo tema, e consome 1 pauta do banco.
 #
-# Os horarios estao 5 minutos ANTES do alvo de proposito. O agendador do
-# GitHub nao e pontual: em horario cheio ele costuma atrasar de 5 a 20
-# minutos, porque e quando todo mundo agenda. Pedindo 11:55 e 18:25, a
-# publicacao cai perto de 12:00 e 18:30.
+# POR QUE TANTO CRON
 #
-#   14:55 UTC = 11:55 em Brasilia  -> alvo 12:00
-#   21:25 UTC = 18:25 em Brasilia  -> alvo 18:30
+# O agendador do GitHub e melhor esforco, nao promessa. A propria
+# documentacao avisa que a rodada pode atrasar ou nem acontecer quando
+# a fila esta cheia. Em 31/10/2026 o cron das 11:55 so disparou as
+# 15:52 e o das 18:25 nao disparou. Um horario por janela e aposta.
 #
-# Para voltar a 1 post por dia, apague uma das duas linhas de cron.
+# Entao o workflow BATE NA PORTA varias vezes dentro de cada janela:
+#
+#   14:50 -> 17:00 UTC = 11:50 -> 14:00 em Brasilia   (alvo 12:00)
+#   21:20 -> 23:40 UTC = 18:20 -> 20:40 em Brasilia   (alvo 18:30)
+#
+# Quem decide se publica NAO e o horario, e o postador.py: ele olha o
+# historico e, se a janela de hoje ja saiu, encerra em segundos sem
+# gerar imagem, sem chamar a API e sem gastar pauta. A primeira
+# tentativa que o GitHub honrar e a que publica; as outras sao so
+# seguro. Repositorio publico tem minuto de Actions ilimitado, entao
+# tentar de novo nao custa nada.
+#
+# Para voltar a 1 post por dia, apague os crons da janela da tarde.
 # Para testar sem esperar: aba Actions > Run workflow.
 # Para pausar: aba Actions > este workflow > Disable workflow.
 
 on:
   schedule:
-    - cron: "55 14 * * *"
-    - cron: "25 21 * * *"
+    # janela da manha
+    - cron: "50 14 * * *"
+    - cron: "5,20,35,50 15 * * *"
+    - cron: "5,30 16 * * *"
+    - cron: "0 17 * * *"
+    # janela da tarde
+    - cron: "20,35,50 21 * * *"
+    - cron: "5,20,35,50 22 * * *"
+    - cron: "10,40 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -56,7 +74,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue create             --title "O post de $(date -u +%F) falhou"             --body "A rodada automatica nao publicou.
+          # Agora sao varias tentativas por janela. Se algo quebrou de
+          # verdade, todas falham, e sem este filtro a caixa de entrada
+          # recebe uma duzia de avisos do mesmo problema. Um por dia.
+          TITULO="O post de $(date -u +%F) falhou"
+          if gh issue list --state open --search "$TITULO in:title" \
+               --json title --jq '.[].title' | grep -qxF "$TITULO"; then
+            echo "Ja existe aviso aberto para hoje. Nao vou duplicar."
+            exit 0
+          fi
+          gh issue create             --title "$TITULO"             --body "A rodada automatica nao publicou.
 
           Veja o log em: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 

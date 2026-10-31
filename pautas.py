@@ -27,6 +27,10 @@ ARQ_PAUTAS = os.path.join(PASTA, "pautas.json")
 LIMITE_TEMA = 0.60      # proposta contra o tema do registro
 LIMITE_TEXTO = 0.70     # proposta contra tema + mensagem + conceito
 
+# Quantos posts para tras o rodizio olha antes de repetir um eixo.
+# Com 8 eixos e 2 posts por dia, 6 cobre os tres ultimos dias.
+JANELA_EIXO = 6
+
 VAZIAS = {
     "a", "o", "as", "os", "de", "do", "da", "dos", "das", "e", "em", "no",
     "na", "nos", "nas", "um", "uma", "para", "por", "com", "sem", "que",
@@ -98,6 +102,33 @@ def ja_usado(proposta, historico):
     return None, None
 
 
+def eixo_do_registro(r, dados):
+    """
+    Descobre o eixo de um post ja publicado.
+
+    O campo "eixo" gravado no proprio registro e a fonte certa. Antes
+    isso era deduzido comparando o tema do historico com o tema da
+    pauta, e nunca batia: o que vai para o historico e o tema REESCRITO
+    pela IA, nao a frase do banco. Com isso o rodizio de eixo nunca saiu
+    do lugar, o banco nunca marcava pauta como usada, e em 31/10/2026 o
+    robo publicou dois posts de confirmacao no mesmo dia.
+
+    Registro antigo, sem o campo, ainda cai na comparacao por texto.
+    """
+    if r.get("eixo"):
+        return r["eixo"]
+    alvo = r.get("pauta") or r.get("tema", "")
+    for p in dados["pautas"]:
+        if p["tema"] == alvo:
+            return p["eixo"]
+    melhor, nota = None, 0.0
+    for p in dados["pautas"]:
+        s = semelhanca(alvo, p["tema"])
+        if s > nota:
+            melhor, nota = p["eixo"], s
+    return melhor if nota >= 0.45 else None
+
+
 def proxima_pauta(historico, log=print):
     """
     Escolhe a proxima pauta livre, evitando repetir o eixo dos ultimos
@@ -109,14 +140,21 @@ def proxima_pauta(historico, log=print):
         log("BANCO DE PAUTAS VAZIO. Nenhum tema novo disponivel.")
         return None
 
-    eixos_recentes = []
-    for r in historico[-3:]:
-        for p in dados["pautas"]:
-            if p["tema"] == r.get("tema"):
-                eixos_recentes.append(p["eixo"])
+    # Eixos usados por ultimo, do mais recente para o mais antigo.
+    recentes = []
+    for r in reversed(historico[-JANELA_EIXO:]):
+        e = eixo_do_registro(r, dados)
+        if e and e not in recentes:
+            recentes.append(e)
 
-    preferidas = [p for p in livres if p["eixo"] not in eixos_recentes]
-    candidatas = preferidas or livres
+    def prioridade(p):
+        # Eixo que nao aparece na janela vale mais que qualquer um que
+        # apareceu. Entre os que apareceram, ganha o mais antigo.
+        # sorted() e estavel, entao o empate mantem a ordem do arquivo.
+        e = p.get("eixo", "")
+        return recentes.index(e) if e in recentes else len(recentes)
+
+    candidatas = sorted(livres, key=prioridade, reverse=True)
 
     for p in candidatas:
         parecido, motivo = ja_usado(p["tema"], historico)
