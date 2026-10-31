@@ -51,5 +51,23 @@
   ],
   "status": "rascunho",
   "modo": "molde"
+ },
+ {
+  "data": "2026-10-31",
+  "tema": "Correções repetidas em fichas de papel",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Quando a informação se repete no papel, a correção também se multiplica.",
+  "chamada": "Um dado muda, várias fichas precisam mudar",
+  "conceito": "A composição contrapõe um único dado alterado a várias fichas que precisam de correção, evidenciando a multiplicação do trabalho.",
+  "composicao": "tipografico",
+  "estilo": "composição tipográfica",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_correc-es-repetidas-em-fichas-de-papel_feed_1080x1350.jpg",
+   "fisiosync_correc-es-repetidas-em-fichas-de-papel_stories_1080x1920.jpg"
+  ],
+  "status": "rascunho",
+  "modo": "molde"
  }
 ]
