@@ -16,15 +16,21 @@ from PIL import Image, ImageDraw, ImageFilter
 
 import marca as M
 
+# PADRAO TRAVADO em 31/10/2026, a pedido do Darlan.
+#
+# So estes dois entram no sorteio automatico. Os dois colocam a LOGO
+# PRIMEIRO e CENTRALIZADA, e seguem a mesma ordem de leitura das
+# referencias aprovadas 02 e 03.
+#
+# Os outros continuam funcionando no molde.py, mas ficam fora da
+# escolha automatica porque quebram essa ordem: o "detalhe", por
+# exemplo, poe a foto antes da logo.
 LAYOUTS = [
-    "calibrado",     # hierarquia da referencia aprovada
-    "tipografico",   # sem ilustracao: a tipografia e o visual     # hierarquia da referencia aprovada
-    "editorial",     # tipografia domina, foto em faixa sangrada
-    "lateral",       # foto sangra em uma lateral, texto na outra
-    "objeto",        # objeto solto no branco, sem moldura
-    "detalhe",       # recorte aproximado, grande, sangrando no topo
-    "centro",        # centralizado de proposito, quando serve a mensagem
+    "calibrado",     # com ilustracao
+    "tipografico",   # sem ilustracao, so tipografia
 ]
+
+LAYOUTS_EXTRAS = ["editorial", "lateral", "objeto", "detalhe", "centro"]
 
 # Onde cada layout precisa de espaco vazio na foto gerada.
 # Isso vai dentro do pedido feito a IA, antes de gerar a imagem.
