@@ -53,6 +53,16 @@ Não reaproveitar prompt genérico trocando só o nome do tema.
   250 no topo e 350 na base.
 - Produção em 2160x2700 e 2160x3840, reduzindo proporcionalmente.
 
+### Arquivos por peça: dois, não três
+
+- `*_2160x2700.png` ou `*_2160x3840.png` — produção, sem perda, para
+  arquivar e reaproveitar.
+- `*_1080x1350.jpg` ou `*_1080x1920.jpg` — publicação. **A API do
+  Instagram só aceita JPEG**, então é este que sobe.
+
+Não gerar PNG de 1080: ele não é publicado nem serve de arquivo, porque
+o de 2160 já cobre isso. Era só peso em disco.
+
 ## O que é proibido
 
 - Placeholder de selo, selo desenhado, logo inventada
@@ -105,6 +115,28 @@ Várias versões de "organize sua agenda" são o mesmo tema.
 
 Se não houver tema novo sustentado pelas informações confirmadas, dizer
 isso. Não inventar funcionalidade para encher calendário.
+
+## Padrão travado em 31/10/2026
+
+As peças `aprovada_02_padrao-feed.png` e `aprovada_03_padrao-story.png`
+foram aprovadas pelo Darlan e definem o padrão obrigatório.
+
+**A ordem dos elementos é sempre esta, nos dois formatos:**
+
+1. Logo oficial, centralizada no topo. Sempre primeiro.
+2. Sobretítulo curto, em caixa alta espaçada.
+3. Chamada em duas cores, azul-marinho e ciano.
+4. Apoio curto.
+5. Ilustração com os efeitos em ciano atrás.
+6. Teste grátis por 7 dias.
+7. Selos oficiais, disponibilidade e site.
+
+Só dois layouts entram no sorteio automático: `calibrado`, com
+ilustração, e `tipografico`, quando a mensagem funciona só com texto.
+Os outros cinco continuam no código, mas fora da escolha, porque
+quebram essa ordem. O `detalhe`, por exemplo, põe a foto antes da logo.
+
+O story não é o feed esticado: mesma ordem, composição própria.
 
 ## Logo: regra permanente
 
