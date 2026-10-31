@@ -1,0 +1,57 @@
+name: Postagens diarias da FisioSync
+
+# Horarios em UTC. Brasilia e UTC-3.
+#   10:30 UTC = 07:30 Brasilia  -> story tipografico (sem custo de imagem)
+#   15:30 UTC = 12:30 Brasilia  -> POST DO FEED + story com ilustracao
+#   22:30 UTC = 19:30 Brasilia  -> story tipografico (sem custo de imagem)
+#
+# Para 3 posts de feed por dia, troque os args dos slots da manha e da
+# noite por: --layout calibrado      (cada um passa a gastar 1 imagem e
+# 1 pauta do banco). Leia o INSTRUCOES.md antes: o banco de 120 pautas
+# dura 40 dias nesse ritmo, em vez de 4 meses.
+
+on:
+  schedule:
+    - cron: "30 10 * * *"
+    - cron: "30 15 * * *"
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+
+      - name: Definir o que publicar neste horario
+        id: slot
+        run: |
+          case "${{ github.event.schedule }}" in
+            "30 15 * * *") echo 'args=' >> $GITHUB_OUTPUT ;;
+            *)             echo 'args=--so-story --layout tipografico' >> $GITHUB_OUTPUT ;;
+          esac
+
+      - name: Gerar e publicar
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python postador.py ${{ steps.slot.outputs.args }}
+
+      - name: Guardar historico e pautas
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git add historico.json pautas.json || true
+          git commit -m "registro do post de $(date +%F)" || exit 0
+          git push
