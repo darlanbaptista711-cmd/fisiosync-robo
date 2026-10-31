@@ -1,0 +1,845 @@
+{
+ "versao": 1,
+ "pautas": [
+  {
+   "id": "faltas-001",
+   "eixo": "faltas",
+   "tema": "a falta que o paciente nao avisa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-002",
+   "eixo": "faltas",
+   "tema": "quanto custa um horario vago no mes",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-003",
+   "eixo": "faltas",
+   "tema": "confirmar no dia anterior ou dois dias antes",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-004",
+   "eixo": "faltas",
+   "tema": "o paciente que remarca toda semana",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-005",
+   "eixo": "faltas",
+   "tema": "lista de espera para cobrir buraco de agenda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-006",
+   "eixo": "faltas",
+   "tema": "cobrar ou nao cobrar por falta sem aviso",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-007",
+   "eixo": "faltas",
+   "tema": "o padrao de quem ja faltou antes",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-008",
+   "eixo": "faltas",
+   "tema": "atraso de 15 minutos: atende ou nao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-009",
+   "eixo": "faltas",
+   "tema": "feriado e recesso derrubando a agenda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-010",
+   "eixo": "faltas",
+   "tema": "o primeiro horario da manha que ninguem quer",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-011",
+   "eixo": "faltas",
+   "tema": "quando a falta e culpa do processo, nao do paciente",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-012",
+   "eixo": "faltas",
+   "tema": "reagendar na hora da falta, pelo telefone",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-013",
+   "eixo": "faltas",
+   "tema": "o lembrete que irrita e o lembrete que ajuda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-014",
+   "eixo": "faltas",
+   "tema": "medindo taxa de comparecimento de verdade",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "faltas-015",
+   "eixo": "faltas",
+   "tema": "o paciente que some depois da melhora",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-016",
+   "eixo": "prontuario",
+   "tema": "prontuario em papel e o retrabalho invisivel",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-017",
+   "eixo": "prontuario",
+   "tema": "o que nao pode faltar numa evolucao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-018",
+   "eixo": "prontuario",
+   "tema": "registrar no mesmo dia ou perder o detalhe",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-019",
+   "eixo": "prontuario",
+   "tema": "avaliacao inicial padronizada economiza tempo",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-020",
+   "eixo": "prontuario",
+   "tema": "prontuario como defesa em caso de questionamento",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-021",
+   "eixo": "prontuario",
+   "tema": "guarda e sigilo dos dados do paciente",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-022",
+   "eixo": "prontuario",
+   "tema": "escala de dor registrada sessao a sessao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-023",
+   "eixo": "prontuario",
+   "tema": "foto de evolucao: quando faz sentido",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-024",
+   "eixo": "prontuario",
+   "tema": "transferir paciente entre fisioterapeutas sem perder historico",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-025",
+   "eixo": "prontuario",
+   "tema": "o prontuario que ninguem consegue ler depois",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-026",
+   "eixo": "prontuario",
+   "tema": "objetivos de tratamento escritos no inicio",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-027",
+   "eixo": "prontuario",
+   "tema": "reavaliacao marcada no proprio plano",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-028",
+   "eixo": "prontuario",
+   "tema": "alta registrada direito",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-029",
+   "eixo": "prontuario",
+   "tema": "exportar prontuario quando o paciente pede",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "prontuario-030",
+   "eixo": "prontuario",
+   "tema": "o caderno que sumiu e levou tres meses de historico",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-031",
+   "eixo": "agenda",
+   "tema": "dupla marcacao quando a agenda mora em dois lugares",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-032",
+   "eixo": "agenda",
+   "tema": "encaixe de ultima hora sem atropelar o dia",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-033",
+   "eixo": "agenda",
+   "tema": "intervalo entre atendimentos e por que ele existe",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-034",
+   "eixo": "agenda",
+   "tema": "o WhatsApp como agenda e o refem que ele cria",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-035",
+   "eixo": "agenda",
+   "tema": "agenda cheia nao significa clinica lucrativa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-036",
+   "eixo": "agenda",
+   "tema": "quanto tempo some entre um paciente e outro",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-037",
+   "eixo": "agenda",
+   "tema": "bloquear horario para a parte administrativa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-038",
+   "eixo": "agenda",
+   "tema": "quem pode marcar na sua agenda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-039",
+   "eixo": "agenda",
+   "tema": "ferias sem deixar a agenda quebrada",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-040",
+   "eixo": "agenda",
+   "tema": "o custo de atender fora do horario",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-041",
+   "eixo": "agenda",
+   "tema": "pacote de sessoes marcado de uma vez",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-042",
+   "eixo": "agenda",
+   "tema": "agenda compartilhada entre dois profissionais",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-043",
+   "eixo": "agenda",
+   "tema": "o retorno que nunca foi marcado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-044",
+   "eixo": "agenda",
+   "tema": "sala ocupada e profissional livre",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "agenda-045",
+   "eixo": "agenda",
+   "tema": "primeira consulta precisa de mais tempo",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-046",
+   "eixo": "dinheiro",
+   "tema": "preco por sessao ou pacote fechado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-047",
+   "eixo": "dinheiro",
+   "tema": "o repasse do convenio que atrasa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-048",
+   "eixo": "dinheiro",
+   "tema": "cobrar sem constrangimento e manter a relacao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-049",
+   "eixo": "dinheiro",
+   "tema": "quanto custa uma hora da sua agenda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-050",
+   "eixo": "dinheiro",
+   "tema": "inadimplencia silenciosa no pacote de sessoes",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-051",
+   "eixo": "dinheiro",
+   "tema": "reajuste anual conversado com antecedencia",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-052",
+   "eixo": "dinheiro",
+   "tema": "desconto que vira padrao e nao volta",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-053",
+   "eixo": "dinheiro",
+   "tema": "separar o dinheiro da clinica do dinheiro pessoal",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-054",
+   "eixo": "dinheiro",
+   "tema": "quanto do faturamento vira lucro de verdade",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-055",
+   "eixo": "dinheiro",
+   "tema": "formas de pagamento e a taxa que ninguem conta",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-056",
+   "eixo": "dinheiro",
+   "tema": "pacote expirado e sessao nao usada",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-057",
+   "eixo": "dinheiro",
+   "tema": "o paciente particular e o paciente de convenio no mesmo dia",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-058",
+   "eixo": "dinheiro",
+   "tema": "nota fiscal e organizacao fiscal basica",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-059",
+   "eixo": "dinheiro",
+   "tema": "reserva de caixa para o mes fraco",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "dinheiro-060",
+   "eixo": "dinheiro",
+   "tema": "quando vale a pena recusar um convenio",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-061",
+   "eixo": "paciente",
+   "tema": "aderencia ao exercicio em casa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-062",
+   "eixo": "paciente",
+   "tema": "explicar a evolucao de um jeito que o paciente entenda",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-063",
+   "eixo": "paciente",
+   "tema": "o paciente que abandona quando a dor passa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-064",
+   "eixo": "paciente",
+   "tema": "expectativa alinhada na primeira consulta",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-065",
+   "eixo": "paciente",
+   "tema": "alta nao e perda, e prova de resultado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-066",
+   "eixo": "paciente",
+   "tema": "pos alta virando indicacao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-067",
+   "eixo": "paciente",
+   "tema": "quando o paciente compara com o tratamento do vizinho",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-068",
+   "eixo": "paciente",
+   "tema": "o acompanhante que atrapalha a sessao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-069",
+   "eixo": "paciente",
+   "tema": "linguagem tecnica demais afasta",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-070",
+   "eixo": "paciente",
+   "tema": "registro de queixa que muda no meio do tratamento",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-071",
+   "eixo": "paciente",
+   "tema": "feedback do paciente que ninguem pede",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-072",
+   "eixo": "paciente",
+   "tema": "o paciente que chega ja com diagnostico do Google",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-073",
+   "eixo": "paciente",
+   "tema": "constancia vale mais que intensidade",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-074",
+   "eixo": "paciente",
+   "tema": "o que fazer quando o resultado demora",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "paciente-075",
+   "eixo": "paciente",
+   "tema": "pesquisa de satisfacao curta e util",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-076",
+   "eixo": "domiciliar",
+   "tema": "organizar a rota do atendimento domiciliar",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-077",
+   "eixo": "domiciliar",
+   "tema": "documentar fora da clinica sem acumular",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-078",
+   "eixo": "domiciliar",
+   "tema": "o que levar na bolsa de atendimento domiciliar",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-079",
+   "eixo": "domiciliar",
+   "tema": "cobrar deslocamento sem afastar o paciente",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-080",
+   "eixo": "domiciliar",
+   "tema": "atendimento domiciliar e o limite de pacientes por dia",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-081",
+   "eixo": "domiciliar",
+   "tema": "combinar o espaco com a familia antes da primeira visita",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-082",
+   "eixo": "domiciliar",
+   "tema": "seguranca do profissional em visita domiciliar",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-083",
+   "eixo": "domiciliar",
+   "tema": "equipamento portatil que realmente e usado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-084",
+   "eixo": "domiciliar",
+   "tema": "cancelamento de ultima hora com o deslocamento ja feito",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-085",
+   "eixo": "domiciliar",
+   "tema": "quando o domicilio nao e indicado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-086",
+   "eixo": "domiciliar",
+   "tema": "registro de evolucao no carro, entre um atendimento e outro",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-087",
+   "eixo": "domiciliar",
+   "tema": "familia como parte do tratamento em casa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-088",
+   "eixo": "domiciliar",
+   "tema": "adaptar exercicio ao que existe na casa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-089",
+   "eixo": "domiciliar",
+   "tema": "cobrir area grande sem perder o dia no transito",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "domiciliar-090",
+   "eixo": "domiciliar",
+   "tema": "primeira visita: avaliacao do ambiente",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-091",
+   "eixo": "clinica",
+   "tema": "checklist para abrir a propria clinica",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-092",
+   "eixo": "clinica",
+   "tema": "quando vale contratar recepcionista",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-093",
+   "eixo": "clinica",
+   "tema": "escolher o ponto da clinica",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-094",
+   "eixo": "clinica",
+   "tema": "equipamento essencial e equipamento que fica parado",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-095",
+   "eixo": "clinica",
+   "tema": "alvara e exigencias basicas antes de abrir",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-096",
+   "eixo": "clinica",
+   "tema": "quanto capital de giro para os primeiros meses",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-097",
+   "eixo": "clinica",
+   "tema": "sair do consultorio compartilhado para o proprio espaco",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-098",
+   "eixo": "clinica",
+   "tema": "divulgar sem parecer propaganda de remedio",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-099",
+   "eixo": "clinica",
+   "tema": "o site e o Google da clinica",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-100",
+   "eixo": "clinica",
+   "tema": "parceria com academia ou estudio de pilates",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-101",
+   "eixo": "clinica",
+   "tema": "contratar o primeiro fisioterapeuta",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-102",
+   "eixo": "clinica",
+   "tema": "padronizar a conduta entre profissionais",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-103",
+   "eixo": "clinica",
+   "tema": "indicadores que todo dono de clinica deveria olhar",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-104",
+   "eixo": "clinica",
+   "tema": "crescer sem perder a qualidade do atendimento",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "clinica-105",
+   "eixo": "clinica",
+   "tema": "quando a clinica depende demais do dono",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-106",
+   "eixo": "processos",
+   "tema": "o fluxo do primeiro contato ate a primeira sessao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-107",
+   "eixo": "processos",
+   "tema": "quem responde o que, e em quanto tempo",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-108",
+   "eixo": "processos",
+   "tema": "manual de rotina da recepcao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-109",
+   "eixo": "processos",
+   "tema": "backup e o que acontece se o computador morrer",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-110",
+   "eixo": "processos",
+   "tema": "senha compartilhada e os riscos",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-111",
+   "eixo": "processos",
+   "tema": "treinar alguem para substituir voce por uma semana",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-112",
+   "eixo": "processos",
+   "tema": "reuniao semanal curta que resolve",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-113",
+   "eixo": "processos",
+   "tema": "protocolo para intercorrencia durante a sessao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-114",
+   "eixo": "processos",
+   "tema": "controle de materiais e reposicao",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-115",
+   "eixo": "processos",
+   "tema": "limpeza e higienizacao registradas",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-116",
+   "eixo": "processos",
+   "tema": "onboarding de um fisioterapeuta novo",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-117",
+   "eixo": "processos",
+   "tema": "centralizar a informacao em um lugar so",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-118",
+   "eixo": "processos",
+   "tema": "o processo que so existe na cabeca de uma pessoa",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-119",
+   "eixo": "processos",
+   "tema": "medir antes de mudar",
+   "status": "livre",
+   "usado_em": null
+  },
+  {
+   "id": "processos-120",
+   "eixo": "processos",
+   "tema": "automatizar o que e repetitivo, nao o que e clinico",
+   "status": "livre",
+   "usado_em": null
+  }
+ ]
+}
