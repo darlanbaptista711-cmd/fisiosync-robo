@@ -82,3 +82,35 @@ Responder com a arte renderizada na frente, em tamanho de celular:
 
 Falhando qualquer item, identificar o motivo e revisar conceito, geração ou
 composição. Não resolver ideia fraca aumentando resolução, nitidez ou sombra.
+
+---
+
+## aprovada_02_padrao-feed.png e aprovada_03_padrao-story.png
+
+**Aprovadas em:** 31/10/2026 pelo Darlan
+**Tema:** registrar a evolução com a voz
+**Tratamento:** ilustração 3D publicitária, objeto único
+
+### Por que estas duas viraram o padrão
+
+São as duas primeiras peças produzidas inteiramente pelo sistema que
+ele aprovou olhando o arquivo final, feed e story juntos.
+
+**A ordem é sempre esta, e não muda:** logo centralizada no topo,
+sobretítulo espaçado, chamada em duas cores, apoio curto, ilustração,
+teste grátis, selos, disponibilidade e site.
+
+**A logo vem sempre primeiro e sempre centralizada**, nos dois formatos,
+com 38% da largura da arte, medida pelo conteúdo visível.
+
+**Os efeitos em ciano** entram atrás da ilustração: mancha orgânica,
+halo de profundidade e, por ser tema de áudio, as ondas finas saindo do
+microfone.
+
+**O story não é o feed esticado:** mesma hierarquia, composição própria,
+com as faixas de 250 px no topo e 350 px na base em branco.
+
+### O que manter
+
+Nível de execução, hierarquia e a ordem dos elementos. O tema, o objeto
+e os efeitos mudam a cada peça.
