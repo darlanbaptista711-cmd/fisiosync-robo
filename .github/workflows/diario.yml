@@ -1,26 +1,34 @@
-name: Post diario da FisioSync
+name: Posts diarios da FisioSync
 
-# Uma vez por dia: 1 post no feed + 1 story do mesmo tema.
+# DUAS publicacoes por dia. Cada uma leva 1 post no feed + 1 story do
+# mesmo tema, e consome 1 pauta do banco.
 #
-# 15:30 UTC = 12:30 em Brasilia. O intervalo do almoco e quando o
-# fisioterapeuta para entre atendimentos.
+# Os horarios estao 5 minutos ANTES do alvo de proposito. O agendador do
+# GitHub nao e pontual: em horario cheio ele costuma atrasar de 5 a 20
+# minutos, porque e quando todo mundo agenda. Pedindo 11:55 e 18:25, a
+# publicacao cai perto de 12:00 e 18:30.
 #
-# Para testar sem esperar, use a aba Actions e o botao Run workflow.
+#   14:55 UTC = 11:55 em Brasilia  -> alvo 12:00
+#   21:25 UTC = 18:25 em Brasilia  -> alvo 18:30
 #
-# Para mudar o horario, troque o numero do cron. Lembre que ele e em
-# UTC: Brasilia e UTC-3, entao 12:30 daqui e 15:30 la.
-#   07:30 Brasilia -> "30 10 * * *"
-#   19:30 Brasilia -> "30 22 * * *"
-#
+# Para voltar a 1 post por dia, apague uma das duas linhas de cron.
+# Para testar sem esperar: aba Actions > Run workflow.
 # Para pausar: aba Actions > este workflow > Disable workflow.
 
 on:
   schedule:
-    - cron: "30 15 * * *"
+    - cron: "55 14 * * *"
+    - cron: "25 21 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  # se uma rodada atrasar e encostar na outra, a segunda espera em vez
+  # de rodar junto e baguncar o historico
+  group: post-diario
+  cancel-in-progress: false
 
 jobs:
   postar:
@@ -46,6 +54,7 @@ jobs:
         run: |
           git config user.name "FisioSync Robo"
           git config user.email "robo@users.noreply.github.com"
+          git pull --rebase --autostash || true
           git add historico.json pautas.json || true
-          git commit -m "registro do post de $(date +%F)" || exit 0
+          git commit -m "registro do post de $(date -u +%F\ %H:%M)" || exit 0
           git push
