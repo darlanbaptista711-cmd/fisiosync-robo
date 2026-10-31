@@ -93,11 +93,42 @@ especificar enquadramento, materiais, iluminação, sombras e composição.
 - `referencias/` — padrão de qualidade aprovado
 - `historico.json` — tema, objetivo, estilo, layout e conceito de cada post
 
+## Janelas de publicação
+
+Duas por dia, em horário de Brasília:
+
+- **manhã**, das 10h às 16h, alvo 12h
+- **tarde**, das 17h às 23h, alvo 18h30
+
+O agendador do GitHub é melhor esforço, não promessa: em 31/10/2026 ele
+atrasou a janela da manhã em quase quatro horas e pulou a da tarde. Por
+isso o workflow **tenta várias vezes dentro de cada janela**, e quem
+decide publicar é o `postador.py`: se a janela de hoje já tem post
+`publicado` no histórico, ele encerra em segundos, sem gerar imagem, sem
+chamar API e sem gastar pauta.
+
+Consequência prática: o horário exato pode variar, mas **sai um post por
+janela, todo dia**. Nunca dois.
+
+A trava não vale para `--previa`, `--tema` nem `--brief`: esses são
+comandos manuais e sempre rodam.
+
 ## Histórico editorial
 
-`historico.json` guarda, por publicação: data, tema, público, situação,
-mensagem, chamada, conceito, composição, estilo, objetivo, arquivos e
-**status**.
+`historico.json` guarda, por publicação: data, **janela**, tema,
+**pauta**, **eixo**, público, situação, mensagem, chamada, conceito,
+composição, estilo, objetivo, arquivos e **status**.
+
+`tema` é o título reescrito pela IA. `pauta` é a frase original do banco
+e `eixo` é o assunto dela. **Essa distinção não é detalhe.** Enquanto o
+histórico guardava só o `tema`, o banco nunca reconhecia a pauta de
+volta: nada era marcado como usado, o rodízio de eixo nunca saía do
+lugar, e em 31/10/2026 as duas publicações do dia saíram da **mesma
+pauta** com títulos diferentes.
+
+Rodízio: antes de sortear, o robô olha o `eixo` dos **6 últimos** posts e
+prefere o eixo que está há mais tempo sem aparecer. Com 8 eixos e 2 posts
+por dia, isso cobre os três últimos dias.
 
 Status possíveis: `rascunho`, `aprovado`, `publicado`, `rejeitado`.
 
