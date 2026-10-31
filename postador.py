@@ -348,8 +348,9 @@ def _pedido_conteudo(tema_sugerido=None):
         "por que. Antes de responder, pense em tres caminhos visuais "
         "diferentes e escolha o mais claro. Nao vale 'objetos 3D premium', "
         "'tecnologia moderna' nem 'imagem sofisticada': isso nao e conceito.\n"
-        '  "layout": um entre editorial, lateral, objeto, detalhe, centro. '
-        "Escolha o que serve ao conceito, nao o mesmo de sempre.\n"
+        '  "layout": "calibrado" quando a peca tiver ilustracao, ou '
+        '"tipografico" quando a mensagem funcionar so com tipografia. '
+        "O padrao visual esta travado nesses dois.\n"
         '  "titulo": chamada curta e forte, no maximo 8 palavras, sem ponto '
         "final. Tem que expressar uma ACAO, uma SITUACAO ou uma MUDANCA. "
         "NAO pode ser o nome de um recurso: 'Evolucao clinica por audio' e "
@@ -777,9 +778,42 @@ def _listar_modelos_google(chave):
 # Hospedagem e publicacao
 # --------------------------------------------------------------------------
 
+NOME_REPO_PADRAO = "fisiosync-robo"
+
+
+def descobrir_repo(token):
+    """
+    Descobre o repositorio sozinho quando o GITHUB_REPO nao foi
+    preenchido: pergunta ao GitHub quem e o dono do token e monta
+    usuario/fisiosync-robo, conferindo se existe.
+    """
+    try:
+        r = requests.get("https://api.github.com/user",
+                         headers={"Authorization": f"Bearer {token}",
+                                  "Accept": "application/vnd.github+json"},
+                         timeout=60)
+        if r.status_code != 200:
+            return None
+        usuario = r.json().get("login")
+        repo = f"{usuario}/{NOME_REPO_PADRAO}"
+        c = requests.get(f"https://api.github.com/repos/{repo}",
+                         headers={"Authorization": f"Bearer {token}"},
+                         timeout=60)
+        if c.status_code == 200:
+            log(f"Repositorio descoberto automaticamente: {repo}")
+            return repo
+    except Exception:
+        pass
+    return None
+
+
 def subir_para_github(cfg, caminho, nome_remoto):
     token = cfg.get("GITHUB_TOKEN")
     repo = cfg.get("GITHUB_REPO")
+    if token and not repo:
+        repo = descobrir_repo(token)
+        if repo:
+            cfg["GITHUB_REPO"] = repo
     if not token or not repo:
         erro("Faltam GITHUB_TOKEN e GITHUB_REPO no CHAVES.txt.\n"
              "GITHUB_REPO deve ser assim: seu-usuario/nome-do-repositorio")
