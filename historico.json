@@ -1,0 +1,55 @@
+[
+ {
+  "data": "2026-10-31",
+  "tema": "a falta que o paciente nao avisa",
+  "publico": "fisioterapeutas autonomos e donos de clinica pequena que cuidam da propria agenda",
+  "situacao": "O horario estava marcado, a sala preparada, e o paciente simplesmente nao apareceu. Aquele horario nao volta e quase ninguem mede quanto isso custa no mes.",
+  "mensagem": "A falta nao avisada e o maior vazamento de receita da clinica, e da para agir antes do horario chegar.",
+  "chamada": "A cadeira vazia custa mais que a sessão",
+  "conceito": "Uma sala pronta e um banco vazio no horario marcado: o custo da falta e o silencio de um lugar preparado para alguem que nao veio.",
+  "composicao": "calibrado",
+  "estilo": "fotografia realista de produto",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_a-falta-que-o-paciente-nao-avisa_feed_1080x1350.jpg"
+  ],
+  "status": "rascunho",
+  "modo": "molde"
+ },
+ {
+  "data": "2026-10-31",
+  "tema": "Registrar a evolução com a voz",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Na FisioSync, a evolução por áudio é uma alternativa para documentar o atendimento.",
+  "chamada": "Registre a evolução com a sua voz",
+  "conceito": "Um lápis com uma cápsula de microfone no lugar da borracha comunica a voz como alternativa à escrita no registro da evolução.",
+  "composicao": "objeto",
+  "estilo": "ilustracao 3D minimalista e sofisticada",
+  "objetivo": "iniciar teste",
+  "arquivos": [
+   "fisiosync_registrar-a-evoluc-o-com-a-voz_feed_1080x1350.jpg",
+   "fisiosync_registrar-a-evoluc-o-com-a-voz_stories_1080x1920.jpg"
+  ],
+  "status": "rascunho",
+  "modo": "molde"
+ },
+ {
+  "data": "2026-10-31",
+  "tema": "O trabalho de reunir o histórico em papel",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "No papel, reunir o histórico também vira trabalho, mesmo sem acrescentar nenhuma informação clínica.",
+  "chamada": "Antes de consultar, você precisa juntar tudo",
+  "conceito": "As mesmas folhas aparecem dispersas e depois reunidas, revelando o trabalho de organizar um histórico antes mesmo de consultá-lo.",
+  "composicao": "lateral",
+  "estilo": "representação conceitual do benefício",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_o-trabalho-de-reunir-o-hist-rico-em-pape_feed_1080x1350.jpg",
+   "fisiosync_o-trabalho-de-reunir-o-hist-rico-em-pape_stories_1080x1920.jpg"
+  ],
+  "status": "rascunho",
+  "modo": "molde"
+ }
+]
