@@ -165,5 +165,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-01",
+  "janela": "tarde",
+  "tema": "Obrigatoriedade do registro em prontuário",
+  "pauta": "registro em prontuario nao e opcional",
+  "eixo": "regulacao",
+  "familia": "regulacao",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "O registro das atividades assistenciais é obrigação do fisioterapeuta.",
+  "chamada": "Registrar em prontuário não é opcional",
+  "conceito": "A composição destaca tipograficamente “não é opcional” para comunicar que registrar em prontuário é uma obrigação profissional.",
+  "composicao": "tipografico",
+  "estilo": "composicao tipografica",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_obrigatoriedade-do-registro-em-prontu-ri_feed_1080x1350.jpg",
+   "fisiosync_obrigatoriedade-do-registro-em-prontu-ri_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]

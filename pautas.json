@@ -967,7 +967,8 @@
    "tema": "registro em prontuario nao e opcional",
    "fato": "A Resolução COFFITO 414/2012, no Art. 1º, obriga o fisioterapeuta a registrar em prontuário todas as atividades assistenciais que presta ao cliente/paciente.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre"
+   "status": "publicado",
+   "usado_em": "2026-11-01"
   },
   {
    "id": "regulacao-002",
