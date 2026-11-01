@@ -5,31 +5,34 @@ O relogio do robo.
 
 POR QUE ISTO EXISTE
 
-O agendador do GitHub nao cumpre horario. Medido neste repositorio:
+O agendador do GitHub nao cumpre horario, e o padrao medido aqui mostra
+onde ele falha:
 
-  31/10  cron das 11:55 -> rodou 15:52   (3h57 de atraso)
-  31/10  cron das 18:25 -> nunca rodou
-  01/11  SETE crons entre 11:50 e 13:30 -> nenhum rodou
+  31/10  cron 11:55 -> rodou 15:52      (3h57 de atraso)
+  31/10  cron 18:25 -> nunca rodou
+  01/11  6 crons entre 09:30 e 13:30 -> ZERO dispararam em 5h30
+  01/11  6 crons entre 18:20 e 20:40 -> 3 dispararam, 1h a 3h atrasados
 
-Ja o workflow_dispatch foi honrado na hora, 4 vezes em 4. Ou seja: o
-problema nao e o GitHub estar fora do ar, e a fila de agendamento ser
-melhor esforco e ficar no fim da fila.
+O buraco e de dia: 12h as 17h UTC e o pico da fila do GitHub, e e
+exatamente onde cai o nosso meio-dia. De madrugada ele dispara.
 
 A SOLUCAO
 
-Parar de pedir ao cron que acerte o minuto. O cron vira so a largada:
-dispare a qualquer momento dentro das 2h30 antes do alvo, que este
-script DORME ate a hora certa e so entao libera a publicacao. Um cron
-que atrasou 40 minutos continua publicando as 12:00 em ponto, porque o
-que marca a hora e o sleep, nao o GitHub.
+A largada vem da madrugada, que funciona, e o robo DORME ate a hora
+certa. Como um job do GitHub morre em 6 horas, a espera e dividida em
+uma corrente de jobs, cada um esperando um trecho:
 
-Se o cron atrasar tanto que ja passou do alvo, publica na hora, atrasado
-mas publicado. Se nada estiver pendente, encerra em segundos.
+  aquecer -> dorme ate 06:30         (so espera, nao publica)
+  manha   -> dorme ate 12:00         e publica
+  tarde   -> dorme ate 18:00         e publica
 
-Decide e escreve no $GITHUB_OUTPUT:
-  publicar=sim|nao
+Uma largada as 01:00 da manha cobre os DOIS posts do dia. Largada mais
+tarde entra no meio da corrente e o resto segue igual.
+
+Decide e escreve no $GITHUB_OUTPUT:  publicar=sim|nao
 """
 
+import argparse
 import datetime
 import os
 import sys
@@ -37,16 +40,23 @@ import time
 
 import postador as P
 
-# Alvo de cada janela, em horario de Brasilia.
-ALVOS = [
-    ("manha", datetime.time(12, 0), 16),
-    ("tarde", datetime.time(18, 30), 23),
-]
+# Alvo de cada etapa, em horario de Brasilia, e ate que hora ainda vale
+# publicar atrasado. Etapa com limite None so espera, nao publica.
+#
+# Os alvos sao proximos de proposito: nenhum trecho passa de 4h, bem
+# abaixo do teto de 6h que o GitHub impoe a um job. Dividir em mais
+# etapas custa nada e evita o job morrer no meio da espera.
+ETAPAS = {
+    "madrugada": (datetime.time(5, 0), None),
+    "manha_cedo": (datetime.time(9, 0), None),
+    "manha": (datetime.time(12, 0), 16),      # publica
+    "tarde_cedo": (datetime.time(15, 30), None),
+    "tarde": (datetime.time(18, 0), 23),      # publica
+}
 
-# Quanto tempo o runner aceita ficar dormindo. Acima disso a largada foi
-# cedo demais: encerra e deixa para o proximo cron, que vai cair dentro
-# da janela. Segura o desperdicio de runner parado.
-ESPERA_MAXIMA = 2.5 * 3600
+# Teto de sono por job. O limite duro do GitHub e 6h; 5h deixa folga
+# para o checkout, o pip e a propria publicacao.
+TETO = 5 * 3600
 
 
 def janelas_ja_publicadas(hoje):
@@ -68,50 +78,69 @@ def decidir(valor, motivo):
     sys.exit(0)
 
 
+def dormir_ate(alvo, agora, rotulo):
+    """Dorme ate o alvo, respeitando o teto do job. True se chegou la."""
+    espera = (alvo - agora).total_seconds()
+    if espera <= 0:
+        return True
+    if espera > TETO:
+        print(f"[relogio] {rotulo}: faltam {espera/3600:.1f}h, mais que o "
+              f"teto de {TETO/3600:.1f}h deste job. Dormindo o teto e "
+              "passando a vez para a proxima etapa.")
+        time.sleep(TETO)
+        return False
+    print(f"[relogio] {rotulo}: dormindo {espera/60:.0f} min ate as "
+          f"{alvo:%H:%M}.")
+    time.sleep(espera)
+    return True
+
+
 def main():
-    # "Run workflow" no site e ordem direta: publica agora, sem esperar
-    # relogio nem janela. Quem clicou quer ver o post sair.
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--etapa", choices=sorted(ETAPAS), required=True)
+    args = ap.parse_args()
+
+    hora_alvo, hora_limite = ETAPAS[args.etapa]
+    so_espera = hora_limite is None
+
     if os.environ.get("FORCAR") == "1":
+        if so_espera:
+            decidir("nao", "disparo manual: pulando as etapas de espera.")
         decidir("sim", "disparo manual: publicando agora, sem esperar.")
 
     agora = P.agora_brasilia()
     hoje = agora.date()
+    alvo = datetime.datetime.combine(hoje, hora_alvo)
+
+    print(f"[relogio] etapa '{args.etapa}', {agora:%d/%m %H:%M} em "
+          f"Brasilia, alvo {hora_alvo:%H:%M}.")
+
+    if so_espera:
+        dormir_ate(alvo, agora, args.etapa)
+        decidir("nao", "espera cumprida. A proxima etapa assume.")
+
     feitas = janelas_ja_publicadas(hoje.isoformat())
-    print(f"[relogio] {agora:%d/%m %H:%M} em Brasilia. "
-          f"Janelas ja publicadas hoje: {sorted(feitas) or 'nenhuma'}")
+    if args.etapa in feitas:
+        decidir("nao", f"a janela da {args.etapa} de hoje ja foi "
+                       "publicada. Saindo sem gerar nada.")
 
-    for nome, hora_alvo, hora_limite in ALVOS:
-        if nome in feitas:
-            continue
+    limite = datetime.datetime.combine(hoje, datetime.time(hora_limite, 59))
+    if agora > limite:
+        decidir("nao", f"passou das {hora_limite}h e a janela da "
+                       f"{args.etapa} nao vale mais hoje.")
 
-        alvo = datetime.datetime.combine(hoje, hora_alvo)
-        limite = datetime.datetime.combine(
-            hoje, datetime.time(hora_limite, 59))
+    if not dormir_ate(alvo, agora, args.etapa):
+        decidir("nao", "o teto do job acabou antes do alvo. A proxima "
+                       "largada pega.")
 
-        if agora > limite:
-            print(f"[relogio] janela da {nome} passou do limite "
-                  f"({hora_limite}h). Pulando.")
-            continue
+    # relendo: a corrente pode ter levado horas desde o checkout
+    if args.etapa in janelas_ja_publicadas(
+            P.agora_brasilia().date().isoformat()):
+        decidir("nao", f"a janela da {args.etapa} saiu enquanto este job "
+                       "esperava. Nao vou duplicar.")
 
-        espera = (alvo - agora).total_seconds()
-
-        if espera > ESPERA_MAXIMA:
-            decidir("nao", f"largada cedo demais para a {nome}: faltam "
-                           f"{espera/3600:.1f}h para as {hora_alvo:%H:%M}. "
-                           "O proximo cron pega.")
-
-        if espera > 0:
-            print(f"[relogio] janela da {nome} pendente. Dormindo "
-                  f"{espera/60:.0f} min ate as {hora_alvo:%H:%M}.")
-            time.sleep(espera)
-            decidir("sim", f"{hora_alvo:%H:%M} em ponto. Publicando a "
-                           f"janela da {nome}.")
-
-        decidir("sim", f"janela da {nome} pendente e o alvo "
-                       f"({hora_alvo:%H:%M}) ja passou. Publicando "
-                       f"atrasado, que e melhor que nao publicar.")
-
-    decidir("nao", "nenhuma janela pendente. Nada a fazer.")
+    decidir("sim", f"{hora_alvo:%H:%M}. Publicando a janela da "
+                   f"{args.etapa}.")
 
 
 if __name__ == "__main__":

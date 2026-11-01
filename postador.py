@@ -276,7 +276,7 @@ STATUS = ("rascunho", "aprovado", "publicado", "rejeitado")
 
 JANELAS = {
     "manha": (10, 16),   # alvo 12:00 em Brasilia
-    "tarde": (17, 23),   # alvo 18:30 em Brasilia
+    "tarde": (17, 23),   # alvo 18:00 em Brasilia
 }
 
 

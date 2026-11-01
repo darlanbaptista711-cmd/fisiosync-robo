@@ -1,50 +1,53 @@
 name: Posts diarios da FisioSync
 
-# DUAS publicacoes por dia. Cada uma leva 1 post no feed + 1 story do
-# mesmo tema, e consome 1 pauta do banco.
+# DOIS posts por dia: 12:00 e 18:00 em Brasilia. Cada um leva 1 post no
+# feed + 1 story do mesmo tema, e consome 1 pauta do banco.
 #
-# O CRON NAO MARCA MAIS A HORA
+# O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
 #
-# Medido neste repositorio: o agendador do GitHub atrasou 3h57 uma vez,
-# pulou a janela inteira outra, e em 01/11 ignorou sete gatilhos
-# seguidos. Pedir pontualidade a ele nao funciona.
+#   31/10  cron 11:55 -> rodou 15:52       (3h57 atrasado)
+#   31/10  cron 18:25 -> nunca rodou
+#   01/11  6 crons entre 09:30 e 13:30 -> ZERO em 5h30
+#   01/11  6 crons entre 18:20 e 20:40 -> 3 rodaram, 1h a 3h atrasados
 #
-# Entao o cron virou so a LARGADA. Ele dispara em algum momento das
-# 2h30 que antecedem o alvo, e o espera.py dorme ate a hora certa antes
-# de liberar a publicacao. Cron que atrasou 40 minutos continua
-# publicando as 12:00 em ponto, porque quem marca a hora e o sleep.
+# O buraco e de dia: 12h as 17h UTC e o pico da fila do GitHub, e e
+# exatamente onde cai o nosso meio-dia. De madrugada ele dispara.
 #
-#   alvo da manha: 15:00 UTC = 12:00 em Brasilia
-#   alvo da tarde: 21:30 UTC = 18:30 em Brasilia
+# Por isso a largada vem da MADRUGADA e o robo ESPERA ate a hora certa.
+# Como um job morre em 6 horas, a espera e uma corrente de cinco
+# etapas, nenhuma com mais de 4 horas de sono:
 #
-# Os dois ultimos crons de cada janela caem DEPOIS do alvo de proposito:
-# se tudo antes falhar, eles publicam atrasado, que e melhor que nao
-# publicar.
+#   madrugada   dorme ate 05:00
+#   manha_cedo  dorme ate 09:00
+#   manha       dorme ate 12:00  e PUBLICA
+#   tarde_cedo  dorme ate 15:30
+#   tarde       dorme ate 18:00  e PUBLICA
 #
-# Duas travas impedem post duplicado: o espera.py encerra em segundos se
-# a janela de hoje ja saiu, e o postador.py confere de novo antes de
-# gastar API. O grupo de concorrencia garante uma rodada por vez.
+# Uma largada a 01:00 cobre os dois posts do dia. Largada mais tarde
+# entra no meio da corrente. Cada etapa roda mesmo se a anterior
+# falhar, por causa do if: always().
 #
-# Para voltar a 1 post por dia, apague os crons da janela da tarde.
-# Para testar sem esperar: aba Actions > Run workflow.
+# Travas contra post duplicado: o espera.py confere o historico antes e
+# depois de dormir, o postador.py confere de novo antes de gastar API, e
+# o grupo de concorrencia mantem uma corrente por vez.
+#
+# Para testar sem esperar: aba Actions > Run workflow (ignora o relogio).
 # Para pausar: aba Actions > este workflow > Disable workflow.
 
 on:
   schedule:
-    # largadas da manha: 09:30 -> 13:30 em Brasilia, alvo 12:00
-    - cron: "30 12 * * *"
-    - cron: "20 13 * * *"
-    - cron: "10 14 * * *"
-    - cron: "50 14 * * *"
-    - cron: "30 15 * * *"
-    - cron: "30 16 * * *"
-    # largadas da tarde: 16:00 -> 20:00 em Brasilia, alvo 18:30
-    - cron: "0 19 * * *"
-    - cron: "50 19 * * *"
-    - cron: "40 20 * * *"
-    - cron: "20 21 * * *"
-    - cron: "0 22 * * *"
-    - cron: "0 23 * * *"
+    # madrugada: e quando o agendador do GitHub realmente responde
+    - cron: "0 4 * * *"      # 01:00 em Brasilia
+    - cron: "0 6 * * *"      # 03:00
+    - cron: "0 8 * * *"      # 05:00
+    - cron: "30 9 * * *"     # 06:30
+    # manha, se nenhuma largada da madrugada pegou
+    - cron: "30 11 * * *"    # 08:30
+    - cron: "30 13 * * *"    # 10:30
+    - cron: "40 14 * * *"    # 11:40
+    # ultimas chances do dia
+    - cron: "20 16 * * *"    # 13:20
+    - cron: "0 20 * * *"     # 17:00
   workflow_dispatch:
 
 permissions:
@@ -52,16 +55,42 @@ permissions:
   issues: write
 
 concurrency:
-  # se uma rodada atrasar e encostar na outra, a segunda espera em vez
-  # de rodar junto e baguncar o historico
   group: post-diario
   cancel-in-progress: false
 
+env:
+  FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+
 jobs:
-  postar:
+  madrugada:
     runs-on: ubuntu-latest
-    # o espera.py dorme no maximo 2h30; o resto e a propria publicacao
-    timeout-minutes: 200
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - run: python espera.py --etapa madrugada
+
+  manha_cedo:
+    needs: madrugada
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - run: python espera.py --etapa manha_cedo
+
+  manha:
+    needs: manha_cedo
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -69,11 +98,9 @@ jobs:
           python-version: "3.11"
       - run: pip install requests pillow
 
-      - name: Esperar a hora certa
+      - name: Esperar o meio-dia
         id: relogio
-        env:
-          FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
-        run: python espera.py
+        run: python espera.py --etapa manha
 
       - name: Gerar e publicar
         if: steps.relogio.outputs.publicar == 'sim'
@@ -84,39 +111,64 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python postador.py
 
       - name: Avisar se falhou
         if: failure()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Agora sao varias tentativas por janela. Se algo quebrou de
-          # verdade, todas falham, e sem este filtro a caixa de entrada
-          # recebe uma duzia de avisos do mesmo problema. Um por dia.
-          TITULO="O post de $(date -u +%F) falhou"
-          if gh issue list --state open --search "$TITULO in:title" \
-               --json title --jq '.[].title' | grep -qxF "$TITULO"; then
-            echo "Ja existe aviso aberto para hoje. Nao vou duplicar."
-            exit 0
-          fi
-          gh issue create             --title "$TITULO"             --body "A rodada automatica nao publicou.
-
-          Veja o log em: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-          Causas mais comuns, em ordem:
-          1. Token do Instagram expirado. Gere outro no Business Manager e
-             atualize o segredo IG_ACCESS_TOKEN.
-          2. Credito da OpenAI acabou. Veja em platform.openai.com.
-          3. A Meta recusou a imagem ou esta fora do ar. Costuma passar
-             sozinho na proxima rodada." || true
+        run: bash aviso_falha.sh
 
       - name: Guardar historico e pautas
-        run: |
-          git config user.name "FisioSync Robo"
-          git config user.email "robo@users.noreply.github.com"
-          git pull --rebase --autostash || true
-          git add historico.json pautas.json || true
-          git commit -m "registro do post de $(date -u +%F-%H%M)" || exit 0
-          git push
+        if: steps.relogio.outputs.publicar == 'sim'
+        run: bash guardar.sh
+
+  tarde_cedo:
+    needs: manha
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - run: python espera.py --etapa tarde_cedo
+
+  tarde:
+    needs: tarde_cedo
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+
+      - name: Esperar as 18:00
+        id: relogio
+        run: python espera.py --etapa tarde
+
+      - name: Gerar e publicar
+        if: steps.relogio.outputs.publicar == 'sim'
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python postador.py
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash aviso_falha.sh
+
+      - name: Guardar historico e pautas
+        if: steps.relogio.outputs.publicar == 'sim'
+        run: bash guardar.sh
