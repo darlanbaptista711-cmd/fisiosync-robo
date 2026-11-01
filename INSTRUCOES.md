@@ -63,6 +63,42 @@ Não reaproveitar prompt genérico trocando só o nome do tema.
 Não gerar PNG de 1080: ele não é publicado nem serve de arquivo, porque
 o de 2160 já cobre isso. Era só peso em disco.
 
+## Famílias de conteúdo e a mistura
+
+O banco tem três famílias. O sorteio garante **1 post a cada 3 fora da
+gestão** (`CICLO_FAMILIA` em `pautas.py`):
+
+| família | o que é | fato obrigatório |
+|---|---|---|
+| `gestao` | dor de rotina da clínica: faltas, agenda, prontuário, dinheiro | não |
+| `regulacao` | o que a norma exige sobre registro, guarda e sigilo | **sim** |
+| `carreira` | decisões de profissão: autônomo, primeiro consultório, volume | não |
+
+### Conteúdo factual não se escreve de cabeça
+
+Pauta de `regulacao` carrega no próprio banco o campo **`fato`** (o
+texto conferido) e **`fonte`** (a norma). A IA escreve **em volta** do
+fato; ela nunca é a origem dele.
+
+Três travas, nesta ordem:
+
+1. Pauta de `regulacao` sem `fato` e `fonte` preenchidos **não entra no
+   sorteio** (`_tem_fato` em `pautas.py`).
+2. O prompt entrega o fato e proíbe citar qualquer outro número, ano,
+   prazo, percentual ou artigo de lei. Pauta sem fato proíbe número de
+   qualquer tipo.
+3. Antes de montar a arte, `conferir_numeros()` varre título, apoio e
+   legenda. Número que não está no fato nem na lista da casa dispara
+   uma reescrita; se insistir, **a peça não é publicada**.
+
+Também proibido neste tipo de post: dizer que a FisioSync garante
+conformidade legal. O software organiza o registro; quem responde pela
+norma é o profissional.
+
+Para acrescentar pauta de regulação: confira o fato em **fonte oficial**
+(site do COFFITO, Planalto), escreva `fato` e `fonte`, e só então
+cadastre. Fato conferido em blog não serve.
+
 ## Texto cortado: nunca
 
 Em 01/11/2026 foi publicado um post cujo apoio terminava em **"e deixar

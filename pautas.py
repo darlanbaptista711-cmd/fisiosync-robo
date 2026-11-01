@@ -31,6 +31,12 @@ LIMITE_TEXTO = 0.70     # proposta contra tema + mensagem + conceito
 # Com 8 eixos e 2 posts por dia, 6 cobre os tres ultimos dias.
 JANELA_EIXO = 6
 
+# Mistura de conteudo: 1 post a cada CICLO sai de fora da gestao, ou
+# seja, regulacao ou carreira. Com 2 posts por dia e ciclo 3, da cerca
+# de 5 posts de gestao e 2 de dica por semana.
+CICLO_FAMILIA = 3
+FAMILIA_PADRAO = "gestao"
+
 VAZIAS = {
     "a", "o", "as", "os", "de", "do", "da", "dos", "das", "e", "em", "no",
     "na", "nos", "nas", "um", "uma", "para", "por", "com", "sem", "que",
@@ -129,16 +135,60 @@ def eixo_do_registro(r, dados):
     return melhor if nota >= 0.45 else None
 
 
+def familia_do_registro(r, dados):
+    """Familia de um post ja publicado, pelo campo ou pela pauta."""
+    if r.get("familia"):
+        return r["familia"]
+    alvo = r.get("pauta") or r.get("tema", "")
+    for p in dados["pautas"]:
+        if p["tema"] == alvo:
+            return p.get("familia", FAMILIA_PADRAO)
+    return FAMILIA_PADRAO
+
+
+def _tem_fato(p):
+    """
+    Pauta de regulacao so entra no sorteio com o fato preenchido.
+
+    Conteudo factual sem fato no banco vira conteudo inventado pela IA,
+    e o briefing proibe inventar estatistica, data ou norma. Sem fato,
+    a pauta fica de fora ate alguem escrever o fato e a fonte.
+    """
+    if p.get("familia") != "regulacao":
+        return True
+    return bool(p.get("fato") and p.get("fonte"))
+
+
 def proxima_pauta(historico, log=print):
     """
     Escolhe a proxima pauta livre, evitando repetir o eixo dos ultimos
-    dias e qualquer coisa parecida com o que ja foi feito.
+    dias, respeitando a mistura de familias e pulando o que ja foi feito.
     """
     dados = carregar()
-    livres = [p for p in dados["pautas"] if p.get("status") == "livre"]
+    livres = [p for p in dados["pautas"]
+              if p.get("status") == "livre" and _tem_fato(p)]
     if not livres:
         log("BANCO DE PAUTAS VAZIO. Nenhum tema novo disponivel.")
         return None
+
+    # Mistura: se os ultimos CICLO-1 posts foram todos de gestao, chegou
+    # a vez de uma dica. Fora isso, gestao.
+    recentes_fam = [familia_do_registro(r, dados)
+                    for r in historico[-(CICLO_FAMILIA - 1):]]
+    vez_de_dica = (len(recentes_fam) == CICLO_FAMILIA - 1
+                   and all(f == FAMILIA_PADRAO for f in recentes_fam))
+
+    if vez_de_dica:
+        preferidas = [p for p in livres
+                      if p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO]
+        rotulo = "dica/curiosidade"
+    else:
+        preferidas = [p for p in livres
+                      if p.get("familia", FAMILIA_PADRAO) == FAMILIA_PADRAO]
+        rotulo = "gestao"
+    if preferidas:
+        log(f"Vez de: {rotulo}")
+        livres = preferidas
 
     # Eixos usados por ultimo, do mais recente para o mais antigo.
     recentes = []
@@ -164,7 +214,11 @@ def proxima_pauta(historico, log=print):
             p["usado_em"] = parecido.get("data")
             continue
         salvar(dados)
-        log(f"Pauta escolhida: {p['tema']}  (eixo {p['eixo']})")
+        log(f"Pauta escolhida: {p['tema']}  "
+            f"(eixo {p['eixo']}, familia {p.get('familia', FAMILIA_PADRAO)})")
+        if p.get("fato"):
+            log(f"  fato conferido: {p['fato'][:90]}...")
+            log(f"  fonte: {p['fonte']}")
         log(f"Pautas livres restantes: {len(livres) - 1}")
         return p
 

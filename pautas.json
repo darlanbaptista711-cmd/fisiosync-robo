@@ -6,839 +6,1279 @@
    "eixo": "faltas",
    "tema": "a falta que o paciente nao avisa",
    "status": "parecida",
-   "usado_em": "2026-10-31"
+   "usado_em": "2026-10-31",
+   "familia": "gestao"
   },
   {
    "id": "faltas-002",
    "eixo": "faltas",
    "tema": "quanto custa um horario vago no mes",
-   "status": "livre"
+   "status": "livre",
+   "familia": "gestao"
   },
   {
    "id": "faltas-003",
    "eixo": "faltas",
    "tema": "confirmar no dia anterior ou dois dias antes",
    "status": "publicado",
-   "usado_em": "2026-10-31"
+   "usado_em": "2026-10-31",
+   "familia": "gestao"
   },
   {
    "id": "faltas-004",
    "eixo": "faltas",
    "tema": "o paciente que remarca toda semana",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-005",
    "eixo": "faltas",
    "tema": "lista de espera para cobrir buraco de agenda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-006",
    "eixo": "faltas",
    "tema": "cobrar ou nao cobrar por falta sem aviso",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-007",
    "eixo": "faltas",
    "tema": "o padrao de quem ja faltou antes",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-008",
    "eixo": "faltas",
    "tema": "atraso de 15 minutos: atende ou nao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-009",
    "eixo": "faltas",
    "tema": "feriado e recesso derrubando a agenda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-010",
    "eixo": "faltas",
    "tema": "o primeiro horario da manha que ninguem quer",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-011",
    "eixo": "faltas",
    "tema": "quando a falta e culpa do processo, nao do paciente",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-012",
    "eixo": "faltas",
    "tema": "reagendar na hora da falta, pelo telefone",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-013",
    "eixo": "faltas",
    "tema": "o lembrete que irrita e o lembrete que ajuda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-014",
    "eixo": "faltas",
    "tema": "medindo taxa de comparecimento de verdade",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "faltas-015",
    "eixo": "faltas",
    "tema": "o paciente que some depois da melhora",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-016",
    "eixo": "prontuario",
    "tema": "prontuario em papel e o retrabalho invisivel",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-017",
    "eixo": "prontuario",
    "tema": "o que nao pode faltar numa evolucao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-018",
    "eixo": "prontuario",
    "tema": "registrar no mesmo dia ou perder o detalhe",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-019",
    "eixo": "prontuario",
    "tema": "avaliacao inicial padronizada economiza tempo",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-020",
    "eixo": "prontuario",
    "tema": "prontuario como defesa em caso de questionamento",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-021",
    "eixo": "prontuario",
    "tema": "guarda e sigilo dos dados do paciente",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-022",
    "eixo": "prontuario",
    "tema": "escala de dor registrada sessao a sessao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-023",
    "eixo": "prontuario",
    "tema": "foto de evolucao: quando faz sentido",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-024",
    "eixo": "prontuario",
    "tema": "transferir paciente entre fisioterapeutas sem perder historico",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-025",
    "eixo": "prontuario",
    "tema": "o prontuario que ninguem consegue ler depois",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-026",
    "eixo": "prontuario",
    "tema": "objetivos de tratamento escritos no inicio",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-027",
    "eixo": "prontuario",
    "tema": "reavaliacao marcada no proprio plano",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-028",
    "eixo": "prontuario",
    "tema": "alta registrada direito",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-029",
    "eixo": "prontuario",
    "tema": "exportar prontuario quando o paciente pede",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "prontuario-030",
    "eixo": "prontuario",
    "tema": "o caderno que sumiu e levou tres meses de historico",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-031",
    "eixo": "agenda",
    "tema": "dupla marcacao quando a agenda mora em dois lugares",
    "status": "publicado",
-   "usado_em": "2026-10-31"
+   "usado_em": "2026-10-31",
+   "familia": "gestao"
   },
   {
    "id": "agenda-032",
    "eixo": "agenda",
    "tema": "encaixe de ultima hora sem atropelar o dia",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-033",
    "eixo": "agenda",
    "tema": "intervalo entre atendimentos e por que ele existe",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-034",
    "eixo": "agenda",
    "tema": "o WhatsApp como agenda e o refem que ele cria",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-035",
    "eixo": "agenda",
    "tema": "agenda cheia nao significa clinica lucrativa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-036",
    "eixo": "agenda",
    "tema": "quanto tempo some entre um paciente e outro",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-037",
    "eixo": "agenda",
    "tema": "bloquear horario para a parte administrativa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-038",
    "eixo": "agenda",
    "tema": "quem pode marcar na sua agenda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-039",
    "eixo": "agenda",
    "tema": "ferias sem deixar a agenda quebrada",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-040",
    "eixo": "agenda",
    "tema": "o custo de atender fora do horario",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-041",
    "eixo": "agenda",
    "tema": "pacote de sessoes marcado de uma vez",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-042",
    "eixo": "agenda",
    "tema": "agenda compartilhada entre dois profissionais",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-043",
    "eixo": "agenda",
    "tema": "o retorno que nunca foi marcado",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-044",
    "eixo": "agenda",
    "tema": "sala ocupada e profissional livre",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "agenda-045",
    "eixo": "agenda",
    "tema": "primeira consulta precisa de mais tempo",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-046",
    "eixo": "dinheiro",
    "tema": "preco por sessao ou pacote fechado",
    "status": "publicado",
-   "usado_em": "2026-11-01"
+   "usado_em": "2026-11-01",
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-047",
    "eixo": "dinheiro",
    "tema": "o repasse do convenio que atrasa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-048",
    "eixo": "dinheiro",
    "tema": "cobrar sem constrangimento e manter a relacao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-049",
    "eixo": "dinheiro",
    "tema": "quanto custa uma hora da sua agenda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-050",
    "eixo": "dinheiro",
    "tema": "inadimplencia silenciosa no pacote de sessoes",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-051",
    "eixo": "dinheiro",
    "tema": "reajuste anual conversado com antecedencia",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-052",
    "eixo": "dinheiro",
    "tema": "desconto que vira padrao e nao volta",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-053",
    "eixo": "dinheiro",
    "tema": "separar o dinheiro da clinica do dinheiro pessoal",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-054",
    "eixo": "dinheiro",
    "tema": "quanto do faturamento vira lucro de verdade",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-055",
    "eixo": "dinheiro",
    "tema": "formas de pagamento e a taxa que ninguem conta",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-056",
    "eixo": "dinheiro",
    "tema": "pacote expirado e sessao nao usada",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-057",
    "eixo": "dinheiro",
    "tema": "o paciente particular e o paciente de convenio no mesmo dia",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-058",
    "eixo": "dinheiro",
    "tema": "nota fiscal e organizacao fiscal basica",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-059",
    "eixo": "dinheiro",
    "tema": "reserva de caixa para o mes fraco",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "dinheiro-060",
    "eixo": "dinheiro",
    "tema": "quando vale a pena recusar um convenio",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-061",
    "eixo": "paciente",
    "tema": "aderencia ao exercicio em casa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-062",
    "eixo": "paciente",
    "tema": "explicar a evolucao de um jeito que o paciente entenda",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-063",
    "eixo": "paciente",
    "tema": "o paciente que abandona quando a dor passa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-064",
    "eixo": "paciente",
    "tema": "expectativa alinhada na primeira consulta",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-065",
    "eixo": "paciente",
    "tema": "alta nao e perda, e prova de resultado",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-066",
    "eixo": "paciente",
    "tema": "pos alta virando indicacao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-067",
    "eixo": "paciente",
    "tema": "quando o paciente compara com o tratamento do vizinho",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-068",
    "eixo": "paciente",
    "tema": "o acompanhante que atrapalha a sessao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-069",
    "eixo": "paciente",
    "tema": "linguagem tecnica demais afasta",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-070",
    "eixo": "paciente",
    "tema": "registro de queixa que muda no meio do tratamento",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-071",
    "eixo": "paciente",
    "tema": "feedback do paciente que ninguem pede",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-072",
    "eixo": "paciente",
    "tema": "o paciente que chega ja com diagnostico do Google",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-073",
    "eixo": "paciente",
    "tema": "constancia vale mais que intensidade",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-074",
    "eixo": "paciente",
    "tema": "o que fazer quando o resultado demora",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "paciente-075",
    "eixo": "paciente",
    "tema": "pesquisa de satisfacao curta e util",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-076",
    "eixo": "domiciliar",
    "tema": "organizar a rota do atendimento domiciliar",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-077",
    "eixo": "domiciliar",
    "tema": "documentar fora da clinica sem acumular",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-078",
    "eixo": "domiciliar",
    "tema": "o que levar na bolsa de atendimento domiciliar",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-079",
    "eixo": "domiciliar",
    "tema": "cobrar deslocamento sem afastar o paciente",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-080",
    "eixo": "domiciliar",
    "tema": "atendimento domiciliar e o limite de pacientes por dia",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-081",
    "eixo": "domiciliar",
    "tema": "combinar o espaco com a familia antes da primeira visita",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-082",
    "eixo": "domiciliar",
    "tema": "seguranca do profissional em visita domiciliar",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-083",
    "eixo": "domiciliar",
    "tema": "equipamento portatil que realmente e usado",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-084",
    "eixo": "domiciliar",
    "tema": "cancelamento de ultima hora com o deslocamento ja feito",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-085",
    "eixo": "domiciliar",
    "tema": "quando o domicilio nao e indicado",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-086",
    "eixo": "domiciliar",
    "tema": "registro de evolucao no carro, entre um atendimento e outro",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-087",
    "eixo": "domiciliar",
    "tema": "familia como parte do tratamento em casa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-088",
    "eixo": "domiciliar",
    "tema": "adaptar exercicio ao que existe na casa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-089",
    "eixo": "domiciliar",
    "tema": "cobrir area grande sem perder o dia no transito",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "domiciliar-090",
    "eixo": "domiciliar",
    "tema": "primeira visita: avaliacao do ambiente",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-091",
    "eixo": "clinica",
    "tema": "checklist para abrir a propria clinica",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-092",
    "eixo": "clinica",
    "tema": "quando vale contratar recepcionista",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-093",
    "eixo": "clinica",
    "tema": "escolher o ponto da clinica",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-094",
    "eixo": "clinica",
    "tema": "equipamento essencial e equipamento que fica parado",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-095",
    "eixo": "clinica",
    "tema": "alvara e exigencias basicas antes de abrir",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-096",
    "eixo": "clinica",
    "tema": "quanto capital de giro para os primeiros meses",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-097",
    "eixo": "clinica",
    "tema": "sair do consultorio compartilhado para o proprio espaco",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-098",
    "eixo": "clinica",
    "tema": "divulgar sem parecer propaganda de remedio",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-099",
    "eixo": "clinica",
    "tema": "o site e o Google da clinica",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-100",
    "eixo": "clinica",
    "tema": "parceria com academia ou estudio de pilates",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-101",
    "eixo": "clinica",
    "tema": "contratar o primeiro fisioterapeuta",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-102",
    "eixo": "clinica",
    "tema": "padronizar a conduta entre profissionais",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-103",
    "eixo": "clinica",
    "tema": "indicadores que todo dono de clinica deveria olhar",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-104",
    "eixo": "clinica",
    "tema": "crescer sem perder a qualidade do atendimento",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "clinica-105",
    "eixo": "clinica",
    "tema": "quando a clinica depende demais do dono",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-106",
    "eixo": "processos",
    "tema": "o fluxo do primeiro contato ate a primeira sessao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-107",
    "eixo": "processos",
    "tema": "quem responde o que, e em quanto tempo",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-108",
    "eixo": "processos",
    "tema": "manual de rotina da recepcao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-109",
    "eixo": "processos",
    "tema": "backup e o que acontece se o computador morrer",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-110",
    "eixo": "processos",
    "tema": "senha compartilhada e os riscos",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-111",
    "eixo": "processos",
    "tema": "treinar alguem para substituir voce por uma semana",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-112",
    "eixo": "processos",
    "tema": "reuniao semanal curta que resolve",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-113",
    "eixo": "processos",
    "tema": "protocolo para intercorrencia durante a sessao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-114",
    "eixo": "processos",
    "tema": "controle de materiais e reposicao",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-115",
    "eixo": "processos",
    "tema": "limpeza e higienizacao registradas",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-116",
    "eixo": "processos",
    "tema": "onboarding de um fisioterapeuta novo",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-117",
    "eixo": "processos",
    "tema": "centralizar a informacao em um lugar so",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-118",
    "eixo": "processos",
    "tema": "o processo que so existe na cabeca de uma pessoa",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-119",
    "eixo": "processos",
    "tema": "medir antes de mudar",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
   },
   {
    "id": "processos-120",
    "eixo": "processos",
    "tema": "automatizar o que e repetitivo, nao o que e clinico",
    "status": "livre",
-   "usado_em": null
+   "usado_em": null,
+   "familia": "gestao"
+  },
+  {
+   "id": "regulacao-001",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "registro em prontuario nao e opcional",
+   "fato": "A Resolução COFFITO 414/2012, no Art. 1º, obriga o fisioterapeuta a registrar em prontuário todas as atividades assistenciais que presta ao cliente/paciente.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-002",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "os oito itens que o prontuario precisa ter",
+   "fato": "O Art. 1º, §1º da Resolução COFFITO 414/2012 lista oito itens: identificação do paciente; história clínica; exame clínico/físico; exames complementares; diagnóstico e prognóstico fisioterapêuticos; plano terapêutico; evolução; e identificação do profissional.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-003",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "prontuario eletronico e permitido pela norma",
+   "fato": "O Art. 2º da Resolução COFFITO 414/2012 diz que o registro pode ser manuscrito ou eletrônico, conforme a instituição.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-004",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "o que o registro eletronico exige em cada entrada",
+   "fato": "O parágrafo único do Art. 2º da Resolução COFFITO 414/2012 exige que, no formato eletrônico, o profissional informe nome completo e número de registro no CREFITO logo após cada registro.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-005",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "letra ilegivel tambem e irregularidade",
+   "fato": "O Art. 2º da Resolução COFFITO 414/2012 exige que o registro seja legível, claro e use terminologia própria da profissão.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-006",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "de quem e o prontuario",
+   "fato": "Pela Resolução COFFITO 414/2012, o prontuário pertence ao cliente/paciente e só pode ser divulgado com autorização dele, por dever legal ou justa causa.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-007",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "o paciente pode pedir copia do proprio prontuario",
+   "fato": "A Resolução COFFITO 414/2012 determina que o prontuário permaneça disponível para acesso do paciente ou de seu representante, que pode receber cópias autênticas.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-008",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "negar acesso ao prontuario e vedado",
+   "fato": "A Resolução COFFITO 414/2012 veda negar ao paciente o acesso ao seu prontuário ou deixar de dar as explicações necessárias, salvo quando isso gerar risco ao paciente ou a terceiros.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-009",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "por quanto tempo guardar o prontuario",
+   "fato": "O Art. 6º, I da Resolução COFFITO 414/2012 fixa guarda de no mínimo cinco anos a contar do último registro, prazo que pode ser ampliado por lei, decisão judicial ou necessidade específica.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-010",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "a guarda e responsabilidade de quem",
+   "fato": "O Art. 6º da Resolução COFFITO 414/2012 põe a guarda do prontuário sob responsabilidade do fisioterapeuta ou da instituição onde a assistência foi prestada.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-011",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "onde o prontuario pode ficar guardado",
+   "fato": "O Art. 6º, II da Resolução COFFITO 414/2012 exige que o prontuário seja mantido em local que garanta sigilo e privacidade.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-012",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "jogar prontuario velho no lixo nao resolve",
+   "fato": "O Art. 6º, III da Resolução COFFITO 414/2012 determina que, vencido o prazo de guarda, a destruição do prontuário seja feita de forma que garanta o sigilo das informações.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-013",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "copia digitalizada depois do prazo de guarda",
+   "fato": "O Art. 6º, IV da Resolução COFFITO 414/2012 permite armazenar cópia digitalizada do prontuário mesmo depois de vencido o prazo legal de guarda.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-014",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "no atendimento domiciliar, o prontuario fica na casa do paciente",
+   "fato": "O Art. 6º, V da Resolução COFFITO 414/2012 determina que, no atendimento domiciliar, o prontuário seja guardado no próprio domicílio do paciente, com orientação de sigilo à família.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-015",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "a copia que protege o fisioterapeuta no domiciliar",
+   "fato": "O Art. 6º, VI da Resolução COFFITO 414/2012 permite ao fisioterapeuta manter cópia do prontuário no atendimento domiciliar, com assinatura atestando que a assistência foi prestada.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-016",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "plano terapeutico tem que dizer quantos atendimentos",
+   "fato": "O Art. 1º, §1º, VI da Resolução COFFITO 414/2012 exige que o plano terapêutico traga recursos, métodos, técnicas, objetivos e a quantidade provável de atendimentos.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-017",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "diagnostico fisioterapeutico e item obrigatorio",
+   "fato": "O Art. 1º, §1º, V da Resolução COFFITO 414/2012 lista diagnóstico e prognóstico fisioterapêuticos entre os itens do prontuário.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-018",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "estagiario registra, mas nao sozinho",
+   "fato": "O Art. 1º, §2º da Resolução COFFITO 414/2012 exige que o registro feito em estágio traga identificação e assinatura do responsável técnico, supervisor ou preceptor, além do estagiário.",
+   "fonte": "Resolução COFFITO nº 414/2012",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-019",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "dado de paciente nao e dado comum",
+   "fato": "O Art. 5º, II da Lei 13.709/2018 (LGPD) classifica dado referente à saúde como dado pessoal sensível, categoria com proteção mais rigorosa que a do dado pessoal comum.",
+   "fonte": "Lei 13.709/2018 (LGPD)",
+   "status": "livre"
+  },
+  {
+   "id": "regulacao-020",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "tema": "por que planilha aberta e caderno nao servem para dado de saude",
+   "fato": "Como a LGPD (Lei 13.709/2018, Art. 5º, II) trata dado de saúde como dado pessoal sensível, o cuidado com acesso e sigilo precisa ser maior do que o dispensado a um cadastro comum.",
+   "fonte": "Lei 13.709/2018 (LGPD)",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-001",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "autonomo ou abrir cnpj: o que muda na rotina",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-002",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o primeiro consultorio: o que realmente precisa no comeco",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-003",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "atender em casa, em clinica ou nos dois",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-004",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "quantos pacientes cabem numa semana sem adoecer",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-005",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "a agenda do fisioterapeuta que tambem da aula",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-006",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "quando contratar o primeiro colega",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-007",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "dividir sala alugada: combinados que evitam briga",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-008",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o fisioterapeuta que faz tudo e nao cresce",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-009",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "escolher uma especialidade ou atender de tudo",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-010",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o tempo invisivel entre um atendimento e outro",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-011",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "como organizar a semana quando o volume oscila",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-012",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "sair do plano de saude e viver de particular",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-013",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "a conversa de reajuste com paciente antigo",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-014",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "trabalhar sozinho sem perder a referencia tecnica",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-015",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o que delegar primeiro quando a agenda lota",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-016",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "folga de verdade: ferias de quem atende sozinho",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-017",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o boca a boca ainda e o maior canal, e por que",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-018",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "indicacao de medico: como construir sem depender",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-019",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "o custo de comecar o dia sem saber quem vem",
+   "status": "livre"
+  },
+  {
+   "id": "carreira-020",
+   "eixo": "carreira",
+   "familia": "carreira",
+   "tema": "quando a clinica para porque so voce sabe onde esta tudo",
+   "status": "livre"
   }
  ]
 }

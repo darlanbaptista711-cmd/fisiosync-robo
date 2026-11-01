@@ -319,6 +319,8 @@ def registro_completo(c, tema, arquivos, status="rascunho", modo="molde"):
         "tema": tema,
         "pauta": c.get("pauta", tema),
         "eixo": c.get("eixo", ""),
+        "familia": c.get("familia", "gestao"),
+        "fonte": c.get("fonte", ""),
         "publico": c.get("publico", "fisioterapeutas e gestores de clinica"),
         "situacao": c.get("situacao", ""),
         "mensagem": c.get("mensagem", c.get("apoio", "")),
@@ -355,7 +357,7 @@ def gravar_historico(registro):
         log(f"Nao consegui gravar o historico: {e}")
 
 
-def _pedido_conteudo(tema_sugerido=None):
+def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
     hist = ler_historico()
     if hist:
         recentes = "\n".join(
@@ -380,6 +382,31 @@ def _pedido_conteudo(tema_sugerido=None):
                   if tema_sugerido else
                   "\nESCOLHA O TEMA VOCE MESMO. Nao peca tema a ninguem.\n")
 
+    # Pauta factual: o fato ja vem conferido do banco. A IA escreve EM
+    # VOLTA dele e nao acrescenta nada verificavel por conta propria.
+    if fato:
+        bloco_fato = (
+            "\n=== FATO CONFERIDO, USE EXATAMENTE ESTE ===\n"
+            f"{fato}\n"
+            f"Fonte: {fonte}\n"
+            "\nREGRAS DESTE POST, sem excecao:\n"
+            "- Escreva em volta deste fato. Ele e o conteudo.\n"
+            "- PROIBIDO citar qualquer outro numero, ano, prazo, "
+            "percentual, artigo de lei ou numero de resolucao que nao "
+            "esteja escrito acima. Se voce nao tem certeza, nao escreva.\n"
+            "- PROIBIDO dizer que a FisioSync garante conformidade legal. "
+            "O software ajuda a organizar o registro; quem responde pelo "
+            "cumprimento da norma e o profissional.\n"
+            "- Cite a fonte na legenda, do jeito que esta acima.\n"
+            "- Nada de orientacao clinica ou de consultoria juridica: "
+            "informe o que a norma diz e pare ai.\n"
+            "=== FIM DO FATO ===\n")
+    else:
+        bloco_fato = ("\nEste tema e de rotina e decisao profissional, nao "
+                      "de norma. NAO cite lei, resolucao, estatistica, "
+                      "percentual nem data historica: voce nao tem fonte "
+                      "para isso e inventar esta proibido.\n")
+
     return (
         "Voce e o estrategista de conteudo e diretor de arte senior da "
         "FisioSync, um software de gestao para fisioterapeutas. "
@@ -387,7 +414,7 @@ def _pedido_conteudo(tema_sugerido=None):
         "prontuario digital e evolucao por audio. O teste gratis e de 7 dias.\n"
         "Publico: fisioterapeutas, gestores de clinica e donos de estudio de "
         "Pilates. Nao sao pacientes.\n"
-        + linha_tema + bloco_hist +
+        + linha_tema + bloco_fato + bloco_hist +
         f"\nObjetivos ainda nao usados recentemente: {', '.join(sugerir)}\n"
         f"Estilos de arte ainda nao usados: {', '.join(sugerir_e)}\n"
         "\nEscolha UM objetivo principal e UM estilo de arte. "
@@ -482,9 +509,66 @@ def encurtar(texto, limite, rotulo=""):
     return novo
 
 
+# Numeros que podem aparecer em qualquer peca sem vir de um fato:
+# sao do proprio produto, nao do mundo.
+NUMEROS_DA_CASA = {"7", "1", "2", "3", "24", "2026"}
+
+
+def numeros_soltos(textos, fato=""):
+    """
+    Numeros escritos na peca que NAO estao no fato conferido.
+
+    Esta e a ultima linha de defesa contra o risco que vem junto com
+    conteudo de curiosidade: a IA escreve "desde 1969" ou "em 68% dos
+    casos" com total confianca e aquilo vai ao ar no perfil de um
+    produto de saude. Numero sem lastro nao sai.
+    """
+    permitidos = set(re.findall(r"\d+", fato or "")) | NUMEROS_DA_CASA
+    achados = set()
+    for t in textos:
+        achados |= set(re.findall(r"\d+", t or ""))
+    return sorted(achados - permitidos)
+
+
+def conferir_numeros(cfg, dados, fato):
+    """
+    Confere os numeros da peca; se houver invencao, pede UMA reescrita.
+    Se insistir, devolve a lista do que sobrou para o chamador abortar.
+    """
+    campos = ("titulo", "apoio", "legenda")
+    soltos = numeros_soltos([dados.get(c, "") for c in campos], fato)
+    if not soltos:
+        return []
+
+    log(f"AVISO: numero sem lastro na peca: {', '.join(soltos)}. "
+        "Pedindo reescrita.")
+    pedido = (
+        "Reescreva os tres campos abaixo REMOVENDO os numeros "
+        f"{', '.join(soltos)}, que nao tem fonte e nao podem ser "
+        "publicados. Mantenha o sentido e o tom. "
+        + (f"O unico fato com fonte e: {fato}\n" if fato else
+           "Nao existe fato com fonte para este post: escreva sem "
+           "numero nenhum.\n")
+        + "Responda SOMENTE um JSON com as chaves titulo, apoio e legenda.\n\n"
+        + json.dumps({c: dados.get(c, "") for c in campos},
+                     ensure_ascii=False))
+
+    bruto = None
+    if cfg.get("OPENAI_API_KEY"):
+        bruto = _openai_texto(cfg["OPENAI_API_KEY"], pedido)
+    novo = _extrair_json(bruto) if bruto else None
+    if novo:
+        for c in campos:
+            if novo.get(c):
+                dados[c] = novo[c]
+
+    return numeros_soltos([dados.get(c, "") for c in campos], fato)
+
+
 def gerar_conteudo(cfg, tema=None):
     hist = ler_historico(limite=500)
-    pauta_banco, eixo_banco = "", ""
+    pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
+    fato_banco, fonte_banco = "", ""
 
     if not tema:
         # A pauta sai do banco, nao da cabeca do modelo. A trava contra
@@ -501,8 +585,10 @@ def gerar_conteudo(cfg, tema=None):
         # pode depender desse texto reescrito, senao o banco nunca sabe
         # o que ja saiu e o rodizio de eixo para de funcionar.
         pauta_banco, eixo_banco = p["tema"], p.get("eixo", "")
+        familia_banco = p.get("familia", "gestao")
+        fato_banco, fonte_banco = p.get("fato", ""), p.get("fonte", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
-    pedido = _pedido_conteudo(tema)
+    pedido = _pedido_conteudo(tema, fato_banco, fonte_banco)
 
     bruto = None
     if cfg.get("OPENAI_API_KEY"):
@@ -556,10 +642,19 @@ def gerar_conteudo(cfg, tema=None):
         log(f"AVISO: a proposta repete o historico ({motivo}).")
         log("Mantendo o tema do banco de pautas e seguindo.")
         dados["tema"] = tema or dados.get("tema", "")
+    sobraram = conferir_numeros(cfg, dados, fato_banco)
+    if sobraram:
+        erro("A peca cita numero que nao tem fonte, e a reescrita nao "
+             f"resolveu: {', '.join(sobraram)}.\n"
+             "  Nao vou publicar dado inventado em perfil de produto de "
+             "saude.\n  Rode de novo: a IA escreve outro texto.")
+
     dados["titulo"] = encurtar(dados["titulo"], 62, "titulo")
     dados["apoio"] = encurtar(dados.get("apoio", ""), 118, "apoio")
     dados["pauta"] = pauta_banco or dados.get("tema", "")
     dados["eixo"] = eixo_banco
+    dados["familia"] = familia_banco
+    dados["fonte"] = fonte_banco
     log(f"Tema escolhido: {dados['tema']}")
     if eixo_banco:
         log(f"Eixo: {eixo_banco}  (pauta do banco: {pauta_banco})")
