@@ -36,6 +36,7 @@ except ImportError:
     sys.exit(1)
 
 import humanizador
+import layouts
 import molde
 import pautas as PT
 
@@ -410,8 +411,11 @@ def _pedido_conteudo(tema_sugerido=None):
         "NAO pode ser o nome de um recurso: 'Evolucao clinica por audio' e "
         "nome de recurso e esta proibido. 'Fale a evolucao, ela entra no "
         "prontuario' e uma acao e esta certo.\n"
-        '  "apoio": uma frase curta que desenvolve o tema escolhido, no '
-        "maximo 18 palavras. PROIBIDO listar funcionalidades: nao escreva "
+        '  "apoio": UMA frase curta que desenvolve o tema escolhido, no '
+        "maximo 14 palavras e 110 caracteres, terminada em ponto. Ela e "
+        "desenhada na arte em no maximo tres linhas: frase longa nao cabe "
+        "e a peca inteira e descartada. PROIBIDO listar funcionalidades: "
+        "nao escreva "
         "'A FisioSync reune agenda online, prontuario digital e evolucao por "
         "audio'. Fale do assunto do dia, nao do catalogo.\n"
         '  "legenda": abertura que desperte interesse, desenvolvimento util '
@@ -444,6 +448,38 @@ def _extrair_json(texto):
         return json.loads(texto[inicio:fim + 1])
     except json.JSONDecodeError:
         return None
+
+
+def encurtar(texto, limite, rotulo=""):
+    """
+    Encurta SEM deixar frase pela metade.
+
+    Corta na ultima pontuacao de fim de frase que cabe. Se nao houver,
+    corta na ultima virgula e fecha com ponto. So no ultimo caso corta
+    na palavra, e ainda assim fecha a frase.
+
+    O prompt ja pede frase curta, mas pedir nao e garantir: em
+    01/11/2026 a IA mandou 16 palavras, a arte so tinha espaco para
+    duas linhas, e foi publicado "e deixar claras as condicoes do".
+    """
+    texto = (texto or "").strip()
+    if len(texto) <= limite:
+        return texto
+
+    recorte = texto[:limite]
+    for marcas, fecho in ((".!?", ""), (",;:", ".")):
+        corte = max(recorte.rfind(c) for c in marcas)
+        # so vale se sobrar frase de verdade, nao tres palavras
+        if corte >= limite * 0.55:
+            novo = recorte[:corte].rstrip(" ,;:") + fecho
+            log(f"AVISO: {rotulo} tinha {len(texto)} caracteres e nao "
+                f"caberia na arte. Encurtado para: {novo}")
+            return novo
+
+    novo = recorte.rsplit(" ", 1)[0].rstrip(" ,;:") + "."
+    log(f"AVISO: {rotulo} tinha {len(texto)} caracteres sem pontuacao "
+        f"aproveitavel. Encurtado para: {novo}")
+    return novo
 
 
 def gerar_conteudo(cfg, tema=None):
@@ -520,6 +556,8 @@ def gerar_conteudo(cfg, tema=None):
         log(f"AVISO: a proposta repete o historico ({motivo}).")
         log("Mantendo o tema do banco de pautas e seguindo.")
         dados["tema"] = tema or dados.get("tema", "")
+    dados["titulo"] = encurtar(dados["titulo"], 62, "titulo")
+    dados["apoio"] = encurtar(dados.get("apoio", ""), 118, "apoio")
     dados["pauta"] = pauta_banco or dados.get("tema", "")
     dados["eixo"] = eixo_banco
     log(f"Tema escolhido: {dados['tema']}")
@@ -1151,20 +1189,29 @@ def main():
     base_story = os.path.join(PASTA_SAIDA, f"fisiosync_{apelido}_stories")
 
     arq_feed = arq_story = None
-    if quer_feed:
-        arq_feed = molde.montar(foto, c["titulo"], c["apoio"], base_feed, "feed",
-                                   layout=c["layout"],
-                                   sobretitulo=c.get("sobretitulo", ""))
-        ok, medida = molde.validar(arq_feed, "feed")
-        log(f"Peca do feed: {os.path.basename(arq_feed)} -> {medida} "
-            f"{'OK' if ok else 'PROPORCAO ERRADA'}")
-    if quer_story:
-        arq_story = molde.montar(foto, c["titulo"], c["apoio"], base_story,
-                                 "story", layout=c["layout"],
-                                 sobretitulo=c.get("sobretitulo", ""))
-        ok, medida = molde.validar(arq_story, "story")
-        log(f"Peca do story: {os.path.basename(arq_story)} -> {medida} "
-            f"{'OK' if ok else 'PROPORCAO ERRADA'}")
+    try:
+        if quer_feed:
+            arq_feed = molde.montar(foto, c["titulo"], c["apoio"], base_feed,
+                                    "feed", layout=c["layout"],
+                                    sobretitulo=c.get("sobretitulo", ""))
+            ok, medida = molde.validar(arq_feed, "feed")
+            log(f"Peca do feed: {os.path.basename(arq_feed)} -> {medida} "
+                f"{'OK' if ok else 'PROPORCAO ERRADA'}")
+        if quer_story:
+            arq_story = molde.montar(foto, c["titulo"], c["apoio"], base_story,
+                                     "story", layout=c["layout"],
+                                     sobretitulo=c.get("sobretitulo", ""))
+            ok, medida = molde.validar(arq_story, "story")
+            log(f"Peca do story: {os.path.basename(arq_story)} -> {medida} "
+                f"{'OK' if ok else 'PROPORCAO ERRADA'}")
+    except layouts.TextoNaoCabe as falha:
+        # Preferir NAO publicar a publicar frase cortada. Nao ha
+        # fallback aqui de proposito: fallback silencioso foi o que
+        # colocou "e deixar claras as condicoes do" no ar.
+        erro("O texto nao coube na arte e cortar nao e opcao.\n"
+             f"  {falha}\n"
+             "  A peca NAO foi publicada. Rode de novo: a IA escreve "
+             "outro texto, mais curto.")
 
     if molde.avisos:
         print("\n" + "!" * 56)

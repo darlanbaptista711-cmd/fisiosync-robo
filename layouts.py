@@ -340,11 +340,45 @@ def logo(peca, x, y, altura=None, largura_rel=LOGO_LARGURA):
     return y + nova_alt
 
 
+class TextoNaoCabe(Exception):
+    """O texto nao entra no espaco e cortar nao e opcao."""
+
+
+def caber(d, texto, largura, maximo, negrito, tam, e, minimo=0.74):
+    """
+    Devolve (fonte, linhas, corpo) com o texto INTEIRO dentro de
+    'maximo' linhas, reduzindo o corpo em passos ate caber.
+
+    Se nem no menor corpo couber, levanta TextoNaoCabe em vez de cortar.
+
+    POR QUE ISTO EXISTE
+
+    Antes, titulo() e apoio() faziam quebrar(...)[:maximo] e jogavam
+    fora o que sobrava, calados. Em 01/11/2026 foi publicado um post
+    cujo apoio terminava em "e deixar claras as condicoes do" - frase
+    cortada no meio, no ar, no perfil.
+
+    Texto que nao cabe e problema de CONTEUDO. A composicao nao pode
+    resolver isso escondendo o pedaco que sobra: ou diminui ate caber
+    inteiro, ou reclama alto e a peca nao e publicada.
+    """
+    corpo = float(tam)
+    linhas = []
+    while corpo >= tam * minimo:
+        f = M.fonte(negrito, int(corpo * e))
+        linhas = quebrar(texto, f, largura, d)
+        if len(linhas) <= maximo:
+            return f, linhas, corpo
+        corpo -= 1
+    raise TextoNaoCabe(
+        f"{len(linhas)} linhas para {maximo} disponiveis, mesmo baixando "
+        f"o corpo de {tam} para {int(corpo)}. Texto: {texto!r}")
+
+
 def titulo(d, texto, x, y, largura, e, tam, destaque=True):
     """Titulo em duas cores, destacando por significado e nao por regra."""
-    f = M.fonte(True, tam * e)
-    linhas = quebrar(texto, f, largura, d)[:4]
-    passo = int(tam * 1.18 * e)
+    f, linhas, corpo = caber(d, texto, largura, 4, True, tam, e)
+    passo = int(corpo * 1.18 * e)
     # so pinta de ciano se a ultima linha tiver pelo menos duas palavras
     pintar = destaque and len(linhas) > 1 and len(linhas[-1].split()) >= 2
     for i, linha in enumerate(linhas):
@@ -357,9 +391,9 @@ def titulo(d, texto, x, y, largura, e, tam, destaque=True):
 def apoio(d, texto, x, y, largura, e, tam=31, maximo=3):
     if not texto:
         return y
-    f = M.fonte(False, tam * e)
+    f, linhas, corpo = caber(d, texto, largura, maximo, False, tam, e)
     y += int(tam * 0.5 * e)
-    for linha in quebrar(texto, f, largura, d)[:maximo]:
+    for linha in linhas:
         d.text((x, y), linha, font=f, fill=M.MARINHO)
-        y += int(tam * 1.38 * e)
+        y += int(corpo * 1.38 * e)
     return y

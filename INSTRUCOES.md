@@ -63,6 +63,33 @@ Não reaproveitar prompt genérico trocando só o nome do tema.
 Não gerar PNG de 1080: ele não é publicado nem serve de arquivo, porque
 o de 2160 já cobre isso. Era só peso em disco.
 
+## Texto cortado: nunca
+
+Em 01/11/2026 foi publicado um post cujo apoio terminava em **"e deixar
+claras as condições do"**. Frase cortada no meio, no ar, no perfil.
+
+A causa era `quebrar(...)[:maximo]` dentro de `titulo()` e `apoio()`:
+o texto era quebrado em linhas e as linhas que sobravam eram **jogadas
+fora em silêncio**. A arte ficava bonita e mentirosa.
+
+Regra permanente, nesta ordem:
+
+1. **O corpo diminui até o texto caber inteiro.** É o que faz
+   `LY.caber()`, que reduz o tamanho da fonte em passos de 1 até as
+   linhas caberem no espaço.
+2. **Se não couber nem no menor corpo, a peça não é publicada.**
+   `LY.caber()` levanta `TextoNaoCabe`, o `postador.py` aborta com erro
+   e a janela continua pendente — a próxima tentativa gera outro texto.
+3. **Nenhum caminho do código corta texto para caber.** Se aparecer um
+   `[:n]` novo em cima de `quebrar()`, é bug.
+
+Antes disso, na geração: o apoio é limitado a 14 palavras e 110
+caracteres no prompt, e `encurtar()` apara o que passar — sempre no fim
+de uma frase ou de uma oração, nunca no meio de uma, e sempre deixando
+pontuação final.
+
+Publicar atrasado é aceitável. Publicar cortado, não.
+
 ## O que é proibido
 
 - Placeholder de selo, selo desenhado, logo inventada

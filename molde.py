@@ -43,6 +43,24 @@ def _base(formato, escala):
 # Os cinco layouts
 # --------------------------------------------------------------------------
 
+def _que_cabe(d, texto, larg, e, tam, negrito, ideal, limite, minimo=0.70):
+    """
+    Devolve (fonte, linhas, corpo) com o texto inteiro desenhavel.
+
+    Tenta primeiro no numero IDEAL de linhas, diminuindo o corpo. Se nem
+    no menor corpo couber, aceita ate LIMITE linhas, de novo do maior
+    corpo para o menor. Se ainda assim nao couber, deixa o
+    LY.TextoNaoCabe subir: a peca nao sai.
+
+    Nenhum caminho aqui corta texto. O corte silencioso foi o que
+    publicou "e deixar claras as condicoes do" em 01/11/2026.
+    """
+    try:
+        return LY.caber(d, texto, larg, ideal, negrito, tam, e, minimo)
+    except LY.TextoNaoCabe:
+        return LY.caber(d, texto, larg, limite, negrito, tam, e, minimo)
+
+
 def _calibrado(peca, d, foto, tit, apo, g, story, sobretitulo=""):
     """
     Hierarquia da referencia aprovada: logo centrada, sobretitulo
@@ -71,12 +89,7 @@ def _calibrado(peca, d, foto, tit, apo, g, story, sobretitulo=""):
     # chamada grande, duas cores
     y += int(40 * e)
     tam = 76 if not story else 70
-    f = M.fonte(True, tam * e)
-    linhas = LY.quebrar(tit, f, larg, d)[:3]
-    while len(linhas) > 2 and tam > 54:
-        tam -= 6
-        f = M.fonte(True, tam * e)
-        linhas = LY.quebrar(tit, f, larg, d)[:3]
+    f, linhas, tam = _que_cabe(d, tit, larg, e, tam, True, ideal=2, limite=3)
     for i, linha in enumerate(linhas):
         cor = M.CIANO if (len(linhas) > 1 and i == len(linhas) - 1) else M.MARINHO
         w = d.textlength(linha, font=f)
@@ -85,9 +98,11 @@ def _calibrado(peca, d, foto, tit, apo, g, story, sobretitulo=""):
 
     # apoio curto
     if apo:
-        fa = M.fonte(False, (32 if not story else 31) * e)
+        fa, linhas_ap, _ = _que_cabe(d, apo, larg * 0.94, e,
+                                     32 if not story else 31, False,
+                                     ideal=2, limite=3)
         y += int(18 * e)
-        for linha in LY.quebrar(apo, fa, larg * 0.94, d)[:2]:
+        for linha in linhas_ap:
             w = d.textlength(linha, font=fa)
             d.text((meio - w / 2, y), linha, font=fa, fill=M.MARINHO)
             y += int(fa.size * 1.34)
@@ -148,8 +163,12 @@ def _tipografico(peca, d, foto, tit, apo, g, story, sobretitulo=""):
         f = M.fonte(True, tam * e)
         linhas = LY.quebrar(tit, f, larg, d)
 
-    fa = M.fonte(False, max(28, int(tam * 0.40)) * e)
-    linhas_ap = LY.quebrar(apo or "", fa, larg * 0.92, d)[:3] if apo else []
+    if apo:
+        fa, linhas_ap, _ = _que_cabe(d, apo, larg * 0.92, e,
+                                     max(28, int(tam * 0.40)), False,
+                                     ideal=3, limite=4)
+    else:
+        fa, linhas_ap = M.fonte(False, max(28, int(tam * 0.40)) * e), []
 
     altura_tit = len(linhas) * int(tam * 1.14 * e)
     altura_ap = (int(tam * 0.30 * e) + len(linhas_ap) * int(fa.size * 1.34)
@@ -237,10 +256,12 @@ def _detalhe(peca, d, foto, tit, apo, g, story):
                                 tratamento="linha", alinhar="esq")
 
     # quanto o texto precisa, medido antes de escolher a altura da foto
-    f_tit = M.fonte(True, 58 * e)
-    n_tit = len(LY.quebrar(tit, f_tit, g["larg"], d)[:3])
-    f_ap = M.fonte(False, 31 * e)
-    n_ap = len(LY.quebrar(apo or "", f_ap, g["larg"], d)[:2]) if apo else 0
+    # medido com o mesmo criterio que o desenho vai usar, senao a conta
+    # de espaco mente e o texto estoura o rodape
+    n_tit = len(_que_cabe(d, tit, g["larg"], e, 58, True,
+                          ideal=3, limite=4)[1])
+    n_ap = len(_que_cabe(d, apo, g["larg"], e, 31, False,
+                         ideal=2, limite=3)[1]) if apo else 0
     preciso = (int(50 * e)                      # logo
                + int(50 * e)                    # respiro
                + n_tit * int(58 * 1.18 * e)
@@ -259,7 +280,7 @@ def _detalhe(peca, d, foto, tit, apo, g, story):
     y = LY.logo(peca, x0, y, int(50 * e))
     y += int(50 * e)
     y = LY.titulo(d, tit, x0, y, g["larg"], e, 58)
-    LY.apoio(d, apo, x0, y, g["larg"], e, maximo=2)
+    LY.apoio(d, apo, x0, y, g["larg"], e, maximo=3)
 
 
 def _centro(peca, d, foto, tit, apo, g, story):
@@ -269,18 +290,19 @@ def _centro(peca, d, foto, tit, apo, g, story):
 
     y = LY.logo(peca, 0, g["y0"]) + int(62 * e)
 
-    f = M.fonte(True, 58 * e)
-    linhas = LY.quebrar(tit, f, g["larg"], d)[:3]
+    f, linhas, corpo = _que_cabe(d, tit, g["larg"], e, 58, True,
+                                 ideal=3, limite=4)
     for i, linha in enumerate(linhas):
         cor = M.CIANO if (len(linhas) > 1 and i == len(linhas) - 1) else M.MARINHO
         w = d.textlength(linha, font=f)
         d.text((meio - w / 2, y), linha, font=f, fill=cor)
-        y += int(58 * 1.18 * e)
+        y += int(corpo * 1.18 * e)
 
     if apo:
-        fa = M.fonte(False, 30 * e)
+        fa, linhas_ap, _ = _que_cabe(d, apo, g["larg"] * 0.92, e, 30, False,
+                                     ideal=3, limite=4)
         y += int(16 * e)
-        for linha in LY.quebrar(apo, fa, g["larg"] * 0.92, d)[:3]:
+        for linha in linhas_ap:
             w = d.textlength(linha, font=fa)
             d.text((meio - w / 2, y), linha, font=fa, fill=M.MARINHO)
             y += int(30 * 1.38 * e)
