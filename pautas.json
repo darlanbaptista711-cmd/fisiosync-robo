@@ -319,8 +319,8 @@
    "id": "dinheiro-046",
    "eixo": "dinheiro",
    "tema": "preco por sessao ou pacote fechado",
-   "status": "livre",
-   "usado_em": null
+   "status": "publicado",
+   "usado_em": "2026-11-01"
   },
   {
    "id": "dinheiro-047",

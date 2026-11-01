@@ -144,5 +144,26 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-01",
+  "janela": "manha",
+  "tema": "Sessão avulsa ou pacote fechado",
+  "pauta": "preco por sessao ou pacote fechado",
+  "eixo": "dinheiro",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "O formato de cobrança precisa respeitar o plano terapêutico e deixar claras as condições do atendimento.",
+  "chamada": "Você cobra por sessão ou fecha pacotes?",
+  "conceito": "Uma peça isolada e um conjunto de peças idênticas agrupadas representam a escolha entre contratar cada sessão ou fechar um pacote.",
+  "composicao": "calibrado",
+  "estilo": "representacao conceitual do beneficio",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_sess-o-avulsa-ou-pacote-fechado_feed_1080x1350.jpg",
+   "fisiosync_sess-o-avulsa-ou-pacote-fechado_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
