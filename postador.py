@@ -1076,7 +1076,9 @@ def main():
     # Trava de janela. A nuvem tenta varias vezes dentro de cada
     # janela porque o cron do GitHub atrasa; quem garante um unico post
     # por janela e esta checagem, nao o horario do agendador.
-    if not (args.previa or args.tema or args.brief):
+    if os.environ.get("FORCAR") == "1":
+        log("Disparo manual: a trava de janela nao se aplica.")
+    elif not (args.previa or args.tema or args.brief):
         data_br, janela = janela_agora()
         hora = agora_brasilia().strftime("%H:%M")
         if janela is None:

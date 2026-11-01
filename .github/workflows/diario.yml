@@ -3,24 +3,27 @@ name: Posts diarios da FisioSync
 # DUAS publicacoes por dia. Cada uma leva 1 post no feed + 1 story do
 # mesmo tema, e consome 1 pauta do banco.
 #
-# POR QUE TANTO CRON
+# O CRON NAO MARCA MAIS A HORA
 #
-# O agendador do GitHub e melhor esforco, nao promessa. A propria
-# documentacao avisa que a rodada pode atrasar ou nem acontecer quando
-# a fila esta cheia. Em 31/10/2026 o cron das 11:55 so disparou as
-# 15:52 e o das 18:25 nao disparou. Um horario por janela e aposta.
+# Medido neste repositorio: o agendador do GitHub atrasou 3h57 uma vez,
+# pulou a janela inteira outra, e em 01/11 ignorou sete gatilhos
+# seguidos. Pedir pontualidade a ele nao funciona.
 #
-# Entao o workflow BATE NA PORTA varias vezes dentro de cada janela:
+# Entao o cron virou so a LARGADA. Ele dispara em algum momento das
+# 2h30 que antecedem o alvo, e o espera.py dorme ate a hora certa antes
+# de liberar a publicacao. Cron que atrasou 40 minutos continua
+# publicando as 12:00 em ponto, porque quem marca a hora e o sleep.
 #
-#   14:50 -> 17:00 UTC = 11:50 -> 14:00 em Brasilia   (alvo 12:00)
-#   21:20 -> 23:40 UTC = 18:20 -> 20:40 em Brasilia   (alvo 18:30)
+#   alvo da manha: 15:00 UTC = 12:00 em Brasilia
+#   alvo da tarde: 21:30 UTC = 18:30 em Brasilia
 #
-# Quem decide se publica NAO e o horario, e o postador.py: ele olha o
-# historico e, se a janela de hoje ja saiu, encerra em segundos sem
-# gerar imagem, sem chamar a API e sem gastar pauta. A primeira
-# tentativa que o GitHub honrar e a que publica; as outras sao so
-# seguro. Repositorio publico tem minuto de Actions ilimitado, entao
-# tentar de novo nao custa nada.
+# Os dois ultimos crons de cada janela caem DEPOIS do alvo de proposito:
+# se tudo antes falhar, eles publicam atrasado, que e melhor que nao
+# publicar.
+#
+# Duas travas impedem post duplicado: o espera.py encerra em segundos se
+# a janela de hoje ja saiu, e o postador.py confere de novo antes de
+# gastar API. O grupo de concorrencia garante uma rodada por vez.
 #
 # Para voltar a 1 post por dia, apague os crons da janela da tarde.
 # Para testar sem esperar: aba Actions > Run workflow.
@@ -28,15 +31,20 @@ name: Posts diarios da FisioSync
 
 on:
   schedule:
-    # janela da manha
+    # largadas da manha: 09:30 -> 13:30 em Brasilia, alvo 12:00
+    - cron: "30 12 * * *"
+    - cron: "20 13 * * *"
+    - cron: "10 14 * * *"
     - cron: "50 14 * * *"
-    - cron: "5,20,35,50 15 * * *"
-    - cron: "5,30 16 * * *"
-    - cron: "0 17 * * *"
-    # janela da tarde
-    - cron: "20,35,50 21 * * *"
-    - cron: "5,20,35,50 22 * * *"
-    - cron: "10,40 23 * * *"
+    - cron: "30 15 * * *"
+    - cron: "30 16 * * *"
+    # largadas da tarde: 16:00 -> 20:00 em Brasilia, alvo 18:30
+    - cron: "0 19 * * *"
+    - cron: "50 19 * * *"
+    - cron: "40 20 * * *"
+    - cron: "20 21 * * *"
+    - cron: "0 22 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -52,6 +60,8 @@ concurrency:
 jobs:
   postar:
     runs-on: ubuntu-latest
+    # o espera.py dorme no maximo 2h30; o resto e a propria publicacao
+    timeout-minutes: 200
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -59,7 +69,14 @@ jobs:
           python-version: "3.11"
       - run: pip install requests pillow
 
+      - name: Esperar a hora certa
+        id: relogio
+        env:
+          FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+        run: python espera.py
+
       - name: Gerar e publicar
+        if: steps.relogio.outputs.publicar == 'sim'
         env:
           ID: ${{ secrets.IG_USER_ID }}
           TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -67,6 +84,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python postador.py
 
       - name: Avisar se falhou
