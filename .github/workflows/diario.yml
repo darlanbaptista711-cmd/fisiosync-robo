@@ -49,6 +49,11 @@ on:
     - cron: "20 16 * * *"    # 13:20
     - cron: "0 20 * * *"     # 17:00
   workflow_dispatch:
+    inputs:
+      agora:
+        description: "Publicar na hora, sem esperar o relogio"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -59,7 +64,11 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  FORCAR: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+  # "Run workflow" publica na hora por padrao, que e o que se espera de
+  # um botao. Desmarcando a caixa, a corrente larga agora mas respeita
+  # o relogio: serve para recuperar uma janela que ainda nao chegou.
+  # No agendamento o input vem vazio, entao vale 0.
+  FORCAR: ${{ inputs.agora && '1' || '0' }}
 
 jobs:
   madrugada:
