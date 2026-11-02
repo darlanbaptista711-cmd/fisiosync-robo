@@ -1,0 +1,29 @@
+name: Testar travas de duplicado (nao publica)
+on:
+  workflow_dispatch:
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - name: Feed - acha post de feed nas ultimas 6h?
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: x
+        run: python -c "import postador as p; print('feed encontrado:', p.feed_recente_no_instagram({'ID':'$ID','TOKEN':'$TOKEN'}, horas=6))"
+      - name: Reels - acha o Reels dos 8 itens?
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          node -e '
+          const T=process.env.IG_ACCESS_TOKEN, ID=process.env.IG_USER_ID;
+          const leg=require("./reels/fila/02-os-oito-itens-do-prontuario.json").legenda.trim().slice(0,80);
+          fetch(`https://graph.facebook.com/v23.0/${ID}/media?fields=caption,timestamp,media_product_type,permalink&limit=15&access_token=${T}`)
+           .then(r=>r.json()).then(j=>{const a=(j.data||[]).filter(m=>m.media_product_type==="REELS"&&(m.caption||"").trim().slice(0,80)===leg);
+             console.log("reels iguais encontrados:", a.length, a.map(m=>m.permalink).join(" "));});'
