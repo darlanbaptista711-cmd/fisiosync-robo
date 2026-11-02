@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   previa:
@@ -27,7 +27,11 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python postador.py --previa
-      - uses: actions/upload-artifact@v4
-        with:
-          name: previa
-          path: gerado/
+      - name: Guardar a previa no branch previa
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git checkout -B previa
+          git add -f gerado/
+          git commit -qm "previa $(date -u +%F-%H%M)" || exit 0
+          git push -qf origin previa
