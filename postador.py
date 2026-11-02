@@ -674,30 +674,41 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
 
     dados = _extrair_json(bruto) if bruto else None
     if not dados or not dados.get("titulo"):
-        log("AVISO: a IA nao devolveu o conteudo esperado. Usando reserva.")
+        # Sem IA (ex.: 02/11/2026, creditos da OpenAI zerados) o post
+        # sai mesmo assim, montado SO com o fato conferido e a fonte, em
+        # layout tipografico (nao precisa gerar imagem). Nada escrito de
+        # cabeca, entao nao ha o que conferir.
+        log("AVISO: a IA nao devolveu o conteudo esperado. Montando o post "
+            "so com o fato conferido, sem ilustracao.")
         base = tema or escolher_tema()
+        titulo = base[:1].upper() + base[1:]
+        ref = "a OMS" if "OMS" in fonte_banco else (
+              "a lei" if fonte_banco.lower().startswith(("lei", "decreto"))
+              else "a norma")
         return {
             "tema": base,
             "pauta": pauta_banco or base,
             "eixo": eixo_banco,
-            "objetivo": "salvar",
-            "estilo": ESTILOS_ARTE[0],
-            "titulo": base[:60].capitalize(),
-            # reserva de conhecimento: so o fato conferido e a fonte, nada
-            # escrito de cabeca
-            "apoio": (encurtar(fato_banco, 118, "apoio")
-                      if fato_banco else "Você sabia disso?"),
             "familia": familia_banco,
             "fonte": fonte_banco,
-            "legenda": (f"Você sabia? {base.capitalize()}.\n\n"
+            "objetivo": "salvar",
+            "estilo": ESTILOS_ARTE[0],
+            "layout": "tipografico",
+            "conceito": "",
+            "sobretitulo": "Você sabia?",
+            "titulo": encurtar(titulo, 62, "titulo"),
+            "apoio": f"Veja o que diz {ref}.",
+            "slides": [],
+            "foto": "",
+            "legenda": (f"Você sabia? {titulo}.\n\n"
                         + (f"{fato_banco}\n\nFonte: {fonte_banco}\n\n"
                            if fato_banco else "")
-                        + "Salve para consultar depois.\n\n"
+                        + "Salve para consultar depois e mande para um "
+                        "colega.\n\n"
                         "Conteúdo FisioSync. Teste grátis por 7 dias: "
                         "app.fisiosync.com.br\n\n"
                         "#FisioSync #FisioSyncExplica #fisioterapia "
-                        "#coffito #fisioterapeuta"),
-            "foto": FOTOS_RESERVA[datetime.date.today().day % len(FOTOS_RESERVA)],
+                        "#fisioterapeuta #conhecimento"),
         }
 
     dados.setdefault("tema", tema or "tema livre")
@@ -1408,7 +1419,12 @@ def main():
     else:
         log("Gerando a imagem com IA. Leva de 30 a 90 segundos, aguarde...")
         log(f"  cena pedida: {c['foto'][:110]}")
-        gerar_foto(cfg, c, foto, c["layout"])
+        try:
+            gerar_foto(cfg, c, foto, c["layout"])
+        except SystemExit:
+            # sem imagem o post ainda sai: tipografico, sem carrossel
+            log("AVISO: sem ilustracao hoje. Saindo em layout tipografico.")
+            c["layout"], c["slides"], foto = "tipografico", [], ""
 
     quer_feed = not args.so_story
     quer_story = not args.so_feed
