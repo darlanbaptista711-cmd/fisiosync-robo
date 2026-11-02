@@ -440,29 +440,6 @@ ROTEIROS = [
         "tags": "#pilates #crefito #estudiodepilates",
     },
     {
-        "titulo": "Quando se anunciar especialista",
-        "partes": ["Quando posso me anunciar especialista em quiropraxia ou osteopatia?",
-                   "Só depois de registrar o título no COFFITO.",
-                   "E pelos meios eticamente permitidos.",
-                   "Organize os atendimentos com a FisioSync."],
-        "pergunta": ["Quando posso", "me anunciar", "especialista?"],
-        "resposta": {"destaque": "Só depois", "complemento": "de registrar o título no COFFITO",
-                     "fonte": "Resolução COFFITO nº 220/2001, Art. 5º"},
-        "extra": {"titulo": "E como?", "texto": "Pelos meios\neticamente permitidos."},
-        "fato": ("Somente após registrar no COFFITO seu título de qualificação em quiropraxia e/ou "
-                 "osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área, "
-                 "\"pelos meios eticamente permitidos\" (Art. 5º)."),
-        "fonte": "Resolução COFFITO nº 220/2001, Art. 5º",
-        "legenda": [
-            "Só depois de registrar no COFFITO o título de qualificação em quiropraxia e/ou "
-            "osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área "
-            "(Resolução COFFITO nº 220/2001, Art. 5º).",
-            "E o mesmo artigo põe a condição: \"pelos meios eticamente permitidos\".",
-            "Você já registrou o seu título? Conta aqui.",
-        ],
-        "tags": "#quiropraxia #osteopatia #coffito",
-    },
-    {
         "titulo": "Quiropraxia e osteopatia nao sao autonomas",
         "partes": ["Quiropraxia e osteopatia são autônomas da fisioterapia?",
                    "Não, pelo COFFITO. E o especialista segue o Código de Ética.",
