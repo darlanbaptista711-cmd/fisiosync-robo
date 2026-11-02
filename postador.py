@@ -454,8 +454,8 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "audio'. Fale do assunto do dia, nao do catalogo.\n"
         '  "legenda": abertura que desperte curiosidade, o fato explicado em '
         "linguagem simples, a fonte citada, UMA chamada coerente com o "
-        "objetivo (salvar, mandar para um colega ou responder uma pergunta "
-        "nos comentarios), depois a assinatura em uma linha, copiada com "
+        "objetivo; em carrossel, a chamada e SEMPRE pedir para salvar o post "
+        "e enviar para um colega de profissao. Depois a assinatura em uma linha, copiada com "
         "os acentos: 'Conteúdo FisioSync. Teste grátis por 7 dias: "
         "app.fisiosync.com.br'. Legenda inteira com acentuacao correta. "
         "Depois "
@@ -632,8 +632,15 @@ def _slides_validos(dados, fato):
         log(f"AVISO: slide com numero sem fonte ({', '.join(soltos)}). "
             "Saindo como post unico.")
         return []
-    if not dados.get("fechamento"):
-        dados["fechamento"] = "Salve para consultar depois e mande para um colega."
+    # Pedido do Darlan (02/11/2026): TODO carrossel termina pedindo para
+    # salvar e enviar para um colega de profissao. Frase fixa, nao fica a
+    # criterio da IA. No "mito ou verdade" vem antes o convite a comentar.
+    if dados.get("_estilo") == "mito":
+        dados["fechamento"] = ("Acertou? Conta nos comentários. "
+                               "Salve e envie para um colega de profissão.")
+    else:
+        dados["fechamento"] = ("Salve este post e envie para um colega "
+                               "de profissão.")
     log(f"Carrossel: capa + {len(limpos)} slides + fechamento")
     return limpos
 
@@ -745,6 +752,7 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
              "saude.\n  Rode de novo: a IA escreve outro texto.")
 
     if carrossel:
+        dados["_estilo"] = estilo
         dados["slides"] = _slides_validos(dados, fato_banco)
     else:
         dados["slides"] = []

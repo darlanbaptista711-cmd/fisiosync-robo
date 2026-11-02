@@ -101,14 +101,25 @@ def slide_final(chamada, n, total):
     rodape = LY.assinatura(peca, d, x0, x1, (ALT - 90) * e, e,
                            tratamento="pilula", alinhar="centro")
     larg = x1 - x0
-    fc, lc, _ = LY.caber(d, chamada, larg, 4, True, 60, e, 0.70)
-    alt = len(lc) * int(fc.size * 1.2)
+    # o pedido de salvar/enviar vai inteiro em ciano; o que vem antes
+    # (pergunta do "mito ou verdade") em marinho
+    k = chamada.find("Salve")
+    blocos = ([(chamada[:k].strip(), M.MARINHO)] if k > 0 else []) + \
+             [(chamada[k:].strip() if k >= 0 else chamada, M.CIANO)]
+    medidos = []
+    for texto, cor in blocos:
+        fc, lc, _ = LY.caber(d, texto, larg, 3, True, 60, e, 0.70)
+        medidos.append((fc, lc, cor))
+    vao = int(28 * e)
+    alt = sum(len(lc) * int(fc.size * 1.2) for fc, lc, _ in medidos) \
+        + vao * (len(medidos) - 1)
     y = topo + (rodape - topo - alt) / 2
-    for i, linha in enumerate(lc):
-        w = d.textlength(linha, font=fc)
-        cor = M.CIANO if i == len(lc) - 1 and len(lc) > 1 else M.MARINHO
-        d.text(((LARG * e - w) / 2, y), linha, font=fc, fill=cor)
-        y += int(fc.size * 1.2)
+    for fc, lc, cor in medidos:
+        for linha in lc:
+            w = d.textlength(linha, font=fc)
+            d.text(((LARG * e - w) / 2, y), linha, font=fc, fill=cor)
+            y += int(fc.size * 1.2)
+        y += vao
     f = M.fonte(True, 24 * e)
     txt = f"{n}/{total}"
     d.text((x1 - d.textlength(txt, font=f), int(70 * e)), txt, font=f,
