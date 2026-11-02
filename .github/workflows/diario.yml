@@ -27,7 +27,7 @@ name: Posts diarios da FisioSync
 #
 # Uma largada a 01:00 cobre os dois posts do dia. Largada mais tarde
 # entra no meio da corrente. Cada etapa roda mesmo se a anterior
-# falhar, por causa do if: always().
+# falhar, por causa do if: ${{ !cancelled() }}.
 #
 # Travas contra post duplicado: o espera.py confere o historico antes e
 # depois de dormir, o postador.py confere de novo antes de gastar API, e
@@ -86,7 +86,7 @@ jobs:
 
   manha_cedo:
     needs: madrugada
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
@@ -99,7 +99,7 @@ jobs:
 
   manha:
     needs: reels_manha
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
@@ -136,7 +136,7 @@ jobs:
 
   tarde_cedo:
     needs: manha
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
@@ -149,7 +149,7 @@ jobs:
 
   tarde:
     needs: tarde_cedo
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
@@ -194,7 +194,7 @@ jobs:
   # ---------------------------------------------------------------------
   reels_manha:
     needs: manha_cedo
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
@@ -217,7 +217,7 @@ jobs:
 
   reels:
     needs: tarde
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
