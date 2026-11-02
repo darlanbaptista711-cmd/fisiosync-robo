@@ -1,0 +1,27 @@
+name: Conferir chaves (sem mostrar valores)
+
+# Diz so se cada chave existe no cofre. Nenhum valor aparece no log.
+on:
+  workflow_dispatch:
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conferir
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+        run: |
+          for k in IG_USER_ID IG_ACCESS_TOKEN OPENAI_API_KEY ELEVENLABS_API_KEY ELEVENLABS_VOICE_ID; do
+            if [ -n "${!k}" ]; then echo "$k: OK"; else echo "$k: FALTANDO"; fi
+          done
+          if [ -n "$ELEVENLABS_API_KEY" ]; then
+            code=$(curl -s -o /dev/null -w '%{http_code}' -H "xi-api-key: $ELEVENLABS_API_KEY" https://api.elevenlabs.io/v1/user/subscription)
+            echo "ElevenLabs responde: HTTP $code"
+          fi
+          code=$(curl -s -o /dev/null -w '%{http_code}' "https://graph.facebook.com/v23.0/me?access_token=$IG_ACCESS_TOKEN")
+          echo "Instagram token responde: HTTP $code"
