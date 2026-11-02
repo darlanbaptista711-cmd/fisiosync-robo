@@ -357,7 +357,8 @@ def gravar_historico(registro):
         log(f"Nao consegui gravar o historico: {e}")
 
 
-def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False):
+def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
+                     estilo="sabia"):
     hist = ler_historico()
     if hist:
         recentes = "\n".join(
@@ -481,6 +482,24 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False):
         "Pilates'). Sem falar da FisioSync.\n"
         "  No carrossel, o titulo e o apoio sao a CAPA: o titulo e o gancho "
         "que faz arrastar.\n" if carrossel else "") +
+        (
+        "\n=== FORMATO MITO OU VERDADE (vale para este post) ===\n"
+        "- sobretitulo: exatamente 'Mito ou verdade?'.\n"
+        "- titulo (capa): UMA afirmacao curta, ate 8 palavras, sem ponto "
+        "final, que o publico realmente poderia achar verdadeira ou falsa. "
+        "Ela tem que ser decidida PELO FATO CONFERIDO: ou o fato confirma a "
+        "afirmacao (VERDADE) ou o fato a contradiz diretamente (MITO). Nada "
+        "que o fato nao resolva.\n"
+        "- apoio (capa): 'Arraste e confira a resposta.'\n"
+        "- primeiro slide: titulo exatamente 'Verdade.' ou 'Mito.', e o texto "
+        "explica por que, com o que o fato diz. Os outros slides "
+        "aprofundam, sempre dentro do fato.\n"
+        "- fechamento: uma pergunta curta para os comentarios, ligada ao "
+        "assunto (ex: 'Voce ja sabia? Conta nos comentarios.').\n"
+        "- legenda: comeca repetindo a afirmacao como pergunta, pede para "
+        "a pessoa responder nos comentarios antes de arrastar, e depois "
+        "segue a regra normal da legenda.\n"
+        "=== FIM ===\n" if (carrossel and estilo == "mito") else "") +
         "\nA imagem tem que explicar sozinha. Se o paragrafo for necessario para "
         "a imagem fazer sentido, o conceito esta fraco. Se um objeto puder "
         "sair sem perda de sentido, tire.\n"
@@ -619,7 +638,7 @@ def _slides_validos(dados, fato):
     return limpos
 
 
-def gerar_conteudo(cfg, tema=None, carrossel=False):
+def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     hist = ler_historico(limite=500)
     pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
     fato_banco, fonte_banco = "", ""
@@ -642,7 +661,10 @@ def gerar_conteudo(cfg, tema=None, carrossel=False):
         familia_banco = p.get("familia", "gestao")
         fato_banco, fonte_banco = p.get("fato", ""), p.get("fonte", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
-    pedido = _pedido_conteudo(tema, fato_banco, fonte_banco, carrossel)
+    pedido = _pedido_conteudo(tema, fato_banco, fonte_banco, carrossel,
+                              estilo)
+    log(f"Formato: {'carrossel' if carrossel else 'imagem unica'}"
+        + (' / mito ou verdade' if carrossel and estilo == 'mito' else ''))
 
     bruto = None
     if cfg.get("OPENAI_API_KEY"):
@@ -1302,6 +1324,8 @@ def main():
                     help="arquivo .json com o briefing pronto da peca")
     ap.add_argument("--carrossel", action="store_true",
                     help="feed em carrossel: capa + slides do fato + fechamento")
+    ap.add_argument("--estilo", choices=["sabia", "mito"], default="sabia",
+                    help="carrossel 'Voce sabia?' (12h) ou 'Mito ou verdade?' (18h)")
     ap.add_argument("--molde", action="store_true",
                     help="forca o modo molde (texto perfeito)")
     args = ap.parse_args()
@@ -1343,7 +1367,8 @@ def main():
         log(f"Conceito: {c.get('conceito')}")
     else:
         # Sem --tema, a IA escolhe sozinha, olhando o historico
-        c = gerar_conteudo(cfg, args.tema, carrossel=args.carrossel)
+        c = gerar_conteudo(cfg, args.tema, carrossel=args.carrossel,
+                           estilo=args.estilo)
     tema = c["tema"]
     if args.layout:
         c["layout"] = args.layout
@@ -1403,7 +1428,13 @@ def main():
             log(f"Peca do feed: {os.path.basename(arq_feed)} -> {medida} "
                 f"{'OK' if ok else 'PROPORCAO ERRADA'}")
         if quer_story:
-            arq_story = molde.montar(foto, c["titulo"], c["apoio"], base_story,
+            # no "Mito ou verdade?" o story nao pode mostrar a afirmacao
+            # sem a resposta: quem so ve o story sairia com o mito
+            apoio_story = c["apoio"]
+            if c.get("slides") and args.estilo == "mito":
+                resp = c["slides"][0]["titulo"].strip().rstrip(".")
+                apoio_story = f"{resp}. Veja o porquê no post de hoje."
+            arq_story = molde.montar(foto, c["titulo"], apoio_story, base_story,
                                      "story", layout=c["layout"],
                                      sobretitulo=c.get("sobretitulo", ""))
             ok, medida = molde.validar(arq_story, "story")

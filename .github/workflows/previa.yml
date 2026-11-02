@@ -10,6 +10,11 @@ on:
         description: "Gerar como carrossel (formato do post das 12h)"
         type: boolean
         default: true
+      estilo:
+        description: "sabia (12h) ou mito (18h)"
+        type: choice
+        options: ["sabia", "mito"]
+        default: "sabia"
 
 permissions:
   contents: write
@@ -31,7 +36,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python postador.py --previa ${{ inputs.carrossel && '--carrossel' || '' }}
+        run: python postador.py --previa ${{ inputs.carrossel && '--carrossel' || '' }} --estilo ${{ inputs.estilo || 'sabia' }}
       - name: Guardar a previa no branch previa
         run: |
           git config user.name "FisioSync Robo"

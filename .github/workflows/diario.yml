@@ -1,7 +1,7 @@
 name: Posts diarios da FisioSync
 
-# DOIS posts por dia: 12:00 (carrossel) e 18:00 (imagem unica), em
-# Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
+# DOIS posts por dia: 12:00 (carrossel "Voce sabia?") e 18:00 (carrossel
+# "Mito ou verdade?"), em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
 # consome 1 pauta de conhecimento conferida do banco.
 #
 # O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
@@ -20,7 +20,6 @@ name: Posts diarios da FisioSync
 #
 #   madrugada   dorme ate 05:00
 #   manha_cedo  dorme ate 08:00
-#   reels_manha monta 08:45     e PUBLICA o Reels as 09:00
 #   manha       dorme ate 12:00  e PUBLICA
 #   tarde_cedo  dorme ate 15:30
 #   tarde       dorme ate 18:00  e PUBLICA
@@ -99,7 +98,7 @@ jobs:
       - run: python espera.py --etapa manha_cedo
 
   manha:
-    needs: reels_manha
+    needs: manha_cedo
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 330
@@ -174,7 +173,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python postador.py
+        run: python postador.py --carrossel --estilo mito
 
       - name: Avisar se falhou
         if: failure()
@@ -187,36 +186,15 @@ jobs:
         run: bash guardar.sh
 
   # ---------------------------------------------------------------------
-  # REELS, DOIS POR DIA: 9h e 20h
+  # REELS, UM POR DIA: 20h (decisao de 02/11/2026: 1 Reels + 2 carrosseis.
+  # Um Reels forte rende mais que dois medianos e a fila de fatos rende o
+  # dobro.)
   #
   # Cada um pega o proximo roteiro da fila (reels/fila), que so tem fato
   # conferido em fonte oficial; monta, confere quadro a quadro e as regras
   # do Reels, espera o minuto exato e publica. A logica fica em
   # .github/actions/reels, a mesma para os dois horarios.
   # ---------------------------------------------------------------------
-  reels_manha:
-    needs: manha_cedo
-    if: ${{ !cancelled() }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 330
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/reels
-        with:
-          etapa: reels_manha
-          publicar_as: "09:00"
-          janela: manha
-          elevenlabs_key: ${{ secrets.ELEVENLABS_API_KEY }}
-          voice_id: ${{ secrets.ELEVENLABS_VOICE_ID }}
-          ig_user_id: ${{ secrets.IG_USER_ID }}
-          ig_token: ${{ secrets.IG_ACCESS_TOKEN }}
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Avisar se falhou
-        if: failure()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash aviso_falha.sh
-
   reels:
     needs: tarde
     if: ${{ !cancelled() }}
