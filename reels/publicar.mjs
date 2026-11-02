@@ -16,6 +16,7 @@
  * Ambiente: IG_USER_ID, IG_ACCESS_TOKEN, VIDEO, ROTEIRO
  */
 
+import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 
 const GRAPH = "https://graph.facebook.com/v23.0";
@@ -45,6 +46,55 @@ async function graph(caminho, params = {}, metodo = "POST") {
   return j;
 }
 
+/**
+ * Trava pela FONTE DA VERDADE: o proprio Instagram.
+ *
+ * Em 02/11/2026 o Reels das 20h saiu duas vezes (20:00 e 20:03): uma
+ * largada de reserva ficou na fila e comecou com uma copia do historico
+ * anterior ao registro do primeiro post. O historico em arquivo pode
+ * estar velho; o perfil no Instagram nao.
+ *
+ * Devolve o link do Reels igual publicado nas ultimas 36h, ou null.
+ */
+async function jaNoInstagram(legenda) {
+  const r = await fetch(`${GRAPH}/${ID}/media?` + new URLSearchParams({
+    fields: "caption,timestamp,media_product_type,permalink", limit: "15",
+    access_token: TOKEN }));
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || j.error) {
+    // sem conseguir conferir, NAO publica: duplicado e pior que atraso
+    morrer(`nao consegui conferir o perfil antes de publicar: ${JSON.stringify(j.error || {}).slice(0, 200)}`);
+  }
+  const inicio = legenda.slice(0, 80);
+  const limite = Date.now() - 36 * 3600 * 1000;
+  const igual = (j.data || []).find((m) =>
+    m.media_product_type === "REELS" &&
+    Date.parse(m.timestamp) >= limite &&
+    (m.caption || "").trim().slice(0, 80) === inicio);
+  return igual ? igual.permalink || igual.timestamp : null;
+}
+
+/**
+ * Momento da capa: no meio do bloco da resposta, quando o numero ja
+ * terminou de contar. Com tempo fixo (3,8s) a capa do Reels "oito itens"
+ * pegou a contagem no 7.
+ */
+function capaMs(roteiro) {
+  try {
+    const dur = parseFloat(execFileSync("ffprobe", ["-v", "error", "-show_entries",
+      "format=duration", "-of", "default=nw=1:nk=1", VIDEO]).toString());
+    const fps = 30, total = Math.round(dur * fps), fecho = Math.round(2.2 * fps);
+    const corpo = total - fecho;
+    const [pa, pb] = roteiro.proporcoes ?? [0.3, 0.38];
+    const a = Math.round(corpo * pa), b = Math.round(corpo * pb);
+    // a contagem acaba 14 quadros depois do inicio do bloco
+    const quadro = a + Math.max(24, Math.round(b * 0.6));
+    return Math.round((quadro / fps) * 1000);
+  } catch {
+    return roteiro.capa_ms ?? 3000;
+  }
+}
+
 async function lerHistorico() {
   try { return JSON.parse(await readFile(HIST, "utf-8")); } catch { return []; }
 }
@@ -64,6 +114,12 @@ async function main() {
     return;
   }
 
+  const noAr = await jaNoInstagram(legenda);
+  if (noAr && process.env.FORCAR !== "1") {
+    log(`este Reels ja esta no perfil (${noAr}). Nao vou publicar de novo.`);
+    return;
+  }
+
   const video = await readFile(VIDEO);
   log(`video: ${VIDEO} (${(video.length / 1e6).toFixed(1)} MB)`);
 
@@ -73,7 +129,7 @@ async function main() {
     upload_type: "resumable",
     caption: legenda,
     share_to_feed: "true",
-    thumb_offset: String(roteiro.capa_ms ?? 3000),
+    thumb_offset: String(capaMs(roteiro)),
   });
   log(`container criado: ${c.id}`);
 

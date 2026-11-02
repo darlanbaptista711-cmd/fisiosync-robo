@@ -78,6 +78,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -91,6 +96,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -104,6 +114,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -142,6 +157,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -155,6 +175,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -202,6 +227,11 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # o estado MAIS RECENTE do branch, nao o do momento em que a
+          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
+          # um historico velho e o Reels das 20h saiu duplicado
+          ref: ${{ github.ref_name }}
       - uses: ./.github/actions/reels
         with:
           etapa: reels

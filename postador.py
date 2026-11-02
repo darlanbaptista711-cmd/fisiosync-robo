@@ -310,6 +310,40 @@ def ja_publicou_nesta_janela():
     return False
 
 
+def feed_recente_no_instagram(cfg, horas=3):
+    """
+    Trava pela fonte da verdade: ha post de feed (imagem ou carrossel)
+    no perfil nas ultimas 'horas'? Os posts sao as 12h e as 18h, entao
+    3 horas separa as duas janelas sem confundir uma com a outra.
+
+    Criada em 02/11/2026, depois de um Reels sair duplicado porque uma
+    largada de reserva leu um historico velho. O historico em arquivo
+    pode estar desatualizado; o perfil nao.
+    Devolve o link do post encontrado, ou None. Se nao der para
+    conferir, devolve "?" e quem chama nao publica.
+    """
+    try:
+        r = requests.get(
+            f"https://graph.facebook.com/{VERSAO_GRAPH}/{cfg['ID']}/media",
+            params={"fields": "timestamp,media_product_type,permalink",
+                    "limit": 10, "access_token": cfg["TOKEN"]}, timeout=60)
+        dados = r.json()
+        if "error" in dados:
+            log(f"  nao consegui conferir o perfil: {dados['error'].get('message')}")
+            return "?"
+    except Exception as e:
+        log(f"  nao consegui conferir o perfil: {e}")
+        return "?"
+    limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=horas)
+    for m in dados.get("data", []):
+        if m.get("media_product_type") == "REELS":
+            continue
+        quando = datetime.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if quando >= limite:
+            return m.get("permalink") or m["timestamp"]
+    return None
+
+
 def registro_completo(c, tema, arquivos, status="rascunho", modo="molde"):
     """Registro editorial exigido pelo projeto."""
     data, janela = janela_agora()
@@ -1380,6 +1414,11 @@ def main():
             log(f"A janela da {janela} de {data_br} ja foi publicada. "
                 "Saindo sem gerar imagem nem gastar pauta.")
             return
+        no_ar = feed_recente_no_instagram(cfg)
+        if no_ar:
+            log(f"O perfil ja tem post de feed nas ultimas 3 horas ({no_ar}). "
+                "Nao vou publicar de novo.")
+            return
         log(f"Janela da {janela} de {data_br}, {hora} em Brasilia. "
             "Ainda nao publicada: seguindo.")
 
@@ -1530,6 +1569,11 @@ def main():
         erro("Nao publiquei porque a peca esta incompleta. Resolva os avisos "
              "acima e rode de novo. Para ver a peca sem publicar, use --previa.")
 
+    if os.environ.get("FORCAR") != "1":
+        no_ar = feed_recente_no_instagram(cfg)
+        if no_ar:
+            erro(f"Outro processo publicou enquanto eu montava ({no_ar}). "
+                 "Nao publico duplicado.")
     if quer_feed and slides_arq:
         links = [subir_para_github(cfg, a, f"feed-{carimbo}-{n}.jpg")
                  for n, a in enumerate(slides_arq, 1)]
