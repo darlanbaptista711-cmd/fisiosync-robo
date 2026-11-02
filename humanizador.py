@@ -135,6 +135,10 @@ def _lexico(texto):
     return achados
 
 
+# Ordem importa: o Instagram limita a 5 e corta o que passar.
+HASHTAGS_PROPRIAS = ["#FisioSync", "#FisioSyncGestao"]
+
+
 def _hashtags(texto):
     """Mantem no maximo 5 hashtags e garante a #FisioSync."""
     tags = re.findall(r"#\w+", texto)
@@ -146,9 +150,13 @@ def _hashtags(texto):
         if t.lower() not in [e.lower() for e in escolhidas]:
             escolhidas.append(t)
 
-    tem_marca = any(t.lower() == "#fisiosync" for t in escolhidas)
-    if not tem_marca:
-        escolhidas = ["#FisioSync"] + escolhidas
+    # Hashtags proprias, sempre na frente: a marca e a serie dos posts de
+    # gestao. Hashtag nao da alcance (o Instagram disse isso), mas agrupa a
+    # serie e vira o lugar onde quem gostou acha os outros posts.
+    for propria in reversed(HASHTAGS_PROPRIAS):
+        escolhidas = [t for t in escolhidas if t.lower() != propria.lower()]
+        escolhidas.insert(0, propria)
+    if not any(t.lower() == "#fisiosync" for t in tags):
         mudancas.append("adicionada a #FisioSync")
     if len(escolhidas) > 5:
         cortadas = escolhidas[5:]

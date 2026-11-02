@@ -29,6 +29,16 @@ PASTA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fila")
 CTA_LEGENDA = ("Teste a FisioSync grátis por 7 dias: app.fisiosync.com.br\n"
                "Disponível no Google Play e na App Store.")
 
+# Envio por DM e o sinal que o Instagram mais valoriza para mostrar um
+# Reels a quem ainda nao segue a conta. O convite e natural para quem
+# fala com colegas de profissao.
+CONVITE_ENVIO = "Conhece um fisio que precisa ver isso? Manda pra ele."
+
+# Hashtags proprias sempre na frente. O limite do Instagram e 5 por post
+# desde dez/2025, e hashtag nao da alcance; a serie existe para agrupar
+# os videos e ser o lugar onde quem gostou acha os outros.
+HASHTAGS_PROPRIAS = ["#FisioSync", "#FisioSyncExplica"]
+
 R414 = "Resolução COFFITO nº 414/2012"
 
 ROTEIROS = [
@@ -372,11 +382,14 @@ def main():
         palavras = len(narracao.split())
         if palavras > 34:
             raise SystemExit(f"{r['titulo']}: {palavras} palavras, passa de 15s.")
-        legenda = "\n\n".join(r["legenda"] + [CTA_LEGENDA, r["tags"]])
+        tematicas = [t for t in r["tags"].split()
+                     if t.lower() not in {h.lower() for h in HASHTAGS_PROPRIAS}]
+        tags = " ".join((HASHTAGS_PROPRIAS + tematicas)[:5])
+        legenda = "\n\n".join(r["legenda"] + [CONVITE_ENVIO, CTA_LEGENDA, tags])
         if len(legenda) > 2200:
             raise SystemExit(f"{r['titulo']}: legenda com {len(legenda)} caracteres.")
-        if "#FisioSync" not in r["tags"] or not 3 <= r["tags"].count("#") <= 5:
-            raise SystemExit(f"{r['titulo']}: hashtags fora da regra (3 a 5, com #FisioSync).")
+        if not 3 <= tags.count("#") <= 5 or "#FisioSyncExplica" not in tags:
+            raise SystemExit(f"{r['titulo']}: hashtags fora da regra (3 a 5, com as proprias).")
         dados = {
             "tipo": "dica",
             "titulo": r["titulo"],
