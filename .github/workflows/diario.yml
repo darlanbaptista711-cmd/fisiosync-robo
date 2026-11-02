@@ -1,7 +1,8 @@
 name: Posts diarios da FisioSync
 
-# DOIS posts por dia: 12:00 e 18:00 em Brasilia. Cada um leva 1 post no
-# feed + 1 story do mesmo tema, e consome 1 pauta do banco.
+# DOIS posts por dia: 12:00 (carrossel) e 18:00 (imagem unica), em
+# Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
+# consome 1 pauta de conhecimento conferida do banco.
 #
 # O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
 #
@@ -122,7 +123,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python postador.py
+        # 12h e carrossel (o formato que mais e salvo); 18h e post unico
+        run: python postador.py --carrossel
 
       - name: Avisar se falhou
         if: failure()

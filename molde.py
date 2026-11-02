@@ -107,8 +107,18 @@ def _calibrado(peca, d, foto, tit, apo, g, story, sobretitulo=""):
             d.text((meio - w / 2, y), linha, font=fa, fill=M.MARINHO)
             y += int(fa.size * 1.34)
 
-    topo_rodape = LY.assinatura(peca, d, g["x0"], g["x1"], g["y1"], e,
-                                tratamento="pilula", alinhar="centro")
+    if g.get("capa"):
+        # capa de carrossel: a assinatura vai no ultimo slide; aqui so o
+        # convite para arrastar
+        f_arr = M.fonte(True, 32 * e)
+        txt = "Arraste para o lado  →"
+        alt_arr = int(f_arr.size * 1.3)
+        topo_rodape = g["y1"] - alt_arr
+        w = d.textlength(txt, font=f_arr)
+        d.text((meio - w / 2, topo_rodape), txt, font=f_arr, fill=M.CIANO)
+    else:
+        topo_rodape = LY.assinatura(peca, d, g["x0"], g["x1"], g["y1"], e,
+                                    tratamento="pilula", alinhar="centro")
 
     # ilustracao grande, inteira, sem corte e sem moldura
     folga = int(34 * e)
@@ -333,7 +343,7 @@ _MONTADORES = {
 
 def montar(caminho_foto, titulo, apoio, destino_base, formato="feed",
            escala=2, layout="calibrado", sobretitulo="", tema="",
-           conceito=""):
+           conceito="", capa=False):
     """Monta a peca no layout pedido e exporta producao e publicacao."""
     if layout not in _MONTADORES:
         layout = "calibrado"
@@ -345,6 +355,10 @@ def montar(caminho_foto, titulo, apoio, destino_base, formato="feed",
     peca, g = _base(formato, escala)
     d = ImageDraw.Draw(peca)
     g["tema"], g["conceito"] = tema, conceito
+    if capa:
+        # so o calibrado sabe trocar a assinatura pelo "arraste"
+        g["capa"] = True
+        layout = "calibrado"
     if layout in ("calibrado", "tipografico"):
         _MONTADORES[layout](peca, d, caminho_foto, titulo, apoio, g,
                             formato == "story", sobretitulo)

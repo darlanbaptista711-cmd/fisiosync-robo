@@ -357,7 +357,7 @@ def gravar_historico(registro):
         log(f"Nao consegui gravar o historico: {e}")
 
 
-def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
+def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False):
     hist = ler_historico()
     if hist:
         recentes = "\n".join(
@@ -467,6 +467,20 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
         "perder sentido, tire. SEM pessoas, rostos ou maos. SEM celulares, "
         "tablets ou computadores. SEM texto na imagem. Nao caia sempre em "
         "pasta, onda sonora, relogio, engrenagem ou grafico flutuando.\n"
+        + (
+        '  "slides": CARROSSEL. Lista de 3 ou 4 objetos {"titulo", "texto"} '
+        "que explicam o fato passo a passo, um passo por slide, na ordem "
+        "em que a pessoa entende. titulo: ate 5 palavras. texto: ate 32 "
+        "palavras, frases completas. Cada slide so pode afirmar o que esta "
+        "no fato conferido: nada de dado, exemplo clinico, beneficio ou "
+        "numero que nao esteja nele. Pode explicar com palavras simples o "
+        "que o fato diz e por que isso importa no dia a dia do "
+        "fisioterapeuta, sem inventar regra.\n"
+        '  "fechamento": frase do ultimo slide, ate 16 palavras, pedindo para '
+        "salvar ou mandar para um colega especifico (ex: 'que da aula de "
+        "Pilates'). Sem falar da FisioSync.\n"
+        "  No carrossel, o titulo e o apoio sao a CAPA: o titulo e o gancho "
+        "que faz arrastar.\n" if carrossel else "") +
         "\nA imagem tem que explicar sozinha. Se o paragrafo for necessario para "
         "a imagem fazer sentido, o conceito esta fraco. Se um objeto puder "
         "sair sem perda de sentido, tire.\n"
@@ -576,7 +590,36 @@ def conferir_numeros(cfg, dados, fato):
     return numeros_soltos([dados.get(c, "") for c in campos], fato)
 
 
-def gerar_conteudo(cfg, tema=None):
+def _slides_validos(dados, fato):
+    """
+    Confere os slides do carrossel. Qualquer problema derruba SO o
+    carrossel: o post sai como imagem unica, que ja passou nas travas.
+    """
+    slides = dados.get("slides")
+    if not isinstance(slides, list) or not 2 <= len(slides) <= 5:
+        log("AVISO: a IA nao mandou slides validos. Saindo como post unico.")
+        return []
+    limpos = []
+    for s in slides:
+        if not isinstance(s, dict) or not s.get("titulo") or not s.get("texto"):
+            log("AVISO: slide sem titulo ou texto. Saindo como post unico.")
+            return []
+        limpos.append({"titulo": str(s["titulo"]).strip(),
+                       "texto": str(s["texto"]).strip()})
+    textos = [x for s in limpos for x in (s["titulo"], s["texto"])]
+    textos.append(dados.get("fechamento", ""))
+    soltos = numeros_soltos(textos, fato)
+    if soltos:
+        log(f"AVISO: slide com numero sem fonte ({', '.join(soltos)}). "
+            "Saindo como post unico.")
+        return []
+    if not dados.get("fechamento"):
+        dados["fechamento"] = "Salve para consultar depois e mande para um colega."
+    log(f"Carrossel: capa + {len(limpos)} slides + fechamento")
+    return limpos
+
+
+def gerar_conteudo(cfg, tema=None, carrossel=False):
     hist = ler_historico(limite=500)
     pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
     fato_banco, fonte_banco = "", ""
@@ -599,7 +642,7 @@ def gerar_conteudo(cfg, tema=None):
         familia_banco = p.get("familia", "gestao")
         fato_banco, fonte_banco = p.get("fato", ""), p.get("fonte", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
-    pedido = _pedido_conteudo(tema, fato_banco, fonte_banco)
+    pedido = _pedido_conteudo(tema, fato_banco, fonte_banco, carrossel)
 
     bruto = None
     if cfg.get("OPENAI_API_KEY"):
@@ -667,6 +710,11 @@ def gerar_conteudo(cfg, tema=None):
              f"resolveu: {', '.join(sobraram)}.\n"
              "  Nao vou publicar dado inventado em perfil de produto de "
              "saude.\n  Rode de novo: a IA escreve outro texto.")
+
+    if carrossel:
+        dados["slides"] = _slides_validos(dados, fato_banco)
+    else:
+        dados["slides"] = []
 
     dados["titulo"] = encurtar(dados["titulo"], 62, "titulo")
     dados["apoio"] = encurtar(dados.get("apoio", ""), 118, "apoio")
@@ -1141,6 +1189,45 @@ def publicar_feed(cfg, arquivo, legenda, carimbo):
     return True
 
 
+def publicar_carrossel(cfg, links, legenda):
+    """Carrossel: um container por imagem, depois o container pai."""
+    ig, tok = cfg["ID"], cfg["TOKEN"]
+    log(f"Publicando carrossel com {len(links)} imagens...")
+    filhos = []
+    for link in links:
+        r = graph("POST", f"{ig}/media", tok, image_url=link,
+                  is_carousel_item="true")
+        filhos.append(r["id"])
+    for f in filhos:
+        inicio = time.time()
+        while time.time() - inicio < 180:
+            st = graph("GET", f, tok, fields="status_code,status")
+            if st.get("status_code") == "FINISHED":
+                break
+            if st.get("status_code") in ("ERROR", "EXPIRED"):
+                erro(f"A Meta nao aceitou um slide: {st.get('status')}")
+            time.sleep(4)
+        else:
+            erro("A Meta demorou demais processando um slide.")
+    pai = graph("POST", f"{ig}/media", tok, media_type="CAROUSEL",
+                children=",".join(filhos), caption=legenda or "")["id"]
+    inicio = time.time()
+    while time.time() - inicio < 180:
+        st = graph("GET", pai, tok, fields="status_code,status")
+        if st.get("status_code") == "FINISHED":
+            break
+        if st.get("status_code") in ("ERROR", "EXPIRED"):
+            erro(f"A Meta nao aceitou o carrossel: {st.get('status')}")
+        time.sleep(5)
+    media_id = graph("POST", f"{ig}/media_publish", tok, creation_id=pai)["id"]
+    try:
+        link = graph("GET", media_id, tok, fields="permalink").get("permalink")
+    except SystemExit:
+        link = "(sem link)"
+    log(f"PUBLICADO carrossel: {link}")
+    return media_id
+
+
 # --------------------------------------------------------------------------
 # Principal
 # --------------------------------------------------------------------------
@@ -1213,6 +1300,8 @@ def main():
                     help="forca um layout, ex: tipografico")
     ap.add_argument("--brief", default=None,
                     help="arquivo .json com o briefing pronto da peca")
+    ap.add_argument("--carrossel", action="store_true",
+                    help="feed em carrossel: capa + slides do fato + fechamento")
     ap.add_argument("--molde", action="store_true",
                     help="forca o modo molde (texto perfeito)")
     args = ap.parse_args()
@@ -1254,7 +1343,7 @@ def main():
         log(f"Conceito: {c.get('conceito')}")
     else:
         # Sem --tema, a IA escolhe sozinha, olhando o historico
-        c = gerar_conteudo(cfg, args.tema)
+        c = gerar_conteudo(cfg, args.tema, carrossel=args.carrossel)
     tema = c["tema"]
     if args.layout:
         c["layout"] = args.layout
@@ -1286,6 +1375,8 @@ def main():
             log(f"Nao consegui baixar os selos automaticamente: {e}")
 
     foto = os.path.join(PASTA_SAIDA, f"foto-{carimbo}.jpg")
+    if c.get("slides"):
+        c["layout"] = "calibrado"   # a capa do carrossel leva ilustracao
     if c.get("layout") == "tipografico":
         log("Layout tipografico: a tipografia e o visual, sem gerar imagem.")
         foto = ""
@@ -1327,6 +1418,27 @@ def main():
              "  A peca NAO foi publicada. Rode de novo: a IA escreve "
              "outro texto, mais curto.")
 
+    # Carrossel: capa sem assinatura + slides do fato + fechamento. Se
+    # qualquer slide nao couber, o post sai como imagem unica (a arte
+    # acima ja passou em todas as travas). Nunca corta texto.
+    slides_arq = []
+    if quer_feed and c.get("slides"):
+        import carrossel
+        try:
+            capa = molde.montar(foto, c["titulo"], c["apoio"],
+                                base_feed + "_capa", "feed",
+                                layout="calibrado",
+                                sobretitulo=c.get("sobretitulo", ""),
+                                capa=True)
+            total = len(c["slides"]) + 2
+            slides_arq = [capa] + carrossel.montar(
+                c["slides"], c["fechamento"], c.get("fonte", ""),
+                base_feed, primeiro_numero=2, total=total)
+            log(f"Carrossel montado: {len(slides_arq)} imagens")
+        except layouts.TextoNaoCabe as falha:
+            log(f"AVISO: slide nao coube ({falha}). Saindo como post unico.")
+            slides_arq = []
+
     if molde.avisos:
         print("\n" + "!" * 56)
         for a in molde.avisos:
@@ -1337,6 +1449,10 @@ def main():
               "w", encoding="utf-8") as f:
         f.write(f"TEMA: {tema}\n\nTITULO: {c['titulo']}\n"
                 f"APOIO: {c['apoio']}\n\n{c['legenda']}\n")
+        for n, sl in enumerate(c.get("slides") or [], 2):
+            f.write(f"\nSLIDE {n}: {sl['titulo']}\n{sl['texto']}\n")
+        if c.get("slides"):
+            f.write(f"\nFECHAMENTO: {c.get('fechamento')}\n")
 
     if args.previa:
         gravar_historico(registro_completo(
@@ -1352,7 +1468,11 @@ def main():
         erro("Nao publiquei porque a peca esta incompleta. Resolva os avisos "
              "acima e rode de novo. Para ver a peca sem publicar, use --previa.")
 
-    if quer_feed:
+    if quer_feed and slides_arq:
+        links = [subir_para_github(cfg, a, f"feed-{carimbo}-{n}.jpg")
+                 for n, a in enumerate(slides_arq, 1)]
+        publicar_carrossel(cfg, links, c["legenda"])
+    elif quer_feed:
         publicar_feed(cfg, arq_feed, c["legenda"], carimbo)
     if quer_story:
         link = subir_para_github(cfg, arq_story, f"story-{carimbo}.jpg")

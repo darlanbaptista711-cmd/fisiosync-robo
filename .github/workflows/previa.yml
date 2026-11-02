@@ -5,6 +5,11 @@ name: Previa do post (nao publica)
 
 on:
   workflow_dispatch:
+    inputs:
+      carrossel:
+        description: "Gerar como carrossel (formato do post das 12h)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -26,7 +31,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python postador.py --previa
+        run: python postador.py --previa ${{ inputs.carrossel && '--carrossel' || '' }}
       - name: Guardar a previa no branch previa
         run: |
           git config user.name "FisioSync Robo"
