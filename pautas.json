@@ -484,8 +484,8 @@
    "id": "paciente-061",
    "eixo": "paciente",
    "tema": "aderencia ao exercicio em casa",
-   "status": "livre",
-   "usado_em": null,
+   "status": "publicado",
+   "usado_em": "2026-11-02",
    "familia": "gestao"
   },
   {

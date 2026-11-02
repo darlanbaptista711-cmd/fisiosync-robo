@@ -188,5 +188,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-02",
+  "janela": "manha",
+  "tema": "Espaço doméstico como barreira à adesão",
+  "pauta": "aderencia ao exercicio em casa",
+  "eixo": "paciente",
+  "familia": "gestao",
+  "fonte": "",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Antes de prescrever, considere espaço, materiais e obstáculos da rotina.",
+  "chamada": "O exercício cabe na casa do paciente?",
+  "conceito": "Um colchonete espremido entre sofá e parede mostra por que a prescrição precisa considerar o espaço disponível em casa.",
+  "composicao": "calibrado",
+  "estilo": "ilustracao 3D minimalista e sofisticada",
+  "objetivo": "iniciar teste",
+  "arquivos": [
+   "fisiosync_espaco-dom-stico-como-barreira-ades-o_feed_1080x1350.jpg",
+   "fisiosync_espaco-dom-stico-como-barreira-ades-o_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
