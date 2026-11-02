@@ -211,5 +211,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-02",
+  "janela": "tarde",
+  "tema": "Fisioterapia Respiratória: título e espirometria",
+  "pauta": "fisioterapia respiratória: título e espirometria",
+  "eixo": "especialidades",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 400/2011, Arts. 2º e 3º, V",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Arraste e confira a resposta.",
+  "chamada": "A norma prevê solicitar e interpretar espirometria",
+  "conceito": "Pulmões associados a um espirômetro conectam visualmente a especialidade respiratória ao exame citado na norma.",
+  "composicao": "calibrado",
+  "estilo": "icones lineares discretos",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_fisioterapia-respirat-ria-t-tulo-e-espir_feed_1080x1350.jpg",
+   "fisiosync_fisioterapia-respirat-ria-t-tulo-e-espir_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
