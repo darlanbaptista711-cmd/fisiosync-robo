@@ -49,13 +49,19 @@ import postador as P
 # etapas custa nada e evita o job morrer no meio da espera.
 ETAPAS = {
     "madrugada": (datetime.time(5, 0), None),
-    "manha_cedo": (datetime.time(9, 0), None),
+    "manha_cedo": (datetime.time(8, 0), None),
+    # Reels da manha: comeca a montar 8:45, publica 9:00 em ponto.
+    "reels_manha": (datetime.time(8, 45), 11),  # monta e publica
     "manha": (datetime.time(12, 0), 16),      # publica
     "tarde_cedo": (datetime.time(15, 30), None),
     "tarde": (datetime.time(18, 0), 23),      # publica
-    # Reels: monta a partir de 19:50 e publica perto das 20:00. A montagem
-    # leva uns 6 minutos (narracao, trilha, render conferido quadro a quadro).
-    "reels": (datetime.time(19, 50), 23),     # monta e publica
+    # Reels da noite: comeca a montar 19:45, publica 20:00 em ponto. A
+    # montagem leva uns 6 minutos (narracao, trilha, render conferido).
+    "reels": (datetime.time(19, 45), 23),     # monta e publica
+}
+
+# Cada etapa de Reels e uma janela propria no historico do Reels.
+JANELA_REELS = {"reels_manha": "manha", "reels": "noite"
 }
 
 # Teto de sono por job. O limite duro do GitHub e 6h; 5h deixa folga
@@ -63,8 +69,9 @@ ETAPAS = {
 TETO = 5 * 3600
 
 
-def reels_publicado_hoje(hoje):
-    """O Reels tem historico proprio: reels/historico-reels.json."""
+def reels_publicado_hoje(hoje, janela):
+    """O Reels tem historico proprio: reels/historico-reels.json.
+    Dois por dia, entao a trava e por janela (manha, noite)."""
     caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                            "reels", "historico-reels.json")
     try:
@@ -72,7 +79,8 @@ def reels_publicado_hoje(hoje):
             hist = json.load(f)
     except (FileNotFoundError, ValueError):
         return False
-    return any(h.get("data_brasilia") == hoje for h in hist)
+    return any(h.get("data_brasilia") == hoje and h.get("janela") == janela
+               for h in hist)
 
 
 def janelas_ja_publicadas(hoje):
@@ -113,8 +121,22 @@ def dormir_ate(alvo, agora, rotulo):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--etapa", choices=sorted(ETAPAS), required=True)
+    ap.add_argument("--etapa", choices=sorted(ETAPAS))
+    ap.add_argument("--ate", help="HH:MM em Brasilia: so dorme ate essa hora")
     args = ap.parse_args()
+
+    if args.ate:
+        if os.environ.get("FORCAR") == "1":
+            print("[relogio] disparo manual: sem esperar o minuto exato.")
+            return
+        h, m = (int(x) for x in args.ate.split(":"))
+        agora = P.agora_brasilia()
+        alvo = datetime.datetime.combine(agora.date(), datetime.time(h, m))
+        dormir_ate(alvo, agora, f"publicar as {args.ate}")
+        print(f"[relogio] {args.ate}: hora de publicar.")
+        return
+    if not args.etapa:
+        ap.error("informe --etapa ou --ate")
 
     hora_alvo, hora_limite = ETAPAS[args.etapa]
     so_espera = hora_limite is None
@@ -136,8 +158,9 @@ def main():
         decidir("nao", "espera cumprida. A proxima etapa assume.")
 
     feitas = janelas_ja_publicadas(hoje.isoformat())
-    if args.etapa == "reels" and reels_publicado_hoje(hoje.isoformat()):
-        feitas.add("reels")
+    if args.etapa in JANELA_REELS and reels_publicado_hoje(
+            hoje.isoformat(), JANELA_REELS[args.etapa]):
+        feitas.add(args.etapa)
     if args.etapa in feitas:
         decidir("nao", f"a janela da {args.etapa} de hoje ja foi "
                        "publicada. Saindo sem gerar nada.")
@@ -154,7 +177,8 @@ def main():
     # relendo: a corrente pode ter levado horas desde o checkout
     depois = P.agora_brasilia().date().isoformat()
     if args.etapa in janelas_ja_publicadas(depois) or (
-            args.etapa == "reels" and reels_publicado_hoje(depois)):
+            args.etapa in JANELA_REELS and
+            reels_publicado_hoje(depois, JANELA_REELS[args.etapa])):
         decidir("nao", f"a janela da {args.etapa} saiu enquanto este job "
                        "esperava. Nao vou duplicar.")
 

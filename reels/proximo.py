@@ -20,7 +20,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILA = os.path.join(RAIZ, "reels", "fila")
 HIST = os.path.join(RAIZ, "reels", "historico-reels.json")
 HOJE = os.path.join(RAIZ, "reels", "roteiro-hoje.json")
-AVISAR_COM = 5   # dias de fila restantes que ja merecem aviso
+AVISAR_COM = 6   # roteiros restantes que ja merecem aviso (3 dias a 2 por dia)
 
 
 def main():
@@ -45,6 +45,9 @@ def main():
 
     escolhido = prontos[0]
     shutil.copyfile(escolhido, HOJE)
+    nome = os.path.splitext(os.path.basename(escolhido))[0]
+    with open(os.environ.get("GITHUB_OUTPUT", os.devnull), "a") as f:
+        f.write(f"nome={nome}\n")
     print(f"[proximo] hoje: {os.path.basename(escolhido)}")
     print(f"[proximo] restam {len(prontos) - 1} roteiros prontos depois deste")
     if len(prontos) - 1 < AVISAR_COM:
