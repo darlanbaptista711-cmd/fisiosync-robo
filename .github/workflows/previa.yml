@@ -1,0 +1,33 @@
+name: Previa do post (nao publica)
+
+# Gera o proximo post do feed e do story exatamente como o robo faria,
+# mas NAO publica. O resultado fica como artefato da rodada.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  previa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - name: Gerar sem publicar
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python postador.py --previa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: previa
+          path: gerado/

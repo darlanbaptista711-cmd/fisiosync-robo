@@ -136,7 +136,9 @@ def _lexico(texto):
 
 
 # Ordem importa: o Instagram limita a 5 e corta o que passar.
-HASHTAGS_PROPRIAS = ["#FisioSync", "#FisioSyncGestao"]
+# Desde 02/11/2026 o perfil e de conhecimento: a serie e a FisioSyncExplica,
+# a mesma dos Reels.
+HASHTAGS_PROPRIAS = ["#FisioSync", "#FisioSyncExplica"]
 
 
 def _hashtags(texto):

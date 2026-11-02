@@ -31,10 +31,8 @@ LIMITE_TEXTO = 0.70     # proposta contra tema + mensagem + conceito
 # Com 8 eixos e 2 posts por dia, 6 cobre os tres ultimos dias.
 JANELA_EIXO = 6
 
-# Mistura de conteudo: 1 post a cada CICLO sai de fora da gestao, ou
-# seja, regulacao ou carreira. Com 2 posts por dia e ciclo 3, da cerca
-# de 5 posts de gestao e 2 de dica por semana.
-CICLO_FAMILIA = 3
+# Ate 02/11/2026 havia mistura gestao/dica. Agora e so conhecimento:
+# FAMILIA_PADRAO (gestao) fica fora do sorteio em proxima_pauta.
 FAMILIA_PADRAO = "gestao"
 
 VAZIAS = {
@@ -159,6 +157,45 @@ def _tem_fato(p):
     return bool(p.get("fato") and p.get("fonte"))
 
 
+def temas_dos_reels(dias=10, proximos=2):
+    """
+    Titulos dos Reels recentes e dos proximos da fila.
+
+    O feed nao pode repetir no mesmo dia (nem na mesma semana) o assunto
+    de um Reels. Em 02/11/2026 o feed das 18h ia sair com "os oito itens
+    do prontuario", o mesmo tema do Reels das 20h.
+    """
+    base = os.path.join(PASTA, "reels")
+    titulos, feitos = [], set()
+    try:
+        with open(os.path.join(base, "historico-reels.json"), encoding="utf-8") as f:
+            hist = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        hist = []
+    limite = (datetime.date.today() - datetime.timedelta(days=dias)).isoformat()
+    for h in hist:
+        feitos.add(h.get("titulo"))
+        if str(h.get("data_brasilia") or h.get("data") or "")[:10] >= limite:
+            titulos.append(h.get("titulo", ""))
+    fila = os.path.join(base, "fila")
+    if os.path.isdir(fila):
+        for nome in sorted(os.listdir(fila)):
+            if proximos <= 0:
+                break
+            if not nome.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(fila, nome), encoding="utf-8") as f:
+                    r = json.load(f)
+            except (OSError, json.JSONDecodeError):
+                continue
+            if r.get("titulo") in feitos:
+                continue
+            titulos.append(r.get("titulo", ""))
+            proximos -= 1
+    return [t for t in titulos if t]
+
+
 def proxima_pauta(historico, log=print):
     """
     Escolhe a proxima pauta livre, evitando repetir o eixo dos ultimos
@@ -171,24 +208,18 @@ def proxima_pauta(historico, log=print):
         log("BANCO DE PAUTAS VAZIO. Nenhum tema novo disponivel.")
         return None
 
-    # Mistura: se os ultimos CICLO-1 posts foram todos de gestao, chegou
-    # a vez de uma dica. Fora isso, gestao.
-    recentes_fam = [familia_do_registro(r, dados)
-                    for r in historico[-(CICLO_FAMILIA - 1):]]
-    vez_de_dica = (len(recentes_fam) == CICLO_FAMILIA - 1
-                   and all(f == FAMILIA_PADRAO for f in recentes_fam))
-
-    if vez_de_dica:
-        preferidas = [p for p in livres
-                      if p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO]
-        rotulo = "dica/curiosidade"
-    else:
-        preferidas = [p for p in livres
-                      if p.get("familia", FAMILIA_PADRAO) == FAMILIA_PADRAO]
-        rotulo = "gestao"
-    if preferidas:
-        log(f"Vez de: {rotulo}")
-        livres = preferidas
+    # Decisao do Darlan em 02/11/2026: o perfil passa a ser 100%
+    # conhecimento. Gestao/software sai do sorteio; o produto so aparece
+    # como assinatura no fim da legenda. E so entra pauta com fato e
+    # fonte conferidos: conhecimento sem fonte vira conhecimento inventado.
+    livres = [p for p in livres
+              if p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO
+              and p.get("fato") and p.get("fonte")]
+    if not livres:
+        log("SEM PAUTA DE CONHECIMENTO CONFERIDA. Abasteca o pautas.json "
+            "com fatos de fonte oficial antes de publicar.")
+        return None
+    log("Vez de: conhecimento")
 
     # Eixos usados por ultimo, do mais recente para o mais antigo.
     recentes = []
@@ -206,7 +237,15 @@ def proxima_pauta(historico, log=print):
 
     candidatas = sorted(livres, key=prioridade, reverse=True)
 
+    reels = temas_dos_reels()
     for p in candidatas:
+        bate = next((t for t in reels
+                     if semelhanca(p["tema"], t) >= LIMITE_TEMA), None)
+        if bate:
+            # nao marca como usada: volta ao sorteio depois que o Reels sair
+            # da janela
+            log(f"  pulando '{p['tema']}': mesmo assunto do Reels '{bate}'")
+            continue
         parecido, motivo = ja_usado(p["tema"], historico)
         if parecido:
             log(f"  pulando '{p['tema']}': {motivo}")

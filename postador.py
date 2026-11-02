@@ -237,7 +237,7 @@ def escolher_tema(forcado=None):
 
 ARQ_HISTORICO = os.path.join(PASTA, "historico.json")
 
-OBJETIVOS = ["salvar", "compartilhar", "comentar", "iniciar teste"]
+OBJETIVOS = ["salvar", "compartilhar", "comentar"]
 
 ESTILOS_ARTE = [
     "ilustracao 3D minimalista e sofisticada",
@@ -408,12 +408,17 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
                       "para isso e inventar esta proibido.\n")
 
     return (
-        "Voce e o estrategista de conteudo e diretor de arte senior da "
-        "FisioSync, um software de gestao para fisioterapeutas. "
-        "Funcionalidades confirmadas, nao invente outras: agenda online, "
-        "prontuario digital e evolucao por audio. O teste gratis e de 7 dias.\n"
-        "Publico: fisioterapeutas, gestores de clinica e donos de estudio de "
-        "Pilates. Nao sao pacientes.\n"
+        "Voce e o estrategista de conteudo e diretor de arte senior do "
+        "perfil @fisiosyncapp. O perfil e de CONHECIMENTO: cada post ensina "
+        "algo verdadeiro e util sobre fisioterapia, Pilates, quiropraxia, "
+        "osteopatia ou a profissao, com fonte. NAO e post de produto: nao "
+        "venda, nao fale de software no titulo, no apoio nem na imagem. A "
+        "FisioSync (software de gestao para fisioterapeutas, teste gratis de "
+        "7 dias) aparece SO na ultima linha da legenda, como assinatura.\n"
+        "Publico: fisioterapeutas, estudantes, gestores de clinica e donos "
+        "de estudio de Pilates. Nao sao pacientes.\n"
+        "O post bom e aquele que o fisioterapeuta manda para um colega "
+        "dizendo 'voce sabia disso?' ou salva para consultar depois.\n"
         + linha_tema + bloco_fato + bloco_hist +
         f"\nObjetivos ainda nao usados recentemente: {', '.join(sugerir)}\n"
         f"Estilos de arte ainda nao usados: {', '.join(sugerir_e)}\n"
@@ -422,10 +427,11 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
         "\nResponda SOMENTE com um JSON valido, sem cercas de codigo, com "
         "estas chaves:\n"
         '  "tema": o assunto escolhido, em poucas palavras.\n'
-        '  "objetivo": um entre salvar, compartilhar, comentar, iniciar teste.\n'
+        '  "objetivo": um entre salvar, compartilhar, comentar.\n'
         '  "estilo": o estilo de arte escolhido.\n'
         '  "sobretitulo": rotulo curto de contexto, ate 5 palavras, tipo '
-        "'Documentacao clinica na FisioSync'. Pode vir vazio.\n"
+        "'Voce sabia?', 'Norma do COFFITO' ou 'Especialidades'. Pode vir "
+        "vazio. Nunca cite a FisioSync aqui.\n"
         '  "conceito": UMA frase objetiva dizendo o que a imagem comunica e '
         "por que. Antes de responder, pense em tres caminhos visuais "
         "diferentes e escolha o mais claro. Nao vale 'objetos 3D premium', "
@@ -445,10 +451,13 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
         "nao escreva "
         "'A FisioSync reune agenda online, prontuario digital e evolucao por "
         "audio'. Fale do assunto do dia, nao do catalogo.\n"
-        '  "legenda": abertura que desperte interesse, desenvolvimento util '
-        "que complemente a imagem, UMA unica chamada para acao coerente com o "
-        "objetivo escolhido, e depois de uma linha em branco, de 3 a 5 "
-        "hashtags relevantes incluindo #FisioSync.\n"
+        '  "legenda": abertura que desperte curiosidade, o fato explicado em '
+        "linguagem simples, a fonte citada, UMA chamada coerente com o "
+        "objetivo (salvar, mandar para um colega ou responder uma pergunta "
+        "nos comentarios), depois a assinatura em uma linha: 'Conteudo "
+        "FisioSync. Teste gratis por 7 dias: app.fisiosync.com.br'. Depois "
+        "de uma linha em branco, de 3 a 5 hashtags do assunto, incluindo "
+        "#FisioSync.\n"
         '  "foto": descricao EM INGLES do elemento visual, detalhando objeto '
         "principal, complementares, materiais, texturas, proporcoes, "
         "enquadramento, angulo, iluminacao de estudio e sombras de contato. "
@@ -607,12 +616,20 @@ def gerar_conteudo(cfg, tema=None):
             "objetivo": "salvar",
             "estilo": ESTILOS_ARTE[0],
             "titulo": base[:60].capitalize(),
-            "apoio": "Organize a sua rotina e ganhe tempo para o que importa.",
-            "legenda": (f"{base.capitalize()}.\n\n"
-                        "Pequenos ajustes na rotina liberam horas na semana.\n"
-                        "Salve este post para consultar depois.\n\n"
-                        "#FisioSync #fisioterapia #gestaodeclinica "
-                        "#prontuarioeletronico #agendaonline"),
+            # reserva de conhecimento: so o fato conferido e a fonte, nada
+            # escrito de cabeca
+            "apoio": (encurtar(fato_banco, 118, "apoio")
+                      if fato_banco else "Você sabia disso?"),
+            "familia": familia_banco,
+            "fonte": fonte_banco,
+            "legenda": (f"Você sabia? {base.capitalize()}.\n\n"
+                        + (f"{fato_banco}\n\nFonte: {fonte_banco}\n\n"
+                           if fato_banco else "")
+                        + "Salve para consultar depois.\n\n"
+                        "Conteúdo FisioSync. Teste grátis por 7 dias: "
+                        "app.fisiosync.com.br\n\n"
+                        "#FisioSync #FisioSyncExplica #fisioterapia "
+                        "#coffito #fisioterapeuta"),
             "foto": FOTOS_RESERVA[datetime.date.today().day % len(FOTOS_RESERVA)],
         }
 
