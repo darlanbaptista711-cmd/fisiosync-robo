@@ -1,0 +1,37 @@
+{
+  "tipo": "dica",
+  "titulo": "O prazo de guarda do prontuario mudou",
+  "narracao": "O prazo pra guardar prontuário mudou. O COFFITO falava em cinco anos, mas a lei de 2018 exige vinte. É muita gaveta. No prontuário digital, fica tudo salvo. Teste grátis.",
+  "palavras": 30,
+  "logica": "Pergunta -> fato com fonte -> consequencia pratica (cinco anos de papel e muita gaveta) -> como a FisioSync resolve essa consequencia -> chamada. A chamada so aparece depois que o problema ligou o fato ao produto.",
+  "fato": "Lei nº 13.787/2018, Art. 6º: os prontuários só podem ser eliminados depois do prazo mínimo de vinte anos a partir do último registro; o §5º estende a todo prontuário de paciente. A Resolução COFFITO 414/2012 falava em no mínimo cinco anos, ampliáveis por lei.",
+  "fonte": "Lei nº 13.787/2018 e Resolução COFFITO nº 414/2012",
+  "observacao": "Conferido no texto da lei (Art. 6º e §5º) e na cartilha do CREFITO-1, que orienta pelos vinte anos. O CREFITO-12 ainda cita os cinco: por isso a legenda manda confirmar com o CREFITO da região.",
+  "proporcoes": [
+    0.2,
+    0.5
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "O prazo pra",
+      "guardar prontuário",
+      "mudou."
+    ]
+  },
+  "resposta": {
+    "destaque": "20 anos",
+    "complemento": "no mínimo, após o último registro",
+    "fonte": "Lei nº 13.787/2018, Art. 6º"
+  },
+  "extra": {
+    "titulo": "É muita gaveta",
+    "texto": "No prontuário digital,\nfica tudo salvo."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "legenda": "O prazo para guardar o prontuário do paciente mudou, e muita gente ainda segue a regra antiga.\n\nA Resolução COFFITO nº 414/2012 fala em no mínimo cinco anos. Mas a Lei nº 13.787/2018, Art. 6º, fixa no mínimo vinte anos a partir do último registro, e vale para todo prontuário de paciente, em papel ou digital.\n\nNa dúvida, confirme a orientação com o CREFITO da sua região.\n\nVinte anos de papel é muita gaveta. No prontuário digital, cada registro fica salvo e fácil de encontrar.\n\nVocê já sabia dessa mudança? Conta aqui nos comentários.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #prontuarioeletronico #coffito #gestaodeclinica",
+  "capa_ms": 4200
+}

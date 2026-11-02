@@ -1,0 +1,46 @@
+name: Reels - publicar
+
+# Publica no Instagram um Reels ja montado e conferido, usando as chaves
+# do Instagram que este robo ja tem. O video vem em reels/*.mp4 com o
+# roteiro (e a legenda) no .json de mesmo nome.
+
+on:
+  workflow_dispatch:
+    inputs:
+      nome:
+        description: "Nome do Reels em reels/, sem extensao"
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reels-publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Publicar no Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          VIDEO: reels/${{ inputs.nome }}.mp4
+          ROTEIRO: reels/${{ inputs.nome }}.json
+        run: node reels/publicar.mjs
+      - name: Guardar o historico
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git add reels/historico-reels.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "reels publicado em $(date -u +%F-%H%M)"
+          git pull --rebase --autostash || true
+          git push
