@@ -277,21 +277,25 @@ def marcar_usada(tema, status="publicado"):
     return False
 
 
+def _usavel(p):
+    return (p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO
+            and p.get("fato") and p.get("fonte"))
+
+
 def situacao(log=print):
+    """Conta so o que o robo pode usar: conhecimento com fato e fonte."""
     dados = carregar()
-    from collections import Counter
-    c = Counter(p.get("status", "livre") for p in dados["pautas"])
-    total = len(dados["pautas"])
-    livres = c.get("livre", 0)
-    log(f"Banco de pautas: {total} no total, {livres} livres.")
-    for eixo in sorted({p["eixo"] for p in dados["pautas"]}):
-        n = sum(1 for p in dados["pautas"]
-                if p["eixo"] == eixo and p.get("status") == "livre")
+    uteis = [p for p in dados["pautas"] if _usavel(p)]
+    livres = [p for p in uteis if p.get("status", "livre") == "livre"]
+    log(f"Pautas de conhecimento: {len(uteis)} no total, {len(livres)} livres "
+        f"(cerca de {len(livres) // 2} dias a 2 posts por dia).")
+    for eixo in sorted({p["eixo"] for p in uteis}):
+        n = sum(1 for p in livres if p["eixo"] == eixo)
         log(f"  {eixo}: {n} livres")
-    if livres <= 15:
-        log("\\nATENCAO: menos de 15 pautas livres. Hora de abastecer o "
-            "banco com assuntos novos, antes que o robo fique sem tema.")
-    return livres
+    if len(livres) <= 15:
+        log("\nATENCAO: menos de 15 pautas livres. Hora de conferir fatos "
+            "novos em fonte oficial antes que o robo fique sem tema.")
+    return len(livres)
 
 
 if __name__ == "__main__":
