@@ -1,0 +1,62 @@
+name: Reels - montar sem publicar
+
+# Monta um Reels da fila exatamente como o robo faz as 19:45, confere
+# quadro a quadro e as regras, e guarda o mp4 no branch previa-reels.
+# NAO publica nada.
+on:
+  workflow_dispatch:
+    inputs:
+      roteiro:
+        description: "nome do roteiro em reels/fila, sem .json"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: pip install --quiet requests pillow numpy scipy
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Montar e conferir
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ROTEIRO: reels/roteiro-hoje.json
+        run: |
+          set -e
+          cp "reels/fila/${{ inputs.roteiro }}.json" reels/roteiro-hoje.json
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          node reels/narrar.mjs
+          python3 reels/musica.py
+          ( cd remotion && bun install )
+          export SAIDA="$GITHUB_WORKSPACE/reels/saida-hoje.mp4" COMPOSICAO=reel-dica
+          limpo=nao
+          for tentativa in 1 2 3; do
+            ( cd remotion && bun run scripts/render-reel.mjs )
+            if python3 reels/piscadas.py "$SAIDA"; then limpo=sim; break; fi
+          done
+          [ "$limpo" = sim ] || { echo "FALHOU: quadro quebrado"; exit 1; }
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$SAIDA")
+          echo "duracao ${DUR}s"
+          awk -v d="$DUR" 'BEGIN{ if (d<8 || d>15.05) exit 1 }' || { echo "FALHOU: passou de 15s"; exit 1; }
+      - name: Guardar no branch previa-reels
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git checkout -B previa-reels
+          mkdir -p previa
+          cp reels/saida-hoje.mp4 "previa/${{ inputs.roteiro }}.mp4"
+          git add -f previa
+          git commit -qm "previa reels ${{ inputs.roteiro }}"
+          git push -qf origin previa-reels
