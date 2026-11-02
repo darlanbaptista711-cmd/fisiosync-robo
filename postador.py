@@ -454,8 +454,10 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte=""):
         '  "legenda": abertura que desperte curiosidade, o fato explicado em '
         "linguagem simples, a fonte citada, UMA chamada coerente com o "
         "objetivo (salvar, mandar para um colega ou responder uma pergunta "
-        "nos comentarios), depois a assinatura em uma linha: 'Conteudo "
-        "FisioSync. Teste gratis por 7 dias: app.fisiosync.com.br'. Depois "
+        "nos comentarios), depois a assinatura em uma linha, copiada com "
+        "os acentos: 'Conteúdo FisioSync. Teste grátis por 7 dias: "
+        "app.fisiosync.com.br'. Legenda inteira com acentuacao correta. "
+        "Depois "
         "de uma linha em branco, de 3 a 5 hashtags do assunto, incluindo "
         "#FisioSync.\n"
         '  "foto": descricao EM INGLES do elemento visual, detalhando objeto '
