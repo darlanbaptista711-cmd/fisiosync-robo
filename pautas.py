@@ -157,12 +157,12 @@ def _tem_fato(p):
     return bool(p.get("fato") and p.get("fonte"))
 
 
-def temas_dos_reels(dias=10, proximos=2):
+def temas_dos_reels(dias=None, proximos=2):
     """
     Titulos dos Reels recentes e dos proximos da fila.
 
-    O feed nao pode repetir no mesmo dia (nem na mesma semana) o assunto
-    de um Reels. Em 02/11/2026 o feed das 18h ia sair com "os oito itens
+    O feed nao repete NUNCA o assunto de um Reels ja publicado (dias=None
+    olha o historico inteiro), nem o dos proximos da fila. Em 02/11/2026 o feed das 18h ia sair com "os oito itens
     do prontuario", o mesmo tema do Reels das 20h.
     """
     base = os.path.join(PASTA, "reels")
@@ -172,7 +172,8 @@ def temas_dos_reels(dias=10, proximos=2):
             hist = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         hist = []
-    limite = (datetime.date.today() - datetime.timedelta(days=dias)).isoformat()
+    limite = ((datetime.date.today() - datetime.timedelta(days=dias)).isoformat()
+              if dias else "")
     for h in hist:
         feitos.add(h.get("titulo"))
         if str(h.get("data_brasilia") or h.get("data") or "")[:10] >= limite:
@@ -194,6 +195,35 @@ def temas_dos_reels(dias=10, proximos=2):
             titulos.append(r.get("titulo", ""))
             proximos -= 1
     return [t for t in titulos if t]
+
+
+def temas_do_feed(arq_historico=None):
+    """
+    Assuntos ja publicados no feed: a frase da pauta e o tema escrito.
+    O Reels confere esta lista antes de montar um video (proximo.py),
+    para a trava funcionar nos dois sentidos.
+    """
+    arq = arq_historico or os.path.join(PASTA, "historico.json")
+    try:
+        with open(arq, encoding="utf-8") as f:
+            hist = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+    if isinstance(hist, dict):
+        hist = hist.get("posts", [])
+    saida = []
+    for r in hist:
+        if r.get("status") not in (None, "publicado"):
+            continue
+        for c in ("pauta", "tema"):
+            if r.get(c):
+                saida.append(r[c])
+    return saida
+
+
+def assunto_repetido(texto, lista):
+    """Primeiro item da lista com o mesmo assunto, ou None."""
+    return next((t for t in lista if semelhanca(texto, t) >= LIMITE_TEMA), None)
 
 
 def proxima_pauta(historico, log=print):
@@ -242,8 +272,7 @@ def proxima_pauta(historico, log=print):
         bate = next((t for t in reels
                      if semelhanca(p["tema"], t) >= LIMITE_TEMA), None)
         if bate:
-            # nao marca como usada: volta ao sorteio depois que o Reels sair
-            # da janela
+            # o assunto ja e do Reels: o feed nao usa
             log(f"  pulando '{p['tema']}': mesmo assunto do Reels '{bate}'")
             continue
         parecido, motivo = ja_usado(p["tema"], historico)

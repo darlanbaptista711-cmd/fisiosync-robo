@@ -17,6 +17,8 @@ import shutil
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, RAIZ)
+import pautas as PT  # noqa: E402  (trava de assunto compartilhada com o feed)
 FILA = os.path.join(RAIZ, "reels", "fila")
 HIST = os.path.join(RAIZ, "reels", "historico-reels.json")
 HOJE = os.path.join(RAIZ, "reels", "roteiro-hoje.json")
@@ -29,10 +31,18 @@ def main():
     except (FileNotFoundError, json.JSONDecodeError):
         feitos = set()
 
+    do_feed = PT.temas_do_feed()
     prontos = []
     for caminho in sorted(glob.glob(os.path.join(FILA, "*.json"))):
         r = json.load(open(caminho, encoding="utf-8"))
         if r.get("titulo") in feitos:
+            continue
+        # trava nos dois sentidos: assunto que ja saiu no feed nao vira
+        # video (o feed faz a mesma conferencia contra o Reels)
+        bate = PT.assunto_repetido(r.get("titulo", ""), do_feed)
+        if bate:
+            print(f"[proximo] pulando {os.path.basename(caminho)}: "
+                  f"assunto ja publicado no feed ('{bate}')")
             continue
         if not (r.get("fato") and r.get("fonte")):
             print(f"[proximo] pulando {os.path.basename(caminho)}: sem fato ou fonte")

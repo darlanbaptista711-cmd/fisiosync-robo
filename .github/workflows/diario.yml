@@ -217,3 +217,41 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash aviso_falha.sh
+
+  # ---------------------------------------------------------------------
+  # ESTOQUE: no fim do dia, conta quantos dias de conteudo conferido
+  # sobram. Abaixo de 10 dias (feed ou Reels), abre um aviso que chega
+  # por e-mail, uma vez so, ate alguem abastecer.
+  # ---------------------------------------------------------------------
+  estoque:
+    needs: reels
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Contar o estoque
+        id: conta
+        run: |
+          git pull -q origin "${GITHUB_REF_NAME}" || true
+          set +e
+          python estoque.py
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+      - name: Avisar se estiver acabando
+        if: steps.conta.outputs.codigo == '2'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RESUMO: ${{ steps.conta.outputs.resumo }}
+        run: |
+          TITULO="Conteudo conferido acabando: abastecer o banco"
+          if gh issue list --state open --search "$TITULO in:title" --json number -q '.[0].number' | grep -q .; then
+            echo "aviso ja aberto"; exit 0
+          fi
+          gh issue create --title "$TITULO" --body "$(printf '%s\n\n%s\n\n%s' \
+            "Menos de 10 dias de conteudo conferido em fonte oficial." \
+            "$RESUMO" \
+            "Abra uma conversa com o Claude e peca: abastecer o banco de fatos (feed e Reels) a partir da lista de temas, conferindo cada fato em fonte oficial.")"
