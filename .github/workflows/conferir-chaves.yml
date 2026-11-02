@@ -23,5 +23,13 @@ jobs:
             code=$(curl -s -o /dev/null -w '%{http_code}' -H "xi-api-key: $ELEVENLABS_API_KEY" https://api.elevenlabs.io/v1/user/subscription)
             echo "ElevenLabs responde: HTTP $code"
           fi
+          if [ -n "$ELEVENLABS_API_KEY" ]; then
+            code=$(curl -s -o /tmp/v.mp3 -w '%{http_code}' -X POST \
+              -H "xi-api-key: $ELEVENLABS_API_KEY" -H "Content-Type: application/json" \
+              -d '{"text":"Teste.","model_id":"eleven_multilingual_v2"}' \
+              "https://api.elevenlabs.io/v1/text-to-speech/$ELEVENLABS_VOICE_ID")
+            echo "ElevenLabs gera voz: HTTP $code ($(stat -c%s /tmp/v.mp3) bytes)"
+            [ "$code" = 200 ] || head -c 300 /tmp/v.mp3
+          fi
           code=$(curl -s -o /dev/null -w '%{http_code}' "https://graph.facebook.com/v23.0/me?access_token=$IG_ACCESS_TOKEN")
           echo "Instagram token responde: HTTP $code"
