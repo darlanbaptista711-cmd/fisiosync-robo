@@ -179,7 +179,9 @@ async function main() {
   // Se mesmo com a voz no maximo da API o video passar de 15s, acelera
   // o audio pronto com atempo, que mantem o tom da voz. Ate 25% a mais
   // ainda soa como voz rapida; passou disso, o texto e que esta longo.
-  const cabe = MAX_SEG - 0.4;
+  // margem de 0,6s: o AAC acrescenta alguns milissegundos no arquivo final,
+  // e um video de 15,0s cravados sai com 15,06s e e barrado na conferencia
+  const cabe = MAX_SEG - 0.6;
   if (fala > cabe) {
     const fator = fala / cabe;
     if (fator > 1.25) {
@@ -198,7 +200,7 @@ async function main() {
 
   // A narracao e continua e cobre os tres blocos. O video acompanha a
   // fala: nada de video fixo com audio sobrando ou faltando.
-  const total = Math.min(MAX_SEG, Math.max(fala + 0.4, GANCHO + FECHO + 3));
+  const total = Math.min(MAX_SEG - 0.2, Math.max(fala + 0.4, GANCHO + FECHO + 3));
   const palavras = roteiro.narracao.trim().split(/\s+/).length;
   log(`narracao: ${palavras} palavras, ${fala.toFixed(1)}s`);
   log(`video: ${total.toFixed(1)}s`);
