@@ -1,19 +1,43 @@
 {
- "lido_em": "2026-11-02T06:24:09.778465Z",
+ "lido_em": "2026-11-02T21:38:39.587887Z",
  "conta": {
   "id": "17841436323760246",
   "followers_count": 749,
   "follows_count": 0,
-  "media_count": 233,
+  "media_count": 236,
   "username": "fisiosyncapp"
  },
  "posts": [
+  {
+   "data": "2026-11-02 21:02",
+   "tipo": "FEED",
+   "titulo": "A norma prevê solicitar e interpretar espirometria?",
+   "link": "https://www.instagram.com/p/DfQObgdkvsM/",
+   "curtidas": 0,
+   "comentarios": 0
+  },
+  {
+   "data": "2026-11-02 15:01",
+   "tipo": "FEED",
+   "titulo": "Nem toda dificuldade de adesão é falta de disposição. Às vezes, falta espaço em casa para ",
+   "link": "https://www.instagram.com/p/DfPlLRfGKdS/",
+   "curtidas": 0,
+   "comentarios": 0
+  },
+  {
+   "data": "2026-11-02 12:00",
+   "tipo": "REELS",
+   "titulo": "A fisioterapia tem 16 especialidades reconhecidas pelo COFFITO:",
+   "link": "https://www.instagram.com/reel/DfPQbTgj7Qw/",
+   "curtidas": 0,
+   "comentarios": 0
+  },
   {
    "data": "2026-11-02 05:18",
    "tipo": "REELS",
    "titulo": "O prazo para guardar o prontuário do paciente mudou, e muita gente ainda segue a regra ant",
    "link": "https://www.instagram.com/reel/DfOibT4j2FI/",
-   "curtidas": 0,
+   "curtidas": 1,
    "comentarios": 0
   },
   {
@@ -21,7 +45,7 @@
    "tipo": "FEED",
    "titulo": "Prontuário não é uma questão de preferência.",
    "link": "https://www.instagram.com/p/DfNpc25jJVm/",
-   "curtidas": 0,
+   "curtidas": 1,
    "comentarios": 0
   },
   {
@@ -222,30 +246,6 @@
    "titulo": "Seu Pilates. Sua gestão. Tudo em um só lugar. 💙",
    "link": "https://www.instagram.com/p/DeHjqe_Fj5w/",
    "curtidas": 1,
-   "comentarios": 0
-  },
-  {
-   "data": "2026-10-04 15:17",
-   "tipo": "FEED",
-   "titulo": "“Quantas sessões ainda restam?” 🤔",
-   "link": "https://www.instagram.com/p/DeE76wKFmf0/",
-   "curtidas": 0,
-   "comentarios": 0
-  },
-  {
-   "data": "2026-10-03 23:30",
-   "tipo": "FEED",
-   "titulo": "Solicitação de exames com mais praticidade para sua rotina. 📋💙",
-   "link": "https://www.instagram.com/p/DeDPpNDCZy9/",
-   "curtidas": 0,
-   "comentarios": 0
-  },
-  {
-   "data": "2026-10-03 15:00",
-   "tipo": "FEED",
-   "titulo": "Agenda cheia. Mas os recebimentos estão em dia? ",
-   "link": "https://www.instagram.com/p/DeCVP2Tlh1M/",
-   "curtidas": 0,
    "comentarios": 0
   }
  ],

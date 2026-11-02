@@ -1,7 +1,7 @@
 # Instagram @fisiosyncapp — 2026-11-02
 
 - Seguidores: **749**
-- Posts publicados: 233
+- Posts publicados: 236
 
 > **Falta a permissão de métricas** (`instagram_manage_insights`). Sem ela, só dá para ler curtidas e comentários. Alcance, visualizações, salvamentos e envios precisam de um token novo com essa permissão.
 
@@ -10,12 +10,15 @@
 | data | tipo | post | curt. | coment. |
 |---|---|---|---|---|
 | 2026-10-15 15:24 | REELS | [Seu estúdio de Pilates merece uma gestão mais simples, organ](https://www.instagram.com/reel/DehRblyhcpE/) | 2 | 0 |
+| 2026-11-02 05:18 | REELS | [O prazo para guardar o prontuário do paciente mudou, e muita](https://www.instagram.com/reel/DfOibT4j2FI/) | 1 | 0 |
+| 2026-11-01 21:00 | FEED | [Prontuário não é uma questão de preferência.](https://www.instagram.com/p/DfNpc25jJVm/) | 1 | 0 |
 | 2026-10-28 18:36 | FEED | [Cresça com a FisioSync! 💙](https://www.instagram.com/p/DfDFzUUBF1w/) | 1 | 0 |
 | 2026-10-16 15:17 | FEED | [Sua clínica de fisioterapia ou estúdio de Pilates merece uma](https://www.instagram.com/p/Dej1dLSFq6T/) | 1 | 0 |
 | 2026-10-13 20:07 | REELS | [Sua clínica organizada, do primeiro agendamento ao controle ](https://www.instagram.com/reel/DecoVD6hFwO/) | 1 | 0 |
 | 2026-10-05 15:42 | FEED | [Seu Pilates. Sua gestão. Tudo em um só lugar. 💙](https://www.instagram.com/p/DeHjqe_Fj5w/) | 1 | 0 |
-| 2026-11-02 05:18 | REELS | [O prazo para guardar o prontuário do paciente mudou, e muita](https://www.instagram.com/reel/DfOibT4j2FI/) | 0 | 0 |
-| 2026-11-01 21:00 | FEED | [Prontuário não é uma questão de preferência.](https://www.instagram.com/p/DfNpc25jJVm/) | 0 | 0 |
+| 2026-11-02 21:02 | FEED | [A norma prevê solicitar e interpretar espirometria?](https://www.instagram.com/p/DfQObgdkvsM/) | 0 | 0 |
+| 2026-11-02 15:01 | FEED | [Nem toda dificuldade de adesão é falta de disposição. Às vez](https://www.instagram.com/p/DfPlLRfGKdS/) | 0 | 0 |
+| 2026-11-02 12:00 | REELS | [A fisioterapia tem 16 especialidades reconhecidas pelo COFFI](https://www.instagram.com/reel/DfPQbTgj7Qw/) | 0 | 0 |
 | 2026-11-01 16:56 | FEED | [Pacote fechado não é sinônimo de plano terapêutico.](https://www.instagram.com/p/DfNNilzl_ca/) | 0 | 0 |
 | 2026-10-31 21:49 | FEED | [O horário estava livre. Mas só em uma das agendas.](https://www.instagram.com/p/DfLKO8iF1Gg/) | 0 | 0 |
 | 2026-10-31 18:53 | FEED | [Confirmar na véspera ou dois dias antes? O cuidado também es](https://www.instagram.com/p/DfK2LfuGPEd/) | 0 | 0 |
@@ -36,10 +39,7 @@
 | 2026-10-07 19:36 | FEED | [Sua agenda também pode virar Story! ](https://www.instagram.com/p/DeNIBlXmZTG/) | 0 | 0 |
 | 2026-10-07 15:43 | FEED | [Abra espaço para uma rotina mais organizada. 💙](https://www.instagram.com/p/DeMtUHlFtsh/) | 0 | 0 |
 | 2026-10-06 17:55 | FEED | [A papelada está ocupando mais espaço que os equipamentos? 📋😅](https://www.instagram.com/p/DeKXpxXiUUu/) | 0 | 0 |
-| 2026-10-04 15:17 | FEED | [“Quantas sessões ainda restam?” 🤔](https://www.instagram.com/p/DeE76wKFmf0/) | 0 | 0 |
-| 2026-10-03 23:30 | FEED | [Solicitação de exames com mais praticidade para sua rotina. ](https://www.instagram.com/p/DeDPpNDCZy9/) | 0 | 0 |
-| 2026-10-03 15:00 | FEED | [Agenda cheia. Mas os recebimentos estão em dia? ](https://www.instagram.com/p/DeCVP2Tlh1M/) | 0 | 0 |
 
-**REELS** (4 posts): média de 0.8 curtidas e 0.0 comentários por post.
+**REELS** (5 posts): média de 0.8 curtidas e 0.0 comentários por post.
 
-**FEED** (26 posts): média de 0.1 curtidas e 0.0 comentários por post.
+**FEED** (25 posts): média de 0.2 curtidas e 0.0 comentários por post.
