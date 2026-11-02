@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "O que o especialista em osteopatia identifica",
+  "narracao": "O que o especialista em osteopatia pode identificar? Alterações da mobilidade visceral e tensões das fáscias cranianas, entre outras. Cada achado merece ficar registrado no prontuário. Teste a FisioSync grátis.",
+  "palavras": 30,
+  "fato": "O título é de \"Especialista Profissional em Osteopatia\" (Art. 2º) e uma das competências é \"identificar alterações da mobilidade visceral, de tensões das fáscias cranianas e das cavidades internas do corpo humano\" (Art. 3º, V).",
+  "fonte": "Resolução COFFITO nº 398/2011, Arts. 2º e 3º, V",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.286,
+    0.44
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "O especialista",
+      "em osteopatia",
+      "identifica o quê?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Visceral",
+    "complemento": "mobilidade visceral e fáscias cranianas",
+    "fonte": "Resolução COFFITO nº 398/2011, Art. 3º, V"
+  },
+  "extra": {
+    "titulo": "Na avaliação",
+    "texto": "cada achado\nno prontuário."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O título é de \"Especialista Profissional em Osteopatia\" (Resolução COFFITO nº 398/2011, Art. 2º).\n\nE uma das competências desse especialista é \"identificar alterações da mobilidade visceral, de tensões das fáscias cranianas e das cavidades internas do corpo humano\" (Art. 3º, V).\n\nComo você registra a avaliação osteopática hoje? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #osteopatia #fisioterapia #coffito"
+}

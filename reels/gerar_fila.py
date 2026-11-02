@@ -363,6 +363,305 @@ ROTEIROS = [
         ],
         "tags": "#FisioSync #fisioterapia #planoterapeutico #coffito",
     },
+    {
+        "titulo": "O que e o Pilates para o COFFITO",
+        "partes": ["O que é o Pilates para o COFFITO?",
+                   "Recurso cinesioterapêutico e mecanoterapêutico, de reeducação do movimento.",
+                   "Se é terapêutico, cada sessão merece evolução no prontuário.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["O que é", "o Pilates para", "o COFFITO?"],
+        "resposta": {"destaque": "Recurso", "complemento": "cinesioterapêutico e mecanoterapêutico",
+                     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, a"},
+        "extra": {"titulo": "Se é terapêutico", "texto": "cada sessão merece\nevolução registrada."},
+        "fato": ("Para o COFFITO, \"o método Pilates é um recurso cinesioterapêutico e "
+                 "mecanoterapêutico que promove a educação e reeducação do movimento corporal, "
+                 "composto por exercícios terapêuticos de promoção, prevenção e recuperação da "
+                 "saúde físico funcional\" (Art. 1º, a)."),
+        "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea a",
+        "legenda": [
+            "Para o COFFITO, \"o método Pilates é um recurso cinesioterapêutico e "
+            "mecanoterapêutico que promove a educação e reeducação do movimento corporal, "
+            "composto por exercícios terapêuticos de promoção, prevenção e recuperação da saúde "
+            "físico funcional\" (Resolução COFFITO nº 386/2011, Art. 1º, alínea a).",
+            "Promoção, prevenção e recuperação: as três frentes estão no texto da resolução.",
+            "No seu estúdio, como você registra a evolução de cada aluno? Conta aqui.",
+        ],
+        "tags": "#pilates #fisioterapia #coffito",
+    },
+    {
+        "titulo": "O papel do fisio no metodo Pilates",
+        "partes": ["O que compete ao fisio no Pilates?",
+                   "Pelo COFFITO: prescrever, induzir o tratamento e avaliar o resultado.",
+                   "Para avaliar, ajuda ter cada sessão registrada.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["O que compete", "ao fisio", "no Pilates?"],
+        "resposta": {"destaque": "Prescrever", "complemento": "induzir o tratamento e avaliar o resultado",
+                     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º"},
+        "extra": {"titulo": "Para avaliar", "texto": "cada sessão\nregistrada ajuda."},
+        "fato": ("Segundo a Resolução COFFITO nº 386/2011, compete ao fisioterapeuta, para o "
+                 "exercício do método Pilates, \"prescrever, induzir o tratamento e avaliar o "
+                 "resultado a partir da utilização de recursos cinesioterapêuticos e "
+                 "mecanoterapêuticos\" (Art. 1º, caput)."),
+        "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, caput",
+        "legenda": [
+            "Pela Resolução COFFITO nº 386/2011 (Art. 1º, caput), compete ao fisioterapeuta, para "
+            "o exercício do método Pilates, \"prescrever, induzir o tratamento e avaliar o "
+            "resultado a partir da utilização de recursos cinesioterapêuticos e "
+            "mecanoterapêuticos\".",
+            "A norma descreve o papel do fisioterapeuta no método, sem afirmar exclusividade.",
+            "Na sua rotina, qual dessas três etapas toma mais tempo? Conta aqui.",
+        ],
+        "tags": "#pilates #fisioterapia #coffito",
+    },
+    {
+        "titulo": "Estudio de Pilates e o registro no CREFITO",
+        "partes": ["Estúdio de Pilates de fisioterapeuta precisa de registro?",
+                   "Sim, no CREFITO da sua região.",
+                   "E entra na fiscalização. Agenda e prontuário em ordem ajudam.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["Estúdio de Pilates", "de fisio precisa", "de registro?"],
+        "resposta": {"destaque": "Sim", "complemento": "no CREFITO da sua circunscrição",
+                     "fonte": "Resolução COFFITO nº 386/2011, Art. 2º"},
+        "extra": {"titulo": "Na fiscalização", "texto": "agenda e prontuário\nem ordem ajudam."},
+        "fato": ("Quando indicado e administrado por fisioterapeuta, o Pilates fica vinculado ao "
+                 "controle ético e fiscalizatório do Sistema COFFITO/CREFITOs, \"sendo, portando, "
+                 "necessário o registro, por parte do profissional fisioterapeuta, do seu "
+                 "consultório ou empresa no CREFITO de sua circunscrição\" (Art. 2º)."),
+        "fonte": "Resolução COFFITO nº 386/2011, Art. 2º",
+        "legenda": [
+            "Quando indicado e administrado por fisioterapeuta, o Pilates fica vinculado ao "
+            "controle ético e fiscalizatório do Sistema COFFITO/CREFITOs (Resolução COFFITO nº "
+            "386/2011, Art. 2º).",
+            "Por isso, o mesmo artigo exige que o fisioterapeuta registre o seu consultório ou "
+            "empresa no CREFITO da sua circunscrição. Na dúvida, confirme os detalhes com o "
+            "CREFITO da sua região.",
+            "Seu estúdio já está registrado? Conta aqui.",
+        ],
+        "tags": "#pilates #crefito #estudiodepilates",
+    },
+    {
+        "titulo": "Quando se anunciar especialista",
+        "partes": ["Quando posso me anunciar especialista em quiropraxia ou osteopatia?",
+                   "Só depois de registrar o título no COFFITO.",
+                   "E pelos meios eticamente permitidos.",
+                   "Organize os atendimentos com a FisioSync."],
+        "pergunta": ["Quando posso", "me anunciar", "especialista?"],
+        "resposta": {"destaque": "Só depois", "complemento": "de registrar o título no COFFITO",
+                     "fonte": "Resolução COFFITO nº 220/2001, Art. 5º"},
+        "extra": {"titulo": "E como?", "texto": "Pelos meios\neticamente permitidos."},
+        "fato": ("Somente após registrar no COFFITO seu título de qualificação em quiropraxia e/ou "
+                 "osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área, "
+                 "\"pelos meios eticamente permitidos\" (Art. 5º)."),
+        "fonte": "Resolução COFFITO nº 220/2001, Art. 5º",
+        "legenda": [
+            "Só depois de registrar no COFFITO o título de qualificação em quiropraxia e/ou "
+            "osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área "
+            "(Resolução COFFITO nº 220/2001, Art. 5º).",
+            "E o mesmo artigo põe a condição: \"pelos meios eticamente permitidos\".",
+            "Você já registrou o seu título? Conta aqui.",
+        ],
+        "tags": "#quiropraxia #osteopatia #coffito",
+    },
+    {
+        "titulo": "Quiropraxia e osteopatia nao sao autonomas",
+        "partes": ["Quiropraxia e osteopatia são autônomas da fisioterapia?",
+                   "Não, pelo COFFITO. E o especialista segue o Código de Ética.",
+                   "Mesma ética, mesmo cuidado com cada atendimento.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["Quiropraxia e", "osteopatia são", "autônomas?"],
+        "resposta": {"destaque": "Não", "complemento": "não são autônomas em relação à fisioterapia",
+                     "fonte": "Resolução COFFITO nº 220/2001, Art. 6º"},
+        "extra": {"titulo": "Na prática", "texto": "Código de Ética e\nProcesso Disciplinar."},
+        "fato": ("A Resolução COFFITO nº 220/2001 sujeita o fisioterapeuta com título registrado ao "
+                 "Código de Ética e ao Código de Processo Disciplinar, \"considerando que por "
+                 "ordenamento legal, as atividades ora reconhecidas, não são autônomas em relação a "
+                 "Fisioterapia\" (Art. 6º)."),
+        "fonte": "Resolução COFFITO nº 220/2001, Art. 6º",
+        "legenda": [
+            "Pela Resolução COFFITO nº 220/2001 (Art. 6º), o fisioterapeuta com título registrado "
+            "em quiropraxia ou osteopatia está sujeito ao Código de Ética e ao Código de Processo "
+            "Disciplinar.",
+            "O motivo está no próprio artigo: \"por ordenamento legal, as atividades ora "
+            "reconhecidas, não são autônomas em relação a Fisioterapia\".",
+            "Você atua com quiropraxia ou osteopatia? Conta aqui.",
+        ],
+        "tags": "#quiropraxia #osteopatia #coffito",
+    },
+    {
+        "titulo": "O que o especialista em osteopatia identifica",
+        "partes": ["O que o especialista em osteopatia pode identificar?",
+                   "Alterações da mobilidade visceral e tensões das fáscias cranianas, entre outras.",
+                   "Cada achado merece ficar registrado no prontuário.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["O especialista", "em osteopatia", "identifica o quê?"],
+        "resposta": {"destaque": "Visceral", "complemento": "mobilidade visceral e fáscias cranianas",
+                     "fonte": "Resolução COFFITO nº 398/2011, Art. 3º, V"},
+        "extra": {"titulo": "Na avaliação", "texto": "cada achado\nno prontuário."},
+        "fato": ("O título é de \"Especialista Profissional em Osteopatia\" (Art. 2º) e uma das "
+                 "competências é \"identificar alterações da mobilidade visceral, de tensões das "
+                 "fáscias cranianas e das cavidades internas do corpo humano\" (Art. 3º, V)."),
+        "fonte": "Resolução COFFITO nº 398/2011, Arts. 2º e 3º, V",
+        "legenda": [
+            "O título é de \"Especialista Profissional em Osteopatia\" (Resolução COFFITO nº "
+            "398/2011, Art. 2º).",
+            "E uma das competências desse especialista é \"identificar alterações da mobilidade "
+            "visceral, de tensões das fáscias cranianas e das cavidades internas do corpo "
+            "humano\" (Art. 3º, V).",
+            "Como você registra a avaliação osteopática hoje? Conta aqui.",
+        ],
+        "tags": "#osteopatia #fisioterapia #coffito",
+    },
+    {
+        "titulo": "Competencias do especialista em quiropraxia",
+        "partes": ["O que compete ao especialista em quiropraxia?",
+                   "Prescrever e aplicar ajustamentos articulares e recursos manipulativos, entre outros.",
+                   "Cada técnica aplicada, na evolução. Até por áudio.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["O que compete", "ao especialista", "em quiropraxia?"],
+        "resposta": {"destaque": "Prescrever", "complemento": "e aplicar ajustamentos articulares",
+                     "fonte": "Resolução COFFITO nº 399/2011, Art. 3º, IX"},
+        "extra": {"titulo": "Na evolução", "texto": "cada técnica,\naté por áudio."},
+        "fato": ("Compete ao Especialista Profissional em Quiropraxia \"prescrever e aplicar "
+                 "ajustamento articulares, recursos manipulativos, recursos proprioceptivos, "
+                 "adaptações funcionais, reeducação postural\" (Art. 3º, IX)."),
+        "fonte": "Resolução COFFITO nº 399/2011, Art. 3º, IX",
+        "legenda": [
+            "Compete ao Especialista Profissional em Quiropraxia prescrever e aplicar ajustamentos "
+            "articulares, recursos manipulativos, recursos proprioceptivos, adaptações funcionais "
+            "e reeducação postural (Resolução COFFITO nº 399/2011, Art. 3º, IX).",
+            "Qual desses recursos mais aparece na sua rotina? Conta aqui.",
+        ],
+        "tags": "#quiropraxia #fisioterapia #coffito",
+    },
+    {
+        "titulo": "Atividade fisica para adultos segundo a OMS",
+        "partes": ["O que a OMS recomenda para adultos?",
+                   "Pelo menos cento e cinquenta minutos moderados por semana e força dois dias ou mais.",
+                   "Planeje na agenda.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["Quanta atividade", "física a OMS", "recomenda?"],
+        "resposta": {"destaque": "150 min", "complemento": "por semana, moderada, para adultos",
+                     "fonte": "OMS, Diretrizes de atividade física, 2020"},
+        "extra": {"titulo": "E mais", "texto": "força muscular\nem 2 ou mais dias."},
+        "fato": ("A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150–300 minutos "
+                 "semanais de atividade aeróbica moderada, ou 75–150 minutos de atividade vigorosa "
+                 "(ou combinação equivalente), além de fortalecimento muscular de intensidade "
+                 "moderada ou maior envolvendo os grandes grupos musculares em 2 ou mais dias por "
+                 "semana."),
+        "fonte": ("OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020 (fact "
+                  "sheet \"Physical activity\", OMS Europa, 2021)"),
+        "legenda": [
+            "A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150 a 300 minutos por "
+            "semana de atividade aeróbica moderada, ou 75 a 150 minutos de atividade vigorosa (ou "
+            "uma combinação equivalente).",
+            "Além disso, fortalecimento muscular de intensidade moderada ou maior, envolvendo os "
+            "grandes grupos musculares, em 2 ou mais dias por semana (OMS, Diretrizes sobre "
+            "atividade física e comportamento sedentário, 2020).",
+            "É uma diretriz de saúde pública, não um protocolo de tratamento.",
+            "Seus pacientes chegam perto dessa meta? Conta aqui.",
+        ],
+        "tags": "#atividadefisica #oms #fisioterapia",
+    },
+    {
+        "titulo": "Equilibrio e forca depois dos 65",
+        "partes": ["A partir dos sessenta e cinco, o que a OMS acrescenta?",
+                   "Equilíbrio e força, três dias ou mais, para prevenir quedas.",
+                   "Organize as sessões na agenda.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["A partir dos 65,", "o que a OMS", "acrescenta?"],
+        "resposta": {"destaque": "3+ dias", "complemento": "equilíbrio e força, para prevenir quedas",
+                     "fonte": "OMS, Diretrizes de atividade física, 2020"},
+        "extra": {"titulo": "Multicomponente", "texto": "equilíbrio funcional\ne treino de força."},
+        "fato": ("Para pessoas com 65 anos ou mais, a OMS recomenda, além das metas dos adultos, "
+                 "atividade física multicomponente variada que enfatize equilíbrio funcional e "
+                 "treino de força, de intensidade moderada ou maior, em 3 ou mais dias por semana, "
+                 "para melhorar a capacidade funcional e prevenir quedas."),
+        "fonte": "OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020",
+        "legenda": [
+            "Para pessoas com 65 anos ou mais, a OMS recomenda, além das metas dos adultos, "
+            "atividade física multicomponente variada que enfatize equilíbrio funcional e treino "
+            "de força, de intensidade moderada ou maior, em 3 ou mais dias por semana.",
+            "O objetivo, nas palavras da diretriz: melhorar a capacidade funcional e prevenir "
+            "quedas (OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020).",
+            "É uma diretriz de saúde pública, não um protocolo de tratamento.",
+            "Quantos dos seus pacientes têm 65 anos ou mais? Conta aqui.",
+        ],
+        "tags": "#idosos #prevencaodequedas #fisioterapia",
+    },
+    {
+        "titulo": "Dor lombar em numeros",
+        "partes": ["Quantas pessoas tiveram dor lombar em 2020?",
+                   "Seiscentos e dezenove milhões, segundo a OMS. Principal causa de incapacidade no mundo.",
+                   "Demanda grande pede agenda organizada.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["Quantas pessoas", "tiveram dor lombar", "em 2020?"],
+        "resposta": {"destaque": "619 mi", "complemento": "cerca de 1 em cada 13 pessoas",
+                     "fonte": "OMS, 2023"},
+        "extra": {"titulo": "Até 2050", "texto": "projeção de\n843 milhões de casos."},
+        "fato": ("Segundo a OMS, em 2020 cerca de 1 em cada 13 pessoas — 619 milhões — teve dor "
+                 "lombar, e a projeção é de 843 milhões de casos até 2050. A dor lombar é a "
+                 "principal causa de incapacidade no mundo."),
+        "fonte": ("OMS, comunicado de 07/12/2023 sobre as diretrizes de dor lombar crônica; fact "
+                  "sheet \"Low back pain\" (2023)"),
+        "legenda": [
+            "Segundo a OMS, em 2020 cerca de 1 em cada 13 pessoas, ou 619 milhões, teve dor "
+            "lombar. A projeção é de 843 milhões de casos até 2050.",
+            "E a dor lombar é a principal causa de incapacidade no mundo (OMS, comunicado de "
+            "07/12/2023 e fact sheet \"Low back pain\", 2023).",
+            "Quantos pacientes com dor lombar você atende por semana? Conta aqui.",
+        ],
+        "tags": "#dorlombar #oms #fisioterapia",
+    },
+    {
+        "titulo": "Atividade privativa do fisioterapeuta",
+        "partes": ["O que é privativo do fisioterapeuta?",
+                   "Pelo decreto-lei de 1969, executar métodos e técnicas fisioterápicos.",
+                   "Cada técnica executada merece registro no prontuário.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["O que é", "privativo do", "fisioterapeuta?"],
+        "resposta": {"destaque": "Privativo", "complemento": "executar métodos e técnicas fisioterápicos",
+                     "fonte": "Decreto-Lei nº 938/1969, Art. 3º"},
+        "extra": {"titulo": "Nível superior", "texto": "pelo Art. 2º\ndo Decreto-Lei 938."},
+        "fato": ("O Decreto-Lei nº 938/1969 estabelece que o fisioterapeuta é profissional de "
+                 "nível superior (Art. 2º) e que \"é atividade privativa do fisioterapeuta executar "
+                 "métodos e técnicas fisioterápicos com a finalidade de restaurar, desenvolver e "
+                 "conservar a capacidade física do\" paciente (Art. 3º)."),
+        "fonte": "Decreto-Lei nº 938, de 13 de outubro de 1969, Arts. 2º e 3º",
+        "legenda": [
+            "O Decreto-Lei nº 938/1969 diz que o fisioterapeuta é profissional de nível superior "
+            "(Art. 2º).",
+            "E que \"é atividade privativa do fisioterapeuta executar métodos e técnicas "
+            "fisioterápicos com a finalidade de restaurar, desenvolver e conservar a capacidade "
+            "física do [paciente]\" (Art. 3º).",
+            "Você sabia que essa definição é de 1969? Conta aqui.",
+        ],
+        "tags": "#fisioterapia #fisioterapeuta #legislacao",
+    },
+    {
+        "titulo": "Depoimento de paciente no post",
+        "partes": ["Pode postar depoimento de paciente para se promover?",
+                   "Não. O Código de Ética da fisioterapia proíbe, para autopromoção.",
+                   "Divulgue sua agenda online, não depoimentos.",
+                   "Teste a FisioSync grátis."],
+        "pergunta": ["Pode postar", "depoimento de", "paciente?"],
+        "resposta": {"destaque": "Não", "complemento": "proibido divulgar para autopromoção",
+                     "fonte": "Resolução COFFITO nº 424/2013, Art. 10, V"},
+        "extra": {"titulo": "Em vez disso", "texto": "divulgue sua\nagenda online."},
+        "fato": ("O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta "
+                 "\"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de "
+                 "agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de "
+                 "serviço profissional prestado\" (Art. 10, V)."),
+        "fonte": ("Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), "
+                  "Art. 10, V"),
+        "legenda": [
+            "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, "
+            "para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento "
+            "emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço "
+            "profissional prestado\" (Resolução COFFITO nº 424/2013, Art. 10, V).",
+            "Como você divulga o seu trabalho sem depoimentos? Conta aqui.",
+        ],
+        "tags": "#etica #coffito #fisioterapia",
+    },
 ]
 
 

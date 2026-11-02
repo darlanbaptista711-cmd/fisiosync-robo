@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Estudio de Pilates e o registro no CREFITO",
+  "narracao": "Estúdio de Pilates de fisioterapeuta precisa de registro? Sim, no CREFITO da sua região. E entra na fiscalização. Agenda e prontuário em ordem ajudam. Teste a FisioSync grátis.",
+  "palavras": 28,
+  "fato": "Quando indicado e administrado por fisioterapeuta, o Pilates fica vinculado ao controle ético e fiscalizatório do Sistema COFFITO/CREFITOs, \"sendo, portando, necessário o registro, por parte do profissional fisioterapeuta, do seu consultório ou empresa no CREFITO de sua circunscrição\" (Art. 2º).",
+  "fonte": "Resolução COFFITO nº 386/2011, Art. 2º",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.385,
+    0.203
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Estúdio de Pilates",
+      "de fisio precisa",
+      "de registro?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Sim",
+    "complemento": "no CREFITO da sua circunscrição",
+    "fonte": "Resolução COFFITO nº 386/2011, Art. 2º"
+  },
+  "extra": {
+    "titulo": "Na fiscalização",
+    "texto": "agenda e prontuário\nem ordem ajudam."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Quando indicado e administrado por fisioterapeuta, o Pilates fica vinculado ao controle ético e fiscalizatório do Sistema COFFITO/CREFITOs (Resolução COFFITO nº 386/2011, Art. 2º).\n\nPor isso, o mesmo artigo exige que o fisioterapeuta registre o seu consultório ou empresa no CREFITO da sua circunscrição. Na dúvida, confirme os detalhes com o CREFITO da sua região.\n\nSeu estúdio já está registrado? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #pilates #crefito #estudiodepilates"
+}

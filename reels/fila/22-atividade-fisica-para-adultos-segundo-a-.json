@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Atividade fisica para adultos segundo a OMS",
+  "narracao": "O que a OMS recomenda para adultos? Pelo menos cento e cinquenta minutos moderados por semana e força dois dias ou mais. Planeje na agenda. Teste a FisioSync grátis.",
+  "palavras": 29,
+  "fato": "A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150–300 minutos semanais de atividade aeróbica moderada, ou 75–150 minutos de atividade vigorosa (ou combinação equivalente), além de fortalecimento muscular de intensidade moderada ou maior envolvendo os grandes grupos musculares em 2 ou mais dias por semana.",
+  "fonte": "OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020 (fact sheet \"Physical activity\", OMS Europa, 2021)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.255,
+    0.613
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quanta atividade",
+      "física a OMS",
+      "recomenda?"
+    ]
+  },
+  "resposta": {
+    "destaque": "150 min",
+    "complemento": "por semana, moderada, para adultos",
+    "fonte": "OMS, Diretrizes de atividade física, 2020"
+  },
+  "extra": {
+    "titulo": "E mais",
+    "texto": "força muscular\nem 2 ou mais dias."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150 a 300 minutos por semana de atividade aeróbica moderada, ou 75 a 150 minutos de atividade vigorosa (ou uma combinação equivalente).\n\nAlém disso, fortalecimento muscular de intensidade moderada ou maior, envolvendo os grandes grupos musculares, em 2 ou mais dias por semana (OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020).\n\nÉ uma diretriz de saúde pública, não um protocolo de tratamento.\n\nSeus pacientes chegam perto dessa meta? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #atividadefisica #oms #fisioterapia"
+}

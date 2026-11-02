@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Quando se anunciar especialista",
+  "narracao": "Quando posso me anunciar especialista em quiropraxia ou osteopatia? Só depois de registrar o título no COFFITO. E pelos meios eticamente permitidos. Organize os atendimentos com a FisioSync.",
+  "palavras": 28,
+  "fato": "Somente após registrar no COFFITO seu título de qualificação em quiropraxia e/ou osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área, \"pelos meios eticamente permitidos\" (Art. 5º).",
+  "fonte": "Resolução COFFITO nº 220/2001, Art. 5º",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.459,
+    0.295
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quando posso",
+      "me anunciar",
+      "especialista?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Só depois",
+    "complemento": "de registrar o título no COFFITO",
+    "fonte": "Resolução COFFITO nº 220/2001, Art. 5º"
+  },
+  "extra": {
+    "titulo": "E como?",
+    "texto": "Pelos meios\neticamente permitidos."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Só depois de registrar no COFFITO o título de qualificação em quiropraxia e/ou osteopatia o fisioterapeuta \"poderá se anunciar como especialista\" nessa área (Resolução COFFITO nº 220/2001, Art. 5º).\n\nE o mesmo artigo põe a condição: \"pelos meios eticamente permitidos\".\n\nVocê já registrou o seu título? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #quiropraxia #osteopatia #coffito"
+}

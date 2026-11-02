@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Equilibrio e forca depois dos 65",
+  "narracao": "A partir dos sessenta e cinco, o que a OMS acrescenta? Equilíbrio e força, três dias ou mais, para prevenir quedas. Organize as sessões na agenda. Teste a FisioSync grátis.",
+  "palavras": 30,
+  "fato": "Para pessoas com 65 anos ou mais, a OMS recomenda, além das metas dos adultos, atividade física multicomponente variada que enfatize equilíbrio funcional e treino de força, de intensidade moderada ou maior, em 3 ou mais dias por semana, para melhorar a capacidade funcional e prevenir quedas.",
+  "fonte": "OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.375,
+    0.417
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "A partir dos 65,",
+      "o que a OMS",
+      "acrescenta?"
+    ]
+  },
+  "resposta": {
+    "destaque": "3+ dias",
+    "complemento": "equilíbrio e força, para prevenir quedas",
+    "fonte": "OMS, Diretrizes de atividade física, 2020"
+  },
+  "extra": {
+    "titulo": "Multicomponente",
+    "texto": "equilíbrio funcional\ne treino de força."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Para pessoas com 65 anos ou mais, a OMS recomenda, além das metas dos adultos, atividade física multicomponente variada que enfatize equilíbrio funcional e treino de força, de intensidade moderada ou maior, em 3 ou mais dias por semana.\n\nO objetivo, nas palavras da diretriz: melhorar a capacidade funcional e prevenir quedas (OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020).\n\nÉ uma diretriz de saúde pública, não um protocolo de tratamento.\n\nQuantos dos seus pacientes têm 65 anos ou mais? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #idosos #prevencaodequedas #fisioterapia"
+}

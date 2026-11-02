@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Depoimento de paciente no post",
+  "narracao": "Pode postar depoimento de paciente para se promover? Não. O Código de Ética da fisioterapia proíbe, para autopromoção. Divulgue sua agenda online, não depoimentos. Teste a FisioSync grátis.",
+  "palavras": 28,
+  "fato": "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Art. 10, V).",
+  "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), Art. 10, V",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.323,
+    0.404
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Pode postar",
+      "depoimento de",
+      "paciente?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Não",
+    "complemento": "proibido divulgar para autopromoção",
+    "fonte": "Resolução COFFITO nº 424/2013, Art. 10, V"
+  },
+  "extra": {
+    "titulo": "Em vez disso",
+    "texto": "divulgue sua\nagenda online."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Resolução COFFITO nº 424/2013, Art. 10, V).\n\nComo você divulga o seu trabalho sem depoimentos? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #etica #coffito #fisioterapia"
+}

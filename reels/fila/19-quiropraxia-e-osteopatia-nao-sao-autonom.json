@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Quiropraxia e osteopatia nao sao autonomas",
+  "narracao": "Quiropraxia e osteopatia são autônomas da fisioterapia? Não, pelo COFFITO. E o especialista segue o Código de Ética. Mesma ética, mesmo cuidado com cada atendimento. Teste a FisioSync grátis.",
+  "palavras": 29,
+  "fato": "A Resolução COFFITO nº 220/2001 sujeita o fisioterapeuta com título registrado ao Código de Ética e ao Código de Processo Disciplinar, \"considerando que por ordenamento legal, as atividades ora reconhecidas, não são autônomas em relação a Fisioterapia\" (Art. 6º).",
+  "fonte": "Resolução COFFITO nº 220/2001, Art. 6º",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.337,
+    0.368
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quiropraxia e",
+      "osteopatia são",
+      "autônomas?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Não",
+    "complemento": "não são autônomas em relação à fisioterapia",
+    "fonte": "Resolução COFFITO nº 220/2001, Art. 6º"
+  },
+  "extra": {
+    "titulo": "Na prática",
+    "texto": "Código de Ética e\nProcesso Disciplinar."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Pela Resolução COFFITO nº 220/2001 (Art. 6º), o fisioterapeuta com título registrado em quiropraxia ou osteopatia está sujeito ao Código de Ética e ao Código de Processo Disciplinar.\n\nO motivo está no próprio artigo: \"por ordenamento legal, as atividades ora reconhecidas, não são autônomas em relação a Fisioterapia\".\n\nVocê atua com quiropraxia ou osteopatia? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #quiropraxia #osteopatia #coffito"
+}

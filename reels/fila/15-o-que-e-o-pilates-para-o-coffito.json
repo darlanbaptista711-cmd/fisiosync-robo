@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "O que e o Pilates para o COFFITO",
+  "narracao": "O que é o Pilates para o COFFITO? Recurso cinesioterapêutico e mecanoterapêutico, de reeducação do movimento. Se é terapêutico, cada sessão merece evolução no prontuário. Teste a FisioSync grátis.",
+  "palavras": 29,
+  "fato": "Para o COFFITO, \"o método Pilates é um recurso cinesioterapêutico e mecanoterapêutico que promove a educação e reeducação do movimento corporal, composto por exercícios terapêuticos de promoção, prevenção e recuperação da saúde físico funcional\" (Art. 1º, a).",
+  "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea a",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.196,
+    0.446
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "O que é",
+      "o Pilates para",
+      "o COFFITO?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Recurso",
+    "complemento": "cinesioterapêutico e mecanoterapêutico",
+    "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, a"
+  },
+  "extra": {
+    "titulo": "Se é terapêutico",
+    "texto": "cada sessão merece\nevolução registrada."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Para o COFFITO, \"o método Pilates é um recurso cinesioterapêutico e mecanoterapêutico que promove a educação e reeducação do movimento corporal, composto por exercícios terapêuticos de promoção, prevenção e recuperação da saúde físico funcional\" (Resolução COFFITO nº 386/2011, Art. 1º, alínea a).\n\nPromoção, prevenção e recuperação: as três frentes estão no texto da resolução.\n\nNo seu estúdio, como você registra a evolução de cada aluno? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #pilates #fisioterapia #coffito"
+}

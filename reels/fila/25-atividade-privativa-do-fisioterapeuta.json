@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Atividade privativa do fisioterapeuta",
+  "narracao": "O que é privativo do fisioterapeuta? Pelo decreto-lei de 1969, executar métodos e técnicas fisioterápicos. Cada técnica executada merece registro no prontuário. Teste a FisioSync grátis.",
+  "palavras": 26,
+  "fato": "O Decreto-Lei nº 938/1969 estabelece que o fisioterapeuta é profissional de nível superior (Art. 2º) e que \"é atividade privativa do fisioterapeuta executar métodos e técnicas fisioterápicos com a finalidade de restaurar, desenvolver e conservar a capacidade física do\" paciente (Art. 3º).",
+  "fonte": "Decreto-Lei nº 938, de 13 de outubro de 1969, Arts. 2º e 3º",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.228,
+    0.437
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "O que é",
+      "privativo do",
+      "fisioterapeuta?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Privativo",
+    "complemento": "executar métodos e técnicas fisioterápicos",
+    "fonte": "Decreto-Lei nº 938/1969, Art. 3º"
+  },
+  "extra": {
+    "titulo": "Nível superior",
+    "texto": "pelo Art. 2º\ndo Decreto-Lei 938."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O Decreto-Lei nº 938/1969 diz que o fisioterapeuta é profissional de nível superior (Art. 2º).\n\nE que \"é atividade privativa do fisioterapeuta executar métodos e técnicas fisioterápicos com a finalidade de restaurar, desenvolver e conservar a capacidade física do [paciente]\" (Art. 3º).\n\nVocê sabia que essa definição é de 1969? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fisioterapia #fisioterapeuta #legislacao"
+}
