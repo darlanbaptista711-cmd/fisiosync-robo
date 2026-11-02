@@ -95,6 +95,19 @@ Também proibido neste tipo de post: dizer que a FisioSync garante
 conformidade legal. O software organiza o registro; quem responde pela
 norma é o profissional.
 
+### Prazo de guarda do prontuário: atenção
+
+A Resolução COFFITO 414/2012 fala em cinco anos, mas a **Lei nº
+13.787/2018, Art. 6º, fixa no mínimo vinte anos** a partir do último
+registro e vale para todo prontuário de paciente (§5º). Lei federal
+prevalece sobre resolução de conselho, e o CREFITO-1 já orienta pelos
+vinte. Nunca publicar "cinco anos" como regra atual.
+
+Este erro quase foi ao ar em 02/11/2026, num Reels. Foi pego porque a
+legenda pedia uma afirmação que ainda não tinha sido conferida. Fato
+"conferido" uma vez não dispensa conferir de novo quando a peça vai
+dizer algo a mais do que o fato diz.
+
 Para acrescentar pauta de regulação: confira o fato em **fonte oficial**
 (site do COFFITO, Planalto), escreva `fato` e `fonte`, e só então
 cadastre. Fato conferido em blog não serve.

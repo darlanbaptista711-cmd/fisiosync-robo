@@ -1037,9 +1037,9 @@
    "id": "regulacao-009",
    "eixo": "regulacao",
    "familia": "regulacao",
-   "tema": "por quanto tempo guardar o prontuario",
-   "fato": "O Art. 6º, I da Resolução COFFITO 414/2012 fixa guarda de no mínimo cinco anos a contar do último registro, prazo que pode ser ampliado por lei, decisão judicial ou necessidade específica.",
-   "fonte": "Resolução COFFITO nº 414/2012",
+   "tema": "o prazo de guarda do prontuario mudou",
+   "fato": "A Resolução COFFITO 414/2012, Art. 6º, I, fala em guarda de no mínimo cinco anos, prazo que pode ser ampliado por lei. A Lei nº 13.787/2018, Art. 6º, fixa no mínimo vinte anos a partir do último registro e, pelo §5º, vale para todo prontuário de paciente, em papel ou digital. O CREFITO-1 orienta pelos vinte anos.",
+   "fonte": "Lei nº 13.787/2018 e Resolução COFFITO nº 414/2012",
    "status": "livre"
   },
   {
@@ -1065,8 +1065,8 @@
    "eixo": "regulacao",
    "familia": "regulacao",
    "tema": "jogar prontuario velho no lixo nao resolve",
-   "fato": "O Art. 6º, III da Resolução COFFITO 414/2012 determina que, vencido o prazo de guarda, a destruição do prontuário seja feita de forma que garanta o sigilo das informações.",
-   "fonte": "Resolução COFFITO nº 414/2012",
+   "fato": "O prontuário só pode ser eliminado depois do prazo mínimo de vinte anos a partir do último registro (Lei nº 13.787/2018, Art. 6º), e a Resolução COFFITO 414/2012, Art. 6º, III, exige que a destruição garanta o sigilo das informações.",
+   "fonte": "Lei nº 13.787/2018 e Resolução COFFITO nº 414/2012",
    "status": "livre"
   },
   {
