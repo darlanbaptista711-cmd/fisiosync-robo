@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Prontuario eletronico vale",
+  "narracao": "Prontuário eletrônico vale? Vale. O COFFITO aceita manuscrito ou eletrônico. No eletrônico, nome e CREFITO depois de cada registro. Teste a FisioSync grátis.",
+  "palavras": 23,
+  "fato": "A Resolução COFFITO 414/2012, Art. 2º, permite o registro manuscrito ou eletrônico. No eletrônico, o parágrafo único exige nome completo e número de registro no CREFITO logo após cada registro.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.209,
+    0.372
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Prontuário",
+      "eletrônico",
+      "vale?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Vale",
+    "complemento": "manuscrito ou eletrônico",
+    "fonte": "Resolução COFFITO nº 414/2012, Art. 2º"
+  },
+  "extra": {
+    "titulo": "Mas atenção",
+    "texto": "Nome completo e\nnº do CREFITO\napós cada registro."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Prontuário eletrônico vale, sim: a Resolução COFFITO nº 414/2012 (Art. 2º) aceita registro manuscrito ou eletrônico.\n\nMas tem uma regra: no eletrônico, nome completo e número do CREFITO logo após cada registro (parágrafo único).\n\nSeu prontuário ainda é de papel ou já é digital? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #prontuarioeletronico #fisioterapia #coffito"
+}

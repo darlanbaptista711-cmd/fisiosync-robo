@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Fisioterapia esportiva e exclusiva",
+  "narracao": "Fisioterapia esportiva é exclusiva do fisioterapeuta? É. O COFFITO reconheceu em 2007, de exercício exclusivo. Diferente da acupuntura, que não tem exclusividade. Teste a FisioSync grátis.",
+  "palavras": 26,
+  "fato": "A Resolução COFFITO nº 337, de 08/11/2007, Art. 1º, reconhece a Fisioterapia Esportiva 'como própria e de exercício exclusivo por Fisioterapeutas'. A Resolução 219/2000 reconhece a Acupuntura 'sem caráter de exclusividade corporativa'.",
+  "fonte": "Resoluções COFFITO nº 337/2007 e nº 219/2000",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.331,
+    0.35
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Fisioterapia",
+      "esportiva é",
+      "exclusiva?"
+    ]
+  },
+  "resposta": {
+    "destaque": "2007",
+    "complemento": "especialidade própria e exclusiva",
+    "fonte": "Resolução COFFITO nº 337/2007"
+  },
+  "extra": {
+    "titulo": "Diferente da acupuntura",
+    "texto": "que é reconhecida\nsem exclusividade."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "A Fisioterapia Esportiva foi reconhecida pelo COFFITO em 2007 como especialidade \"própria e de exercício exclusivo por Fisioterapeutas\" (Resolução nº 337/2007).\n\nRepara na diferença: a Acupuntura foi reconhecida \"sem caráter de exclusividade corporativa\" (Resolução nº 219/2000).\n\nVocê atende atleta? De qual modalidade? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapiaesportiva #fisioterapia #coffito"
+}

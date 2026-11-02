@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Por que 13 de outubro",
+  "narracao": "Por que treze de outubro é o Dia do Fisioterapeuta? É a data do decreto que regulamentou a profissão. Mais de cinquenta anos depois, a clínica pode ser digital. Teste a FisioSync.",
+  "palavras": 32,
+  "fato": "O 13 de outubro marca a publicação, em 13/10/1969, do decreto-lei que regulamenta a fisioterapia e a terapia ocupacional no Brasil (Decreto-Lei nº 938/1969). Desde 2015 a data é o Dia Nacional desses profissionais (Rádio Senado).",
+  "fonte": "Decreto-Lei nº 938/1969; Rádio Senado",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.323,
+    0.31
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Por que 13 de",
+      "outubro é o Dia do",
+      "Fisioterapeuta?"
+    ]
+  },
+  "resposta": {
+    "destaque": "1969",
+    "complemento": "o decreto-lei regulamenta a profissão",
+    "fonte": "Decreto-Lei nº 938, de 13/10/1969"
+  },
+  "extra": {
+    "titulo": "Mais de 50 anos",
+    "texto": "e a clínica\npode ser digital."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O Dia do Fisioterapeuta é 13 de outubro por um motivo: em 13 de outubro de 1969 foi publicado o decreto-lei que regulamentou a profissão (Decreto-Lei nº 938/1969).\n\nDesde 2015, a data é o Dia Nacional do Fisioterapeuta e do Terapeuta Ocupacional.\n\nHá quanto tempo você é fisio? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #diadofisioterapeuta #coffito"
+}

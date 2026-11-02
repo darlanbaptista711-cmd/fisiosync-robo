@@ -181,3 +181,110 @@ jobs:
       - name: Guardar historico e pautas
         if: steps.relogio.outputs.publicar == 'sim'
         run: bash guardar.sh
+
+  # ---------------------------------------------------------------------
+  # REELS DIARIO, ~20:00
+  #
+  # Pega o proximo roteiro da fila (reels/fila), que so tem fato
+  # conferido em fonte oficial; gera a narracao, a trilha e o video;
+  # confere quadro a quadro e as regras do Reels; e publica. Nada de
+  # conteudo de saude escrito por IA na hora: a fila e feita antes.
+  # ---------------------------------------------------------------------
+  reels:
+    needs: tarde
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: pip install requests pillow numpy scipy
+
+      - name: Esperar as 19:50
+        id: relogio
+        run: python espera.py --etapa reels
+
+      - name: Escolher o roteiro de hoje
+        id: fila
+        if: steps.relogio.outputs.publicar == 'sim'
+        run: python3 reels/proximo.py
+
+      - uses: oven-sh/setup-bun@v2
+        if: steps.relogio.outputs.publicar == 'sim'
+        with:
+          bun-version: latest
+
+      - name: Instalar ffmpeg
+        if: steps.relogio.outputs.publicar == 'sim'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Montar e conferir o video
+        if: steps.relogio.outputs.publicar == 'sim'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ROTEIRO: reels/roteiro-hoje.json
+        run: |
+          set -e
+          node reels/narrar.mjs
+          python3 reels/musica.py
+          ( cd remotion && bun install )
+          export SAIDA="$GITHUB_WORKSPACE/reels/saida-hoje.mp4" COMPOSICAO=reel-dica
+          limpo=nao
+          for tentativa in 1 2 3; do
+            ( cd remotion && bun run scripts/render-reel.mjs )
+            if python3 reels/piscadas.py "$SAIDA"; then limpo=sim; break; fi
+            echo "quadro quebrado na tentativa $tentativa, renderizando de novo"
+          done
+          [ "$limpo" = sim ] || { echo "FALHOU: tres renders com quadro quebrado"; exit 1; }
+
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$SAIDA")
+          DIM=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height \
+                -of csv=p=0 "$SAIDA" | tr -d '\r\n ' | sed 's/,*$//')
+          AUD=$(ffprobe -v error -select_streams a -show_entries stream=codec_name \
+                -of csv=p=0 "$SAIDA" | head -1)
+          echo "duracao ${DUR}s | ${DIM} | audio ${AUD:-NENHUM}"
+          awk -v d="$DUR" 'BEGIN{ if (d<8 || d>15.05) exit 1 }' || { echo "FALHOU: passou de 15s"; exit 1; }
+          [ "$DIM" = "1080,1920" ] || { echo "FALHOU: nao e 1080x1920"; exit 1; }
+          [ -n "$AUD" ] || { echo "FALHOU: sem audio"; exit 1; }
+
+      - name: Publicar no Instagram
+        if: steps.relogio.outputs.publicar == 'sim'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          VIDEO: reels/saida-hoje.mp4
+          ROTEIRO: reels/roteiro-hoje.json
+        run: node reels/publicar.mjs
+
+      - name: Guardar o historico do Reels
+        if: steps.relogio.outputs.publicar == 'sim'
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git add reels/historico-reels.json
+          git diff --cached --quiet && exit 0
+          git commit -m "reels publicado em $(date -u +%F-%H%M)"
+          for t in 1 2 3 4 5; do git push && exit 0; git pull --rebase --autostash || true; sleep $((t*3)); done
+          exit 1
+
+      - name: Avisar que a fila esta acabando
+        if: steps.fila.outputs.fila_baixa == 'sim'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create --title "Fila de Reels acabando ($(date -u +%F))" \
+            --body "Restam menos de 5 roteiros conferidos em reels/fila. Hora de conferir fatos novos em fonte oficial (reels/temas/REGRAS.md)." || true
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash aviso_falha.sh

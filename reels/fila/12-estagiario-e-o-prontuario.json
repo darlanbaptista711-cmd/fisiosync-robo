@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Estagiario e o prontuario",
+  "narracao": "Estagiário pode registrar no prontuário? Pode, mas com a assinatura do supervisor junto. Identificação dos dois, sempre. Organize a clínica com a FisioSync.",
+  "palavras": 23,
+  "fato": "Resolução COFFITO 414/2012, Art. 1º, §2º: o registro feito em estágio deve trazer a identificação e a assinatura do responsável técnico, supervisor ou preceptor, além do estagiário.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.339,
+    0.398
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Estagiário",
+      "pode registrar no",
+      "prontuário?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Pode",
+    "complemento": "com a assinatura do supervisor",
+    "fonte": "Resolução COFFITO nº 414/2012, Art. 1º, §2º"
+  },
+  "extra": {
+    "titulo": "Sempre",
+    "texto": "Identificação\ndos dois."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Estagiário registra no prontuário, mas não sozinho: o registro precisa trazer identificação e assinatura do supervisor, preceptor ou responsável técnico, além do estagiário (Resolução COFFITO nº 414/2012, Art. 1º, §2º).\n\nNa sua clínica tem estagiário? Marca aqui quem supervisiona.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #estagio #coffito"
+}

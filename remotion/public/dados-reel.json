@@ -1,0 +1,46 @@
+{
+ "_nota": "Placeholder. O reels/narrar.mjs reescreve este arquivo com a duracao real da narracao antes de cada render.",
+ "fps": 30,
+ "duracaoTotal": 16,
+ "framesTotal": 480,
+ "framesPorCena": 100,
+ "narracao": "",
+ "cenas": [
+  {
+   "imagem": "01-painel.png",
+   "rotulo": "Painel",
+   "titulo": "",
+   "apoio": ""
+  }
+ ],
+ "framesGancho": 90,
+ "framesFecho": 96,
+ "gancho": {
+  "linhas": [
+   "Falta sem aviso."
+  ],
+  "remate": ""
+ },
+ "fecho": {
+  "chamada": "Teste grátis por 7 dias",
+  "site": "app.fisiosync.com.br"
+ },
+ "pergunta": {
+  "rotulo": "",
+  "linhas": []
+ },
+ "resposta": {
+  "destaque": "",
+  "complemento": "",
+  "fonte": ""
+ },
+ "extra": {
+  "titulo": "",
+  "texto": ""
+ },
+ "fonte": "",
+ "proporcoes": [
+  0.3,
+  0.38
+ ]
+}

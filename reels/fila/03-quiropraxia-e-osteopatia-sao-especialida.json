@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Quiropraxia e osteopatia sao especialidades",
+  "narracao": "Quiropraxia e osteopatia são especialidades da fisioterapia? Sim. O COFFITO reconhece as duas desde 2001. Mas só se anuncia especialista com o título registrado. Organize a clínica com a FisioSync.",
+  "palavras": 30,
+  "fato": "A Resolução COFFITO nº 220, de 23/05/2001, reconhece a Quiropraxia e a Osteopatia como especialidades do fisioterapeuta (Art. 1º). Pelo Art. 5º, o profissional só se anuncia especialista após registrar o título no COFFITO.",
+  "fonte": "Resolução COFFITO nº 220/2001",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.377,
+    0.277
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quiropraxia e",
+      "osteopatia são",
+      "especialidades?"
+    ]
+  },
+  "resposta": {
+    "destaque": "2001",
+    "complemento": "as duas reconhecidas pelo COFFITO",
+    "fonte": "Resolução COFFITO nº 220/2001"
+  },
+  "extra": {
+    "titulo": "Atenção",
+    "texto": "Especialista só\ncom título registrado."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Quiropraxia e osteopatia são reconhecidas pelo COFFITO como especialidades do fisioterapeuta desde 2001 (Resolução COFFITO nº 220/2001, Art. 1º).\n\nE um detalhe que muita gente pula: pelo Art. 5º, só se anuncia como especialista depois de registrar o título no COFFITO.\n\nVocê atua com alguma das duas? Conta aqui nos comentários.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #quiropraxia #osteopatia #fisioterapia #coffito"
+}

@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "De quem e o prontuario",
+  "narracao": "De quem é o prontuário? Do paciente. E ele pode pedir cópia. No prontuário digital, tudo fica fácil de achar. Teste a FisioSync grátis.",
+  "palavras": 24,
+  "fato": "Pela Resolução COFFITO 414/2012, o prontuário pertence ao cliente/paciente, deve permanecer disponível para acesso dele ou de seu representante, que pode receber cópias autênticas, e é vedado negar esse acesso, salvo risco ao paciente ou a terceiros.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.215,
+    0.336
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "De quem",
+      "é o",
+      "prontuário?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Do paciente",
+    "complemento": "e ele pode pedir cópia",
+    "fonte": "Resolução COFFITO nº 414/2012"
+  },
+  "extra": {
+    "titulo": "Quando ele pedir",
+    "texto": "No digital, tudo\nfica fácil de achar."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O prontuário é do paciente, não da clínica (Resolução COFFITO nº 414/2012).\n\nEle, ou o representante dele, pode pedir acesso e cópias autênticas. Negar esse acesso é vedado, salvo quando gerar risco ao paciente ou a terceiros.\n\nJá te pediram cópia do prontuário? Conta como foi.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #prontuario #fisioterapia #coffito"
+}

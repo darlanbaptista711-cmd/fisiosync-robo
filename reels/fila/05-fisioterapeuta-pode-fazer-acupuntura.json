@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Fisioterapeuta pode fazer acupuntura",
+  "narracao": "Fisioterapeuta pode fazer acupuntura? Pode. O COFFITO reconhece como especialidade desde 2000. Sem exclusividade para a fisioterapia. Organize a clínica com a FisioSync.",
+  "palavras": 23,
+  "fato": "A Resolução COFFITO nº 219, de 14/12/2000, Art. 1º: 'Sem caráter de exclusividade corporativa, reconhecer a Acupuntura como especialidade do profissional Fisioterapeuta'. Pelo Art. 2º, a condição de especialista é anotada na carteira de identidade profissional.",
+  "fonte": "Resolução COFFITO nº 219/2000",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.282,
+    0.427
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Fisioterapeuta",
+      "pode fazer",
+      "acupuntura?"
+    ]
+  },
+  "resposta": {
+    "destaque": "2000",
+    "complemento": "acupuntura reconhecida como especialidade",
+    "fonte": "Resolução COFFITO nº 219/2000"
+  },
+  "extra": {
+    "titulo": "Detalhe",
+    "texto": "Sem exclusividade\ncorporativa."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Sim: a Resolução COFFITO nº 219/2000 reconhece a Acupuntura como especialidade do fisioterapeuta, \"sem caráter de exclusividade corporativa\" (Art. 1º).\n\nOu seja, a resolução não reserva a técnica só para a fisioterapia. E a condição de especialista é anotada na carteira profissional (Art. 2º).\n\nVocê usa acupuntura nos seus atendimentos? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #acupuntura #fisioterapia #coffito"
+}

@@ -115,6 +115,8 @@ async function main() {
 
   hist.push({
     data: new Date().toISOString(),
+    // dia em Brasilia: e por ele que a trava de "ja publicou hoje" confere
+    data_brasilia: new Date(Date.now() - 3 * 3600 * 1000).toISOString().slice(0, 10),
     titulo: roteiro.titulo,
     tipo: roteiro.tipo || "dica",
     media_id: pub.id,

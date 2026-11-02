@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Terapia intensiva e suas tres areas",
+  "narracao": "Fisioterapia em terapia intensiva é especialidade? É. O COFFITO disciplinou em 2011. Em três áreas: neonatal, pediátrica e adulta. Teste a FisioSync grátis.",
+  "palavras": 23,
+  "fato": "A Resolução COFFITO nº 402/2011 disciplina a especialidade de Fisioterapia em Terapia Intensiva; o Art. 5º prevê as áreas de neonatologia, pediatria e adulto.",
+  "fonte": "Resolução COFFITO nº 402/2011",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.391,
+    0.258
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Terapia",
+      "intensiva é",
+      "especialidade?"
+    ]
+  },
+  "resposta": {
+    "destaque": "3",
+    "complemento": "áreas: neonatologia, pediatria e adulto",
+    "fonte": "Resolução COFFITO nº 402/2011"
+  },
+  "extra": {
+    "titulo": "Três áreas",
+    "texto": "Neonatal,\npediátrica\ne adulta."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Fisioterapia em Terapia Intensiva é especialidade disciplinada pelo COFFITO desde 2011 (Resolução nº 402/2011).\n\nE tem três áreas de atuação: neonatologia, pediatria e adulto (Art. 5º).\n\nVocê já trabalhou em UTI? Em qual área? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #terapiaintensiva #fisioterapia #coffito"
+}

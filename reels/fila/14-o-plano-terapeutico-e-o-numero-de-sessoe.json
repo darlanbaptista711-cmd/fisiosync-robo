@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "O plano terapeutico e o numero de sessoes",
+  "narracao": "O plano terapêutico precisa dizer quantas sessões? Precisa. O COFFITO pede a quantidade provável de atendimentos. Além de objetivos, recursos e técnicas. Teste a FisioSync grátis.",
+  "palavras": 26,
+  "fato": "Resolução COFFITO 414/2012, Art. 1º, §1º, VI: o plano terapêutico traz recursos, métodos, técnicas, objetivos e a quantidade provável de atendimentos.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.331,
+    0.411
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "O plano precisa",
+      "dizer quantas",
+      "sessões?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Sim",
+    "complemento": "a quantidade provável de atendimentos",
+    "fonte": "Resolução COFFITO nº 414/2012, Art. 1º, §1º, VI"
+  },
+  "extra": {
+    "titulo": "E também",
+    "texto": "objetivos,\nrecursos e\ntécnicas."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O plano terapêutico precisa trazer a quantidade provável de atendimentos, além de recursos, métodos, técnicas e objetivos (Resolução COFFITO nº 414/2012, Art. 1º, §1º, VI).\n\nVocê já combina o número de sessões com o paciente logo no início? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #planoterapeutico #coffito"
+}

@@ -33,6 +33,7 @@ Decide e escreve no $GITHUB_OUTPUT:  publicar=sim|nao
 """
 
 import argparse
+import json
 import datetime
 import os
 import sys
@@ -52,11 +53,26 @@ ETAPAS = {
     "manha": (datetime.time(12, 0), 16),      # publica
     "tarde_cedo": (datetime.time(15, 30), None),
     "tarde": (datetime.time(18, 0), 23),      # publica
+    # Reels: monta a partir de 19:50 e publica perto das 20:00. A montagem
+    # leva uns 6 minutos (narracao, trilha, render conferido quadro a quadro).
+    "reels": (datetime.time(19, 50), 23),     # monta e publica
 }
 
 # Teto de sono por job. O limite duro do GitHub e 6h; 5h deixa folga
 # para o checkout, o pip e a propria publicacao.
 TETO = 5 * 3600
+
+
+def reels_publicado_hoje(hoje):
+    """O Reels tem historico proprio: reels/historico-reels.json."""
+    caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                           "reels", "historico-reels.json")
+    try:
+        with open(caminho, encoding="utf-8") as f:
+            hist = json.load(f)
+    except (FileNotFoundError, ValueError):
+        return False
+    return any(h.get("data_brasilia") == hoje for h in hist)
 
 
 def janelas_ja_publicadas(hoje):
@@ -120,6 +136,8 @@ def main():
         decidir("nao", "espera cumprida. A proxima etapa assume.")
 
     feitas = janelas_ja_publicadas(hoje.isoformat())
+    if args.etapa == "reels" and reels_publicado_hoje(hoje.isoformat()):
+        feitas.add("reels")
     if args.etapa in feitas:
         decidir("nao", f"a janela da {args.etapa} de hoje ja foi "
                        "publicada. Saindo sem gerar nada.")
@@ -134,8 +152,9 @@ def main():
                        "largada pega.")
 
     # relendo: a corrente pode ter levado horas desde o checkout
-    if args.etapa in janelas_ja_publicadas(
-            P.agora_brasilia().date().isoformat()):
+    depois = P.agora_brasilia().date().isoformat()
+    if args.etapa in janelas_ja_publicadas(depois) or (
+            args.etapa == "reels" and reels_publicado_hoje(depois)):
         decidir("nao", f"a janela da {args.etapa} saiu enquanto este job "
                        "esperava. Nao vou duplicar.")
 

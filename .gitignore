@@ -3,3 +3,9 @@ CREDENCIAIS.txt
 *.log
 gerado/
 __pycache__/
+
+# Reels: arquivos do dia, gerados no runner
+reels/roteiro-hoje.json
+reels/saida-hoje.mp4
+remotion/node_modules/
+remotion/public/audio/

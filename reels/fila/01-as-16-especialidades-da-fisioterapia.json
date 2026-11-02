@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "As 16 especialidades da fisioterapia",
+  "narracao": "Quantas especialidades a fisioterapia tem? Pelo COFFITO, dezesseis. Da acupuntura à terapia intensiva. Seja qual for a sua, agenda e prontuário num lugar só. Teste a FisioSync grátis.",
+  "palavras": 28,
+  "fato": "O COFFITO reconhece 16 especialidades: Acupuntura, Aquática, Cardiovascular, Dermatofuncional, Esportiva, Gerontologia, Trabalho, Neurofuncional, Oncologia, Reumatologia, Respiratória, Traumato-Ortopédica, Osteopatia, Quiropraxia, Saúde da Mulher e Terapia Intensiva.",
+  "fonte": "COFFITO, página de especialidades (coffito.gov.br)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.271,
+    0.381
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quantas",
+      "especialidades a",
+      "fisioterapia tem?"
+    ]
+  },
+  "resposta": {
+    "destaque": "16",
+    "complemento": "especialidades reconhecidas",
+    "fonte": "COFFITO, página oficial de especialidades"
+  },
+  "extra": {
+    "titulo": "Qual é a sua?",
+    "texto": "Agenda e prontuário\nnum lugar só."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "A fisioterapia tem 16 especialidades reconhecidas pelo COFFITO:\n\nAcupuntura, Aquática, Cardiovascular, Dermatofuncional, Esportiva, Gerontologia, Trabalho, Neurofuncional, Oncologia, Reumatologia, Respiratória, Traumato-Ortopédica, Osteopatia, Quiropraxia, Saúde da Mulher e Terapia Intensiva.\n\nQual é a sua? Conta aqui nos comentários.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #coffito #especialidades"
+}

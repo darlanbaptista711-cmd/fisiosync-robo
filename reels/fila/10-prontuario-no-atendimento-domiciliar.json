@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Prontuario no atendimento domiciliar",
+  "narracao": "No atendimento domiciliar, onde fica o prontuário? Na casa do paciente, com orientação de sigilo à família. E você pode guardar uma cópia para se proteger. Teste a FisioSync grátis.",
+  "palavras": 30,
+  "fato": "Resolução COFFITO 414/2012, Art. 6º, V: no atendimento domiciliar, o prontuário é guardado no domicílio do paciente, com orientação de sigilo ao núcleo familiar. Art. 6º, VI: o fisioterapeuta pode manter cópia, com assinatura atestando que a assistência foi prestada.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.327,
+    0.366
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Atendimento",
+      "domiciliar: onde fica",
+      "o prontuário?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Na casa",
+    "complemento": "do paciente, com sigilo",
+    "fonte": "Resolução COFFITO nº 414/2012, Art. 6º, V"
+  },
+  "extra": {
+    "titulo": "E você",
+    "texto": "pode guardar\numa cópia para\nse proteger."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "No atendimento domiciliar, o prontuário fica na casa do paciente, e o fisioterapeuta orienta a família a manter sigilo (Resolução COFFITO nº 414/2012, Art. 6º, V).\n\nE, para se proteger, você pode manter uma cópia, com a assinatura do paciente ou do responsável atestando o atendimento (Art. 6º, VI).\n\nVocê atende em domicílio? Como organiza isso? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapiadomiciliar #homecare #fisioterapia"
+}

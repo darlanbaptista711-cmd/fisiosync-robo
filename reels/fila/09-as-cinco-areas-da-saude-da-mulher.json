@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "As cinco areas da saude da mulher",
+  "narracao": "Quantas áreas tem a fisioterapia na saúde da mulher? Cinco, pela resolução do COFFITO de 2011. Da obstetrícia à mastologia. Organize os atendimentos com a FisioSync.",
+  "palavras": 26,
+  "fato": "A Resolução COFFITO nº 401/2011, Art. 5º, define as áreas de atuação da Fisioterapia na Saúde da Mulher: uroginecologia e coloproctologia, ginecologia, obstetrícia, disfunções sexuais femininas e mastologia.",
+  "fonte": "Resolução COFFITO nº 401/2011",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.43,
+    0.339
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Fisioterapia na",
+      "saúde da mulher:",
+      "quantas áreas?"
+    ]
+  },
+  "resposta": {
+    "destaque": "5",
+    "complemento": "áreas de atuação",
+    "fonte": "Resolução COFFITO nº 401/2011, Art. 5º"
+  },
+  "extra": {
+    "titulo": "Quais?",
+    "texto": "Da obstetrícia\nà mastologia."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "A Fisioterapia na Saúde da Mulher tem cinco áreas de atuação (Resolução COFFITO nº 401/2011, Art. 5º):\n\n1. Uroginecologia e coloproctologia\n2. Ginecologia\n3. Obstetrícia\n4. Disfunções sexuais femininas\n5. Mastologia\n\nEm qual delas você atua? Conta aqui nos comentários.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #saudedamulher #fisioterapiapelvica #fisioterapia"
+}

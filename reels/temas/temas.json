@@ -1,0 +1,4086 @@
+{
+ "versao": 1,
+ "regra": "Tema NAO e fato. Nenhum tema vira video sem fato conferido em fonte oficial (COFFITO/CREFITO/lei). Ver REGRAS.md.",
+ "temas": [
+  {
+   "id": "00-coffito-16-especialidades",
+   "grupo": "Especialidades",
+   "tema": "O COFFITO reconhece 16 especialidades da fisioterapia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "O COFFITO reconhece 16 especialidades: Acupuntura, Aquática, Cardiovascular, Dermatofuncional, Esportiva, Gerontologia, Trabalho, Neurofuncional, Oncologia, Reumatologia, Respiratória, Traumato-Ortopédica, Osteopatia, Quiropraxia, Saúde da Mulher e Terapia Intensiva.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": "Bom gancho de abertura da série: 'você sabe quantas são?'"
+  },
+  {
+   "id": "01-fisioterapia-em-acupuntura",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Acupuntura",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Acupuntura é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-aquatica",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Aquática",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Aquática é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-cardiovascular",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Cardiovascular",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Cardiovascular é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-dermatofuncional",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Dermatofuncional",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Dermatofuncional é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-esportiva",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Esportiva",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Esportiva é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-gerontologia",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Gerontologia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Gerontologia é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-do-trabalho",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia do Trabalho",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia do Trabalho é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-neurofuncional",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Neurofuncional",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Neurofuncional é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-oncologia",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Oncologia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Oncologia é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-reumatologia",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Reumatologia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Reumatologia é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-respiratoria",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Respiratória",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Respiratória é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-traumato-ortopedica",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia Traumato-Ortopédica",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia Traumato-Ortopédica é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-osteopatia",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Osteopatia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Osteopatia é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-quiropraxia",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Quiropraxia",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Quiropraxia é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-saude-da-mulher",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Saúde da Mulher",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Saúde da Mulher é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "01-fisioterapia-em-terapia-intensiva",
+   "grupo": "As 16 especialidades reconhecidas pelo COFFITO",
+   "tema": "Fisioterapia em Terapia Intensiva",
+   "tipo": "especialidade",
+   "status": "fato-conferido",
+   "fato": "Fisioterapia em Terapia Intensiva é uma das 16 especialidades da fisioterapia reconhecidas pelo COFFITO.",
+   "fonte": "COFFITO, página de especialidades (coffito.gov.br/nsite/?page_id=2350), conferida em 02/11/2026",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-ortopedica",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia ortopédica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-traumatologica",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia traumatológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-musculoesqueletica",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação musculoesquelética",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-pre-e-pos-operatoria-ortopedica",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação pré e pós-operatória ortopédica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-fraturas",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de fraturas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-lesoes-musculares",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de lesões musculares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-tendinopatias",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de tendinopatias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-lesoes-ligamentares",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de lesões ligamentares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-apos-artroplastias-e-proteses-artic",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação após artroplastias e próteses articulares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-de-coluna",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia de coluna",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-lombalgias-e-cervicalgias",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de lombalgias e cervicalgias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-escoliose-e-outras-deformidades-",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de escoliose e outras deformidades da coluna",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-de-ombro-e-cotovelo",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia de ombro e cotovelo",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-mao-e-punho",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de mão e punho",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-de-quadril",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia de quadril",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-de-joelho",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia de joelho",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-fisioterapia-de-tornozelo-e-pe",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Fisioterapia de tornozelo e pé",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-amputados",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de amputados",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-treinamento-funcional-com-proteses",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Treinamento funcional com próteses",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-reabilitacao-de-politraumatizados",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Reabilitação de politraumatizados",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-alteracoes-posturais",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Alterações posturais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-alteracoes-da-marcha",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Alterações da marcha",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "02-hipermobilidade-e-instabilidade-articular",
+   "grupo": "Ortopedia, traumatologia e sistema musculoesquelético",
+   "tema": "Hipermobilidade e instabilidade articular",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-esportiva-para-atletas-profissionai",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia esportiva para atletas profissionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-a-atletas-amadores",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento a atletas amadores",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-prevencao-de-lesoes-esportivas",
+   "grupo": "Esporte e exercício",
+   "tema": "Prevenção de lesões esportivas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-reabilitacao-de-lesoes-esportivas",
+   "grupo": "Esporte e exercício",
+   "tema": "Reabilitação de lesões esportivas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-retorno-ao-esporte",
+   "grupo": "Esporte e exercício",
+   "tema": "Retorno ao esporte",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-avaliacao-funcional-esportiva",
+   "grupo": "Esporte e exercício",
+   "tema": "Avaliação funcional esportiva",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-recuperacao-apos-treinos-e-competicoes",
+   "grupo": "Esporte e exercício",
+   "tema": "Recuperação após treinos e competições",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-paradesporto",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no paradesporto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-em-clubes-equipes-e-selecoes",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento em clubes, equipes e seleções",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-em-eventos-esportivos",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento em eventos esportivos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-futebol",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no futebol",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-futsal",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no futsal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-volei",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no vôlei",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-basquete",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no basquete",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-handebol",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no handebol",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-tenis",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no tênis",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-beach-tennis",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no beach tennis",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-na-corrida",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia na corrida",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-ciclismo",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no ciclismo",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-triatlo",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no triatlo",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-na-natacao",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia na natação",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-surfe",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no surfe",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-na-ginastica",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia na ginástica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-nas-lutas",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia nas lutas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-crossfit",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no CrossFit",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-fisioterapia-no-levantamento-de-peso",
+   "grupo": "Esporte e exercício",
+   "tema": "Fisioterapia no levantamento de peso",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-a-bailarinos-e-dancarinos",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento a bailarinos e dançarinos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-a-artistas-circenses",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento a artistas circenses",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "03-atendimento-a-musicos-e-outros-profissionais-da-",
+   "grupo": "Esporte e exercício",
+   "tema": "Atendimento a músicos e outros profissionais da performance",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-neurofuncional-adulto",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Neurofuncional adulto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-neurofuncional-infantil",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Neurofuncional infantil",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-neurofuncional-do-adolescente",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Neurofuncional do adolescente",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-neurofuncional-do-idoso",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Neurofuncional do idoso",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-apos-avc",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação após AVC",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-apos-traumatismo-cranioencefalico",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação após traumatismo cranioencefálico",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-de-lesao-medular",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação de lesão medular",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-atendimento-a-pessoas-com-parkinson",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Atendimento a pessoas com Parkinson",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-atendimento-a-pessoas-com-esclerose-multipla",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Atendimento a pessoas com esclerose múltipla",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-atendimento-a-pessoas-com-doencas-neuromusculare",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Atendimento a pessoas com doenças neuromusculares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-atendimento-a-pessoas-com-distrofias-musculares",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Atendimento a pessoas com distrofias musculares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-atendimento-a-pessoas-com-ela",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Atendimento a pessoas com ELA",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-de-neuropatias-perifericas",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação de neuropatias periféricas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-de-lesoes-de-nervos",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação de lesões de nervos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-de-paralisia-facial",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação de paralisia facial",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-de-ataxias",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação de ataxias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-manejo-funcional-da-espasticidade",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Manejo funcional da espasticidade",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-treino-de-marcha-e-equilibrio",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Treino de marcha e equilíbrio",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "04-reabilitacao-com-tecnologias-assistivas-e-roboti",
+   "grupo": "Neurologia e reabilitação neurofuncional",
+   "tema": "Reabilitação com tecnologias assistivas e robóticas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-reabilitacao-vestibular",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Reabilitação vestibular",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-atendimento-a-pessoas-com-vertigem-e-tontura",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Atendimento a pessoas com vertigem e tontura",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-reabilitacao-de-alteracoes-do-equilibrio",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Reabilitação de alterações do equilíbrio",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-reabilitacao-de-hipofuncao-vestibular",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Reabilitação de hipofunção vestibular",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-reabilitacao-funcional-de-pessoas-com-sensibilid",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Reabilitação funcional de pessoas com sensibilidade ao movimento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-prevencao-de-quedas-associadas-a-alteracoes-vest",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Prevenção de quedas associadas a alterações vestibulares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "05-reabilitacao-do-equilibrio-apos-concussao",
+   "grupo": "Vestibular e equilíbrio",
+   "tema": "Reabilitação do equilíbrio após concussão",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-fisioterapia-neonatal",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Fisioterapia neonatal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-fisioterapia-pediatrica",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Fisioterapia pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-acompanhamento-do-desenvolvimento-motor",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Acompanhamento do desenvolvimento motor",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-intervencao-precoce",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Intervenção precoce",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-acompanhamento-de-prematuros",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Acompanhamento de prematuros",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-reabilitacao-de-atrasos-motores",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Reabilitação de atrasos motores",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-a-criancas-com-paralisia-cerebral",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento a crianças com paralisia cerebral",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-a-criancas-com-sindrome-de-down",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento a crianças com síndrome de Down",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-a-criancas-com-mielomeningocele",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento a crianças com mielomeningocele",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-a-criancas-com-doencas-neuromuscular",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento a crianças com doenças neuromusculares",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-a-criancas-com-sindromes-geneticas",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento a crianças com síndromes genéticas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-as-alteracoes-motoras-em-criancas-co",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento às alterações motoras em crianças com TEA",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-fisioterapia-no-torcicolo-congenito",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Fisioterapia no torcicolo congênito",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-atendimento-as-assimetrias-posturais-do-bebe",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Atendimento às assimetrias posturais do bebê",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-ortopedia-pediatrica",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Ortopedia pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-respiratoria-pediatrica",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Respiratória pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-reabilitacao-pos-operatoria-infantil",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Reabilitação pós-operatória infantil",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-reabilitacao-de-criancas-com-deficiencia",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Reabilitação de crianças com deficiência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "06-orientacao-familiar-para-o-desenvolvimento-motor",
+   "grupo": "Pediatria, neonatologia e desenvolvimento infantil",
+   "tema": "Orientação familiar para o desenvolvimento motor",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-fisioterapia-respiratoria-adulta",
+   "grupo": "Respiratória",
+   "tema": "Fisioterapia respiratória adulta",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-fisioterapia-respiratoria-pediatrica",
+   "grupo": "Respiratória",
+   "tema": "Fisioterapia respiratória pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-fisioterapia-respiratoria-neonatal",
+   "grupo": "Respiratória",
+   "tema": "Fisioterapia respiratória neonatal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-reabilitacao-pulmonar",
+   "grupo": "Respiratória",
+   "tema": "Reabilitação pulmonar",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-atendimento-a-pessoas-com-dpoc",
+   "grupo": "Respiratória",
+   "tema": "Atendimento a pessoas com DPOC",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-atendimento-a-pessoas-com-asma",
+   "grupo": "Respiratória",
+   "tema": "Atendimento a pessoas com asma",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-atendimento-a-pessoas-com-bronquiectasias",
+   "grupo": "Respiratória",
+   "tema": "Atendimento a pessoas com bronquiectasias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-atendimento-a-pessoas-com-fibrose-cistica",
+   "grupo": "Respiratória",
+   "tema": "Atendimento a pessoas com fibrose cística",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-atendimento-a-pessoas-com-doencas-pulmonares-int",
+   "grupo": "Respiratória",
+   "tema": "Atendimento a pessoas com doenças pulmonares intersticiais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-reabilitacao-apos-infeccoes-respiratorias",
+   "grupo": "Respiratória",
+   "tema": "Reabilitação após infecções respiratórias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-reabilitacao-de-alteracoes-respiratorias-pos-cov",
+   "grupo": "Respiratória",
+   "tema": "Reabilitação de alterações respiratórias pós-COVID",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-fisioterapia-respiratoria-pre-e-pos-operatoria",
+   "grupo": "Respiratória",
+   "tema": "Fisioterapia respiratória pré e pós-operatória",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-treinamento-muscular-respiratorio",
+   "grupo": "Respiratória",
+   "tema": "Treinamento muscular respiratório",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-manejo-de-secrecoes-e-assistencia-a-tosse",
+   "grupo": "Respiratória",
+   "tema": "Manejo de secreções e assistência à tosse",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-assistencia-a-pessoas-com-traqueostomia",
+   "grupo": "Respiratória",
+   "tema": "Assistência a pessoas com traqueostomia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "07-suporte-ventilatorio-em-contexto-hospitalar-e-do",
+   "grupo": "Respiratória",
+   "tema": "Suporte ventilatório em contexto hospitalar e domiciliar",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-cardiaca",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação cardíaca",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-apos-infarto",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação após infarto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-apos-cirurgia-cardiaca",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação após cirurgia cardíaca",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-atendimento-a-pessoas-com-insuficiencia-cardiaca",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Atendimento a pessoas com insuficiência cardíaca",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-de-pessoas-com-doencas-vasculares-p",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação de pessoas com doenças vasculares periféricas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-pre-e-pos-transplante-cardiaco",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação pré e pós-transplante cardíaco",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-cardiopulmonar",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação cardiopulmonar",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-exercicio-terapeutico-para-pessoas-com-multiplas",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Exercício terapêutico para pessoas com múltiplas doenças crônicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-funcional-de-pessoas-com-obesidade",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação funcional de pessoas com obesidade",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-funcional-de-pessoas-com-diabetes",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação funcional de pessoas com diabetes",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-de-pessoas-com-doenca-renal-cronica",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação de pessoas com doença renal crônica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-exercicio-e-reabilitacao-durante-a-hemodialise",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Exercício e reabilitação durante a hemodiálise",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "08-reabilitacao-pre-e-pos-cirurgia-bariatrica",
+   "grupo": "Cardiovascular e condições crônicas",
+   "tema": "Reabilitação pré e pós-cirurgia bariátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-hospitalar",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia hospitalar",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-em-enfermarias",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia em enfermarias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-em-unidades-semi-intensivas",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia em unidades semi-intensivas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-terapia-intensiva-adulta",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Terapia intensiva adulta",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-terapia-intensiva-pediatrica",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Terapia intensiva pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-terapia-intensiva-neonatal",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Terapia intensiva neonatal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-em-urgencia-e-emergencia",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia em urgência e emergência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-mobilizacao-precoce",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Mobilização precoce",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-reabilitacao-do-paciente-critico",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Reabilitação do paciente crítico",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-reabilitacao-apos-internacao-prolongada",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Reabilitação após internação prolongada",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-reabilitacao-apos-alta-da-uti",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Reabilitação após alta da UTI",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-assistencia-ventilatoria",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Assistência ventilatória",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-desmame-da-ventilacao-mecanica",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Desmame da ventilação mecânica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-perioperatoria",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia perioperatória",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-em-unidades-de-queimados",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia em unidades de queimados",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "09-fisioterapia-em-servicos-de-transplantes",
+   "grupo": "Hospitalar e terapia intensiva",
+   "tema": "Fisioterapia em serviços de transplantes",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-fisioterapia-ginecologica",
+   "grupo": "Saúde da mulher",
+   "tema": "Fisioterapia ginecológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-fisioterapia-obstetrica",
+   "grupo": "Saúde da mulher",
+   "tema": "Fisioterapia obstétrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-acompanhamento-fisioterapeutico-na-gestacao",
+   "grupo": "Saúde da mulher",
+   "tema": "Acompanhamento fisioterapêutico na gestação",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-preparacao-fisica-e-funcional-para-o-parto",
+   "grupo": "Saúde da mulher",
+   "tema": "Preparação física e funcional para o parto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-assistencia-fisioterapeutica-durante-o-trabalho-",
+   "grupo": "Saúde da mulher",
+   "tema": "Assistência fisioterapêutica durante o trabalho de parto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-reabilitacao-no-pos-parto",
+   "grupo": "Saúde da mulher",
+   "tema": "Reabilitação no pós-parto",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-reabilitacao-de-diastase-abdominal",
+   "grupo": "Saúde da mulher",
+   "tema": "Reabilitação de diástase abdominal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-reabilitacao-de-alteracoes-musculoesqueleticas-d",
+   "grupo": "Saúde da mulher",
+   "tema": "Reabilitação de alterações musculoesqueléticas da gestação",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-atendimento-no-climaterio-e-na-menopausa",
+   "grupo": "Saúde da mulher",
+   "tema": "Atendimento no climatério e na menopausa",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-atendimento-a-disfuncoes-do-assoalho-pelvico",
+   "grupo": "Saúde da mulher",
+   "tema": "Atendimento a disfunções do assoalho pélvico",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-atendimento-a-dor-pelvica",
+   "grupo": "Saúde da mulher",
+   "tema": "Atendimento à dor pélvica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-atendimento-as-repercussoes-funcionais-da-endome",
+   "grupo": "Saúde da mulher",
+   "tema": "Atendimento às repercussões funcionais da endometriose",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-reabilitacao-apos-cirurgias-ginecologicas",
+   "grupo": "Saúde da mulher",
+   "tema": "Reabilitação após cirurgias ginecológicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "10-reabilitacao-apos-tratamento-do-cancer-de-mama",
+   "grupo": "Saúde da mulher",
+   "tema": "Reabilitação após tratamento do câncer de mama",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-pelvica-feminina",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia pélvica feminina",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-pelvica-masculina",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia pélvica masculina",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-pelvica-pediatrica",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia pélvica pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-urologica",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia urológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-uroginecologica",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia uroginecológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-fisioterapia-coloproctologica",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Fisioterapia coloproctológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-reabilitacao-da-incontinencia-urinaria",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Reabilitação da incontinência urinária",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-reabilitacao-da-incontinencia-fecal",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Reabilitação da incontinência fecal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-atendimento-a-alteracoes-funcionais-da-evacuacao",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Atendimento a alterações funcionais da evacuação",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-atendimento-a-disfuncoes-miccionais",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Atendimento a disfunções miccionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-reabilitacao-de-prolapsos-pelvicos",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Reabilitação de prolapsos pélvicos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-reabilitacao-apos-prostatectomia",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Reabilitação após prostatectomia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-atendimento-a-dor-pelvica-cronica",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Atendimento a dor pélvica crônica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-atendimento-a-disfuncoes-sexuais-com-componente-",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Atendimento a disfunções sexuais com componente físico-funcional",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-reabilitacao-apos-cirurgias-pelvicas",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Reabilitação após cirurgias pélvicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "11-atendimento-pelvico-a-pessoas-trans-conforme-nec",
+   "grupo": "Pélvica, urológica, coloproctológica e saúde sexual",
+   "tema": "Atendimento pélvico a pessoas trans, conforme necessidades funcionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-fisioterapia-geriatrica",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Fisioterapia geriátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-fisioterapia-gerontologica",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Fisioterapia gerontológica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-envelhecimento-ativo",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Envelhecimento ativo",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-prevencao-de-quedas",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Prevenção de quedas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-treino-de-equilibrio",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Treino de equilíbrio",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-reabilitacao-de-fragilidade",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Reabilitação de fragilidade",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-atendimento-a-sarcopenia",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Atendimento à sarcopenia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-atendimento-as-limitacoes-funcionais-associadas-",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Atendimento às limitações funcionais associadas à osteoporose",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-reabilitacao-apos-fratura-de-quadril",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Reabilitação após fratura de quadril",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-manutencao-da-mobilidade-e-independencia",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Manutenção da mobilidade e independência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-atendimento-a-idosos-com-demencias",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Atendimento a idosos com demências",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-atendimento-em-instituicoes-de-longa-permanencia",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Atendimento em instituições de longa permanência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-atendimento-domiciliar-a-idosos",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Atendimento domiciliar a idosos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "12-reabilitacao-do-idoso-com-multiplas-doencas",
+   "grupo": "Gerontologia e envelhecimento",
+   "tema": "Reabilitação do idoso com múltiplas doenças",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-artrite-reumatoide",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com artrite reumatoide",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-osteoartrite-artrose",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com osteoartrite/artrose",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-espondiloartrites",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com espondiloartrites",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-lupus",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com lúpus",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-esclerose-sistemica",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com esclerose sistêmica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-miopatias-inflamatoria",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com miopatias inflamatórias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-atendimento-a-pessoas-com-fibromialgia",
+   "grupo": "Reumatologia",
+   "tema": "Atendimento a pessoas com fibromialgia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-reabilitacao-das-limitacoes-decorrentes-de-doenc",
+   "grupo": "Reumatologia",
+   "tema": "Reabilitação das limitações decorrentes de doenças reumáticas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "13-protecao-articular-e-conservacao-de-energia",
+   "grupo": "Reumatologia",
+   "tema": "Proteção articular e conservação de energia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-fisioterapia-para-dor-persistente",
+   "grupo": "Dor",
+   "tema": "Fisioterapia para dor persistente",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-reabilitacao-de-dor-musculoesqueletica",
+   "grupo": "Dor",
+   "tema": "Reabilitação de dor musculoesquelética",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-atendimento-a-dor-miofascial",
+   "grupo": "Dor",
+   "tema": "Atendimento à dor miofascial",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-reabilitacao-funcional-na-dor-neuropatica",
+   "grupo": "Dor",
+   "tema": "Reabilitação funcional na dor neuropática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-atendimento-a-dor-pos-operatoria-persistente",
+   "grupo": "Dor",
+   "tema": "Atendimento à dor pós-operatória persistente",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-atendimento-a-sindrome-dolorosa-regional-complex",
+   "grupo": "Dor",
+   "tema": "Atendimento à síndrome dolorosa regional complexa",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-educacao-em-dor",
+   "grupo": "Dor",
+   "tema": "Educação em dor",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-reabilitacao-interdisciplinar-da-dor",
+   "grupo": "Dor",
+   "tema": "Reabilitação interdisciplinar da dor",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "14-recuperacao-funcional-de-pessoas-com-medo-do-mov",
+   "grupo": "Dor",
+   "tema": "Recuperação funcional de pessoas com medo do movimento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-fisioterapia-em-disfuncoes-temporomandibulares-d",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Fisioterapia em disfunções temporomandibulares — DTM",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-reabilitacao-de-alteracoes-funcionais-da-atm",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Reabilitação de alterações funcionais da ATM",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-atendimento-a-dor-orofacial-de-origem-musculoesq",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Atendimento à dor orofacial de origem musculoesquelética",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-atendimento-as-repercussoes-musculoesqueleticas-",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Atendimento às repercussões musculoesqueléticas do bruxismo",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-reabilitacao-apos-cirurgia-ortognatica",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Reabilitação após cirurgia ortognática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-reabilitacao-apos-trauma-de-face",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Reabilitação após trauma de face",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-reabilitacao-funcional-de-cabeca-e-pescoco",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Reabilitação funcional de cabeça e pescoço",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-atendimento-a-cefaleia-cervicogenica",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Atendimento à cefaleia cervicogênica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "15-reabilitacao-de-alteracoes-motoras-faciais",
+   "grupo": "Cabeça, face e articulação temporomandibular",
+   "tema": "Reabilitação de alterações motoras faciais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-fisioterapia-dermatofuncional-facial",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Fisioterapia dermatofuncional facial",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-fisioterapia-dermatofuncional-corporal",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Fisioterapia dermatofuncional corporal",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-reabilitacao-pre-e-pos-cirurgia-plastica",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Reabilitação pré e pós-cirurgia plástica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-reabilitacao-apos-cirurgia-reparadora",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Reabilitação após cirurgia reparadora",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-manejo-de-edema-pos-operatorio",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Manejo de edema pós-operatório",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-manejo-de-cicatrizes-e-aderencias",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Manejo de cicatrizes e aderências",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-reabilitacao-de-fibroses",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Reabilitação de fibroses",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-reabilitacao-de-queimaduras",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Reabilitação de queimaduras",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-atuacao-em-reparacao-tecidual",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Atuação em reparação tecidual",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-atendimento-fisioterapeutico-em-feridas",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Atendimento fisioterapêutico em feridas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-reabilitacao-de-linfedema",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Reabilitação de linfedema",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-atendimento-as-repercussoes-do-lipedema",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Atendimento às repercussões do lipedema",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-terapia-descongestiva",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Terapia descongestiva",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "16-atendimento-a-alteracoes-funcionais-associadas-a",
+   "grupo": "Dermatofuncional, reparadora e linfática",
+   "tema": "Atendimento a alterações funcionais associadas a condições dermatológicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-durante-o-tratamento-oncologico",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação durante o tratamento oncológico",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-pre-habilitacao-antes-de-tratamentos-e-cirurgias",
+   "grupo": "Oncologia",
+   "tema": "Pré-habilitação antes de tratamentos e cirurgias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-apos-cirurgias-oncologicas",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação após cirurgias oncológicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-no-cancer-de-mama",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação no câncer de mama",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-em-canceres-de-cabeca-e-pescoco",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação em cânceres de cabeça e pescoço",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-em-canceres-pelvicos",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação em cânceres pélvicos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-em-tumores-musculoesqueleticos",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação em tumores musculoesqueléticos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-em-oncologia-pediatrica",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação em oncologia pediátrica",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-atendimento-a-fadiga-relacionada-ao-cancer",
+   "grupo": "Oncologia",
+   "tema": "Atendimento à fadiga relacionada ao câncer",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-reabilitacao-de-neuropatias-associadas-ao-tratam",
+   "grupo": "Oncologia",
+   "tema": "Reabilitação de neuropatias associadas ao tratamento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-manejo-de-linfedema-relacionado-ao-cancer",
+   "grupo": "Oncologia",
+   "tema": "Manejo de linfedema relacionado ao câncer",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "17-recuperacao-da-capacidade-funcional-apos-o-trata",
+   "grupo": "Oncologia",
+   "tema": "Recuperação da capacidade funcional após o tratamento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-fisioterapia-em-cuidados-paliativos",
+   "grupo": "Cuidados paliativos",
+   "tema": "Fisioterapia em cuidados paliativos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-reabilitacao-paliativa",
+   "grupo": "Cuidados paliativos",
+   "tema": "Reabilitação paliativa",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-cuidados-paliativos-oncologicos",
+   "grupo": "Cuidados paliativos",
+   "tema": "Cuidados paliativos oncológicos",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-cuidados-paliativos-em-doencas-nao-oncologicas",
+   "grupo": "Cuidados paliativos",
+   "tema": "Cuidados paliativos em doenças não oncológicas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-cuidados-paliativos-pediatricos-e-neonatais",
+   "grupo": "Cuidados paliativos",
+   "tema": "Cuidados paliativos pediátricos e neonatais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-preservacao-de-mobilidade-e-autonomia",
+   "grupo": "Cuidados paliativos",
+   "tema": "Preservação de mobilidade e autonomia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-conforto-respiratorio-e-posicionamento",
+   "grupo": "Cuidados paliativos",
+   "tema": "Conforto respiratório e posicionamento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-orientacao-de-cuidadores",
+   "grupo": "Cuidados paliativos",
+   "tema": "Orientação de cuidadores",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "18-atendimento-domiciliar-ambulatorial-e-hospitalar",
+   "grupo": "Cuidados paliativos",
+   "tema": "Atendimento domiciliar, ambulatorial e hospitalar",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "19-fisioterapia-nos-disturbios-do-sono",
+   "grupo": "Sono",
+   "tema": "Fisioterapia nos distúrbios do sono",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "19-atuacao-nas-alteracoes-respiratorias-do-sono",
+   "grupo": "Sono",
+   "tema": "Atuação nas alterações respiratórias do sono",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "19-acompanhamento-fisioterapeutico-de-terapias-com-",
+   "grupo": "Sono",
+   "tema": "Acompanhamento fisioterapêutico de terapias com pressão positiva",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "19-adaptacao-e-acompanhamento-funcional-do-uso-de-c",
+   "grupo": "Sono",
+   "tema": "Adaptação e acompanhamento funcional do uso de CPAP e outras interfaces, dentro das competências profissionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "19-atendimento-as-repercussoes-funcionais-de-condic",
+   "grupo": "Sono",
+   "tema": "Atendimento às repercussões funcionais de condições que prejudicam o sono",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-ergonomia",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Ergonomia",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-analise-ergonomica-do-trabalho",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Análise ergonômica do trabalho",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-avaliacao-funcional-ocupacional",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Avaliação funcional ocupacional",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-prevencao-de-lesoes-relacionadas-ao-trabalho",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Prevenção de lesões relacionadas ao trabalho",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-reabilitacao-de-ler-dort",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Reabilitação de LER/DORT",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-ginastica-laboral",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Ginástica laboral",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-programas-de-saude-do-trabalhador",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Programas de saúde do trabalhador",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-adaptacao-de-postos-de-trabalho",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Adaptação de postos de trabalho",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-retorno-ao-trabalho-apos-afastamento",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Retorno ao trabalho após afastamento",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-inclusao-funcional-de-trabalhadores-com-deficien",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Inclusão funcional de trabalhadores com deficiência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-consultoria-para-empresas",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Consultoria para empresas",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-saude-de-trabalhadores-em-home-office",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Saúde de trabalhadores em home office",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "20-atendimento-ocupacional-a-musicos-motoristas-pro",
+   "grupo": "Trabalho e ergonomia",
+   "tema": "Atendimento ocupacional a músicos, motoristas, profissionais da saúde e trabalhadores industriais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-fisioterapia-na-atencao-primaria",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Fisioterapia na atenção primária",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-fisioterapia-na-saude-da-familia",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Fisioterapia na saúde da família",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-promocao-da-saude",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Promoção da saúde",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-prevencao-de-incapacidades",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Prevenção de incapacidades",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-grupos-de-exercicio-terapeutico",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Grupos de exercício terapêutico",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-educacao-em-saude",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Educação em saúde",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-reabilitacao-comunitaria",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Reabilitação comunitária",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-apoio-matricial-a-equipes-de-saude",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Apoio matricial a equipes de saúde",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-atencao-a-pessoa-com-deficiencia",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Atenção à pessoa com deficiência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-saude-de-populacoes-rurais",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Saúde de populações rurais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-saude-de-povos-indigenas-e-comunidades-tradicion",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Saúde de povos indígenas e comunidades tradicionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-atendimento-a-populacoes-socialmente-vulneraveis",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Atendimento a populações socialmente vulneráveis",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "21-atuacao-em-desastres-e-emergencias-humanitarias",
+   "grupo": "Saúde coletiva e atuação comunitária",
+   "tema": "Atuação em desastres e emergências humanitárias",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "22-cuidado-das-alteracoes-fisicas-e-funcionais-em-p",
+   "grupo": "Saúde mental — atuação físico-funcional",
+   "tema": "Cuidado das alterações físicas e funcionais em pessoas com transtornos mentais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "22-exercicio-terapeutico-em-equipes-de-saude-mental",
+   "grupo": "Saúde mental — atuação físico-funcional",
+   "tema": "Exercício terapêutico em equipes de saúde mental",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "22-atendimento-a-dor-tensao-muscular-inatividade-e-",
+   "grupo": "Saúde mental — atuação físico-funcional",
+   "tema": "Atendimento a dor, tensão muscular, inatividade e perda de funcionalidade",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "22-reabilitacao-fisica-de-pessoas-em-uso-prolongado",
+   "grupo": "Saúde mental — atuação físico-funcional",
+   "tema": "Reabilitação física de pessoas em uso prolongado de psicofármacos, conforme avaliação",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "22-praticas-corporais-em-servicos-multiprofissionai",
+   "grupo": "Saúde mental — atuação físico-funcional",
+   "tema": "Práticas corporais em serviços multiprofissionais",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-clinico-terapeutico",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates clínico/terapêutico",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-de-solo",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates de solo",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-com-aparelhos",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates com aparelhos",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-para-gestantes",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates para gestantes",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-no-pos-parto",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates no pós-parto",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-para-idosos",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates para idosos",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-para-pessoas-com-dor-na-coluna",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates para pessoas com dor na coluna",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-na-reabilitacao-ortopedica",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates na reabilitação ortopédica",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-pilates-aplicado-a-reabilitacao-esportiva",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Pilates aplicado à reabilitação esportiva",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-exercicio-terapeutico-individual",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Exercício terapêutico individual",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-exercicio-terapeutico-em-grupo",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Exercício terapêutico em grupo",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-treinamento-funcional-aplicado-a-reabilitacao",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Treinamento funcional aplicado à reabilitação",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-programas-de-mobilidade-forca-e-equilibrio",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Programas de mobilidade, força e equilíbrio",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "23-reeducacao-postural",
+   "grupo": "Pilates, exercício terapêutico e movimento",
+   "tema": "Reeducação postural",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-ortopedica-aquatica",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação ortopédica aquática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-neurologica-aquatica",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação neurológica aquática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-pediatrica-aquatica",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação pediátrica aquática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-geriatrica-aquatica",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação geriátrica aquática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-reumatologica-aquatica",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação reumatológica aquática",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-exercicio-terapeutico-na-agua",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Exercício terapêutico na água",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-reabilitacao-aquatica-pos-operatoria",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Reabilitação aquática pós-operatória",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-atendimento-aquatico-a-pessoas-com-dor-persisten",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Atendimento aquático a pessoas com dor persistente",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "24-atendimento-aquatico-a-pessoas-com-deficiencia",
+   "grupo": "Fisioterapia aquática",
+   "tema": "Atendimento aquático a pessoas com deficiência",
+   "tipo": "area",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-terapia-manual",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Terapia manual",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-mobilizacao-articular",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Mobilização articular",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-manipulacao-articular",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Manipulação articular",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-mobilizacao-neural",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Mobilização neural",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-tecnicas-de-tecidos-moles",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Técnicas de tecidos moles",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-liberacao-miofascial",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Liberação miofascial",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-massoterapia",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Massoterapia",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-drenagem-linfatica-manual",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Drenagem linfática manual",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-reeducacao-postural-global-rpg",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Reeducação Postural Global — RPG",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-metodo-mckenzie-diagnostico-e-terapia-mecanica",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Método McKenzie/Diagnóstico e Terapia Mecânica",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-facilitacao-neuromuscular-proprioceptiva-fnp",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Facilitação Neuromuscular Proprioceptiva — FNP",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-conceito-bobath",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Conceito Bobath",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-metodos-de-exercicios-especificos-para-escoliose",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Métodos de exercícios específicos para escoliose, como Schroth",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-treino-de-marcha-com-suporte-de-peso",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Treino de marcha com suporte de peso",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-treino-orientado-a-tarefas",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Treino orientado a tarefas",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-terapia-por-contencao-induzida",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Terapia por contenção induzida",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-terapia-do-espelho",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Terapia do espelho",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-biofeedback",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Biofeedback",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-eletroterapia",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Eletroterapia",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-estimulacao-eletrica-funcional",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Estimulação elétrica funcional",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-fotobiomodulacao",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Fotobiomodulação",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-termoterapia-e-crioterapia",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Termoterapia e crioterapia",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-ultrassom-terapeutico",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Ultrassom terapêutico",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-terapia-por-ondas-de-choque",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Terapia por ondas de choque",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-bandagens-terapeuticas",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Bandagens terapêuticas",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-agulhamento-seco",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Agulhamento seco",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-acupuntura",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Acupuntura",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-realidade-virtual-aplicada-a-reabilitacao",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Realidade virtual aplicada à reabilitação",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-jogos-e-gamificacao-terapeutica",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Jogos e gamificação terapêutica",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-reabilitacao-robotica",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Reabilitação robótica",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-equoterapia-em-equipe",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Equoterapia em equipe",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-avaliacao-biomecanica-instrumental",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Avaliação biomecânica instrumental",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "25-baropodometria-e-analise-da-marcha",
+   "grupo": "Métodos e recursos que também aparecem como serviços no mercado",
+   "tema": "Baropodometria e análise da marcha",
+   "tipo": "metodo",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-consultorio-proprio",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Consultório próprio",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-clinica-de-fisioterapia",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Clínica de fisioterapia",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-clinica-multidisciplinar",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Clínica multidisciplinar",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-centro-de-reabilitacao",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Centro de reabilitação",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-estudio-de-pilates",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Estúdio de Pilates",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-domiciliar",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento domiciliar",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-home-care-de-alta-complexidade",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Home care de alta complexidade",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-hospitais",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em hospitais",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-maternidades",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em maternidades",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-clubes-esportivos",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em clubes esportivos",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-academias-e-centros-de-treinament",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em academias e centros de treinamento",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-empresas",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em empresas",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-escolas-conforme-demanda-fisico-f",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em escolas, conforme demanda físico-funcional",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-piscinas-terapeuticas",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em piscinas terapêuticas",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-instituicoes-de-apoio-a-pessoa-co",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em instituições de apoio à pessoa com deficiência",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-em-unidades-publicas-de-saude",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento em unidades públicas de saúde",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-telessaude-e-acompanhamento-remoto-conforme-adeq",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Telessaúde e acompanhamento remoto, conforme adequação clínica e regras profissionais",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "26-atendimento-hibrido-presencial-e-remoto",
+   "grupo": "Formatos e locais de atendimento",
+   "tema": "Atendimento híbrido: presencial e remoto",
+   "tipo": "local",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-pericia-fisioterapeutica",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Perícia fisioterapêutica",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-pericia-judicial-dentro-do-campo-de-competencia",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Perícia judicial dentro do campo de competência",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-assistencia-tecnica-em-processos-judiciais",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Assistência técnica em processos judiciais",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-avaliacao-de-capacidade-funcional",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Avaliação de capacidade funcional",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-avaliacao-de-incapacidade-fisico-funcional",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Avaliação de incapacidade físico-funcional",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-elaboracao-de-pareceres-e-laudos-fisioterapeutic",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Elaboração de pareceres e laudos fisioterapêuticos",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-consultoria-em-ergonomia",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Consultoria em ergonomia",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-auditoria-de-servicos-de-fisioterapia",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Auditoria de serviços de fisioterapia",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-auditoria-de-prontuarios-e-procedimentos",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Auditoria de prontuários e procedimentos",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-consultoria-de-qualidade-assistencial",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Consultoria de qualidade assistencial",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-consultoria-para-operadoras-de-saude",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Consultoria para operadoras de saúde",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "27-consultoria-para-implantacao-de-servicos-de-reab",
+   "grupo": "Perícia, auditoria e consultoria",
+   "tema": "Consultoria para implantação de serviços de reabilitação",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-docencia-em-cursos-tecnicos-e-superiores-conform",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Docência em cursos técnicos e superiores, conforme formação exigida",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-docencia-em-pos-graduacao",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Docência em pós-graduação",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-supervisao-de-estagio",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Supervisão de estágio",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-preceptoria-de-residencia",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Preceptoria de residência",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-coordenacao-de-cursos",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Coordenação de cursos",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-pesquisa-cientifica",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Pesquisa científica",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-pesquisa-clinica",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Pesquisa clínica",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-desenvolvimento-de-protocolos-assistenciais",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Desenvolvimento de protocolos assistenciais",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-gestao-de-clinicas",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Gestão de clínicas",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-gestao-de-servicos-hospitalares-de-fisioterapia",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Gestão de serviços hospitalares de fisioterapia",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-coordenacao-de-equipes",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Coordenação de equipes",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-responsabilidade-tecnica",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Responsabilidade técnica",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-gestao-publica-em-saude",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Gestão pública em saúde",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-empreendedorismo-em-reabilitacao",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Empreendedorismo em reabilitação",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-desenvolvimento-de-equipamentos",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Desenvolvimento de equipamentos",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-consultoria-tecnica-para-fabricantes",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Consultoria técnica para fabricantes",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-treinamento-de-uso-de-equipamentos",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Treinamento de uso de equipamentos",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-desenvolvimento-de-tecnologias-assistivas",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Desenvolvimento de tecnologias assistivas",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-consultoria-clinica-para-softwares-e-healthtechs",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Consultoria clínica para softwares e healthtechs",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-desenvolvimento-de-solucoes-digitais-para-reabil",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Desenvolvimento de soluções digitais para reabilitação",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  },
+  {
+   "id": "28-producao-de-materiais-e-conteudos-educacionais",
+   "grupo": "Ensino, pesquisa, gestão e tecnologia",
+   "tema": "Produção de materiais e conteúdos educacionais",
+   "tipo": "carreira",
+   "status": "pendente",
+   "fato": "",
+   "fonte": "",
+   "observacao": ""
+  }
+ ]
+}

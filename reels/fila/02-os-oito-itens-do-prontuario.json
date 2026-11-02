@@ -1,0 +1,36 @@
+{
+  "tipo": "dica",
+  "titulo": "Os oito itens do prontuario",
+  "narracao": "Quantos itens o prontuário precisa ter? Pelo COFFITO, oito. Da identificação do paciente à do profissional. No digital, fica tudo num lugar só. Teste a FisioSync grátis.",
+  "palavras": 27,
+  "fato": "O Art. 1º, §1º da Resolução COFFITO 414/2012 lista oito itens: identificação do paciente; história clínica; exame clínico/físico; exames complementares; diagnóstico e prognóstico fisioterapêuticos; plano terapêutico; evolução; e identificação do profissional.",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.277,
+    0.475
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quantos itens",
+      "o prontuário",
+      "precisa ter?"
+    ]
+  },
+  "resposta": {
+    "destaque": "8",
+    "complemento": "itens obrigatórios",
+    "fonte": "Resolução COFFITO nº 414/2012, Art. 1º, §1º"
+  },
+  "extra": {
+    "titulo": "Do começo ao fim",
+    "texto": "Da identificação\ndo paciente à\ndo profissional."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "O prontuário fisioterapêutico tem oito itens obrigatórios (Resolução COFFITO nº 414/2012, Art. 1º, §1º):\n\n1. Identificação do paciente\n2. História clínica\n3. Exame clínico/físico\n4. Exames complementares\n5. Diagnóstico e prognóstico fisioterapêuticos\n6. Plano terapêutico\n7. Evolução\n8. Identificação do profissional\n\nQual deles mais fica para trás na correria? Conta aqui.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #fisioterapia #prontuario #coffito"
+}
