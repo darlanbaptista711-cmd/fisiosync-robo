@@ -487,7 +487,7 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "- sobretitulo: exatamente 'Mito ou verdade?'.\n"
         "- titulo (capa): UMA afirmacao curta, ate 8 palavras, sem ponto "
         "final, que o publico realmente poderia achar verdadeira ou falsa. "
-        "Ela tem que ser decidida PELO FATO CONFERIDO: ou o fato confirma a "
+        "Ate 60 caracteres. Ela tem que ser decidida PELO FATO CONFERIDO: ou o fato confirma a "
         "afirmacao (VERDADE) ou o fato a contradiz diretamente (MITO). Nada "
         "que o fato nao resolva.\n"
         "- apoio (capa): 'Arraste e confira a resposta.'\n"
@@ -749,7 +749,14 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     else:
         dados["slides"] = []
 
-    dados["titulo"] = encurtar(dados["titulo"], 62, "titulo")
+    # Titulo NAO e encurtado por palavra: em 02/11/2026 "competencia da
+    # Fisioterapia Respiratoria" virou "competencia da Fisioterapia." e o
+    # fato mudou de sentido. A arte diminui a letra ate 3 linhas e, se nem
+    # assim couber, o molde recusa a peca (TextoNaoCabe). So corta em
+    # pontuacao, e so se passar muito do tamanho.
+    dados["titulo"] = dados["titulo"].strip()
+    if len(dados["titulo"]) > 95:
+        dados["titulo"] = encurtar(dados["titulo"], 95, "titulo")
     dados["apoio"] = encurtar(dados.get("apoio", ""), 118, "apoio")
     dados["pauta"] = pauta_banco or dados.get("tema", "")
     dados["eixo"] = eixo_banco
