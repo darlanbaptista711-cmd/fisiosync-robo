@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       nome:
-        description: "Nome do Reels em reels/, sem extensao"
+        description: "Nome do Reels (ex: 15-dez-segundos-num-pe-so). Procura o video em reels/prontos e o roteiro em reels/fila"
         type: string
         required: true
 
@@ -25,16 +25,26 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Instalar ffmpeg (a capa e calculada pela duracao do video)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Publicar no Instagram
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          VIDEO: reels/${{ inputs.nome }}.mp4
-          ROTEIRO: reels/${{ inputs.nome }}.json
-        run: node reels/publicar.mjs
+          NOME: ${{ inputs.nome }}
+        run: |
+          set -e
+          VIDEO="reels/prontos/$NOME.mp4"; [ -f "$VIDEO" ] || VIDEO="reels/$NOME.mp4"
+          ROTEIRO="reels/fila/$NOME.json"; [ -f "$ROTEIRO" ] || ROTEIRO="reels/$NOME.json"
+          test -f "$VIDEO" && test -f "$ROTEIRO"
+          echo "video: $VIDEO | roteiro: $ROTEIRO"
+          export VIDEO ROTEIRO
+          node reels/publicar.mjs
       - name: Guardar o historico
         run: |
           git config user.name "FisioSync Robo"
