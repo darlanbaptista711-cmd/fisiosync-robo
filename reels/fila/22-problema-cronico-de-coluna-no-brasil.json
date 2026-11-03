@@ -1,0 +1,37 @@
+{
+  "tipo": "dica",
+  "titulo": "Problema cronico de coluna no Brasil",
+  "narracao": "Quantos brasileiros têm problema crônico de coluna? Pela PNS, vinte e um vírgula seis por cento dos adultos relatam. É muita gente pra atender. Organize a agenda com a FisioSync.",
+  "palavras": 30,
+  "fato": "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros de 18 anos ou mais relataram problema crônico de coluna, cerca de 34,3 milhões de pessoas. A prevalência foi de 24,5% nas mulheres e 18,3% nos homens, e subiu de 9,3% na faixa de 18 a 24 anos para 31,3% tanto entre 55 e 64 anos quanto a partir dos 65.",
+  "fonte": "Malta et al., Revista Brasileira de Epidemiologia, 2022 (dados da PNS 2019/IBGE)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.362,
+    0.454
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Quantos brasileiros",
+      "têm problema",
+      "crônico de coluna?"
+    ]
+  },
+  "resposta": {
+    "destaque": "21,6%",
+    "complemento": "dos adultos relatam o problema",
+    "fonte": "PNS 2019 (IBGE); Malta et al., 2022"
+  },
+  "extra": {
+    "titulo": "Nas mulheres",
+    "texto": "24,5%.\nNos homens, 18,3%."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros com 18 anos ou mais relataram problema crônico de coluna (Malta et al., Revista Brasileira de Epidemiologia, 2022).\n\nForam 24,5% nas mulheres e 18,3% nos homens. Na faixa de 18 a 24 anos eram 9,3%; entre 55 e 64 anos, e a partir dos 65, 31,3%.\n\nEsse é o tamanho da demanda pela fisioterapia no país.\n\nQual faixa de idade mais aparece no seu consultório?\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #coluna #saudepublica #fisioterapia",
+  "interesse": "alto"
+}

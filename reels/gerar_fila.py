@@ -364,6 +364,269 @@ ROTEIROS = [
         "tags": "#FisioSync #fisioterapia #planoterapeutico #coffito",
     },
     {
+        "interesse": "alto",
+        "titulo": "Dez segundos num pe so",
+        "partes": [
+            "Seu paciente aguenta dez segundos num pé só?",
+            "Estudo brasileiro: quem não aguentou teve oitenta e quatro por cento mais risco de morte.",
+            "Anote na avaliação.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Seu paciente aguenta",
+            "10 segundos",
+            "num pé só?"
+        ],
+        "resposta": {
+            "destaque": "84%",
+            "complemento": "mais risco de morte em quem não aguentou",
+            "fonte": "Araujo et al., BJSM, 2022"
+        },
+        "extra": {
+            "titulo": "Estudo brasileiro",
+            "texto": "1.702 pessoas\nde 51 a 75 anos"
+        },
+        "fato": "Estudo de coorte de pesquisadores da CLINIMEX (Rio de Janeiro) avaliou 1.702 pessoas de 51 a 75 anos (68% homens) entre 2008 e 2020, e 20,4% não conseguiram ficar 10 segundos apoiadas em um pé só. Em mediana de 7 anos, morreram 17,5% desse grupo contra 4,6% de quem conseguiu; ajustado por idade, sexo, IMC e comorbidades, o risco de morte por qualquer causa foi 84% maior (HR 1,84; IC95% 1,23–2,78).",
+        "fonte": "Araujo et al., British Journal of Sports Medicine, 2022 (coorte)",
+        "legenda": [
+            "Pesquisadores da CLINIMEX (Rio de Janeiro) acompanharam 1.702 pessoas de 51 a 75 anos. 20,4% não conseguiram ficar 10 segundos apoiadas em um pé só (Araujo et al., British Journal of Sports Medicine, 2022).",
+            "Em cerca de 7 anos, morreram 17,5% de quem não conseguiu, contra 4,6% de quem conseguiu. Ajustado por idade, sexo, IMC e outras doenças, o risco de morte foi 84% maior.",
+            "É uma associação: o estudo não prova que treinar equilíbrio aumenta a sobrevida.",
+            "Você já usa esse teste na avaliação?"
+        ],
+        "tags": "#equilibrio #avaliacao #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Disco degenerado sem dor",
+        "partes": [
+            "Disco degenerado na ressonância explica a dor?",
+            "Sem dor nenhuma, trinta e sete por cento já têm aos vinte anos.",
+            "Aos oitenta, noventa e seis.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Disco degenerado",
+            "na ressonância",
+            "explica a dor?"
+        ],
+        "resposta": {
+            "destaque": "96%",
+            "complemento": "dos 80 anos sem dor têm degeneração",
+            "fonte": "Brinjikji et al., AJNR, 2015"
+        },
+        "extra": {
+            "titulo": "Aos 20 anos",
+            "texto": "37% já têm,\nmesmo sem dor."
+        },
+        "fato": "Revisão sistemática com 33 estudos e 3.110 pessoas sem sintomas encontrou degeneração discal em exames de imagem em 37% dos indivíduos de 20 anos e em 96% dos de 80 anos. Na mesma comparação entre 20 e 80 anos, o abaulamento discal passou de 30% para 84%, a protrusão discal de 29% para 43% e a fissura anular de 19% para 29%.",
+        "fonte": "Brinjikji et al., American Journal of Neuroradiology, 2015 (revisão sistemática)",
+        "legenda": [
+            "Uma revisão sistemática com 33 estudos e 3.110 pessoas SEM dor (Brinjikji et al., American Journal of Neuroradiology, 2015) encontrou degeneração discal na imagem em 37% dos indivíduos de 20 anos e em 96% dos de 80 anos.",
+            "Entre 20 e 80 anos, o abaulamento discal passou de 30% para 84%, e a protrusão discal de 29% para 43%.",
+            "Ou seja: esses achados são comuns em quem não sente dor, e aumentam com a idade.",
+            "Você mostra esse dado para os seus pacientes?"
+        ],
+        "tags": "#coluna #dorlombar #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Forca de preensao e mortalidade",
+        "partes": [
+            "Força de preensão prevê mortalidade?",
+            "Cada cinco quilos a menos, dezesseis por cento mais risco de morte.",
+            "E previu melhor que a pressão sistólica.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Força de",
+            "preensão prevê",
+            "mortalidade?"
+        ],
+        "resposta": {
+            "destaque": "16%",
+            "complemento": "mais risco a cada 5 kg a menos",
+            "fonte": "Leong et al., The Lancet, 2015"
+        },
+        "extra": {
+            "titulo": "Melhor que",
+            "texto": "a pressão sistólica\ncomo preditor."
+        },
+        "fato": "No estudo PURE, com 139.691 adultos de 17 países acompanhados por mediana de 4 anos, cada 5 kg a menos de força de preensão manual se associou a risco 16% maior de morte por qualquer causa (HR 1,16; IC95% 1,13–1,20). A força de preensão foi preditora mais forte de mortalidade geral e cardiovascular do que a pressão arterial sistólica.",
+        "fonte": "Leong et al., The Lancet, 2015 (estudo de coorte prospectivo PURE)",
+        "legenda": [
+            "No estudo PURE (Leong et al., The Lancet, 2015), 139.691 adultos de 17 países foram acompanhados por cerca de 4 anos. Cada 5 kg a menos de força de preensão se associou a risco 16% maior de morte por qualquer causa.",
+            "A força de preensão foi preditora mais forte de mortalidade geral e cardiovascular do que a pressão arterial sistólica.",
+            "É associação, de um estudo observacional: não quer dizer que treinar a preensão reduz a mortalidade.",
+            "Você mede a preensão na avaliação?"
+        ],
+        "tags": "#forca #avaliacao #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Alongamento e lesao esportiva",
+        "partes": [
+            "Alongar previne lesão esportiva?",
+            "Em vinte e cinco ensaios, alongamento não mostrou benefício.",
+            "Treino de força reduziu as lesões a menos de um terço.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Alongar previne",
+            "lesão",
+            "esportiva?"
+        ],
+        "resposta": {
+            "destaque": "1/3",
+            "complemento": "força reduziu lesões a menos de 1/3",
+            "fonte": "Lauersen et al., BJSM, 2014"
+        },
+        "extra": {
+            "titulo": "E o alongamento?",
+            "texto": "Sem efeito\nna prevenção."
+        },
+        "fato": "Metanálise de 25 ensaios randomizados (26.610 participantes, 3.464 lesões) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas (RR 0,963; IC95% 0,846–1,095). O treino de força teve o maior efeito (RR 0,315; IC95% 0,207–0,480), seguido do treino proprioceptivo (RR 0,550; IC95% 0,347–0,869); segundo os autores, o treino de força reduziu as lesões esportivas a menos de 1/3 e as lesões por sobrecarga poderiam ser quase reduzidas à metade.",
+        "fonte": "Lauersen et al., British Journal of Sports Medicine, 2014 (revisão sistemática e metanálise)",
+        "legenda": [
+            "Metanálise com 25 ensaios randomizados e 26.610 participantes (Lauersen et al., British Journal of Sports Medicine, 2014) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas.",
+            "O treino de força teve o maior efeito: segundo os autores, reduziu as lesões esportivas a menos de 1/3. O treino proprioceptivo veio em seguida.",
+            "O estudo avaliou prevenção de lesões. Não fala de flexibilidade nem de desempenho.",
+            "No seu atendimento, força ou alongamento vem primeiro?"
+        ],
+        "tags": "#prevencaodelesoes #fisioesportiva #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "O nordico e os isquiotibiais",
+        "partes": [
+            "Qual exercício corta pela metade lesão de isquiotibiais?",
+            "O nórdico: no programa, reduziu o risco em até cinquenta e um por cento.",
+            "Quinze estudos.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Qual exercício",
+            "corta pela metade",
+            "lesão de isquiotibiais?"
+        ],
+        "resposta": {
+            "destaque": "51%",
+            "complemento": "menos risco com o nórdico no programa",
+            "fonte": "van Dyk et al., BJSM, 2019"
+        },
+        "extra": {
+            "titulo": "8.459 atletas",
+            "texto": "15 estudos\nna metanálise."
+        },
+        "fato": "Revisão sistemática com metanálise de 15 estudos (8.459 atletas) comparou programas de prevenção com e sem o exercício nórdico para isquiotibiais: incluir o nórdico reduziu o risco de lesão de isquiotibiais em até 51% (razão de risco 0,49; IC95% 0,32–0,74). Considerando só os 8 ensaios randomizados, a razão de risco foi 0,52 (IC95% 0,32–0,85), e os autores concluem que o exercício nórdico 'essencialmente reduz pela metade' a taxa dessas lesões.",
+        "fonte": "van Dyk et al., British Journal of Sports Medicine, 2019 (revisão sistemática e metanálise)",
+        "legenda": [
+            "Revisão sistemática com metanálise de 15 estudos e 8.459 atletas (van Dyk et al., British Journal of Sports Medicine, 2019) comparou programas de prevenção com e sem o exercício nórdico.",
+            "Incluir o nórdico reduziu o risco de lesão de isquiotibiais em até 51%. Nos 8 ensaios randomizados, a redução também ficou perto da metade.",
+            "O resultado vale para lesão de isquiotibiais, não para lesões em geral.",
+            "O nórdico já está nos seus programas de prevenção?"
+        ],
+        "tags": "#isquiotibiais #fisioesportiva #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Exercicio e quedas em idosos",
+        "partes": [
+            "Exercício reduz quedas em idosos?",
+            "Pela Cochrane, reduz a taxa de quedas em vinte e três por cento.",
+            "Combinando tipos, provavelmente trinta e quatro.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Exercício",
+            "reduz quedas",
+            "em idosos?"
+        ],
+        "resposta": {
+            "destaque": "23%",
+            "complemento": "menos quedas com exercício",
+            "fonte": "Sherrington et al., Cochrane, 2019"
+        },
+        "extra": {
+            "titulo": "Combinando tipos",
+            "texto": "provavelmente 34%\n(certeza moderada)"
+        },
+        "fato": "Revisão Cochrane de 108 ensaios randomizados (23.407 participantes de 25 países, com 60 anos ou mais e vivendo na comunidade; média de 76 anos, 77% mulheres) concluiu que o exercício reduz a taxa de quedas em 23% (razão de taxas 0,77; IC95% 0,71–0,83; certeza alta) e o número de pessoas que caem ao menos uma vez em 15% (RR 0,85; IC95% 0,81–0,89). Exercícios de equilíbrio e funcionais reduzem a taxa de quedas em 24%, a combinação de tipos (em geral equilíbrio e funcionais mais resistidos) provavelmente reduz em 34% e o Tai Chi pode reduzir em 19%.",
+        "fonte": "Sherrington et al., Cochrane Database of Systematic Reviews, 2019 (revisão sistemática Cochrane)",
+        "legenda": [
+            "Revisão Cochrane com 108 ensaios e 23.407 pessoas com 60 anos ou mais vivendo na comunidade (Sherrington et al., 2019): o exercício reduz a taxa de quedas em 23%, com certeza alta.",
+            "Exercícios de equilíbrio e funcionais reduzem a taxa em 24%. A combinação de tipos, em geral equilíbrio e funcionais com resistidos, provavelmente reduz em 34%. O Tai Chi pode reduzir em 19%.",
+            "Que tipo de exercício você usa com seus pacientes idosos?"
+        ],
+        "tags": "#idosos #quedas #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Pilates ja foi marca registrada",
+        "partes": [
+            "Você sabia que Pilates já foi marca registrada?",
+            "Em dois mil, a Justiça americana anulou a marca.",
+            "Virou o nome genérico do método.",
+            "Teste a FisioSync grátis."
+        ],
+        "pergunta": [
+            "Pilates já foi",
+            "marca",
+            "registrada?"
+        ],
+        "resposta": {
+            "destaque": "2000",
+            "complemento": "a Justiça dos EUA anulou a marca",
+            "fonte": "Pilates, Inc. v. Current Concepts, 2000"
+        },
+        "extra": {
+            "titulo": "Desde então",
+            "texto": "instrutores e fabricantes\npodem usar o nome."
+        },
+        "fato": "Em 19 de outubro de 2000, no caso Pilates, Inc. v. Current Concepts, Inc., a juíza Miriam Cedarbaum, do Tribunal Distrital dos EUA para o Distrito Sul de Nova York, considerou 'Pilates' o nome genérico de um método de exercício, invalidou as marcas registradas da palavra e mandou o escritório de marcas e patentes dos EUA (USPTO) cancelá-las. Com isso, nos EUA, instrutores e fabricantes passaram a poder usar o termo para descrever aulas e equipamentos.",
+        "fonte": "Pilates, Inc. v. Current Concepts, Inc., 120 F. Supp. 2d 286, S.D.N.Y., 2000 (decisão judicial)",
+        "legenda": [
+            "Em 19 de outubro de 2000, no caso Pilates, Inc. v. Current Concepts, Inc., um tribunal federal de Nova York considerou 'Pilates' o nome genérico de um método de exercício e mandou cancelar as marcas registradas da palavra.",
+            "Com isso, nos EUA, instrutores e fabricantes passaram a poder usar o termo para descrever aulas e equipamentos.",
+            "A decisão vale para os Estados Unidos.",
+            "Você conhecia essa história?"
+        ],
+        "tags": "#pilates #historia #studiodepilates"
+    },
+    {
+        "interesse": "alto",
+        "titulo": "Problema cronico de coluna no Brasil",
+        "partes": [
+            "Quantos brasileiros têm problema crônico de coluna?",
+            "Pela PNS, vinte e um vírgula seis por cento dos adultos relatam.",
+            "É muita gente pra atender.",
+            "Organize a agenda com a FisioSync."
+        ],
+        "pergunta": [
+            "Quantos brasileiros",
+            "têm problema",
+            "crônico de coluna?"
+        ],
+        "resposta": {
+            "destaque": "21,6%",
+            "complemento": "dos adultos relatam o problema",
+            "fonte": "PNS 2019 (IBGE); Malta et al., 2022"
+        },
+        "extra": {
+            "titulo": "Nas mulheres",
+            "texto": "24,5%.\nNos homens, 18,3%."
+        },
+        "fato": "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros de 18 anos ou mais relataram problema crônico de coluna, cerca de 34,3 milhões de pessoas. A prevalência foi de 24,5% nas mulheres e 18,3% nos homens, e subiu de 9,3% na faixa de 18 a 24 anos para 31,3% tanto entre 55 e 64 anos quanto a partir dos 65.",
+        "fonte": "Malta et al., Revista Brasileira de Epidemiologia, 2022 (dados da PNS 2019/IBGE)",
+        "legenda": [
+            "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros com 18 anos ou mais relataram problema crônico de coluna (Malta et al., Revista Brasileira de Epidemiologia, 2022).",
+            "Foram 24,5% nas mulheres e 18,3% nos homens. Na faixa de 18 a 24 anos eram 9,3%; entre 55 e 64 anos, e a partir dos 65, 31,3%.",
+            "Esse é o tamanho da demanda pela fisioterapia no país.",
+            "Qual faixa de idade mais aparece no seu consultório?"
+        ],
+        "tags": "#coluna #saudepublica #fisioterapia"
+    },
+    {
         "titulo": "O que e o Pilates para o COFFITO",
         "partes": ["O que é o Pilates para o COFFITO?",
                    "Recurso cinesioterapêutico e mecanoterapêutico, de reeducação do movimento.",

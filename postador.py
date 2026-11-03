@@ -392,7 +392,7 @@ def gravar_historico(registro):
 
 
 def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
-                     estilo="sabia"):
+                     estilo="sabia", cuidados=""):
     hist = ler_historico()
     if hist:
         recentes = "\n".join(
@@ -433,6 +433,11 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
             "O software ajuda a organizar o registro; quem responde pelo "
             "cumprimento da norma e o profissional.\n"
             "- Cite a fonte na legenda, do jeito que esta acima.\n"
+            + (f"- CUIDADOS DE QUEM CONFERIU O FATO (obedeca): {cuidados}\n"
+               if cuidados else "") +
+            "- Estudo observacional mostra ASSOCIACAO: escreva 'se associou', "
+            "nunca 'causa', 'aumenta a vida' ou 'previne'. Nao transforme o "
+            "achado em promessa de tratamento.\n"
             "- Nada de orientacao clinica ou de consultoria juridica: "
             "informe o que a norma diz e pare ai.\n"
             "=== FIM DO FATO ===\n")
@@ -683,6 +688,7 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     hist = ler_historico(limite=500)
     pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
     fato_banco, fonte_banco = "", ""
+    cuidados_banco = ""
 
     if not tema:
         # A pauta sai do banco, nao da cabeca do modelo. A trava contra
@@ -701,9 +707,10 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
         pauta_banco, eixo_banco = p["tema"], p.get("eixo", "")
         familia_banco = p.get("familia", "gestao")
         fato_banco, fonte_banco = p.get("fato", ""), p.get("fonte", "")
+        cuidados_banco = p.get("observacao", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
     pedido = _pedido_conteudo(tema, fato_banco, fonte_banco, carrossel,
-                              estilo)
+                              estilo, cuidados_banco)
     log(f"Formato: {'carrossel' if carrossel else 'imagem unica'}"
         + (' / mito ou verdade' if carrossel and estilo == 'mito' else ''))
 

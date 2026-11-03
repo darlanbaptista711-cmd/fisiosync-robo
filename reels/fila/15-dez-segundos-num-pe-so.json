@@ -1,0 +1,37 @@
+{
+  "tipo": "dica",
+  "titulo": "Dez segundos num pe so",
+  "narracao": "Seu paciente aguenta dez segundos num pé só? Estudo brasileiro: quem não aguentou teve oitenta e quatro por cento mais risco de morte. Anote na avaliação. Teste a FisioSync grátis.",
+  "palavras": 30,
+  "fato": "Estudo de coorte de pesquisadores da CLINIMEX (Rio de Janeiro) avaliou 1.702 pessoas de 51 a 75 anos (68% homens) entre 2008 e 2020, e 20,4% não conseguiram ficar 10 segundos apoiadas em um pé só. Em mediana de 7 anos, morreram 17,5% desse grupo contra 4,6% de quem conseguiu; ajustado por idade, sexo, IMC e comorbidades, o risco de morte por qualquer causa foi 84% maior (HR 1,84; IC95% 1,23–2,78).",
+  "fonte": "Araujo et al., British Journal of Sports Medicine, 2022 (coorte)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.289,
+    0.586
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Seu paciente aguenta",
+      "10 segundos",
+      "num pé só?"
+    ]
+  },
+  "resposta": {
+    "destaque": "84%",
+    "complemento": "mais risco de morte em quem não aguentou",
+    "fonte": "Araujo et al., BJSM, 2022"
+  },
+  "extra": {
+    "titulo": "Estudo brasileiro",
+    "texto": "1.702 pessoas\nde 51 a 75 anos"
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Pesquisadores da CLINIMEX (Rio de Janeiro) acompanharam 1.702 pessoas de 51 a 75 anos. 20,4% não conseguiram ficar 10 segundos apoiadas em um pé só (Araujo et al., British Journal of Sports Medicine, 2022).\n\nEm cerca de 7 anos, morreram 17,5% de quem não conseguiu, contra 4,6% de quem conseguiu. Ajustado por idade, sexo, IMC e outras doenças, o risco de morte foi 84% maior.\n\nÉ uma associação: o estudo não prova que treinar equilíbrio aumenta a sobrevida.\n\nVocê já usa esse teste na avaliação?\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #equilibrio #avaliacao #fisioterapia",
+  "interesse": "alto"
+}

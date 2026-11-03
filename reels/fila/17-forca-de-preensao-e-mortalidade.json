@@ -1,0 +1,37 @@
+{
+  "tipo": "dica",
+  "titulo": "Forca de preensao e mortalidade",
+  "narracao": "Força de preensão prevê mortalidade? Cada cinco quilos a menos, dezesseis por cento mais risco de morte. E previu melhor que a pressão sistólica. Teste a FisioSync grátis.",
+  "palavras": 28,
+  "fato": "No estudo PURE, com 139.691 adultos de 17 países acompanhados por mediana de 4 anos, cada 5 kg a menos de força de preensão manual se associou a risco 16% maior de morte por qualquer causa (HR 1,16; IC95% 1,13–1,20). A força de preensão foi preditora mais forte de mortalidade geral e cardiovascular do que a pressão arterial sistólica.",
+  "fonte": "Leong et al., The Lancet, 2015 (estudo de coorte prospectivo PURE)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.252,
+    0.469
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Força de",
+      "preensão prevê",
+      "mortalidade?"
+    ]
+  },
+  "resposta": {
+    "destaque": "16%",
+    "complemento": "mais risco a cada 5 kg a menos",
+    "fonte": "Leong et al., The Lancet, 2015"
+  },
+  "extra": {
+    "titulo": "Melhor que",
+    "texto": "a pressão sistólica\ncomo preditor."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "No estudo PURE (Leong et al., The Lancet, 2015), 139.691 adultos de 17 países foram acompanhados por cerca de 4 anos. Cada 5 kg a menos de força de preensão se associou a risco 16% maior de morte por qualquer causa.\n\nA força de preensão foi preditora mais forte de mortalidade geral e cardiovascular do que a pressão arterial sistólica.\n\nÉ associação, de um estudo observacional: não quer dizer que treinar a preensão reduz a mortalidade.\n\nVocê mede a preensão na avaliação?\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #forca #avaliacao #fisioterapia",
+  "interesse": "alto"
+}

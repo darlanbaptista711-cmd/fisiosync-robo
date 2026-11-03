@@ -1,0 +1,37 @@
+{
+  "tipo": "dica",
+  "titulo": "O nordico e os isquiotibiais",
+  "narracao": "Qual exercício corta pela metade lesão de isquiotibiais? O nórdico: no programa, reduziu o risco em até cinquenta e um por cento. Quinze estudos. Teste a FisioSync grátis.",
+  "palavras": 28,
+  "fato": "Revisão sistemática com metanálise de 15 estudos (8.459 atletas) comparou programas de prevenção com e sem o exercício nórdico para isquiotibiais: incluir o nórdico reduziu o risco de lesão de isquiotibiais em até 51% (razão de risco 0,49; IC95% 0,32–0,74). Considerando só os 8 ensaios randomizados, a razão de risco foi 0,52 (IC95% 0,32–0,85), e os autores concluem que o exercício nórdico 'essencialmente reduz pela metade' a taxa dessas lesões.",
+  "fonte": "van Dyk et al., British Journal of Sports Medicine, 2019 (revisão sistemática e metanálise)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.392,
+    0.503
+  ],
+  "pergunta": {
+    "rotulo": "Você sabia?",
+    "linhas": [
+      "Qual exercício",
+      "corta pela metade",
+      "lesão de isquiotibiais?"
+    ]
+  },
+  "resposta": {
+    "destaque": "51%",
+    "complemento": "menos risco com o nórdico no programa",
+    "fonte": "van Dyk et al., BJSM, 2019"
+  },
+  "extra": {
+    "titulo": "8.459 atletas",
+    "texto": "15 estudos\nna metanálise."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br"
+  },
+  "capa_ms": 3800,
+  "legenda": "Revisão sistemática com metanálise de 15 estudos e 8.459 atletas (van Dyk et al., British Journal of Sports Medicine, 2019) comparou programas de prevenção com e sem o exercício nórdico.\n\nIncluir o nórdico reduziu o risco de lesão de isquiotibiais em até 51%. Nos 8 ensaios randomizados, a redução também ficou perto da metade.\n\nO resultado vale para lesão de isquiotibiais, não para lesões em geral.\n\nO nórdico já está nos seus programas de prevenção?\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #isquiotibiais #fisioesportiva #fisioterapia",
+  "interesse": "alto"
+}
