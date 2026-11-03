@@ -1,7 +1,7 @@
 name: Posts diarios da FisioSync
 
-# DOIS posts por dia: 12:00 (carrossel "Voce sabia?") e 18:00 (carrossel
-# "Mito ou verdade?"), em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
+# Desde 03/11/2026: 09:00 carrossel "Voce sabia?", 15:00 carrossel
+# "Mito ou verdade?" e 19:00 Reels, em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
 # consome 1 pauta de conhecimento conferida do banco.
 #
 # O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
@@ -20,10 +20,10 @@ name: Posts diarios da FisioSync
 #
 #   madrugada   dorme ate 05:00
 #   manha_cedo  dorme ate 08:00
-#   manha       dorme ate 12:00  e PUBLICA
+#   manha       dorme ate 09:00  e PUBLICA (carrossel)
 #   tarde_cedo  dorme ate 15:30
-#   tarde       dorme ate 18:00  e PUBLICA
-#   reels       monta 19:45     e PUBLICA o Reels as 20:00
+#   tarde       dorme ate 15:00  e PUBLICA (carrossel)
+#   reels       monta 18:45     e PUBLICA o Reels as 19:00
 #
 # Uma largada a 01:00 cobre os dois posts do dia. Largada mais tarde
 # entra no meio da corrente. Cada etapa roda mesmo se a anterior
@@ -43,13 +43,12 @@ on:
     - cron: "0 6 * * *"      # 03:00
     - cron: "0 8 * * *"      # 05:00
     - cron: "30 9 * * *"     # 06:30
-    # manha, se nenhuma largada da madrugada pegou
-    - cron: "30 11 * * *"    # 08:30
-    - cron: "30 13 * * *"    # 10:30
-    - cron: "40 14 * * *"    # 11:40
-    # ultimas chances do dia
-    - cron: "20 16 * * *"    # 13:20
-    - cron: "0 20 * * *"     # 17:00
+    # se nenhuma largada da madrugada pegou: antes de cada post
+    - cron: "30 10 * * *"    # 07:30 (carrossel das 9h)
+    - cron: "15 11 * * *"    # 08:15
+    - cron: "0 14 * * *"     # 11:00 (carrossel das 15h)
+    - cron: "30 16 * * *"    # 13:30
+    - cron: "0 19 * * *"     # 16:00 (Reels das 19h)
   workflow_dispatch:
     inputs:
       agora:
@@ -124,7 +123,7 @@ jobs:
           python-version: "3.11"
       - run: pip install requests pillow
 
-      - name: Esperar o meio-dia
+      - name: Esperar as 09:00
         id: relogio
         run: python espera.py --etapa manha
 
@@ -137,7 +136,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # 12h e carrossel (o formato que mais e salvo); 18h e post unico
+        # 9h carrossel "Voce sabia?"; 15h carrossel "Mito ou verdade?"
         run: python postador.py --carrossel
 
       - name: Avisar se falhou
@@ -185,7 +184,7 @@ jobs:
           python-version: "3.11"
       - run: pip install requests pillow
 
-      - name: Esperar as 18:00
+      - name: Esperar as 15:00
         id: relogio
         run: python espera.py --etapa tarde
 
@@ -211,7 +210,7 @@ jobs:
         run: bash guardar.sh
 
   # ---------------------------------------------------------------------
-  # REELS, UM POR DIA: 20h (decisao de 02/11/2026: 1 Reels + 2 carrosseis.
+  # REELS, UM POR DIA: 19h (decisao de 02/11/2026: 1 Reels + 2 carrosseis.
   # Um Reels forte rende mais que dois medianos e a fila de fatos rende o
   # dobro.)
   #
@@ -235,7 +234,7 @@ jobs:
       - uses: ./.github/actions/reels
         with:
           etapa: reels
-          publicar_as: "20:00"
+          publicar_as: "19:00"
           janela: noite
           elevenlabs_key: ${{ secrets.ELEVENLABS_API_KEY }}
           voice_id: ${{ secrets.ELEVENLABS_VOICE_ID }}

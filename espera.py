@@ -48,16 +48,16 @@ import postador as P
 # abaixo do teto de 6h que o GitHub impoe a um job. Dividir em mais
 # etapas custa nada e evita o job morrer no meio da espera.
 ETAPAS = {
+    # Horarios desde 03/11/2026 (pedido do Darlan): carrossel 9h,
+    # carrossel 15h e Reels 19h. Nenhum trecho de espera passa de 4h.
     "madrugada": (datetime.time(5, 0), None),
-    "manha_cedo": (datetime.time(8, 0), None),
-    # Reels da manha: comeca a montar 8:45, publica 9:00 em ponto.
-    "reels_manha": (datetime.time(8, 45), 11),  # monta e publica
-    "manha": (datetime.time(12, 0), 16),      # publica
-    "tarde_cedo": (datetime.time(15, 30), None),
-    "tarde": (datetime.time(18, 0), 23),      # publica
-    # Reels da noite: comeca a montar 19:45, publica 20:00 em ponto. A
-    # montagem leva uns 6 minutos (narracao, trilha, render conferido).
-    "reels": (datetime.time(19, 45), 23),     # monta e publica
+    "manha_cedo": (datetime.time(7, 0), None),
+    "manha": (datetime.time(9, 0), 13),       # carrossel "Voce sabia?"
+    "tarde_cedo": (datetime.time(12, 0), None),
+    "tarde": (datetime.time(15, 0), 18),      # carrossel "Mito ou verdade?"
+    # Reels: comeca a montar 18:45, publica 19:00 em ponto. A montagem
+    # leva uns 6 minutos (narracao, trilha, render conferido).
+    "reels": (datetime.time(18, 45), 23),
 }
 
 # Cada etapa de Reels e uma janela propria no historico do Reels.
