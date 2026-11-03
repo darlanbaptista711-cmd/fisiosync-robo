@@ -1,14 +1,14 @@
 {
   "tipo": "dica",
   "titulo": "Disco degenerado sem dor",
-  "narracao": "Disco degenerado na ressonância explica a dor? Sem dor nenhuma, trinta e sete por cento já têm aos vinte anos. Aos oitenta, noventa e seis. Teste a FisioSync grátis.",
-  "palavras": 29,
+  "narracao": "Disco degenerado no exame explica a dor? Sem dor, trinta e sete por cento já têm aos vinte. Aos oitenta, noventa e seis. Manda pro paciente com medo do laudo.",
+  "palavras": 30,
   "fato": "Revisão sistemática com 33 estudos e 3.110 pessoas sem sintomas encontrou degeneração discal em exames de imagem em 37% dos indivíduos de 20 anos e em 96% dos de 80 anos. Na mesma comparação entre 20 e 80 anos, o abaulamento discal passou de 30% para 84%, a protrusão discal de 29% para 43% e a fissura anular de 19% para 29%.",
   "fonte": "Brinjikji et al., American Journal of Neuroradiology, 2015 (revisão sistemática)",
   "conferido_em": "2026-11-02",
   "proporcoes": [
-    0.336,
-    0.46
+    0.339,
+    0.424
   ],
   "pergunta": {
     "rotulo": "Você sabia?",

@@ -1,14 +1,14 @@
 {
   "tipo": "dica",
   "titulo": "Depoimento de paciente no post",
-  "narracao": "Pode postar depoimento de paciente para se promover? Não. O Código de Ética da fisioterapia proíbe, para autopromoção. Divulgue sua agenda online, não depoimentos. Teste a FisioSync grátis.",
-  "palavras": 28,
+  "narracao": "Pode postar depoimento de paciente para se promover? Não. O Código de Ética da fisioterapia proíbe, para autopromoção. Vale também para as redes sociais. Manda pro colega que vive postando.",
+  "palavras": 30,
   "fato": "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Art. 10, V).",
   "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), Art. 10, V",
   "conferido_em": "2026-11-02",
   "proporcoes": [
-    0.323,
-    0.404
+    0.344,
+    0.43
   ],
   "pergunta": {
     "rotulo": "Você sabia?",
@@ -24,8 +24,8 @@
     "fonte": "Resolução COFFITO nº 424/2013, Art. 10, V"
   },
   "extra": {
-    "titulo": "Em vez disso",
-    "texto": "divulgue sua\nagenda online."
+    "titulo": "Atenção",
+    "texto": "vale também\npara as redes sociais."
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",

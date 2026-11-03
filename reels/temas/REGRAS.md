@@ -91,3 +91,29 @@ comparação, um "muita gente erra" —, isso precisa de fonte própria.
 1 vídeo por dia. Alternar os grupos de `temas.json` para não cair dois dias
 seguidos no mesmo assunto. Quando sobrarem menos de 7 roteiros prontos, é
 hora de conferir fatos novos.
+
+## 6. Ligação e fecho variado (decisão do Darlan, 03/11/2026)
+
+A narração é uma linha só: **pergunta → dado → o que isso muda na prática →
+pedido que nasce do assunto**. Nada de "teste grátis" caindo do nada.
+
+- O pedido final quase sempre é **mandar para alguém ou salvar**
+  ("Manda pro colega que só alonga", "Salva pra lembrar na próxima
+  avaliação"). Envio e salvamento são o que faz o Reels crescer.
+- A FisioSync só entra na **fala** quando o assunto leva a ela (agenda,
+  prontuário, avaliação registrada). O selo "teste grátis por 7 dias", as
+  lojas e o site ficam sempre na **tela** final.
+- Dois Reels seguidos nunca terminam com a mesma frase (o `gerar_fila.py`
+  barra).
+- O que a tela mostra em cada bloco é o que a voz está dizendo naquele
+  momento, na mesma ordem.
+- Nada de "marque um amigo" ou "curta": é isca de engajamento e a Meta
+  derruba o alcance.
+
+## 7. Filtro de interesse (03/11/2026)
+
+Só vai ao ar o que um fisioterapeuta com 5 anos de prática **aprenderia**,
+ou **mandaria para um colega ou paciente**. Norma que o profissional já
+conhece ("quiropraxia é especialidade") é verdadeira, mas é chata: fica
+fora. Estudos e diretrizes entram, com o número exato da fonte e os
+cuidados ("se associou", não "causa").

@@ -906,6 +906,74 @@ ROTEIROS = [
 ]
 
 
+# ---------------------------------------------------------------------------
+# LIGACAO E VARIEDADE NO FECHO (pedido do Darlan, 03/11/2026)
+#
+# A narracao segue uma linha: pergunta -> dado -> o que isso muda na pratica
+# -> um pedido que nasce do assunto. O pedido quase sempre e mandar para
+# alguem ou salvar (envio e salvamento sao o que faz o Reels crescer). A
+# FisioSync so entra na FALA quando o assunto leva a ela (agenda, prontuario).
+# O selo "teste gratis por 7 dias", as lojas e o site ficam na TELA final.
+#
+# Regra conferida no main(): dois Reels seguidos nunca terminam com a mesma
+# frase.
+# ---------------------------------------------------------------------------
+AJUSTES = {
+    "Disco degenerado sem dor": {
+        "partes": ["Disco degenerado no exame explica a dor?",
+                   "Sem dor, trinta e sete por cento já têm aos vinte.",
+                   "Aos oitenta, noventa e seis.",
+                   "Manda pro paciente com medo do laudo."],
+    },
+    "Forca de preensao e mortalidade": {
+        "partes": ["Força de preensão prevê mortalidade?",
+                   "Cada cinco quilos a menos, dezesseis por cento mais risco de morte.",
+                   "E previu melhor que a pressão sistólica.",
+                   "Salva pra lembrar na próxima avaliação."],
+    },
+    "Alongamento e lesao esportiva": {
+        "partes": ["Alongar previne lesão esportiva?",
+                   "Em vinte e cinco ensaios, alongamento não mostrou benefício.",
+                   "Treino de força reduziu as lesões a menos de um terço.",
+                   "Manda pro colega que só alonga."],
+    },
+    "O nordico e os isquiotibiais": {
+        "partes": ["Dá pra cortar lesão de isquiotibiais pela metade?",
+                   "Incluir o nórdico reduziu o risco em até cinquenta e um por cento.",
+                   "Mais de oito mil atletas.",
+                   "Salva pro próximo treino."],
+    },
+    "Exercicio e quedas em idosos": {
+        "partes": ["Exercício reduz quedas em idosos?",
+                   "Pela Cochrane, reduz a taxa de quedas em vinte e três por cento.",
+                   "Combinando tipos, provavelmente trinta e quatro.",
+                   "Manda pra quem atende idoso."],
+    },
+    "Pilates ja foi marca registrada": {
+        "partes": ["Você sabia que Pilates já foi marca registrada?",
+                   "Em dois mil, a Justiça americana anulou a marca.",
+                   "Virou o nome genérico do método.",
+                   "Manda pro seu grupo de Pilates."],
+    },
+    "Problema cronico de coluna no Brasil": {
+        "partes": ["Quantos brasileiros têm problema crônico de coluna?",
+                   "Pela PNS, vinte e um vírgula seis por cento dos adultos relatam.",
+                   "É muita gente pra atender.",
+                   "Organize a agenda com a FisioSync."],
+        "extra": {"titulo": "Demanda", "texto": "é muita gente\npra atender."},
+    },
+    "Depoimento de paciente no post": {
+        "partes": ["Pode postar depoimento de paciente para se promover?",
+                   "Não. O Código de Ética da fisioterapia proíbe, para autopromoção.",
+                   "Vale também para as redes sociais.",
+                   "Manda pro colega que vive postando."],
+        "extra": {"titulo": "Atenção", "texto": "vale também\npara as redes sociais."},
+    },
+}
+for _r in ROTEIROS:
+    _r.update(AJUSTES.get(_r["titulo"], {}))
+
+
 def slug(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:40]
@@ -913,6 +981,12 @@ def slug(s):
 
 def main():
     os.makedirs(PASTA, exist_ok=True)
+    # variedade: dois Reels seguidos (dos que vao ao ar) nao fecham igual
+    no_ar = [r for r in ROTEIROS if r.get("interesse") == "alto"]
+    for a, b in zip(no_ar, no_ar[1:]):
+        if a["partes"][3].strip().lower() == b["partes"][3].strip().lower():
+            raise SystemExit(f"fecho repetido em seguida: '{a['titulo']}' e "
+                             f"'{b['titulo']}' terminam com '{a['partes'][3]}'.")
     for i, r in enumerate(ROTEIROS, 1):
         partes = r["partes"]
         tamanhos = [len(p) for p in partes[:3]]

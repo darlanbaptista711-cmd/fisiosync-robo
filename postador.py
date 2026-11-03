@@ -648,6 +648,21 @@ def conferir_numeros(cfg, dados, fato):
     return numeros_soltos([dados.get(c, "") for c in campos], fato)
 
 
+# Ultimo slide do carrossel. Todas pedem salvar e enviar; a parte em
+# destaque (ciano) comeca em "Salve".
+FECHOS_SABIA = [
+    "Salve este post e envie para um colega de profissão.",
+    "Vale guardar. Salve e mande para quem atende com você.",
+    "Útil? Salve e envie para um colega que precisa ver isso.",
+    "Pra não esquecer: Salve e compartilhe com sua equipe.",
+]
+FECHOS_MITO = [
+    "Acertou? Conta nos comentários. Salve e envie para um colega de profissão.",
+    "Você sabia a resposta? Comenta aí. Salve e desafie um colega.",
+    "Mito ou verdade, qual foi o seu palpite? Salve e mande para a sua equipe.",
+]
+
+
 def _slides_validos(dados, fato):
     """
     Confere os slides do carrossel. Qualquer problema derruba SO o
@@ -674,12 +689,15 @@ def _slides_validos(dados, fato):
     # Pedido do Darlan (02/11/2026): TODO carrossel termina pedindo para
     # salvar e enviar para um colega de profissao. Frase fixa, nao fica a
     # criterio da IA. No "mito ou verdade" vem antes o convite a comentar.
+    # Varia a frase (03/11/2026: "nem sempre falar a mesma coisa pra nao
+    # enjoar"), mas toda versao pede salvar e enviar. O revezamento e pelo
+    # dia do ano, entao dois dias seguidos nunca repetem.
+    dia = datetime.date.today().timetuple().tm_yday
     if dados.get("_estilo") == "mito":
-        dados["fechamento"] = ("Acertou? Conta nos comentários. "
-                               "Salve e envie para um colega de profissão.")
+        opcoes = FECHOS_MITO
     else:
-        dados["fechamento"] = ("Salve este post e envie para um colega "
-                               "de profissão.")
+        opcoes = FECHOS_SABIA
+    dados["fechamento"] = opcoes[dia % len(opcoes)]
     log(f"Carrossel: capa + {len(limpos)} slides + fechamento")
     return limpos
 
