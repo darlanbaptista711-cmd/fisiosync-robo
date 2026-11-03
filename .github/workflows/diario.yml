@@ -19,9 +19,9 @@ name: Posts diarios da FisioSync
 # etapas, nenhuma com mais de 4 horas de sono:
 #
 #   madrugada   dorme ate 05:00
-#   manha_cedo  dorme ate 08:00
+#   manha_cedo  dorme ate 07:00
 #   manha       dorme ate 09:00  e PUBLICA (carrossel)
-#   tarde_cedo  dorme ate 15:30
+#   tarde_cedo  dorme ate 12:00
 #   tarde       dorme ate 15:00  e PUBLICA (carrossel)
 #   reels       monta 18:45     e PUBLICA o Reels as 19:00
 #
