@@ -242,9 +242,7 @@ def proxima_pauta(historico, log=print):
     # conhecimento. Gestao/software sai do sorteio; o produto so aparece
     # como assinatura no fim da legenda. E so entra pauta com fato e
     # fonte conferidos: conhecimento sem fonte vira conhecimento inventado.
-    livres = [p for p in livres
-              if p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO
-              and p.get("fato") and p.get("fonte")]
+    livres = [p for p in livres if _usavel(p)]
     if not livres:
         log("SEM PAUTA DE CONHECIMENTO CONFERIDA. Abasteca o pautas.json "
             "com fatos de fonte oficial antes de publicar.")
@@ -307,8 +305,15 @@ def marcar_usada(tema, status="publicado"):
 
 
 def _usavel(p):
+    """
+    So entra no sorteio o que tem fato com fonte E passou no filtro de
+    interesse (03/11/2026): "um fisioterapeuta com 5 anos de pratica
+    aprende algo com isso, ou manda para um colega ou paciente?". Norma
+    que o profissional ja conhece e verdadeira, mas e chata, e nao sai.
+    """
     return (p.get("familia", FAMILIA_PADRAO) != FAMILIA_PADRAO
-            and p.get("fato") and p.get("fonte"))
+            and p.get("fato") and p.get("fonte")
+            and p.get("interesse") == "alto")
 
 
 def situacao(log=print):

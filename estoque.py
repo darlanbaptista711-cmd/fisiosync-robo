@@ -39,6 +39,8 @@ def main():
         r = json.load(open(c, encoding="utf-8"))
         if r.get("titulo") in feitos or not (r.get("fato") and r.get("fonte")):
             continue
+        if r.get("interesse") != "alto":
+            continue
         if PT.assunto_repetido(r.get("titulo", ""), do_feed):
             continue
         fila.append(r)

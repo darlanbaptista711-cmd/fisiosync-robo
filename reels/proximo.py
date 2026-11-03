@@ -44,6 +44,10 @@ def main():
             print(f"[proximo] pulando {os.path.basename(caminho)}: "
                   f"assunto ja publicado no feed ('{bate}')")
             continue
+        # filtro de interesse (03/11/2026): roteiro obvio para quem e da
+        # area nao vai ao ar, mesmo sendo verdadeiro
+        if r.get("interesse") != "alto":
+            continue
         if not (r.get("fato") and r.get("fonte")):
             print(f"[proximo] pulando {os.path.basename(caminho)}: sem fato ou fonte")
             continue

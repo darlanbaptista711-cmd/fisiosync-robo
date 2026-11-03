@@ -615,6 +615,7 @@ ROTEIROS = [
         "tags": "#fisioterapia #fisioterapeuta #legislacao",
     },
     {
+        "interesse": "alto",
         "titulo": "Depoimento de paciente no post",
         "partes": ["Pode postar depoimento de paciente para se promover?",
                    "Não. O Código de Ética da fisioterapia proíbe, para autopromoção.",
@@ -681,6 +682,7 @@ def main():
             "fecho": {"chamada": "Teste grátis por 7 dias", "site": "app.fisiosync.com.br"},
             "capa_ms": 3800,
             "legenda": legenda,
+            "interesse": r.get("interesse", ""),
         }
         nome = f"{i:02d}-{slug(r['titulo'])}.json"
         with open(os.path.join(PASTA, nome), "w", encoding="utf-8") as f:

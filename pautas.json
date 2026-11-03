@@ -1085,7 +1085,8 @@
    "tema": "no atendimento domiciliar, o prontuario fica na casa do paciente",
    "fato": "O Art. 6º, V da Resolução COFFITO 414/2012 determina que, no atendimento domiciliar, o prontuário seja guardado no próprio domicílio do paciente, com orientação de sigilo à família.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre"
+   "status": "livre",
+   "interesse": "alto"
   },
   {
    "id": "regulacao-015",
@@ -1103,7 +1104,8 @@
    "tema": "plano terapeutico tem que dizer quantos atendimentos",
    "fato": "O Art. 1º, §1º, VI da Resolução COFFITO 414/2012 exige que o plano terapêutico traga recursos, métodos, técnicas, objetivos e a quantidade provável de atendimentos.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre"
+   "status": "livre",
+   "interesse": "alto"
   },
   {
    "id": "regulacao-017",
@@ -1579,7 +1581,8 @@
    "fonte": "Resolução COFFITO nº 424/2013, Art. 48",
    "url": "https://www.normasbrasil.com.br/norma/resolucao-424-2013_257114.html",
    "status": "livre",
-   "observacao": "Caput idêntico em normasbrasil.com.br e coffito.gov.br/nsite/?page_id=2346; incisos lidos em normasbrasil. Vale para perfis em redes sociais (\"meio eletrônico\")."
+   "observacao": "Caput idêntico em normasbrasil.com.br e coffito.gov.br/nsite/?page_id=2346; incisos lidos em normasbrasil. Vale para perfis em redes sociais (\"meio eletrônico\").",
+   "interesse": "alto"
   },
   {
    "id": "etica-004",
@@ -1612,7 +1615,8 @@
    "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), Art. 15, III",
    "url": "https://www.normasbrasil.com.br/norma/resolucao-424-2013_257114.html",
    "status": "livre",
-   "observacao": "Conferido em normasbrasil.com.br (texto consolidado com notas da Res. 552/2022), legisweb.com.br (id=257114) e coffito.gov.br/nsite/?page_id=2346. Texto idêntico nas três. Bom gancho para marketing de clínica/estúdio; não confundir com o Art. 10, V (depoimentos), já usado."
+   "observacao": "Conferido em normasbrasil.com.br (texto consolidado com notas da Res. 552/2022), legisweb.com.br (id=257114) e coffito.gov.br/nsite/?page_id=2346. Texto idêntico nas três. Bom gancho para marketing de clínica/estúdio; não confundir com o Art. 10, V (depoimentos), já usado.",
+   "interesse": "alto"
   },
   {
    "id": "etica-102",
@@ -1645,7 +1649,8 @@
    "fonte": "Resolução COFFITO nº 424/2013, Art. 41, II",
    "url": "https://www.normasbrasil.com.br/norma/resolucao-424-2013_257114.html",
    "status": "livre",
-   "observacao": "Conferido em normasbrasil.com.br (texto consolidado com notas da Res. 552/2022), legisweb.com.br (id=257114) e coffito.gov.br/nsite/?page_id=2346. Íntegra em normasbrasil; início idêntico nas outras duas."
+   "observacao": "Conferido em normasbrasil.com.br (texto consolidado com notas da Res. 552/2022), legisweb.com.br (id=257114) e coffito.gov.br/nsite/?page_id=2346. Íntegra em normasbrasil; início idêntico nas outras duas.",
+   "interesse": "alto"
   },
   {
    "id": "etica-105",
@@ -1678,7 +1683,8 @@
    "fonte": "Resolução COFFITO nº 552/2022, Arts. 2º e 4º, II; Resolução COFFITO nº 424/2013, Arts. 9º, VII, 37 e 39",
    "url": "https://ses.sp.bvs.br/wp-content/uploads/2022/08/U_RS-COFFITO-552_120822.pdf",
    "status": "livre",
-   "observacao": "Lido na publicação da Res. 552/2022 (cópia do DOU no BVS SES-SP) e confirmado no texto consolidado do Código em normasbrasil e legisweb (notas 'Revogado pela Resolução COFFITO Nº 552 DE 12/08/2022'). ATENÇÃO: a página do Código no site do COFFITO (page_id=2346) está desatualizada e ainda mostra os Arts. 37 e 39 e a redação antiga do Art. 9º, VII. O Art. 38 (quando pode deixar de cobrar, usado em etica-005) segue em vigor. A 552 também diz que o Referencial de honorários 'não obriga ao profissional' (alteração da Res. 367/2009), mas isso foi lido em uma fonte só."
+   "observacao": "Lido na publicação da Res. 552/2022 (cópia do DOU no BVS SES-SP) e confirmado no texto consolidado do Código em normasbrasil e legisweb (notas 'Revogado pela Resolução COFFITO Nº 552 DE 12/08/2022'). ATENÇÃO: a página do Código no site do COFFITO (page_id=2346) está desatualizada e ainda mostra os Arts. 37 e 39 e a redação antiga do Art. 9º, VII. O Art. 38 (quando pode deixar de cobrar, usado em etica-005) segue em vigor. A 552 também diz que o Referencial de honorários 'não obriga ao profissional' (alteração da Res. 367/2009), mas isso foi lido em uma fonte só.",
+   "interesse": "alto"
   },
   {
    "id": "etica-108",
@@ -1711,7 +1717,8 @@
    "fonte": "Resolução COFFITO nº 464/2016, Art. 1º, alíneas a, b e c",
    "url": "https://www.normasbrasil.com.br/norma/resolucao-464-2016_324103.html",
    "status": "livre",
-   "observacao": "Texto conferido em normasbrasil.com.br e no Parecer CREFITO-4 nº 002/2025 (crefito4.org.br), que transcreve o Art. 1º e alíneas. A Res. 464/2016 revogou a Res. 381/2010 (Art. 7º) e é citada como vigente no edital do exame de especialista COFFITO 2025. Não afirmar no post que o atestado obriga o empregador ou o INSS; a norma trata da competência para emitir."
+   "observacao": "Texto conferido em normasbrasil.com.br e no Parecer CREFITO-4 nº 002/2025 (crefito4.org.br), que transcreve o Art. 1º e alíneas. A Res. 464/2016 revogou a Res. 381/2010 (Art. 7º) e é citada como vigente no edital do exame de especialista COFFITO 2025. Não afirmar no post que o atestado obriga o empregador ou o INSS; a norma trata da competência para emitir.",
+   "interesse": "alto"
   },
   {
    "id": "regulacao-103",
@@ -1755,7 +1762,8 @@
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). No ambulatorial diferenciado/especializado (cuidado intermediário) o número é 8 por turno."
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). No ambulatorial diferenciado/especializado (cuidado intermediário) o número é 8 por turno.",
+   "interesse": "alto"
   },
   {
    "id": "regulacao-107",
@@ -1766,7 +1774,8 @@
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo III",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência)."
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência).",
+   "interesse": "alto"
   },
   {
    "id": "regulacao-108",
@@ -1821,7 +1830,8 @@
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II, atendimento em grupo",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). Vale para o fisioterapeuta (o Art. 1º diz que não obriga outras classes profissionais)."
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). Vale para o fisioterapeuta (o Art. 1º diz que não obriga outras classes profissionais).",
+   "interesse": "alto"
   },
   {
    "id": "pilates-102",
@@ -1876,7 +1886,8 @@
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência)."
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência).",
+   "interesse": "alto"
   },
   {
    "id": "especialidades-101",
@@ -1997,7 +2008,8 @@
    "fonte": "OMS, comentário \"Rehabilitation in the context of WHO's mandate\" (1 nov. 2022) e fact sheet \"Rehabilitation\" (22 abr. 2024)",
    "url": "https://www.who.int/news-room/commentaries/detail/rehabilitation-in-the-context-of-who-s-mandate",
    "status": "livre",
-   "observacao": "Número idêntico no comentário da OMS e no fact sheet 'Rehabilitation' (lido pelo espelho do CMS da OMS, pro.whoin.cloud.sitefinity.com; who.int/news-room/fact-sheets/detail/rehabilitation não abriu direto). O comentário acrescenta que o número subiu cerca de dois terços em três décadas."
+   "observacao": "Número idêntico no comentário da OMS e no fact sheet 'Rehabilitation' (lido pelo espelho do CMS da OMS, pro.whoin.cloud.sitefinity.com; who.int/news-room/fact-sheets/detail/rehabilitation não abriu direto). O comentário acrescenta que o número subiu cerca de dois terços em três décadas.",
+   "interesse": "alto"
   },
   {
    "id": "saude-publica-101",
