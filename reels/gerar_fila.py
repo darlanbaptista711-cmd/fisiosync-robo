@@ -411,13 +411,13 @@ ROTEIROS = [
             "explica a dor?"
         ],
         "resposta": {
-            "destaque": "96%",
-            "complemento": "dos 80 anos sem dor têm degeneração",
+            "destaque": "37%",
+            "complemento": "já têm degeneração aos 20, sem dor",
             "fonte": "Brinjikji et al., AJNR, 2015"
         },
         "extra": {
-            "titulo": "Aos 20 anos",
-            "texto": "37% já têm,\nmesmo sem dor."
+            "titulo": "Aos 80 anos",
+            "texto": "96% têm,\nmesmo sem dor."
         },
         "fato": "Revisão sistemática com 33 estudos e 3.110 pessoas sem sintomas encontrou degeneração discal em exames de imagem em 37% dos indivíduos de 20 anos e em 96% dos de 80 anos. Na mesma comparação entre 20 e 80 anos, o abaulamento discal passou de 30% para 84%, a protrusão discal de 29% para 43% e a fissura anular de 19% para 29%.",
         "fonte": "Brinjikji et al., American Journal of Neuroradiology, 2015 (revisão sistemática)",
@@ -477,13 +477,13 @@ ROTEIROS = [
             "esportiva?"
         ],
         "resposta": {
-            "destaque": "1/3",
-            "complemento": "força reduziu lesões a menos de 1/3",
+            "destaque": "Não",
+            "complemento": "alongamento não mostrou benefício",
             "fonte": "Lauersen et al., BJSM, 2014"
         },
         "extra": {
-            "titulo": "E o alongamento?",
-            "texto": "Sem efeito\nna prevenção."
+            "titulo": "Treino de força",
+            "texto": "reduziu as lesões\na menos de 1/3."
         },
         "fato": "Metanálise de 25 ensaios randomizados (26.610 participantes, 3.464 lesões) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas (RR 0,963; IC95% 0,846–1,095). O treino de força teve o maior efeito (RR 0,315; IC95% 0,207–0,480), seguido do treino proprioceptivo (RR 0,550; IC95% 0,347–0,869); segundo os autores, o treino de força reduziu as lesões esportivas a menos de 1/3 e as lesões por sobrecarga poderiam ser quase reduzidas à metade.",
         "fonte": "Lauersen et al., British Journal of Sports Medicine, 2014 (revisão sistemática e metanálise)",

@@ -19,13 +19,13 @@
     ]
   },
   "resposta": {
-    "destaque": "1/3",
-    "complemento": "força reduziu lesões a menos de 1/3",
+    "destaque": "Não",
+    "complemento": "alongamento não mostrou benefício",
     "fonte": "Lauersen et al., BJSM, 2014"
   },
   "extra": {
-    "titulo": "E o alongamento?",
-    "texto": "Sem efeito\nna prevenção."
+    "titulo": "Treino de força",
+    "texto": "reduziu as lesões\na menos de 1/3."
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
