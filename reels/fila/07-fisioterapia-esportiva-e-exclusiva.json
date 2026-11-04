@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "A Fisioterapia Esportiva foi reconhecida pelo COFFITO em 2007 como especialidade \"própria e de exercício exclusivo por Fisioterapeutas\" (Resolução nº 337/2007).\n\nRepara na diferença: a Acupuntura foi reconhecida \"sem caráter de exclusividade corporativa\" (Resolução nº 219/2000).\n\nVocê atende atleta? De qual modalidade? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fisioterapiaesportiva #fisioterapia #coffito",
+  "legenda": "A Fisioterapia Esportiva foi reconhecida pelo COFFITO em 2007 como especialidade \"própria e de exercício exclusivo por Fisioterapeutas\" (Resolução nº 337/2007).\n\nRepara na diferença: a Acupuntura foi reconhecida \"sem caráter de exclusividade corporativa\" (Resolução nº 219/2000).\n\nVocê atende atleta? De qual modalidade? Conta aqui.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fisioterapiaesportiva #fisioterapia #coffito",
   "interesse": ""
 }

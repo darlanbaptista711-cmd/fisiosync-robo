@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150 a 300 minutos por semana de atividade aeróbica moderada, ou 75 a 150 minutos de atividade vigorosa (ou uma combinação equivalente).\n\nAlém disso, fortalecimento muscular de intensidade moderada ou maior, envolvendo os grandes grupos musculares, em 2 ou mais dias por semana (OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020).\n\nÉ uma diretriz de saúde pública, não um protocolo de tratamento.\n\nSeus pacientes chegam perto dessa meta? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #atividadefisica #oms #fisioterapia",
+  "legenda": "A OMS recomenda que adultos de 18 a 64 anos façam pelo menos 150 a 300 minutos por semana de atividade aeróbica moderada, ou 75 a 150 minutos de atividade vigorosa (ou uma combinação equivalente).\n\nAlém disso, fortalecimento muscular de intensidade moderada ou maior, envolvendo os grandes grupos musculares, em 2 ou mais dias por semana (OMS, Diretrizes sobre atividade física e comportamento sedentário, 2020).\n\nÉ uma diretriz de saúde pública, não um protocolo de tratamento.\n\nSeus pacientes chegam perto dessa meta? Conta aqui.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #atividadefisica #oms #fisioterapia",
   "interesse": ""
 }

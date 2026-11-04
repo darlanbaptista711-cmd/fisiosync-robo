@@ -1,26 +1,26 @@
 {
   "tipo": "dica",
   "titulo": "Alongamento e lesao esportiva",
-  "narracao": "Alongar previne lesão esportiva? Em vinte e cinco ensaios, alongamento não mostrou benefício. Treino de força reduziu as lesões a menos de um terço. Manda pro colega que só alonga.",
+  "narracao": "Alongamento previne lesão? Em vinte e cinco ensaios, alongar não mostrou benefício. O treino de força reduziu as lesões a menos de um terço. Na prevenção, a força vem primeiro.",
   "palavras": 30,
   "fato": "Metanálise de 25 ensaios randomizados (26.610 participantes, 3.464 lesões) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas (RR 0,963; IC95% 0,846–1,095). O treino de força teve o maior efeito (RR 0,315; IC95% 0,207–0,480), seguido do treino proprioceptivo (RR 0,550; IC95% 0,347–0,869); segundo os autores, o treino de força reduziu as lesões esportivas a menos de 1/3 e as lesões por sobrecarga poderiam ser quase reduzidas à metade.",
   "fonte": "Lauersen et al., British Journal of Sports Medicine, 2014 (revisão sistemática e metanálise)",
   "conferido_em": "2026-11-02",
   "proporcoes": [
-    0.219,
-    0.411
+    0.188,
+    0.406
   ],
   "pergunta": {
-    "rotulo": "Você sabia?",
+    "rotulo": "Prevenção",
     "linhas": [
-      "Alongar previne",
-      "lesão",
-      "esportiva?"
+      "Alongamento",
+      "previne",
+      "lesão?"
     ]
   },
   "resposta": {
     "destaque": "Não",
-    "complemento": "alongamento não mostrou benefício",
+    "complemento": "alongar não mostrou benefício",
     "fonte": "Lauersen et al., BJSM, 2014"
   },
   "extra": {
@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": "Na prevenção, a força vem primeiro."
   },
   "capa_ms": 3800,
-  "legenda": "Metanálise com 25 ensaios randomizados e 26.610 participantes (Lauersen et al., British Journal of Sports Medicine, 2014) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas.\n\nO treino de força teve o maior efeito: segundo os autores, reduziu as lesões esportivas a menos de 1/3. O treino proprioceptivo veio em seguida.\n\nO estudo avaliou prevenção de lesões. Não fala de flexibilidade nem de desempenho.\n\nNo seu atendimento, força ou alongamento vem primeiro?\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #prevencaodelesoes #fisioesportiva #fisioterapia",
+  "legenda": "Quando o assunto é prevenir lesão, o alongamento costuma ser a primeira lembrança. Os dados apontam outro caminho.\n\nMetanálise com 25 ensaios randomizados e 26.610 participantes (Lauersen et al., British Journal of Sports Medicine, 2014) não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas.\n\nO treino de força teve o maior efeito: segundo os autores, reduziu as lesões esportivas a menos de 1/3. O treino proprioceptivo veio em seguida.\n\nO estudo avaliou prevenção de lesões. Não fala de flexibilidade nem de desempenho.\n\nNos seus programas de prevenção, o que vem primeiro?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #prevencaodelesoes #fisioesportiva #fisioterapia",
   "interesse": "alto"
 }

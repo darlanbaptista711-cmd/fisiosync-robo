@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "No atendimento domiciliar, o prontuário fica na casa do paciente, e o fisioterapeuta orienta a família a manter sigilo (Resolução COFFITO nº 414/2012, Art. 6º, V).\n\nE, para se proteger, você pode manter uma cópia, com a assinatura do paciente ou do responsável atestando o atendimento (Art. 6º, VI).\n\nVocê atende em domicílio? Como organiza isso? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fisioterapiadomiciliar #homecare #fisioterapia",
+  "legenda": "No atendimento domiciliar, o prontuário fica na casa do paciente, e o fisioterapeuta orienta a família a manter sigilo (Resolução COFFITO nº 414/2012, Art. 6º, V).\n\nE, para se proteger, você pode manter uma cópia, com a assinatura do paciente ou do responsável atestando o atendimento (Art. 6º, VI).\n\nVocê atende em domicílio? Como organiza isso? Conta aqui.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fisioterapiadomiciliar #homecare #fisioterapia",
   "interesse": ""
 }

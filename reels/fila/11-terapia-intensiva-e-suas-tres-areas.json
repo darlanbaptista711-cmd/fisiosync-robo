@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "Fisioterapia em Terapia Intensiva é especialidade disciplinada pelo COFFITO desde 2011 (Resolução nº 402/2011).\n\nE tem três áreas de atuação: neonatologia, pediatria e adulto (Art. 5º).\n\nVocê já trabalhou em UTI? Em qual área? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #terapiaintensiva #fisioterapia #coffito",
+  "legenda": "Fisioterapia em Terapia Intensiva é especialidade disciplinada pelo COFFITO desde 2011 (Resolução nº 402/2011).\n\nE tem três áreas de atuação: neonatologia, pediatria e adulto (Art. 5º).\n\nVocê já trabalhou em UTI? Em qual área? Conta aqui.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #terapiaintensiva #fisioterapia #coffito",
   "interesse": ""
 }

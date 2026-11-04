@@ -365,10 +365,28 @@ const Fecho: React.FC = () => {
             transform: `scale(${interpolate(s, [0, 1], [0.9, 1])})`,
           }}
         >
+          {/* frase de conclusao: o que a voz diz neste quadro (03/11/2026).
+              Tela e voz andam juntas; sem ela, o quadro e so a marca. */}
+          {(f as any).frase ? (
+            <div
+              style={{
+                fontFamily,
+                fontWeight: 800,
+                fontSize: 64,
+                lineHeight: 1.12,
+                color: MARINHO,
+                textAlign: "center",
+                maxWidth: 900,
+                marginBottom: 18,
+              }}
+            >
+              {(f as any).frase}
+            </div>
+          ) : null}
           {/* fundo branco: a logo oficial entra direta, sem placa */}
           <Img
             src={staticFile("images/logo.png")}
-            style={{ width: 620, objectFit: "contain" }}
+            style={{ width: (f as any).frase ? 470 : 620, objectFit: "contain" }}
           />
           <div
             style={{

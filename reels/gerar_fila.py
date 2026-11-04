@@ -26,7 +26,8 @@ import unicodedata
 
 PASTA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fila")
 
-CTA_LEGENDA = ("Teste a FisioSync grátis por 7 dias: app.fisiosync.com.br\n"
+CTA_LEGENDA = ("FisioSync: agenda, prontuário e evolução num lugar só. "
+               "Teste grátis por 7 dias: app.fisiosync.com.br\n"
                "Disponível no Google Play e na App Store.")
 
 # Envio por DM e o sinal que o Instagram mais valoriza para mostrar um
@@ -919,59 +920,116 @@ ROTEIROS = [
 # frase.
 # ---------------------------------------------------------------------------
 AJUSTES = {
+    # Tom de colega experiente (03/11/2026): situacao real ou dado que
+    # surpreende -> numero com fonte -> o que isso muda -> frase de
+    # conclusao. Sem "manda pro colega", sem pedido forcado: o que faz
+    # salvar e compartilhar e o conteudo. A frase final aparece escrita
+    # no ultimo quadro (fecho.frase), acima da marca.
     "Disco degenerado sem dor": {
-        "partes": ["Disco degenerado no exame explica a dor?",
-                   "Sem dor, trinta e sete por cento já têm aos vinte.",
-                   "Aos oitenta, noventa e seis.",
-                   "Manda pro colega que trata o laudo."],
+        "abertura": "Disco degenerado no laudo nem sempre explica a dor.",
+        "rotulo": "Coluna",
+        "partes": ["Laudo de disco degenerado?",
+                   "Sem dor, aparece em trinta e sete por cento aos vinte.",
+                   "E em noventa e seis aos oitenta.",
+                   "Achado de imagem não é sinônimo de dor."],
+        "pergunta": ["Laudo de", "disco", "degenerado?"],
+        "resposta": {"destaque": "37%", "complemento": "das pessoas sem dor, aos 20 anos",
+                     "fonte": "Brinjikji et al., AJNR, 2015"},
+        "extra": {"titulo": "Aos 80 anos", "texto": "96%, também\nsem dor."},
+        "pergunta_final": "Na sua prática, quanto o laudo pesa na primeira consulta?",
     },
     "Forca de preensao e mortalidade": {
-        "partes": ["Força de preensão prevê mortalidade?",
+        "abertura": "Um dinamômetro de mão pode dizer mais do que parece.",
+        "rotulo": "Avaliação",
+        "partes": ["Quanto diz um simples teste de preensão?",
                    "Cada cinco quilos a menos, dezesseis por cento mais risco de morte.",
-                   "E previu melhor que a pressão sistólica.",
-                   "Salva pra lembrar na próxima avaliação."],
+                   "Previu melhor que a pressão sistólica.",
+                   "Cabe em qualquer avaliação."],
+        "pergunta": ["Quanto diz", "um teste de", "preensão?"],
+        "resposta": {"destaque": "16%", "complemento": "mais risco de morte a cada 5 kg a menos",
+                     "fonte": "Leong et al., The Lancet, 2015"},
+        "extra": {"titulo": "Melhor preditor", "texto": "que a pressão\nsistólica."},
+        "pergunta_final": "Você mede a preensão nas suas avaliações?",
     },
     "Alongamento e lesao esportiva": {
-        "partes": ["Alongar previne lesão esportiva?",
-                   "Em vinte e cinco ensaios, alongamento não mostrou benefício.",
-                   "Treino de força reduziu as lesões a menos de um terço.",
-                   "Manda pro colega que só alonga."],
+        "abertura": "Quando o assunto é prevenir lesão, o alongamento costuma ser a primeira lembrança. Os dados apontam outro caminho.",
+        "rotulo": "Prevenção",
+        "partes": ["Alongamento previne lesão?",
+                   "Em vinte e cinco ensaios, alongar não mostrou benefício.",
+                   "O treino de força reduziu as lesões a menos de um terço.",
+                   "Na prevenção, a força vem primeiro."],
+        "pergunta": ["Alongamento", "previne", "lesão?"],
+        "resposta": {"destaque": "Não", "complemento": "alongar não mostrou benefício",
+                     "fonte": "Lauersen et al., BJSM, 2014"},
+        "extra": {"titulo": "Treino de força", "texto": "reduziu as lesões\na menos de 1/3."},
+        "pergunta_final": "Nos seus programas de prevenção, o que vem primeiro?",
     },
     "O nordico e os isquiotibiais": {
-        "partes": ["Dá pra cortar lesão de isquiotibiais pela metade?",
+        "abertura": "Um único exercício aparece com força na prevenção de lesão de isquiotibiais.",
+        "rotulo": "Esporte",
+        "partes": ["Prevenir lesão de isquiotibiais?",
                    "Incluir o nórdico reduziu o risco em até cinquenta e um por cento.",
-                   "Mais de oito mil atletas.",
-                   "Salva pro próximo treino."],
+                   "Em mais de oito mil atletas.",
+                   "Metade das lesões, com um exercício."],
+        "pergunta": ["Prevenir lesão", "de", "isquiotibiais?"],
+        "pergunta_final": "O nórdico já faz parte dos seus programas?",
     },
     "Exercicio e quedas em idosos": {
-        "partes": ["Exercício reduz quedas em idosos?",
-                   "Pela Cochrane, reduz a taxa de quedas em vinte e três por cento.",
+        "abertura": "Exercício para prevenir quedas: quanto ele reduz de verdade?",
+        "rotulo": "Idosos",
+        "partes": ["Quanto o exercício reduz quedas em idosos?",
+                   "Segundo a Cochrane, vinte e três por cento na taxa de quedas.",
                    "Combinando tipos, provavelmente trinta e quatro.",
-                   "Manda pra quem atende idoso."],
+                   "Equilíbrio e força, juntos."],
+        "pergunta": ["Quanto o exercício", "reduz quedas", "em idosos?"],
+        "pergunta_final": "Que combinação você mais usa com idosos?",
     },
     "Pilates ja foi marca registrada": {
-        "partes": ["Você sabia que Pilates já foi marca registrada?",
-                   "Em dois mil, a Justiça americana anulou a marca.",
-                   "Virou o nome genérico do método.",
-                   "Manda pro seu grupo de Pilates."],
+        "abertura": "Uma curiosidade sobre o nome do método.",
+        "rotulo": "História",
+        "partes": ["Pilates já foi marca registrada.",
+                   "Até dois mil, quando a Justiça americana anulou a marca.",
+                   "Virou nome genérico do método nos Estados Unidos.",
+                   "Curioso, né?"],
+        "pergunta": ["Pilates já foi", "marca", "registrada."],
+        "extra": {"titulo": "Nos EUA", "texto": "virou nome genérico\ndo método."},
+        "pergunta_final": "Você conhecia essa história?",
     },
     "Problema cronico de coluna no Brasil": {
-        "partes": ["Quantos brasileiros têm problema crônico de coluna?",
-                   "Pela PNS, vinte e um vírgula seis por cento dos adultos relatam.",
-                   "É muita gente pra atender.",
-                   "Organize a agenda com a FisioSync."],
-        "extra": {"titulo": "Demanda", "texto": "é muita gente\npra atender."},
+        "abertura": "Mais de 1 em cada 5 adultos no Brasil relata problema crônico de coluna.",
+        "rotulo": "Saúde pública",
+        "partes": ["Mais de um em cada cinco adultos no Brasil.",
+                   "Relata problema crônico de coluna, segundo a PNS.",
+                   "Nas mulheres, vinte e quatro vírgula cinco por cento.",
+                   "Demanda não falta."],
+        "pergunta": ["Mais de 1 em", "cada 5 adultos", "no Brasil..."],
+        "resposta": {"destaque": "21,6%", "complemento": "relatam problema crônico de coluna",
+                     "fonte": "PNS 2019 (IBGE); Malta et al., 2022"},
+        "extra": {"titulo": "Nas mulheres", "texto": "24,5%."},
+        "pergunta_final": "Qual queixa de coluna mais aparece no seu consultório?",
     },
     "Depoimento de paciente no post": {
-        "partes": ["Pode postar depoimento de paciente para se promover?",
-                   "Não. O Código de Ética da fisioterapia proíbe, para autopromoção.",
+        "abertura": "Depoimento de paciente no Instagram: pode ou não pode?",
+        "rotulo": "Ética",
+        "partes": ["Postar depoimento de paciente pode?",
+                   "Não. O Código de Ética proíbe divulgar para autopromoção.",
                    "Vale também para as redes sociais.",
-                   "Manda pro colega que vive postando."],
+                   "Hora de revisar o feed?"],
+        "pergunta": ["Postar depoimento", "de paciente", "pode?"],
         "extra": {"titulo": "Atenção", "texto": "vale também\npara as redes sociais."},
+        "pergunta_final": "Como você mostra seu trabalho sem usar depoimentos?",
     },
 }
 for _r in ROTEIROS:
-    _r.update(AJUSTES.get(_r["titulo"], {}))
+    _aj = dict(AJUSTES.get(_r["titulo"], {}))
+    _pf = _aj.pop("pergunta_final", None)
+    _ab = _aj.pop("abertura", None)
+    _r.update(_aj)
+    if _pf:
+        _r["legenda"] = list(_r["legenda"])[:-1] + [_pf]
+    if _ab:
+        # a primeira linha e a unica visivel antes do "mais": abre com gancho
+        _r["legenda"] = [_ab] + list(_r["legenda"])
 
 
 def slug(s):
@@ -999,7 +1057,9 @@ def main():
         tematicas = [t for t in r["tags"].split()
                      if t.lower() not in {h.lower() for h in HASHTAGS_PROPRIAS}]
         tags = " ".join((HASHTAGS_PROPRIAS + tematicas)[:5])
-        legenda = "\n\n".join(r["legenda"] + [CONVITE_ENVIO, CTA_LEGENDA, tags])
+        # sem "manda pra ele" (03/11/2026: soava forcado). A legenda fecha
+        # com uma pergunta de verdade e a assinatura da marca.
+        legenda = "\n\n".join(r["legenda"] + [CTA_LEGENDA, tags])
         if len(legenda) > 2200:
             raise SystemExit(f"{r['titulo']}: legenda com {len(legenda)} caracteres.")
         if not 3 <= tags.count("#") <= 5 or "#FisioSyncExplica" not in tags:
@@ -1013,10 +1073,11 @@ def main():
             "fonte": r["fonte"],
             "conferido_em": "2026-11-02",
             "proporcoes": proporcoes,
-            "pergunta": {"rotulo": "Você sabia?", "linhas": r["pergunta"]},
+            "pergunta": {"rotulo": r.get("rotulo", "Você sabia?"), "linhas": r["pergunta"]},
             "resposta": r["resposta"],
             "extra": r["extra"],
-            "fecho": {"chamada": "Teste grátis por 7 dias", "site": "app.fisiosync.com.br"},
+            "fecho": {"chamada": "Teste grátis por 7 dias", "site": "app.fisiosync.com.br",
+                      "frase": partes[3] if r.get("interesse") == "alto" else ""},
             "capa_ms": 3800,
             "legenda": legenda,
             "interesse": r.get("interesse", ""),

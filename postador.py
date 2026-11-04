@@ -457,8 +457,17 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "7 dias) aparece SO na ultima linha da legenda, como assinatura.\n"
         "Publico: fisioterapeutas, estudantes, gestores de clinica e donos "
         "de estudio de Pilates. Nao sao pacientes.\n"
-        "O post bom e aquele que o fisioterapeuta manda para um colega "
-        "dizendo 'voce sabia disso?' ou salva para consultar depois.\n"
+        "O post bom e aquele que faz o profissional PARAR de rolar a tela, "
+        "aprender algo que nao sabia e querer guardar ou mostrar para um "
+        "colega POR CONTA PROPRIA, porque o conteudo vale, nao porque voce "
+        "pediu.\n"
+        "TOM: colega experiente conversando com outro profissional. Frases "
+        "naturais, diretas, sem cara de anuncio, sem ponto de exclamacao em "
+        "excesso, sem 'voce sabia?' repetido. Passe autoridade pelo dado "
+        "preciso e pela fonte, nao por adjetivos.\n"
+        "PROIBIDO pedir acao de forma forcada: nada de 'salve', 'compartilhe', "
+        "'envie para um colega', 'marque', 'curta', 'comente' no texto da "
+        "arte ou dos slides.\n"
         + linha_tema + bloco_fato + bloco_hist +
         f"\nObjetivos ainda nao usados recentemente: {', '.join(sugerir)}\n"
         f"Estilos de arte ainda nao usados: {', '.join(sugerir_e)}\n"
@@ -491,10 +500,12 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "nao escreva "
         "'A FisioSync reune agenda online, prontuario digital e evolucao por "
         "audio'. Fale do assunto do dia, nao do catalogo.\n"
-        '  "legenda": abertura que desperte curiosidade, o fato explicado em '
-        "linguagem simples, a fonte citada, UMA chamada coerente com o "
-        "objetivo; em carrossel, a chamada e SEMPRE pedir para salvar o post "
-        "e enviar para um colega de profissao. Depois a assinatura em uma linha, copiada com "
+        '  "legenda": a primeira linha e um gancho que da vontade de ler o '
+        "resto (e a unica visivel antes do 'mais'); depois o fato explicado "
+        "em linguagem simples, a fonte citada, e no fim UMA pergunta de "
+        "verdade sobre a pratica do leitor (que um profissional responderia "
+        "nos comentarios). Sem 'salve', 'compartilhe', 'marque' ou 'envie'. "
+        "Depois a assinatura em uma linha, copiada com "
         "os acentos: 'Conteúdo FisioSync. Teste grátis por 7 dias: "
         "app.fisiosync.com.br'. Legenda inteira com acentuacao correta. "
         "Depois "
@@ -516,9 +527,10 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "numero que nao esteja nele. Pode explicar com palavras simples o "
         "que o fato diz e por que isso importa no dia a dia do "
         "fisioterapeuta, sem inventar regra.\n"
-        '  "fechamento": frase do ultimo slide, ate 16 palavras, pedindo para '
-        "salvar ou mandar para um colega especifico (ex: 'que da aula de "
-        "Pilates'). Sem falar da FisioSync.\n"
+        '  "fechamento": frase do ultimo slide, ate 14 palavras: a CONCLUSAO '
+        "pratica do carrossel, como um colega experiente resumiria (ex: "
+        "'Achado de imagem nao e sinonimo de dor.'). Tem que sair do fato. "
+        "Nao pede nada, nao fala da FisioSync.\n"
         "  No carrossel, o titulo e o apoio sao a CAPA: o titulo e o gancho "
         "que faz arrastar.\n" if carrossel else "") +
         (
@@ -533,11 +545,9 @@ def _pedido_conteudo(tema_sugerido=None, fato="", fonte="", carrossel=False,
         "- primeiro slide: titulo exatamente 'Verdade.' ou 'Mito.', e o texto "
         "explica por que, com o que o fato diz. Os outros slides "
         "aprofundam, sempre dentro do fato.\n"
-        "- fechamento: uma pergunta curta para os comentarios, ligada ao "
-        "assunto (ex: 'Voce ja sabia? Conta nos comentarios.').\n"
-        "- legenda: comeca repetindo a afirmacao como pergunta, pede para "
-        "a pessoa responder nos comentarios antes de arrastar, e depois "
-        "segue a regra normal da legenda.\n"
+        "- fechamento: a conclusao pratica, como nos outros carrosseis.\n"
+        "- legenda: comeca com a afirmacao como pergunta ('Mito ou "
+        "verdade: ...?') e segue a regra normal da legenda.\n"
         "=== FIM ===\n" if (carrossel and estilo == "mito") else "") +
         "\nA imagem tem que explicar sozinha. Se o paragrafo for necessario para "
         "a imagem fazer sentido, o conceito esta fraco. Se um objeto puder "
@@ -648,20 +658,11 @@ def conferir_numeros(cfg, dados, fato):
     return numeros_soltos([dados.get(c, "") for c in campos], fato)
 
 
-# Ultimo slide do carrossel. Todas pedem salvar e enviar; a parte em
-# destaque (ciano) comeca em "Salve".
-FECHOS_SABIA = [
-    "Salve este post e envie para um colega de profissão.",
-    "Vale guardar. Salve e mande para quem atende com você.",
-    "Útil? Salve e envie para um colega que precisa ver isso.",
-    "Pra não esquecer: Salve e compartilhe com sua equipe.",
-    "Conhece um estudante de fisio? Salve e mande para ele.",
-]
-FECHOS_MITO = [
-    "Acertou? Conta nos comentários. Salve e envie para um colega de profissão.",
-    "Você sabia a resposta? Comenta aí. Salve e desafie um colega.",
-    "Mito ou verdade, qual foi o seu palpite? Salve e mande para a sua equipe.",
-]
+# Palavras de pedido forcado (03/11/2026: "esta muito forcado, preciso
+# de algo mais natural"). O ultimo slide traz a conclusao, nao um pedido.
+PEDIDOS_FORCADOS = ("salve", "salva", "compartilh", "envie", "mande", "manda",
+                    "marque", "curta", "comente", "comenta")
+FECHO_RESERVA = "Vale ter esse dado na ponta da língua."
 
 
 def _slides_validos(dados, fato):
@@ -687,18 +688,16 @@ def _slides_validos(dados, fato):
         log(f"AVISO: slide com numero sem fonte ({', '.join(soltos)}). "
             "Saindo como post unico.")
         return []
-    # Pedido do Darlan (02/11/2026): TODO carrossel termina pedindo para
-    # salvar e enviar para um colega de profissao. Frase fixa, nao fica a
-    # criterio da IA. No "mito ou verdade" vem antes o convite a comentar.
-    # Varia a frase (03/11/2026: "nem sempre falar a mesma coisa pra nao
-    # enjoar"), mas toda versao pede salvar e enviar. O revezamento e pelo
-    # dia do ano, entao dois dias seguidos nunca repetem.
-    dia = datetime.date.today().timetuple().tm_yday
-    if dados.get("_estilo") == "mito":
-        opcoes = FECHOS_MITO
-    else:
-        opcoes = FECHOS_SABIA
-    dados["fechamento"] = opcoes[dia % len(opcoes)]
+    # Ultimo slide = conclusao pratica escrita pela IA a partir do fato
+    # (03/11/2026). Pedido forcado ou frase longa cai para a reserva.
+    fecho = str(dados.get("fechamento") or "").strip()
+    baixo = fecho.lower()
+    if (not fecho or len(fecho.split()) > 16
+            or any(p in baixo for p in PEDIDOS_FORCADOS)
+            or "fisiosync" in baixo):
+        log(f"AVISO: fechamento fora do tom ('{fecho}'). Usando a reserva.")
+        fecho = FECHO_RESERVA
+    dados["fechamento"] = fecho
     log(f"Carrossel: capa + {len(limpos)} slides + fechamento")
     return limpos
 

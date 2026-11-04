@@ -1,21 +1,21 @@
 {
   "tipo": "dica",
   "titulo": "Depoimento de paciente no post",
-  "narracao": "Pode postar depoimento de paciente para se promover? Não. O Código de Ética da fisioterapia proíbe, para autopromoção. Vale também para as redes sociais. Manda pro colega que vive postando.",
-  "palavras": 30,
+  "narracao": "Postar depoimento de paciente pode? Não. O Código de Ética proíbe divulgar para autopromoção. Vale também para as redes sociais. Hora de revisar o feed?",
+  "palavras": 25,
   "fato": "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Art. 10, V).",
   "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), Art. 10, V",
   "conferido_em": "2026-11-02",
   "proporcoes": [
-    0.344,
-    0.43
+    0.278,
+    0.452
   ],
   "pergunta": {
-    "rotulo": "Você sabia?",
+    "rotulo": "Ética",
     "linhas": [
-      "Pode postar",
-      "depoimento de",
-      "paciente?"
+      "Postar depoimento",
+      "de paciente",
+      "pode?"
     ]
   },
   "resposta": {
@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": "Hora de revisar o feed?"
   },
   "capa_ms": 3800,
-  "legenda": "O Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Resolução COFFITO nº 424/2013, Art. 10, V).\n\nComo você divulga o seu trabalho sem depoimentos? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #etica #coffito #fisioterapia",
+  "legenda": "Depoimento de paciente no Instagram: pode ou não pode?\n\nO Código de Ética e Deontologia da Fisioterapia proíbe ao fisioterapeuta \"divulgar, para fins de autopromoção, declaração, atestado, imagem ou carta de agradecimento emitida por cliente/paciente/usuário ou familiar deste, em razão de serviço profissional prestado\" (Resolução COFFITO nº 424/2013, Art. 10, V).\n\nComo você mostra seu trabalho sem usar depoimentos?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #etica #coffito #fisioterapia",
   "interesse": "alto"
 }

@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "Pela LGPD (Lei nº 13.709/2018, Art. 5º, II), dado referente à saúde é dado pessoal sensível, com proteção mais rigorosa que a de um cadastro comum.\n\nFicha em gaveta aberta, planilha compartilhada sem controle, foto de prontuário no WhatsApp: tudo isso é dado sensível circulando.\n\nComo você guarda os dados dos seus pacientes hoje? Conta aqui.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #lgpd #fisioterapia #gestaodeclinica",
+  "legenda": "Pela LGPD (Lei nº 13.709/2018, Art. 5º, II), dado referente à saúde é dado pessoal sensível, com proteção mais rigorosa que a de um cadastro comum.\n\nFicha em gaveta aberta, planilha compartilhada sem controle, foto de prontuário no WhatsApp: tudo isso é dado sensível circulando.\n\nComo você guarda os dados dos seus pacientes hoje? Conta aqui.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #lgpd #fisioterapia #gestaodeclinica",
   "interesse": ""
 }

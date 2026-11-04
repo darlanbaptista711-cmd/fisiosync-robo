@@ -29,9 +29,10 @@
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
-    "site": "app.fisiosync.com.br"
+    "site": "app.fisiosync.com.br",
+    "frase": ""
   },
   "capa_ms": 3800,
-  "legenda": "O prontuário é do paciente, não da clínica (Resolução COFFITO nº 414/2012).\n\nEle, ou o representante dele, pode pedir acesso e cópias autênticas. Negar esse acesso é vedado, salvo quando gerar risco ao paciente ou a terceiros.\n\nJá te pediram cópia do prontuário? Conta como foi.\n\nConhece um fisio que precisa ver isso? Manda pra ele.\n\nTeste a FisioSync grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #prontuario #fisioterapia #coffito",
+  "legenda": "O prontuário é do paciente, não da clínica (Resolução COFFITO nº 414/2012).\n\nEle, ou o representante dele, pode pedir acesso e cópias autênticas. Negar esse acesso é vedado, salvo quando gerar risco ao paciente ou a terceiros.\n\nJá te pediram cópia do prontuário? Conta como foi.\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #prontuario #fisioterapia #coffito",
   "interesse": ""
 }
