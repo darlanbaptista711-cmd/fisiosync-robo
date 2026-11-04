@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Regras de Ottawa no tornozelo",
+  "narracao": "Paciente com entorse pedindo raio-x? Pelas regras de Ottawa, sensibilidade de quase noventa e oito por cento. Até quarenta por cento menos raio-x desnecessário. Salva pra próxima entorse.",
+  "palavras": 28,
+  "fato": "Revisão sistemática com metanálise de 27 estudos (15.581 pacientes) concluiu que as regras de Ottawa para tornozelo são um instrumento preciso para excluir fraturas de tornozelo e mediopé, com sensibilidade de quase 100% (agrupada de 97,6%; IC95% 96,4–98,9) e especificidade modesta. Aplicando os resultados a uma prevalência de fratura de 15%, a probabilidade de fratura com a regra negativa ficou abaixo de 1,4%, e os autores estimam que o uso da regra reduziria em 30% a 40% as radiografias desnecessárias.",
+  "fonte": "Bachmann et al., BMJ, 2003 (revisão sistemática com metanálise)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.228,
+    0.456
+  ],
+  "pergunta": {
+    "rotulo": "Avaliação",
+    "linhas": [
+      "Paciente com",
+      "entorse pedindo",
+      "raio-x?"
+    ]
+  },
+  "resposta": {
+    "destaque": "97,6%",
+    "complemento": "de sensibilidade para descartar fratura",
+    "fonte": "Bachmann et al., BMJ, 2003"
+  },
+  "extra": {
+    "titulo": "30% a 40%",
+    "texto": "menos raio-x\ndesnecessário."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Salva pra próxima entorse."
+  },
+  "capa_ms": 3800,
+  "legenda": "Nem toda entorse de tornozelo precisa de raio-x.\n\nUma revisão sistemática com 27 estudos e 15.581 pacientes (Bachmann et al., BMJ, 2003) concluiu que as regras de Ottawa para tornozelo são precisas para excluir fraturas de tornozelo e mediopé: sensibilidade agrupada de 97,6%.\n\nCom uma prevalência de fratura de 15%, a chance de fratura com a regra negativa ficou abaixo de 1,4%. Os autores estimam que o uso da regra reduziria de 30% a 40% as radiografias desnecessárias.\n\nA especificidade é modesta: a regra é boa para descartar fratura, não para confirmar.\n\nVocê usa as regras de Ottawa na avaliação de entorse?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #tornozelo #avaliacao #fisioterapia",
+  "interesse": "alto"
+}

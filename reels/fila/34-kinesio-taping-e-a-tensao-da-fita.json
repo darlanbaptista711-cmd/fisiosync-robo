@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Kinesio Taping e a tensao da fita",
+  "narracao": "Kinesio Taping: a tensão da fita importa? Em cento e quarenta e oito pacientes com lombalgia, não mudou dor nem incapacidade. Estudo brasileiro. Desafia o mecanismo proposto.",
+  "palavras": 27,
+  "fato": "Ensaio randomizado brasileiro com 148 pessoas com dor lombar crônica inespecífica comparou 8 sessões (em 4 semanas) de Kinesio Taping aplicado conforme o manual do método, com 10% a 15% de tensão para formar dobras na pele, com 8 sessões da mesma fita aplicada sem tensão e sem dobras. Ao fim das 4 semanas, formar as dobras não mudou o efeito sobre a dor (diferença média −0,4 ponto; IC95% −1,3 a 0,4) nem sobre a incapacidade (−0,3; IC95% −1,9 a 1,3), e os autores concluem que esses resultados desafiam o mecanismo de ação proposto para a técnica.",
+  "fonte": "Parreira et al., Journal of Physiotherapy, 2014 (ensaio clínico randomizado)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.289,
+    0.585
+  ],
+  "pergunta": {
+    "rotulo": "Recursos",
+    "linhas": [
+      "Kinesio Taping:",
+      "a tensão",
+      "importa?"
+    ]
+  },
+  "resposta": {
+    "destaque": "148",
+    "complemento": "pacientes: a tensão não mudou a dor",
+    "fonte": "Parreira et al., J Physiother, 2014"
+  },
+  "extra": {
+    "titulo": "Estudo brasileiro",
+    "texto": "ensaio\nrandomizado."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Desafia o mecanismo proposto."
+  },
+  "capa_ms": 3800,
+  "legenda": "A tensão da fita é o centro do método. Um ensaio brasileiro testou isso.\n\nEnsaio randomizado com 148 pessoas com dor lombar crônica inespecífica (Parreira et al., Journal of Physiotherapy, 2014) comparou Kinesio Taping com 10% a 15% de tensão, formando dobras na pele, com a mesma fita aplicada sem tensão e sem dobras, em 8 sessões.\n\nAo fim de 4 semanas, formar as dobras não mudou o efeito sobre a dor nem sobre a incapacidade. Os autores concluem que os resultados desafiam o mecanismo de ação proposto. O estudo não comparou a fita com nenhum tratamento ou com exercício.\n\nComo você usa a fita na sua prática hoje?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #kinesiotaping #dorlombar #fisioterapia",
+  "interesse": "alto"
+}

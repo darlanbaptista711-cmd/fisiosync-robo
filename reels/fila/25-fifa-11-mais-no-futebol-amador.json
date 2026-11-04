@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "FIFA 11 mais no futebol amador",
+  "narracao": "Atende jogador de futebol amador? Com o FIFA onze mais, as lesões caíram trinta e nove por cento. O FIFA onze antigo não mostrou redução. Guarda essa pra pré-temporada.",
+  "palavras": 29,
+  "fato": "Metanálise de 6 ensaios randomizados por conglomerados no futebol recreativo e abaixo do nível de elite: nos 4 ensaios do FIFA 11+, o programa reduziu as lesões em 39% em relação ao controle (razão de taxas de incidência 0,61; IC95% 0,48–0,77), enquanto os 2 ensaios do programa anterior, o FIFA 11, não mostraram redução (0,99; IC95% 0,80–1,23). Uma metanálise de autores de Salvador (BA), com 6 ensaios e 6.344 jogadores, estimou redução de 30% nas lesões com o FIFA 11+ (RR 0,70; IC95% 0,52–0,93).",
+  "fonte": "Thorborg et al., British Journal of Sports Medicine, 2017 (revisão sistemática e metanálise); Sadigursky et al., BMC Sports Science, Medicine and Rehabilitation, 2017 (revisão sistemática e metanálise)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.244,
+    0.467
+  ],
+  "pergunta": {
+    "rotulo": "Esporte",
+    "linhas": [
+      "Atende jogador",
+      "de futebol",
+      "amador?"
+    ]
+  },
+  "resposta": {
+    "destaque": "39%",
+    "complemento": "menos lesões com o FIFA 11+",
+    "fonte": "Thorborg et al., BJSM, 2017"
+  },
+  "extra": {
+    "titulo": "FIFA 11 antigo",
+    "texto": "não mostrou\nredução."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Guarda essa pra pré-temporada."
+  },
+  "capa_ms": 3800,
+  "legenda": "Um programa de aquecimento aparece forte na prevenção de lesão no futebol amador.\n\nMetanálise de ensaios no futebol recreativo e abaixo da elite (Thorborg et al., British Journal of Sports Medicine, 2017): nos 4 ensaios do FIFA 11+, as lesões caíram 39% em relação ao controle. Os 2 ensaios do programa anterior, o FIFA 11, não mostraram redução.\n\nUma metanálise de autores de Salvador (BA), com 6.344 jogadores, estimou redução de 30% nas lesões com o FIFA 11+ (Sadigursky et al., 2017).\n\nVocê já usa o FIFA 11+ com os times que atende?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #futebol #prevencaodelesoes #fisioesportiva",
+  "interesse": "alto"
+}

@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Patelofemoral quadril e joelho",
+  "narracao": "Dor patelofemoral: fortalece só o joelho? Revisão brasileira com catorze ensaios: quadril mais joelho foi superior. Para dor e atividade, com efeito mantido. Pesquisa da UFMG, vale conhecer.",
+  "palavras": 28,
+  "fato": "Revisão sistemática com metanálise de pesquisadores brasileiros (14 ensaios, 673 participantes com dor patelofemoral) concluiu que fortalecer quadril e joelho é eficaz e superior a fortalecer só o joelho para reduzir a dor (diferença média −1,5; IC95% −2,3 a −0,8) e melhorar a atividade (diferença média padronizada 0,7; IC95% 0,2 a 1,3), com resultados mantidos após o fim da intervenção. Esses ganhos ocorreram sem mudança significativa de força em nenhuma das intervenções.",
+  "fonte": "Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018 (revisão sistemática com metanálise)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.265,
+    0.471
+  ],
+  "pergunta": {
+    "rotulo": "Joelho",
+    "linhas": [
+      "Dor patelofemoral:",
+      "fortalece só",
+      "o joelho?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Quadril",
+    "complemento": "+ joelho foi superior a só joelho",
+    "fonte": "Nascimento et al., JOSPT, 2018"
+  },
+  "extra": {
+    "titulo": "Dor e atividade",
+    "texto": "melhoraram,\ne o efeito se manteve."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Pesquisa da UFMG, vale conhecer."
+  },
+  "capa_ms": 3800,
+  "legenda": "Na dor patelofemoral, fortalecer só o joelho deixa algo de fora.\n\nRevisão sistemática com metanálise de pesquisadores da UFMG (Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018), com 14 ensaios e 673 participantes: fortalecer quadril e joelho foi eficaz e superior a fortalecer só o joelho para reduzir a dor e melhorar a atividade, com resultados mantidos após o fim da intervenção.\n\nOs ganhos aconteceram sem mudança significativa de força em nenhuma das intervenções.\n\nQuadril já entra no seu protocolo de patelofemoral?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #joelho #patelofemoral #fisioterapia",
+  "interesse": "alto"
+}

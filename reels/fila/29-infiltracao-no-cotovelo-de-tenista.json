@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Infiltracao no cotovelo de tenista",
+  "narracao": "Infiltração no cotovelo de tenista. Em um ano, cinquenta e quatro por cento de recorrência, contra doze no placebo. Alívio rápido nem sempre se sustenta. Bom pra discussão de caso.",
+  "palavras": 30,
+  "fato": "Em ensaio randomizado com 165 pacientes com epicondilalgia lateral unilateral havia mais de 6 semanas, a infiltração de corticoide, comparada a uma injeção placebo, resultou em menos pacientes completamente recuperados ou muito melhores em 1 ano (83% vs 96%) e em mais recorrência (54% vs 12%), definida como recuperação completa ou grande melhora na 4ª ou 8ª semana que não se manteve depois. A fisioterapia não mudou os resultados de 1 ano.",
+  "fonte": "Coombes et al., JAMA, 2013 (ensaio clínico randomizado controlado por placebo, fatorial 2x2)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.232,
+    0.523
+  ],
+  "pergunta": {
+    "rotulo": "Cotovelo",
+    "linhas": [
+      "Infiltração no",
+      "cotovelo",
+      "de tenista"
+    ]
+  },
+  "resposta": {
+    "destaque": "54%",
+    "complemento": "de recorrência em 1 ano (12% no placebo)",
+    "fonte": "Coombes et al., JAMA, 2013"
+  },
+  "extra": {
+    "titulo": "Alívio rápido",
+    "texto": "nem sempre\nse sustenta."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Bom pra discussão de caso."
+  },
+  "capa_ms": 3800,
+  "legenda": "Infiltração alivia rápido o cotovelo de tenista. E depois de um ano?\n\nEnsaio randomizado com 165 pacientes com epicondilalgia lateral (Coombes et al., JAMA, 2013): comparada a uma injeção placebo, a infiltração de corticoide teve menos pacientes recuperados ou muito melhores em 1 ano (83% contra 96%) e mais recorrência (54% contra 12%).\n\nRecorrência foi definida como melhora na 4ª ou 8ª semana que não se manteve depois. No estudo, a fisioterapia não mudou os resultados de 1 ano.\n\nComo você discute a infiltração com a equipe?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #cotovelodetenista #epicondilite #fisioterapia",
+  "interesse": "alto"
+}

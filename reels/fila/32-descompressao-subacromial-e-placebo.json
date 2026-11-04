@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Descompressao subacromial e placebo",
+  "narracao": "Descompressão subacromial venceu a cirurgia placebo? Não. Aos seis meses, sem diferença entre os dois operados. Ensaio com trezentos e treze pacientes. Publicado no Lancet, em dois mil e dezoito.",
+  "palavras": 30,
+  "fato": "No ensaio CSAW, 313 pacientes do Reino Unido com dor subacromial havia pelo menos 3 meses, manguito rotador íntegro e que já tinham feito exercícios e ao menos uma infiltração de corticoide foram sorteados para descompressão subacromial artroscópica, artroscopia sem descompressão (placebo, sem retirar osso nem tecido mole) ou nenhum tratamento. Aos 6 meses, o Oxford Shoulder Score (0 = pior, 48 = melhor) não diferiu entre os dois grupos operados (32,7 vs 34,2 pontos; diferença −1,3; IC95% −3,9 a 1,3), e a pequena vantagem dos operados sobre quem não foi tratado foi considerada pelos autores clinicamente não importante.",
+  "fonte": "Beard et al., The Lancet, 2018 (ensaio clínico randomizado controlado por placebo, CSAW)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.349,
+    0.389
+  ],
+  "pergunta": {
+    "rotulo": "Ombro",
+    "linhas": [
+      "Descompressão",
+      "subacromial venceu",
+      "o placebo?"
+    ]
+  },
+  "resposta": {
+    "destaque": "Não",
+    "complemento": "sem diferença vs artroscopia placebo",
+    "fonte": "Beard et al., The Lancet, 2018"
+  },
+  "extra": {
+    "titulo": "313 pacientes",
+    "texto": "ensaio CSAW,\nReino Unido."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Publicado no Lancet, em dois mil e dezoito."
+  },
+  "capa_ms": 3800,
+  "legenda": "Um ensaio com cirurgia placebo mudou a conversa sobre dor subacromial.\n\nNo ensaio CSAW (Beard et al., The Lancet, 2018), 313 pacientes com dor subacromial havia pelo menos 3 meses, manguito íntegro e que já tinham feito exercícios e infiltração foram sorteados para descompressão artroscópica, artroscopia sem descompressão (placebo) ou nenhum tratamento.\n\nAos 6 meses, o Oxford Shoulder Score não diferiu entre os dois grupos operados. A pequena vantagem dos operados sobre quem não foi tratado foi considerada pelos autores clinicamente não importante.\n\nComo esse estudo aparece nas suas discussões de ombro?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #ombro #manguitorotador #fisioterapia",
+  "interesse": "alto"
+}

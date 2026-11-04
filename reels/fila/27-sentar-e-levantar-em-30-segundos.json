@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Sentar e levantar em 30 segundos",
+  "narracao": "Sentar e levantar em trinta segundos. Homem de sessenta e cinco a setenta e quatro: menos de doze é abaixo da média. Pro CDC, risco de queda. Anota a tabela.",
+  "palavras": 30,
+  "fato": "Na folha de avaliação do programa STEADI do CDC (2017), o teste de sentar e levantar da cadeira em 30 segundos é feito com os braços cruzados sobre o peito, numa cadeira de encosto reto, sem braços e com assento de 17 polegadas (cerca de 43 cm); se o paciente precisar usar os braços, o teste para e a nota é zero. São consideradas abaixo da média, por idade, notas menores que (homens/mulheres): 14/12 aos 60–64 anos; 12/11 aos 65–69; 12/10 aos 70–74; 11/10 aos 75–79; 10/9 aos 80–84; 8/8 aos 85–89; e 7/4 aos 90–94. Segundo o CDC, nota abaixo da média indica risco de quedas.",
+  "fonte": "CDC (Centers for Disease Control and Prevention), STEADI, folha de avaliação '30-Second Chair Stand', 2017 (material clínico oficial)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.266,
+    0.561
+  ],
+  "pergunta": {
+    "rotulo": "Avaliação",
+    "linhas": [
+      "Sentar e levantar",
+      "em 30",
+      "segundos"
+    ]
+  },
+  "resposta": {
+    "destaque": "<12",
+    "complemento": "abaixo da média, homens de 65 a 74",
+    "fonte": "CDC, STEADI, 2017"
+  },
+  "extra": {
+    "titulo": "Para o CDC",
+    "texto": "indica risco\nde queda."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Anota a tabela."
+  },
+  "capa_ms": 3800,
+  "legenda": "Um teste de 30 segundos com tabela de referência oficial.\n\nNo programa STEADI do CDC (2017), o teste é feito com os braços cruzados no peito, numa cadeira sem braços com assento de cerca de 43 cm. Se o paciente usar os braços, a nota é zero.\n\nAbaixo da média, por idade (homens/mulheres): menos de 14/12 aos 60–64; 12/11 aos 65–69; 12/10 aos 70–74; 11/10 aos 75–79; 10/9 aos 80–84; 8/8 aos 85–89; 7/4 aos 90–94. Para o CDC, nota abaixo da média indica risco de quedas.\n\nEsse teste já está na sua avaliação de idosos?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #idosos #avaliacao #fisioterapia",
+  "interesse": "alto"
+}

@@ -1,0 +1,38 @@
+{
+  "tipo": "dica",
+  "titulo": "Meniscectomia contra cirurgia simulada",
+  "narracao": "Meniscectomia em lesão degenerativa funciona? Contra cirurgia simulada, sem diferença em doze meses. Os dois grupos melhoraram parecido. Duplo-cego, no New England.",
+  "palavras": 22,
+  "fato": "Ensaio randomizado, duplo-cego e controlado por cirurgia simulada, com 146 pacientes de 35 a 65 anos com sintomas de lesão degenerativa do menisco medial e sem artrose de joelho, não encontrou diferença significativa entre meniscectomia parcial artroscópica e cirurgia simulada em nenhum desfecho principal em 12 meses (melhora no escore de Lysholm de 21,7 vs 23,3 pontos; diferença −1,6; IC95% −7,2 a 4,0). Os autores concluem que os resultados após a meniscectomia parcial não foram melhores do que após a cirurgia simulada.",
+  "fonte": "Sihvonen et al., New England Journal of Medicine, 2013 (ensaio clínico randomizado controlado por cirurgia simulada, FIDELITY)",
+  "conferido_em": "2026-11-02",
+  "proporcoes": [
+    0.336,
+    0.403
+  ],
+  "pergunta": {
+    "rotulo": "Joelho",
+    "linhas": [
+      "Meniscectomia em",
+      "lesão degenerativa",
+      "funciona?"
+    ]
+  },
+  "resposta": {
+    "destaque": "12 meses",
+    "complemento": "sem diferença vs cirurgia simulada",
+    "fonte": "Sihvonen et al., NEJM, 2013"
+  },
+  "extra": {
+    "titulo": "Os dois grupos",
+    "texto": "melhoraram\nparecido."
+  },
+  "fecho": {
+    "chamada": "Teste grátis por 7 dias",
+    "site": "app.fisiosync.com.br",
+    "frase": "Duplo-cego, no New England."
+  },
+  "capa_ms": 3800,
+  "legenda": "Um dos estudos mais citados sobre menisco degenerativo.\n\nEnsaio randomizado, duplo-cego, com 146 pacientes de 35 a 65 anos com lesão degenerativa do menisco medial e sem artrose (Sihvonen et al., New England Journal of Medicine, 2013): a meniscectomia parcial artroscópica não foi melhor que a cirurgia simulada em nenhum desfecho principal em 12 meses.\n\nOs dois grupos melhoraram: no escore de Lysholm, 21,7 contra 23,3 pontos.\n\nO resultado vale para lesão degenerativa do menisco medial sem artrose. Não vale para lesões traumáticas.\n\nComo esse dado entra na sua conversa com a equipe médica?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #joelho #menisco #fisioterapia",
+  "interesse": "alto"
+}

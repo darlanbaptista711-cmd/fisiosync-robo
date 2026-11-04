@@ -628,6 +628,416 @@ ROTEIROS = [
         "tags": "#coluna #saudepublica #fisioterapia"
     },
     {
+        "interesse": "alto",
+        "rotulo": "Avaliação",
+        "titulo": "Regras de Ottawa no tornozelo",
+        "partes": [
+            "Paciente com entorse pedindo raio-x?",
+            "Pelas regras de Ottawa, sensibilidade de quase noventa e oito por cento.",
+            "Até quarenta por cento menos raio-x desnecessário.",
+            "Salva pra próxima entorse."
+        ],
+        "pergunta": [
+            "Paciente com",
+            "entorse pedindo",
+            "raio-x?"
+        ],
+        "resposta": {
+            "destaque": "97,6%",
+            "complemento": "de sensibilidade para descartar fratura",
+            "fonte": "Bachmann et al., BMJ, 2003"
+        },
+        "extra": {
+            "titulo": "30% a 40%",
+            "texto": "menos raio-x\ndesnecessário."
+        },
+        "fato": "Revisão sistemática com metanálise de 27 estudos (15.581 pacientes) concluiu que as regras de Ottawa para tornozelo são um instrumento preciso para excluir fraturas de tornozelo e mediopé, com sensibilidade de quase 100% (agrupada de 97,6%; IC95% 96,4–98,9) e especificidade modesta. Aplicando os resultados a uma prevalência de fratura de 15%, a probabilidade de fratura com a regra negativa ficou abaixo de 1,4%, e os autores estimam que o uso da regra reduziria em 30% a 40% as radiografias desnecessárias.",
+        "fonte": "Bachmann et al., BMJ, 2003 (revisão sistemática com metanálise)",
+        "legenda": [
+            "Nem toda entorse de tornozelo precisa de raio-x.",
+            "Uma revisão sistemática com 27 estudos e 15.581 pacientes (Bachmann et al., BMJ, 2003) concluiu que as regras de Ottawa para tornozelo são precisas para excluir fraturas de tornozelo e mediopé: sensibilidade agrupada de 97,6%.",
+            "Com uma prevalência de fratura de 15%, a chance de fratura com a regra negativa ficou abaixo de 1,4%. Os autores estimam que o uso da regra reduziria de 30% a 40% as radiografias desnecessárias.",
+            "A especificidade é modesta: a regra é boa para descartar fratura, não para confirmar.",
+            "Você usa as regras de Ottawa na avaliação de entorse?"
+        ],
+        "tags": "#tornozelo #avaliacao #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Coluna",
+        "titulo": "Hernia extrusa e regressao espontanea",
+        "partes": [
+            "Laudo com hérnia extrusa assusta?",
+            "Numa revisão, setenta por cento das extrusões regrediram espontaneamente.",
+            "Nos sequestros, noventa e seis.",
+            "Dado bom pra ter na primeira consulta."
+        ],
+        "pergunta": [
+            "Laudo com",
+            "hérnia extrusa",
+            "assusta?"
+        ],
+        "resposta": {
+            "destaque": "70%",
+            "complemento": "das extrusões regrediram espontaneamente",
+            "fonte": "Chiu et al., Clin Rehabil, 2015"
+        },
+        "extra": {
+            "titulo": "Sequestros",
+            "texto": "96% regrediram."
+        },
+        "fato": "Revisão sistemática (31 estudos incluídos, 9 usados no cálculo de probabilidade) encontrou taxa de regressão espontânea da hérnia de disco lombar de 96% nos sequestros, 70% nas extrusões, 41% nas protrusões e 13% nos abaulamentos discais; a resolução completa ocorreu em 43% dos discos sequestrados e em 15% dos extrusos. Os autores concluem que a regressão espontânea pode ocorrer, inclusive com resolução completa após tratamento conservador, e que extrusões e sequestros tiveram possibilidade significativamente maior de regredir do que abaulamentos e protrusões.",
+        "fonte": "Chiu et al., Clinical Rehabilitation, 2015 (revisão sistemática)",
+        "legenda": [
+            "Hérnia extrusa no laudo costuma assustar. A imagem conta outra parte da história.",
+            "Uma revisão sistemática (Chiu et al., Clinical Rehabilitation, 2015) encontrou regressão espontânea da hérnia de disco lombar em 96% dos sequestros, 70% das extrusões, 41% das protrusões e 13% dos abaulamentos. A resolução completa ocorreu em 43% dos sequestros e em 15% das extrusões.",
+            "Regressão aqui é redução da hérnia no exame de imagem, não necessariamente melhora da dor, e o estudo não diz em quanto tempo ela aconteceu.",
+            "Como você conversa sobre o laudo com quem chega preocupado?"
+        ],
+        "tags": "#coluna #herniadedisco #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Esporte",
+        "titulo": "FIFA 11 mais no futebol amador",
+        "partes": [
+            "Atende jogador de futebol amador?",
+            "Com o FIFA onze mais, as lesões caíram trinta e nove por cento.",
+            "O FIFA onze antigo não mostrou redução.",
+            "Guarda essa pra pré-temporada."
+        ],
+        "pergunta": [
+            "Atende jogador",
+            "de futebol",
+            "amador?"
+        ],
+        "resposta": {
+            "destaque": "39%",
+            "complemento": "menos lesões com o FIFA 11+",
+            "fonte": "Thorborg et al., BJSM, 2017"
+        },
+        "extra": {
+            "titulo": "FIFA 11 antigo",
+            "texto": "não mostrou\nredução."
+        },
+        "fato": "Metanálise de 6 ensaios randomizados por conglomerados no futebol recreativo e abaixo do nível de elite: nos 4 ensaios do FIFA 11+, o programa reduziu as lesões em 39% em relação ao controle (razão de taxas de incidência 0,61; IC95% 0,48–0,77), enquanto os 2 ensaios do programa anterior, o FIFA 11, não mostraram redução (0,99; IC95% 0,80–1,23). Uma metanálise de autores de Salvador (BA), com 6 ensaios e 6.344 jogadores, estimou redução de 30% nas lesões com o FIFA 11+ (RR 0,70; IC95% 0,52–0,93).",
+        "fonte": "Thorborg et al., British Journal of Sports Medicine, 2017 (revisão sistemática e metanálise); Sadigursky et al., BMC Sports Science, Medicine and Rehabilitation, 2017 (revisão sistemática e metanálise)",
+        "legenda": [
+            "Um programa de aquecimento aparece forte na prevenção de lesão no futebol amador.",
+            "Metanálise de ensaios no futebol recreativo e abaixo da elite (Thorborg et al., British Journal of Sports Medicine, 2017): nos 4 ensaios do FIFA 11+, as lesões caíram 39% em relação ao controle. Os 2 ensaios do programa anterior, o FIFA 11, não mostraram redução.",
+            "Uma metanálise de autores de Salvador (BA), com 6.344 jogadores, estimou redução de 30% nas lesões com o FIFA 11+ (Sadigursky et al., 2017).",
+            "Você já usa o FIFA 11+ com os times que atende?"
+        ],
+        "tags": "#futebol #prevencaodelesoes #fisioesportiva"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Joelho",
+        "titulo": "Meniscectomia contra cirurgia simulada",
+        "partes": [
+            "Meniscectomia em lesão degenerativa funciona?",
+            "Contra cirurgia simulada, sem diferença em doze meses.",
+            "Os dois grupos melhoraram parecido.",
+            "Duplo-cego, no New England."
+        ],
+        "pergunta": [
+            "Meniscectomia em",
+            "lesão degenerativa",
+            "funciona?"
+        ],
+        "resposta": {
+            "destaque": "12 meses",
+            "complemento": "sem diferença vs cirurgia simulada",
+            "fonte": "Sihvonen et al., NEJM, 2013"
+        },
+        "extra": {
+            "titulo": "Os dois grupos",
+            "texto": "melhoraram\nparecido."
+        },
+        "fato": "Ensaio randomizado, duplo-cego e controlado por cirurgia simulada, com 146 pacientes de 35 a 65 anos com sintomas de lesão degenerativa do menisco medial e sem artrose de joelho, não encontrou diferença significativa entre meniscectomia parcial artroscópica e cirurgia simulada em nenhum desfecho principal em 12 meses (melhora no escore de Lysholm de 21,7 vs 23,3 pontos; diferença −1,6; IC95% −7,2 a 4,0). Os autores concluem que os resultados após a meniscectomia parcial não foram melhores do que após a cirurgia simulada.",
+        "fonte": "Sihvonen et al., New England Journal of Medicine, 2013 (ensaio clínico randomizado controlado por cirurgia simulada, FIDELITY)",
+        "legenda": [
+            "Um dos estudos mais citados sobre menisco degenerativo.",
+            "Ensaio randomizado, duplo-cego, com 146 pacientes de 35 a 65 anos com lesão degenerativa do menisco medial e sem artrose (Sihvonen et al., New England Journal of Medicine, 2013): a meniscectomia parcial artroscópica não foi melhor que a cirurgia simulada em nenhum desfecho principal em 12 meses.",
+            "Os dois grupos melhoraram: no escore de Lysholm, 21,7 contra 23,3 pontos.",
+            "O resultado vale para lesão degenerativa do menisco medial sem artrose. Não vale para lesões traumáticas.",
+            "Como esse dado entra na sua conversa com a equipe médica?"
+        ],
+        "tags": "#joelho #menisco #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Avaliação",
+        "titulo": "Sentar e levantar em 30 segundos",
+        "partes": [
+            "Sentar e levantar em trinta segundos.",
+            "Homem de sessenta e cinco a setenta e quatro: menos de doze é abaixo da média.",
+            "Pro CDC, risco de queda.",
+            "Anota a tabela."
+        ],
+        "pergunta": [
+            "Sentar e levantar",
+            "em 30",
+            "segundos"
+        ],
+        "resposta": {
+            "destaque": "<12",
+            "complemento": "abaixo da média, homens de 65 a 74",
+            "fonte": "CDC, STEADI, 2017"
+        },
+        "extra": {
+            "titulo": "Para o CDC",
+            "texto": "indica risco\nde queda."
+        },
+        "fato": "Na folha de avaliação do programa STEADI do CDC (2017), o teste de sentar e levantar da cadeira em 30 segundos é feito com os braços cruzados sobre o peito, numa cadeira de encosto reto, sem braços e com assento de 17 polegadas (cerca de 43 cm); se o paciente precisar usar os braços, o teste para e a nota é zero. São consideradas abaixo da média, por idade, notas menores que (homens/mulheres): 14/12 aos 60–64 anos; 12/11 aos 65–69; 12/10 aos 70–74; 11/10 aos 75–79; 10/9 aos 80–84; 8/8 aos 85–89; e 7/4 aos 90–94. Segundo o CDC, nota abaixo da média indica risco de quedas.",
+        "fonte": "CDC (Centers for Disease Control and Prevention), STEADI, folha de avaliação '30-Second Chair Stand', 2017 (material clínico oficial)",
+        "legenda": [
+            "Um teste de 30 segundos com tabela de referência oficial.",
+            "No programa STEADI do CDC (2017), o teste é feito com os braços cruzados no peito, numa cadeira sem braços com assento de cerca de 43 cm. Se o paciente usar os braços, a nota é zero.",
+            "Abaixo da média, por idade (homens/mulheres): menos de 14/12 aos 60–64; 12/11 aos 65–69; 12/10 aos 70–74; 11/10 aos 75–79; 10/9 aos 80–84; 8/8 aos 85–89; 7/4 aos 90–94. Para o CDC, nota abaixo da média indica risco de quedas.",
+            "Esse teste já está na sua avaliação de idosos?"
+        ],
+        "tags": "#idosos #avaliacao #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Pé",
+        "titulo": "Fascite plantar e fortalecimento",
+        "partes": [
+            "Fascite plantar só com alongamento?",
+            "Com fortalecimento de alta carga, a função ficou melhor em três meses.",
+            "Depois, os grupos se igualaram.",
+            "Elevação de calcanhar, uma perna, toalha nos dedos."
+        ],
+        "pergunta": [
+            "Fascite plantar",
+            "só com",
+            "alongamento?"
+        ],
+        "resposta": {
+            "destaque": "3 meses",
+            "complemento": "melhor com fortalecimento de alta carga",
+            "fonte": "Rathleff et al., SJMSS, 2015"
+        },
+        "extra": {
+            "titulo": "Depois",
+            "texto": "os grupos\nse igualaram."
+        },
+        "fato": "Ensaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom comparou palmilha mais alongamento diário específico da fáscia plantar com palmilha mais fortalecimento progressivo de alta carga em dias alternados (elevação do calcanhar em uma perna só, com uma toalha sob os dedos). No desfecho principal, aos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (IC95% 6–52; p = 0,016); aos 1, 6 e 12 meses não houve diferença entre os grupos.",
+        "fonte": "Rathleff et al., Scandinavian Journal of Medicine & Science in Sports, 2015 (ensaio clínico randomizado)",
+        "legenda": [
+            "Na fascite plantar, o alongamento costuma ser a primeira escolha. Um ensaio testou outra coisa.",
+            "Ensaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom (Rathleff et al., Scandinavian Journal of Medicine & Science in Sports, 2015) comparou palmilha com alongamento diário e palmilha com fortalecimento progressivo de alta carga em dias alternados: elevação do calcanhar em uma perna só, com uma toalha sob os dedos.",
+            "Aos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (melhor). Aos 1, 6 e 12 meses, não houve diferença entre os grupos.",
+            "Você usa fortalecimento de alta carga na fascite?"
+        ],
+        "tags": "#fasciteplantar #pe #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Cotovelo",
+        "titulo": "Infiltracao no cotovelo de tenista",
+        "partes": [
+            "Infiltração no cotovelo de tenista.",
+            "Em um ano, cinquenta e quatro por cento de recorrência, contra doze no placebo.",
+            "Alívio rápido nem sempre se sustenta.",
+            "Bom pra discussão de caso."
+        ],
+        "pergunta": [
+            "Infiltração no",
+            "cotovelo",
+            "de tenista"
+        ],
+        "resposta": {
+            "destaque": "54%",
+            "complemento": "de recorrência em 1 ano (12% no placebo)",
+            "fonte": "Coombes et al., JAMA, 2013"
+        },
+        "extra": {
+            "titulo": "Alívio rápido",
+            "texto": "nem sempre\nse sustenta."
+        },
+        "fato": "Em ensaio randomizado com 165 pacientes com epicondilalgia lateral unilateral havia mais de 6 semanas, a infiltração de corticoide, comparada a uma injeção placebo, resultou em menos pacientes completamente recuperados ou muito melhores em 1 ano (83% vs 96%) e em mais recorrência (54% vs 12%), definida como recuperação completa ou grande melhora na 4ª ou 8ª semana que não se manteve depois. A fisioterapia não mudou os resultados de 1 ano.",
+        "fonte": "Coombes et al., JAMA, 2013 (ensaio clínico randomizado controlado por placebo, fatorial 2x2)",
+        "legenda": [
+            "Infiltração alivia rápido o cotovelo de tenista. E depois de um ano?",
+            "Ensaio randomizado com 165 pacientes com epicondilalgia lateral (Coombes et al., JAMA, 2013): comparada a uma injeção placebo, a infiltração de corticoide teve menos pacientes recuperados ou muito melhores em 1 ano (83% contra 96%) e mais recorrência (54% contra 12%).",
+            "Recorrência foi definida como melhora na 4ª ou 8ª semana que não se manteve depois. No estudo, a fisioterapia não mudou os resultados de 1 ano.",
+            "Como você discute a infiltração com a equipe?"
+        ],
+        "tags": "#cotovelodetenista #epicondilite #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Prevenção",
+        "titulo": "O que previne dor lombar",
+        "partes": [
+            "Palmilha ou cinta previnem dor lombar?",
+            "Não pareceram prevenir.",
+            "Exercício com educação: risco quarenta e cinco por cento menor no curto prazo.",
+            "Na prevenção, movimento e informação."
+        ],
+        "pergunta": [
+            "Palmilha ou cinta",
+            "previnem",
+            "dor lombar?"
+        ],
+        "resposta": {
+            "destaque": "Não",
+            "complemento": "palmilhas e cintas não pareceram prevenir",
+            "fonte": "Steffens et al., JAMA Intern Med, 2016"
+        },
+        "extra": {
+            "titulo": "Exercício e educação",
+            "texto": "45% menos risco\nno curto prazo."
+        },
+        "fato": "Revisão sistemática com metanálise de 21 ensaios randomizados (30.850 participantes) encontrou evidência de qualidade moderada de que exercício combinado com educação reduz o risco de um episódio de dor lombar no curto prazo (RR 0,55; IC95% 0,41–0,74, ou seja, risco 45% menor) e evidência de qualidade baixa a muito baixa de que exercício sozinho pode reduzir (RR 0,65; IC95% 0,50–0,86). Educação sozinha (RR 1,03), cintas lombares (RR 1,01) e palmilhas (RR 1,01) não pareceram prevenir dor lombar.",
+        "fonte": "Steffens et al., JAMA Internal Medicine, 2016 (revisão sistemática e metanálise)",
+        "legenda": [
+            "O que de fato previne dor lombar? Uma metanálise com pesquisadores da UFMG respondeu.",
+            "Revisão sistemática com 21 ensaios e 30.850 participantes (Steffens et al., JAMA Internal Medicine, 2016): exercício combinado com educação reduziu o risco de um episódio de dor lombar no curto prazo (risco 45% menor, evidência de qualidade moderada). Exercício sozinho pode reduzir (qualidade baixa a muito baixa).",
+            "Educação sozinha, cintas lombares e palmilhas não pareceram prevenir dor lombar. No longo prazo, o efeito de exercício com educação diminuiu.",
+            "Prevenção de dor lombar já faz parte da sua oferta?"
+        ],
+        "tags": "#dorlombar #prevencao #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Joelho",
+        "titulo": "Patelofemoral quadril e joelho",
+        "partes": [
+            "Dor patelofemoral: fortalece só o joelho?",
+            "Revisão brasileira com catorze ensaios: quadril mais joelho foi superior.",
+            "Para dor e atividade, com efeito mantido.",
+            "Pesquisa da UFMG, vale conhecer."
+        ],
+        "pergunta": [
+            "Dor patelofemoral:",
+            "fortalece só",
+            "o joelho?"
+        ],
+        "resposta": {
+            "destaque": "Quadril",
+            "complemento": "+ joelho foi superior a só joelho",
+            "fonte": "Nascimento et al., JOSPT, 2018"
+        },
+        "extra": {
+            "titulo": "Dor e atividade",
+            "texto": "melhoraram,\ne o efeito se manteve."
+        },
+        "fato": "Revisão sistemática com metanálise de pesquisadores brasileiros (14 ensaios, 673 participantes com dor patelofemoral) concluiu que fortalecer quadril e joelho é eficaz e superior a fortalecer só o joelho para reduzir a dor (diferença média −1,5; IC95% −2,3 a −0,8) e melhorar a atividade (diferença média padronizada 0,7; IC95% 0,2 a 1,3), com resultados mantidos após o fim da intervenção. Esses ganhos ocorreram sem mudança significativa de força em nenhuma das intervenções.",
+        "fonte": "Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018 (revisão sistemática com metanálise)",
+        "legenda": [
+            "Na dor patelofemoral, fortalecer só o joelho deixa algo de fora.",
+            "Revisão sistemática com metanálise de pesquisadores da UFMG (Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018), com 14 ensaios e 673 participantes: fortalecer quadril e joelho foi eficaz e superior a fortalecer só o joelho para reduzir a dor e melhorar a atividade, com resultados mantidos após o fim da intervenção.",
+            "Os ganhos aconteceram sem mudança significativa de força em nenhuma das intervenções.",
+            "Quadril já entra no seu protocolo de patelofemoral?"
+        ],
+        "tags": "#joelho #patelofemoral #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Ombro",
+        "titulo": "Descompressao subacromial e placebo",
+        "partes": [
+            "Descompressão subacromial venceu a cirurgia placebo?",
+            "Não. Aos seis meses, sem diferença entre os dois operados.",
+            "Ensaio com trezentos e treze pacientes.",
+            "Publicado no Lancet, em dois mil e dezoito."
+        ],
+        "pergunta": [
+            "Descompressão",
+            "subacromial venceu",
+            "o placebo?"
+        ],
+        "resposta": {
+            "destaque": "Não",
+            "complemento": "sem diferença vs artroscopia placebo",
+            "fonte": "Beard et al., The Lancet, 2018"
+        },
+        "extra": {
+            "titulo": "313 pacientes",
+            "texto": "ensaio CSAW,\nReino Unido."
+        },
+        "fato": "No ensaio CSAW, 313 pacientes do Reino Unido com dor subacromial havia pelo menos 3 meses, manguito rotador íntegro e que já tinham feito exercícios e ao menos uma infiltração de corticoide foram sorteados para descompressão subacromial artroscópica, artroscopia sem descompressão (placebo, sem retirar osso nem tecido mole) ou nenhum tratamento. Aos 6 meses, o Oxford Shoulder Score (0 = pior, 48 = melhor) não diferiu entre os dois grupos operados (32,7 vs 34,2 pontos; diferença −1,3; IC95% −3,9 a 1,3), e a pequena vantagem dos operados sobre quem não foi tratado foi considerada pelos autores clinicamente não importante.",
+        "fonte": "Beard et al., The Lancet, 2018 (ensaio clínico randomizado controlado por placebo, CSAW)",
+        "legenda": [
+            "Um ensaio com cirurgia placebo mudou a conversa sobre dor subacromial.",
+            "No ensaio CSAW (Beard et al., The Lancet, 2018), 313 pacientes com dor subacromial havia pelo menos 3 meses, manguito íntegro e que já tinham feito exercícios e infiltração foram sorteados para descompressão artroscópica, artroscopia sem descompressão (placebo) ou nenhum tratamento.",
+            "Aos 6 meses, o Oxford Shoulder Score não diferiu entre os dois grupos operados. A pequena vantagem dos operados sobre quem não foi tratado foi considerada pelos autores clinicamente não importante.",
+            "Como esse estudo aparece nas suas discussões de ombro?"
+        ],
+        "tags": "#ombro #manguitorotador #fisioterapia"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Avaliação",
+        "titulo": "TUG sozinho e risco de queda",
+        "partes": [
+            "Usa só o TUG pra risco de queda?",
+            "Numa metanálise, sensibilidade de trinta e um por cento.",
+            "Sozinho, ele tem capacidade limitada.",
+            "Melhor não usar isolado."
+        ],
+        "pergunta": [
+            "Usa só o TUG",
+            "pra risco",
+            "de queda?"
+        ],
+        "resposta": {
+            "destaque": "31%",
+            "complemento": "de sensibilidade para prever quedas",
+            "fonte": "Barry et al., BMC Geriatrics, 2014"
+        },
+        "extra": {
+            "titulo": "Sozinho",
+            "texto": "capacidade\nlimitada."
+        },
+        "fato": "Revisão sistemática com metanálise (25 estudos na revisão, 10 na metanálise) avaliou o Timed Up and Go (TUG) em idosos da comunidade, usando 13,5 segundos ou mais como sinal de maior risco: a sensibilidade agrupada foi de 31% (IC95% 13–57%) e a especificidade de 74% (IC95% 52–88%), e o teste foi mais útil para confirmar do que para descartar risco de queda. Os autores concluem que o TUG tem capacidade limitada de prever quedas nessa população e não deve ser usado isoladamente para identificar idosos com alto risco.",
+        "fonte": "Barry et al., BMC Geriatrics, 2014 (revisão sistemática e metanálise)",
+        "legenda": [
+            "O TUG é um dos testes mais usados para risco de queda. Sozinho, ele tem limites.",
+            "Revisão sistemática com metanálise (Barry et al., BMC Geriatrics, 2014) avaliou o TUG em idosos da comunidade, com corte de 13,5 segundos: sensibilidade agrupada de 31% e especificidade de 74%. O teste foi mais útil para confirmar do que para descartar risco de queda.",
+            "Os autores concluem que o TUG tem capacidade limitada de prever quedas nessa população e não deve ser usado isoladamente.",
+            "Que outros testes você combina com o TUG?"
+        ],
+        "tags": "#idosos #quedas #avaliacao"
+    },
+    {
+        "interesse": "alto",
+        "rotulo": "Recursos",
+        "titulo": "Kinesio Taping e a tensao da fita",
+        "partes": [
+            "Kinesio Taping: a tensão da fita importa?",
+            "Em cento e quarenta e oito pacientes com lombalgia, não mudou dor nem incapacidade.",
+            "Estudo brasileiro.",
+            "Desafia o mecanismo proposto."
+        ],
+        "pergunta": [
+            "Kinesio Taping:",
+            "a tensão",
+            "importa?"
+        ],
+        "resposta": {
+            "destaque": "148",
+            "complemento": "pacientes: a tensão não mudou a dor",
+            "fonte": "Parreira et al., J Physiother, 2014"
+        },
+        "extra": {
+            "titulo": "Estudo brasileiro",
+            "texto": "ensaio\nrandomizado."
+        },
+        "fato": "Ensaio randomizado brasileiro com 148 pessoas com dor lombar crônica inespecífica comparou 8 sessões (em 4 semanas) de Kinesio Taping aplicado conforme o manual do método, com 10% a 15% de tensão para formar dobras na pele, com 8 sessões da mesma fita aplicada sem tensão e sem dobras. Ao fim das 4 semanas, formar as dobras não mudou o efeito sobre a dor (diferença média −0,4 ponto; IC95% −1,3 a 0,4) nem sobre a incapacidade (−0,3; IC95% −1,9 a 1,3), e os autores concluem que esses resultados desafiam o mecanismo de ação proposto para a técnica.",
+        "fonte": "Parreira et al., Journal of Physiotherapy, 2014 (ensaio clínico randomizado)",
+        "legenda": [
+            "A tensão da fita é o centro do método. Um ensaio brasileiro testou isso.",
+            "Ensaio randomizado com 148 pessoas com dor lombar crônica inespecífica (Parreira et al., Journal of Physiotherapy, 2014) comparou Kinesio Taping com 10% a 15% de tensão, formando dobras na pele, com a mesma fita aplicada sem tensão e sem dobras, em 8 sessões.",
+            "Ao fim de 4 semanas, formar as dobras não mudou o efeito sobre a dor nem sobre a incapacidade. Os autores concluem que os resultados desafiam o mecanismo de ação proposto. O estudo não comparou a fita com nenhum tratamento ou com exercício.",
+            "Como você usa a fita na sua prática hoje?"
+        ],
+        "tags": "#kinesiotaping #dorlombar #fisioterapia"
+    },
+    {
         "titulo": "O que e o Pilates para o COFFITO",
         "partes": ["O que é o Pilates para o COFFITO?",
                    "Recurso cinesioterapêutico e mecanoterapêutico, de reeducação do movimento.",
