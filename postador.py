@@ -655,6 +655,7 @@ FECHOS_SABIA = [
     "Vale guardar. Salve e mande para quem atende com você.",
     "Útil? Salve e envie para um colega que precisa ver isso.",
     "Pra não esquecer: Salve e compartilhe com sua equipe.",
+    "Conhece um estudante de fisio? Salve e mande para ele.",
 ]
 FECHOS_MITO = [
     "Acertou? Conta nos comentários. Salve e envie para um colega de profissão.",

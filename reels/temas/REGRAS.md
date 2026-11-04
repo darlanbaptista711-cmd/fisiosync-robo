@@ -97,7 +97,9 @@ hora de conferir fatos novos.
 A narração é uma linha só: **pergunta → dado → o que isso muda na prática →
 pedido que nasce do assunto**. Nada de "teste grátis" caindo do nada.
 
-- O pedido final quase sempre é **mandar para alguém ou salvar**
+- O pedido final quase sempre é **mandar para um colega de profissão ou um
+  estudante, ou salvar**. Quem segue a página são profissionais: o envio é
+  para outro profissional, **nunca "manda pro paciente"**
   ("Manda pro colega que só alonga", "Salva pra lembrar na próxima
   avaliação"). Envio e salvamento são o que faz o Reels crescer.
 - A FisioSync só entra na **fala** quando o assunto leva a ela (agenda,

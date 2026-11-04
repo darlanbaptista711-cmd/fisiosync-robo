@@ -425,7 +425,7 @@ ROTEIROS = [
             "Uma revisão sistemática com 33 estudos e 3.110 pessoas SEM dor (Brinjikji et al., American Journal of Neuroradiology, 2015) encontrou degeneração discal na imagem em 37% dos indivíduos de 20 anos e em 96% dos de 80 anos.",
             "Entre 20 e 80 anos, o abaulamento discal passou de 30% para 84%, e a protrusão discal de 29% para 43%.",
             "Ou seja: esses achados são comuns em quem não sente dor, e aumentam com a idade.",
-            "Você mostra esse dado para os seus pacientes?"
+            "Você já atendeu alguém que chegou assustado com o laudo?"
         ],
         "tags": "#coluna #dorlombar #fisioterapia"
     },
@@ -923,7 +923,7 @@ AJUSTES = {
         "partes": ["Disco degenerado no exame explica a dor?",
                    "Sem dor, trinta e sete por cento já têm aos vinte.",
                    "Aos oitenta, noventa e seis.",
-                   "Manda pro paciente com medo do laudo."],
+                   "Manda pro colega que trata o laudo."],
     },
     "Forca de preensao e mortalidade": {
         "partes": ["Força de preensão prevê mortalidade?",
