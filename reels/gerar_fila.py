@@ -920,6 +920,10 @@ ROTEIROS = [
 # frase.
 # ---------------------------------------------------------------------------
 AJUSTES = {
+    # Reels: rapido, simples, ate 15s, sobre o que AGREGA no dia a dia do
+    # profissional (03/11/2026). Pedido de salvar/compartilhar pode, desde
+    # que natural e variado ("Anota essa pra proxima avaliacao", "Vale
+    # mostrar pro preparador fisico"); nunca o mesmo em seguida.
     # Tom de colega experiente (03/11/2026): situacao real ou dado que
     # surpreende -> numero com fonte -> o que isso muda -> frase de
     # conclusao. Sem "manda pro colega", sem pedido forcado: o que faz
@@ -944,7 +948,7 @@ AJUSTES = {
         "partes": ["Quanto diz um simples teste de preensão?",
                    "Cada cinco quilos a menos, dezesseis por cento mais risco de morte.",
                    "Previu melhor que a pressão sistólica.",
-                   "Cabe em qualquer avaliação."],
+                   "Anota essa pra próxima avaliação."],
         "pergunta": ["Quanto diz", "um teste de", "preensão?"],
         "resposta": {"destaque": "16%", "complemento": "mais risco de morte a cada 5 kg a menos",
                      "fonte": "Leong et al., The Lancet, 2015"},
@@ -970,7 +974,7 @@ AJUSTES = {
         "partes": ["Prevenir lesão de isquiotibiais?",
                    "Incluir o nórdico reduziu o risco em até cinquenta e um por cento.",
                    "Em mais de oito mil atletas.",
-                   "Metade das lesões, com um exercício."],
+                   "Vale mostrar pro preparador físico."],
         "pergunta": ["Prevenir lesão", "de", "isquiotibiais?"],
         "pergunta_final": "O nórdico já faz parte dos seus programas?",
     },
@@ -985,6 +989,7 @@ AJUSTES = {
         "pergunta_final": "Que combinação você mais usa com idosos?",
     },
     "Pilates ja foi marca registrada": {
+        "interesse": "baixo-reels",  # curiosidade: vai para o carrossel
         "abertura": "Uma curiosidade sobre o nome do método.",
         "rotulo": "História",
         "partes": ["Pilates já foi marca registrada.",

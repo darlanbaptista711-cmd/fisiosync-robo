@@ -103,14 +103,9 @@ def slide_final(chamada, n, total):
     larg = x1 - x0
     # o pedido de salvar/enviar vai inteiro em ciano; o que vem antes
     # (pergunta do "mito ou verdade") em marinho
-    # a conclusao em marinho; se ainda vier um pedido com "Salve", ele
-    # fica em ciano (compatibilidade)
     k = chamada.find("Salve")
-    if k < 0:
-        blocos = [(chamada.strip(), M.MARINHO)]
-    else:
-        blocos = ([(chamada[:k].strip(), M.MARINHO)] if k > 0 else []) + \
-                 [(chamada[k:].strip(), M.CIANO)]
+    blocos = ([(chamada[:k].strip(), M.MARINHO)] if k > 0 else []) + \
+             [(chamada[k:].strip() if k >= 0 else chamada, M.CIANO)]
     medidos = []
     for texto, cor in blocos:
         fc, lc, _ = LY.caber(d, texto, larg, 3, True, 60, e, 0.70)
