@@ -303,5 +303,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-04",
+  "janela": "tarde",
+  "tema": "A dimensão mundial da reabilitação",
+  "pauta": "2,4 bilhões de pessoas precisam de reabilitação",
+  "eixo": "exercicio-saude",
+  "familia": "conhecimento",
+  "fonte": "OMS, comentário \"Rehabilitation in the context of WHO's mandate\" (1 nov. 2022) e fact sheet \"Rehabilitation\" (22 abr. 2024)",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Arraste e confira a resposta.",
+  "chamada": "Reabilitação pode beneficiar cerca de 2,4 bilhões",
+  "conceito": "Um globo terrestre acompanha a afirmação para mostrar que a estimativa sobre reabilitação tem alcance mundial.",
+  "composicao": "calibrado",
+  "estilo": "ilustracao 3D minimalista e sofisticada",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_a-dimens-o-mundial-da-reabilitac-o_feed_1080x1350.jpg",
+   "fisiosync_a-dimens-o-mundial-da-reabilitac-o_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]

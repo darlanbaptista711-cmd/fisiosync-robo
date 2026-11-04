@@ -2008,9 +2008,10 @@
    "fato": "Segundo a OMS, cerca de 2,4 bilhões de pessoas no mundo vivem com uma condição de saúde que pode se beneficiar de reabilitação.",
    "fonte": "OMS, comentário \"Rehabilitation in the context of WHO's mandate\" (1 nov. 2022) e fact sheet \"Rehabilitation\" (22 abr. 2024)",
    "url": "https://www.who.int/news-room/commentaries/detail/rehabilitation-in-the-context-of-who-s-mandate",
-   "status": "livre",
+   "status": "publicado",
    "observacao": "Número idêntico no comentário da OMS e no fact sheet 'Rehabilitation' (lido pelo espelho do CMS da OMS, pro.whoin.cloud.sitefinity.com; who.int/news-room/fact-sheets/detail/rehabilitation não abriu direto). O comentário acrescenta que o número subiu cerca de dois terços em três décadas.",
-   "interesse": "alto"
+   "interesse": "alto",
+   "usado_em": "2026-11-04"
   },
   {
    "id": "saude-publica-101",
