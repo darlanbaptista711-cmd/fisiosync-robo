@@ -280,5 +280,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-04",
+  "janela": "manha",
+  "tema": "Identificação obrigatória nos anúncios do fisioterapeuta",
+  "pauta": "o que deve constar em anúncios do fisioterapeuta",
+  "eixo": "etica",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 424/2013, Art. 48",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Nome, profissão e número de inscrição no Conselho Regional devem constar na divulgação.",
+  "chamada": "O que deve constar nos seus anúncios?",
+  "conceito": "Um checklist destaca nome, profissão e inscrição no Conselho Regional como informações obrigatórias na divulgação do fisioterapeuta.",
+  "composicao": "calibrado",
+  "estilo": "checklist visual",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_identificac-o-obrigat-ria-nos-an-ncios-d_feed_1080x1350.jpg",
+   "fisiosync_identificac-o-obrigat-ria-nos-an-ncios-d_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
