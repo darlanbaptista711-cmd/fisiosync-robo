@@ -1,0 +1,47 @@
+name: Story avulso (publica uma imagem do repositorio como story)
+
+# Publica UMA imagem ja salva no repositorio como story, na hora.
+# Nao mexe na programacao diaria nem no historico dos posts.
+on:
+  workflow_dispatch:
+    inputs:
+      arquivo:
+        description: "Caminho da imagem no repositorio (JPEG 9:16), ex: imagens/avulsos/story.jpg"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: story-avulso
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - name: Publicar o story
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          ARQUIVO: ${{ inputs.arquivo }}
+          LINK: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/${{ inputs.arquivo }}
+        run: |
+          set -e
+          test -f "$ARQUIVO"
+          python - <<'PY'
+          import os
+          from PIL import Image
+          w, h = Image.open(os.environ["ARQUIVO"]).size
+          print(f"imagem {w}x{h}, proporcao {w/h:.4f} (story = 0.5625)")
+          import postador
+          postador.publicar({"ID": os.environ["ID"], "TOKEN": os.environ["TOKEN"]},
+                            os.environ["LINK"], story=True)
+          PY
