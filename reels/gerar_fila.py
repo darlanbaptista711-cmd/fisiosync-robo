@@ -1717,7 +1717,7 @@ AUDITORIA_2 = {
         "fato_extra": "Os 14 ensaios e 673 participantes são da revisão inteira; a comparação com fortalecer só o joelho usou parte desses ensaios.",
     },
     "Kinesio Taping e a tensao da fita": {
-        "partes": ["A tensão do Kinesio Taping importa?",
+        "partes": ["A tensão do Kinesio importa?",
                    "Lombalgia crônica inespecífica, cento e quarenta e oito pacientes.",
                    "Com tensão ou sem, dor e incapacidade não diferiram em quatro semanas.",
                    "Desafia o mecanismo proposto."],
