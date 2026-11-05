@@ -118,16 +118,19 @@ def _calibrado(peca, d, foto, tit, apo, g, story, sobretitulo=""):
         d.text((meio - w / 2, topo_rodape), txt, font=f_arr, fill=M.CIANO)
         # fonte na capa (05/11/2026): o dado ja chega com a origem
         if g.get("fonte_capa"):
-            larg = g["x1"] - g["x0"]
-            ff, lf, _ = LY.caber(d, f"Fonte: {g['fonte_capa']}", larg, 2, False,
-                                 22, e, 0.80)
+            # variaveis proprias: 'y' e 'larg' marcam o fim do texto e a
+            # area da ilustracao logo abaixo (reusar 'y' aqui sumia com a
+            # ilustracao da capa)
+            larg_f = g["x1"] - g["x0"]
+            ff, lf, _ = LY.caber(d, f"Fonte: {g['fonte_capa']}", larg_f, 2,
+                                 False, 22, e, 0.80)
             passo = int(ff.size * 1.3)
-            y = topo_rodape - int(16 * e) - passo * len(lf)
-            topo_rodape = y
+            yf = topo_rodape - int(16 * e) - passo * len(lf)
+            topo_rodape = yf
             for linha in lf:
                 wl = d.textlength(linha, font=ff)
-                d.text((meio - wl / 2, y), linha, font=ff, fill=(110, 125, 140))
-                y += passo
+                d.text((meio - wl / 2, yf), linha, font=ff, fill=(110, 125, 140))
+                yf += passo
     else:
         topo_rodape = LY.assinatura(peca, d, g["x0"], g["x1"], g["y1"], e,
                                     tratamento="pilula", alinhar="centro")
