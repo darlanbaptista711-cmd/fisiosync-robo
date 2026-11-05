@@ -383,6 +383,24 @@ const Fecho: React.FC = () => {
               {(f as any).frase}
             </div>
           ) : null}
+          {/* fonte de novo no fim (05/11/2026): quem assiste ate o final
+              sai sabendo de onde veio o dado */}
+          {(f as any).frase && dados.resposta?.fonte ? (
+            <div
+              style={{
+                fontFamily,
+                fontWeight: 600,
+                fontSize: 27,
+                color: MARINHO,
+                opacity: 0.72,
+                textAlign: "center",
+                maxWidth: 900,
+                marginBottom: 22,
+              }}
+            >
+              Fonte: {dados.resposta.fonte}
+            </div>
+          ) : null}
           {/* fundo branco: a logo oficial entra direta, sem placa */}
           <Img
             src={staticFile("images/logo.png")}

@@ -143,8 +143,9 @@ def montar(slides, chamada_final, fonte, destino_base, primeiro_numero=2,
     saida = []
     for i, s in enumerate(slides):
         n = primeiro_numero + i
-        # a fonte vai so no ultimo slide de texto, onde o fato fecha
-        f = fonte if i == len(slides) - 1 else ""
+        # a fonte vai em TODO slide de texto (05/11/2026): quem le qualquer
+        # slide sabe de onde veio a informacao
+        f = fonte
         peca = slide_texto(s["titulo"].strip(), s["texto"].strip(), n,
                            total, f)
         saida.append(_salvar(peca, f"{destino_base}_slide{n}.jpg"))

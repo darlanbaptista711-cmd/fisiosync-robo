@@ -1726,6 +1726,7 @@ AUDITORIA_2 = {
                      "fonte": "Parreira et al., J Physiother, 2014"},
         "extra": {"titulo": "10–15% x sem tensão", "texto": "dor e incapacidade não\ndiferiram em 4 semanas."},
         "fato_extra": "Os dois grupos usaram a fita: o estudo comparou fita com tensão x fita sem tensão e não comparou a fita com nenhum tratamento nem com exercício (PEDro 39922).",
+        "url": "https://search.pedro.org.au/search-results/record-detail/39922",
     },
     "Depoimento de paciente no post": {
         "partes": ["Depoimento de paciente pra se promover, pode?",
@@ -1740,12 +1741,44 @@ AUDITORIA_2 = {
 _aplicar_auditoria(AUDITORIA)
 _aplicar_auditoria(AUDITORIA_2)
 
+def _links_das_fontes():
+    """
+    Link de cada fato conferido, guardado nos arquivos de pesquisa em
+    referencias/. O roteiro e ligado ao link pelo comeco do texto do fato.
+    """
+    base = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "referencias")
+    pares = []
+    for nome in ("fatos_interessantes_lote1.json", "fatos_reels_lote2.json",
+                 "pautas_conhecimento_novas.json", "pautas_conhecimento_lote2.json"):
+        try:
+            for f in json.load(open(os.path.join(base, nome), encoding="utf-8")):
+                if f.get("url") and f.get("fato"):
+                    pares.append((f["fato"][:80], f["url"]))
+        except (FileNotFoundError, json.JSONDecodeError):
+            continue
+    return pares
+
+
+def _link_do_roteiro(r, pares):
+    if r.get("url"):
+        return r["url"]
+    for comeco, url in pares:
+        if r.get("fato", "").startswith(comeco[:60]):
+            return url
+    return ""
+
+
 def slug(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:40]
 
 
+LINKS = []
+
+
 def main():
+    global LINKS
+    LINKS = _links_das_fontes()
     os.makedirs(PASTA, exist_ok=True)
     # variedade: dois Reels seguidos (dos que vao ao ar) nao fecham igual
     no_ar = [r for r in ROTEIROS if r.get("interesse") == "alto"]
@@ -1767,7 +1800,11 @@ def main():
         tags = " ".join((HASHTAGS_PROPRIAS + tematicas)[:5])
         # sem "manda pra ele" (03/11/2026: soava forcado). A legenda fecha
         # com uma pergunta de verdade e a assinatura da marca.
-        legenda = "\n\n".join(r["legenda"] + [CTA_LEGENDA, tags])
+        # fonte visivel na legenda (05/11/2026): referencia completa e
+        # link, para quem quiser conferir que nao saiu da nossa cabeca
+        link = _link_do_roteiro(r, LINKS)
+        bloco_fonte = f"📚 Fonte: {r['fonte']}" + (f"\n🔗 {link}" if link else "")
+        legenda = "\n\n".join(r["legenda"] + [bloco_fonte, CTA_LEGENDA, tags])
         if len(legenda) > 2200:
             raise SystemExit(f"{r['titulo']}: legenda com {len(legenda)} caracteres.")
         if not 3 <= tags.count("#") <= 5 or "#FisioSyncExplica" not in tags:

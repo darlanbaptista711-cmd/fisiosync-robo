@@ -834,11 +834,37 @@ def _corrigir_pelo_revisor(cfg, dados, fato, problemas, estilo):
     return saida
 
 
+def legenda_com_fonte(legenda, fonte, url=""):
+    """
+    Linha padrao de fonte no fim da legenda (05/11/2026: "para a pessoa
+    saber que e confiavel, nao que a gente tirou da cabeca"). Tira as
+    linhas 'Fonte:' que a IA escreveu e poe a referencia completa, com o
+    link, antes da assinatura da FisioSync.
+    """
+    if not fonte:
+        return legenda
+    linhas = [l for l in legenda.split("\n")
+              if not l.strip().lower().startswith(("fonte:", "📚 fonte", "🔗"))]
+    texto = "\n".join(linhas)
+    while "\n\n\n" in texto:
+        texto = texto.replace("\n\n\n", "\n\n")
+    bloco = f"📚 Fonte: {fonte}" + (f"\n🔗 {url}" if url else "")
+    for marca in ("Conteúdo FisioSync", "Conteudo FisioSync"):
+        i = texto.find(marca)
+        if i >= 0:
+            return texto[:i].rstrip() + "\n\n" + bloco + "\n\n" + texto[i:]
+    partes = texto.rstrip().split("\n\n")
+    if partes and partes[-1].lstrip().startswith("#"):
+        return "\n\n".join(partes[:-1] + [bloco, partes[-1]])
+    return texto.rstrip() + "\n\n" + bloco
+
+
 def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     hist = ler_historico(limite=500)
     pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
     fato_banco, fonte_banco = "", ""
     cuidados_banco = ""
+    url_banco = ""
 
     if not tema:
         # A pauta sai do banco, nao da cabeca do modelo. A trava contra
@@ -858,6 +884,7 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
         familia_banco = p.get("familia", "gestao")
         fato_banco, fonte_banco = p.get("fato", ""), p.get("fonte", "")
         cuidados_banco = p.get("observacao", "")
+        url_banco = p.get("url", "")
     log(f"Escrevendo o conteudo sobre: {tema}")
     pedido = _pedido_conteudo(tema, fato_banco, fonte_banco, carrossel,
                               estilo, cuidados_banco)
@@ -973,6 +1000,8 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
                                      eixo_banco, familia_banco, fato_banco,
                                      fonte_banco)
 
+    dados["legenda"] = legenda_com_fonte(dados.get("legenda", ""), fonte_banco,
+                                         url_banco)
     log(f"Tema escolhido: {dados['tema']}")
     if eixo_banco:
         log(f"Eixo: {eixo_banco}  (pauta do banco: {pauta_banco})")
@@ -1699,7 +1728,7 @@ def main():
                                 base_feed + "_capa", "feed",
                                 layout="calibrado",
                                 sobretitulo=c.get("sobretitulo", ""),
-                                capa=True)
+                                capa=True, fonte=c.get("fonte", ""))
             total = len(c["slides"]) + 2
             slides_arq = [capa] + carrossel.montar(
                 c["slides"], c["fechamento"], c.get("fonte", ""),
