@@ -1,0 +1,35 @@
+TEMA: Velocidade da marcha e sobrevida em idosos
+
+TITULO: Marcha mais rápida, menor risco de morte
+APOIO: Cada 0,1 m/s a mais na velocidade da marcha se associou a menor risco de morte.
+
+O que a velocidade da marcha revela sobre a sobrevida de idosos?
+
+Uma análise conjunta de 9 coortes, com dados individuais de 34.485 idosos da comunidade com 65 anos ou mais e 17.528 mortes, mostrou que cada 0,1 m/s a mais na velocidade da marcha se associou a menor risco de morte (HR 0,88; IC95% 0,87-0,90). Aos 75 anos, a sobrevida prevista em 10 anos variou, ao longo das velocidades de marcha, de 19% a 87% nos homens e de 35% a 91% nas mulheres.
+
+A diferença é importante: o estudo encontrou uma associação. Não demonstrou que fazer alguém andar mais rápido prolongue sua vida.
+
+Essas faixas de sobrevida são previsões relacionadas às diferentes velocidades de marcha. Não são pontos de corte nem promessas de resultado com um tratamento.
+
+Salve o post para consultar quando precisar.
+
+📚 Fonte: Studenski et al, JAMA, 2011 (análise conjunta de 9 coortes)
+🔗 https://core.ac.uk/download/357380987.pdf
+
+Conteúdo FisioSync.
+
+#FisioSync #FisioSyncExplica #VelocidadeDaMarcha #FisioterapiaGeriatrica #Envelhecimento
+
+SLIDE 2: O que foi analisado
+A análise conjunta reuniu dados individuais de 9 coortes: 34.485 idosos da comunidade com 65 anos ou mais. Foram registradas 17.528 mortes.
+
+SLIDE 3: O achado sobre velocidade
+Cada 0,1 m/s a mais de velocidade de marcha se associou a menor risco de morte. A estimativa foi HR 0,88; IC95% 0,87–0,90.
+
+SLIDE 4: A sobrevida prevista variou
+Aos 75 anos, a sobrevida prevista em 10 anos variou de 19% a 87% nos homens e de 35% a 91% nas mulheres.
+
+SLIDE 5: Como interpretar essas faixas
+As faixas são previsões de modelo considerando idade, sexo e toda a faixa de velocidades da marcha. Não são pontos de corte. A associação observacional não demonstra causalidade.
+
+FECHAMENTO: Conhece um estudante de fisio? Salve e mande para ele.
