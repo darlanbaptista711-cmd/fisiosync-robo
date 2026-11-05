@@ -1725,6 +1725,7 @@ AUDITORIA_2 = {
         "resposta": {"destaque": "148", "complemento": "pacientes com lombalgia crônica inespecífica",
                      "fonte": "Parreira et al., J Physiother, 2014"},
         "extra": {"titulo": "10–15% x sem tensão", "texto": "dor e incapacidade não\ndiferiram em 4 semanas."},
+        "fato_extra": "Os dois grupos usaram a fita: o estudo comparou fita com tensão x fita sem tensão e não comparou a fita com nenhum tratamento nem com exercício (PEDro 39922).",
     },
     "Depoimento de paciente no post": {
         "partes": ["Depoimento de paciente pra se promover, pode?",
