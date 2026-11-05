@@ -1717,12 +1717,14 @@ AUDITORIA_2 = {
         "fato_extra": "Os 14 ensaios e 673 participantes são da revisão inteira; a comparação com fortalecer só o joelho usou parte desses ensaios.",
     },
     "Kinesio Taping e a tensao da fita": {
-        "partes": ["Kinesio Taping: a tensão da fita importa?",
-                   "Com ou sem tensão, sem diferença em dor e incapacidade, em lombalgia crônica.",
-                   "Ensaio randomizado.",
+        "partes": ["A tensão do Kinesio Taping importa?",
+                   "Lombalgia crônica inespecífica, cento e quarenta e oito pacientes.",
+                   "Com tensão ou sem, dor e incapacidade não diferiram em quatro semanas.",
                    "Desafia o mecanismo proposto."],
-        "resposta": {"destaque": "148", "complemento": "pacientes; com e sem tensão, sem diferença",
+        "pergunta": ["A tensão do", "Kinesio Taping", "importa?"],
+        "resposta": {"destaque": "148", "complemento": "pacientes com lombalgia crônica inespecífica",
                      "fonte": "Parreira et al., J Physiother, 2014"},
+        "extra": {"titulo": "10–15% x sem tensão", "texto": "dor e incapacidade não\ndiferiram em 4 semanas."},
     },
     "Depoimento de paciente no post": {
         "partes": ["Depoimento de paciente pra se promover, pode?",

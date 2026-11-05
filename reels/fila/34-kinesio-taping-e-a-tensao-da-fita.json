@@ -1,31 +1,31 @@
 {
   "tipo": "dica",
   "titulo": "Kinesio Taping e a tensao da fita",
-  "narracao": "Kinesio Taping: a tensão da fita importa? Com ou sem tensão, sem diferença em dor e incapacidade, em lombalgia crônica. Ensaio randomizado. Desafia o mecanismo proposto.",
-  "palavras": 26,
+  "narracao": "A tensão do Kinesio Taping importa? Lombalgia crônica inespecífica, cento e quarenta e oito pacientes. Com tensão ou sem, dor e incapacidade não diferiram em quatro semanas. Desafia o mecanismo proposto.",
+  "palavras": 31,
   "fato": "Ensaio randomizado com 148 pessoas com dor lombar crônica inespecífica comparou 8 sessões (em 4 semanas) de Kinesio Taping aplicado conforme o manual do método, com 10% a 15% de tensão para formar dobras na pele, com 8 sessões da mesma fita aplicada sem tensão e sem dobras. Ao fim das 4 semanas, formar as dobras não mudou o efeito sobre a dor (diferença média −0,4 ponto; IC95% −1,3 a 0,4) nem sobre a incapacidade (−0,3; IC95% −1,9 a 1,3), e os autores concluem que esses resultados desafiam o mecanismo de ação proposto para a técnica.",
   "fonte": "Parreira et al., Journal of Physiotherapy, 2014 (ensaio clínico randomizado)",
   "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.299,
-    0.562
+    0.205,
+    0.386
   ],
   "pergunta": {
     "rotulo": "Recursos",
     "linhas": [
-      "Kinesio Taping:",
-      "a tensão",
+      "A tensão do",
+      "Kinesio Taping",
       "importa?"
     ]
   },
   "resposta": {
     "destaque": "148",
-    "complemento": "pacientes; com e sem tensão, sem diferença",
+    "complemento": "pacientes com lombalgia crônica inespecífica",
     "fonte": "Parreira et al., J Physiother, 2014"
   },
   "extra": {
-    "titulo": "Ensaio randomizado",
-    "texto": "Journal of\nPhysiotherapy, 2014."
+    "titulo": "10–15% x sem tensão",
+    "texto": "dor e incapacidade não\ndiferiram em 4 semanas."
   },
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
