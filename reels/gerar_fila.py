@@ -1617,9 +1617,9 @@ AUDITORIA = {
 }
 
 
-def _aplicar_auditoria():
+def _aplicar_auditoria(correcoes):
     por_titulo = {r["titulo"]: r for r in ROTEIROS}
-    for titulo, aj in AUDITORIA.items():
+    for titulo, aj in correcoes.items():
         if titulo not in por_titulo:
             raise SystemExit(f"auditoria: roteiro '{titulo}' nao existe")
         r = por_titulo[titulo]
@@ -1649,7 +1649,93 @@ def _aplicar_auditoria():
             r["fonte"] = r["fonte"].rstrip() + fonte_extra
 
 
-_aplicar_auditoria()
+# Segunda rodada (05/11/2026): o revisor automatico de veracidade
+# (reels/conferir_roteiro.py) apontou mais precisoes. Onde o roteiro dizia
+# mais que o fato, o roteiro mudou; onde o fato registrado nao trazia um
+# detalhe ja conferido na fonte pela auditoria, o detalhe entrou no fato.
+AUDITORIA_2 = {
+    "Forca de preensao e mortalidade": {
+        "partes": ["Quanto diz a preensão?",
+                   "Cada cinco quilos a menos se associou a dezesseis por cento mais risco de morte.",
+                   "Previu mortalidade melhor que a pressão sistólica.",
+                   "Anota pra próxima avaliação."],
+        "resposta": {"destaque": "+16%", "complemento": "risco de morte associado a 5 kg a menos",
+                     "fonte": "Leong et al., The Lancet, 2015"},
+        "extra": {"titulo": "Melhor preditor", "texto": "de mortalidade que\na pressão sistólica."},
+    },
+    "Alongamento e lesao esportiva": {
+        "resposta": {"destaque": "3 ensaios", "complemento": "alongar não mostrou benefício",
+                     "fonte": "Lauersen et al., BJSM, 2014"},
+        "trocas": [["O estudo avaliou prevenção de lesões. Não fala de flexibilidade nem de desempenho.",
+                    "O estudo avaliou prevenção de lesões esportivas."]],
+    },
+    "Exercicio e quedas em idosos": {
+        "fato_extra": "A estimativa de 34% para a combinação de tipos tem certeza moderada (Sherrington et al., 2019).",
+    },
+    "Problema cronico de coluna no Brasil": {
+        "partes": ["Mais de um em cada cinco adultos brasileiros",
+                   "relata problema crônico de coluna, segundo a PNS.",
+                   "Nas mulheres, vinte e quatro vírgula cinco por cento.",
+                   "Dados de autorrelato."],
+    },
+    "Hernia extrusa e regressao espontanea": {
+        "fato_extra": "A regressão foi observada em exames de imagem; o resumo não relaciona a regressão com os sintomas nem informa em quanto tempo ela ocorreu (Chiu et al., 2015, resumo).",
+    },
+    "Meniscectomia contra cirurgia simulada": {
+        "partes": ["Meniscectomia parcial em lesão degenerativa, sem artrose, funciona?",
+                   "Contra cirurgia simulada, sem diferença significativa em doze meses.",
+                   "Os dois grupos melhoraram parecido.",
+                   "Duplo-cego, no New England Journal."],
+        "resposta": {"destaque": "12 meses", "complemento": "sem diferença significativa vs simulada",
+                     "fonte": "Sihvonen et al., NEJM, 2013"},
+    },
+    "Fascite plantar e fortalecimento": {
+        "partes": ["Fascite plantar só com alongamento?",
+                   "Com fortalecimento de alta carga, a função ficou melhor em três meses.",
+                   "Aos seis e doze meses, sem diferença.",
+                   "Ensaio com quarenta e oito pacientes."],
+        "extra": {"titulo": "Aos 6 e 12 meses", "texto": "sem diferença\nentre os grupos."},
+    },
+    "Infiltracao no cotovelo de tenista": {
+        "partes": ["Infiltração de corticoide no cotovelo de tenista.",
+                   "Recorrência: cinquenta e quatro por cento, contra doze no placebo.",
+                   "Melhora inicial nem sempre se sustenta.",
+                   "Bom pra discussão de caso."],
+        "pergunta": ["Infiltração de corticoide", "no cotovelo", "de tenista"],
+        "trocas": [
+            ["Infiltração no cotovelo de tenista: e depois de um ano?",
+             "Infiltração de corticoide no cotovelo de tenista: e depois de um ano?"],
+            ["teve menos pacientes recuperados ou muito melhores em 1 ano",
+             "teve menos pacientes completamente recuperados ou muito melhores em 1 ano"],
+            ["Recorrência foi definida como melhora na 4ª ou 8ª semana que não se manteve depois.",
+             "Recorrência foi definida como recuperação completa ou grande melhora na 4ª ou 8ª semana que não se manteve depois."]],
+    },
+    "O que previne dor lombar": {
+        "fato_extra": "Para cintas lombares e palmilhas, a evidência foi de qualidade baixa a muito baixa (texto completo).",
+    },
+    "Patelofemoral quadril e joelho": {
+        "fato_extra": "Os 14 ensaios e 673 participantes são da revisão inteira; a comparação com fortalecer só o joelho usou parte desses ensaios.",
+    },
+    "Kinesio Taping e a tensao da fita": {
+        "partes": ["Kinesio Taping: a tensão da fita importa?",
+                   "Com ou sem tensão, sem diferença em dor e incapacidade, em lombalgia crônica.",
+                   "Ensaio randomizado.",
+                   "Desafia o mecanismo proposto."],
+        "resposta": {"destaque": "148", "complemento": "pacientes; com e sem tensão, sem diferença",
+                     "fonte": "Parreira et al., J Physiother, 2014"},
+    },
+    "Depoimento de paciente no post": {
+        "partes": ["Depoimento de paciente pra se promover, pode?",
+                   "Não. O Código de Ética proíbe divulgar para autopromoção.",
+                   "Vale também para as redes sociais.",
+                   "Hora de revisar o feed?"],
+        "pergunta": ["Depoimento de paciente", "pra se promover,", "pode?"],
+    },
+}
+
+
+_aplicar_auditoria(AUDITORIA)
+_aplicar_auditoria(AUDITORIA_2)
 
 def slug(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()

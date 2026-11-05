@@ -1,14 +1,14 @@
 {
   "tipo": "dica",
   "titulo": "Meniscectomia contra cirurgia simulada",
-  "narracao": "Meniscectomia parcial em lesão degenerativa, sem artrose, funciona? Contra cirurgia simulada, sem diferença em doze meses. Os dois grupos melhoraram parecido. Duplo-cego, no New England Journal.",
-  "palavras": 26,
+  "narracao": "Meniscectomia parcial em lesão degenerativa, sem artrose, funciona? Contra cirurgia simulada, sem diferença significativa em doze meses. Os dois grupos melhoraram parecido. Duplo-cego, no New England Journal.",
+  "palavras": 27,
   "fato": "Ensaio randomizado, duplo-cego e controlado por cirurgia simulada, com 146 pacientes de 35 a 65 anos com sintomas de lesão degenerativa do menisco medial e sem artrose de joelho, não encontrou diferença significativa entre meniscectomia parcial artroscópica e cirurgia simulada em nenhum desfecho principal em 12 meses (melhora no escore de Lysholm de 21,7 vs 23,3 pontos; diferença −1,6; IC95% −7,2 a 4,0). Os autores concluem que os resultados após a meniscectomia parcial não foram melhores do que após a cirurgia simulada.",
   "fonte": "Sihvonen et al., New England Journal of Medicine, 2013 (ensaio clínico randomizado controlado por cirurgia simulada, FIDELITY)",
   "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.429,
-    0.346
+    0.394,
+    0.4
   ],
   "pergunta": {
     "rotulo": "Joelho",
@@ -20,7 +20,7 @@
   },
   "resposta": {
     "destaque": "12 meses",
-    "complemento": "sem diferença vs cirurgia simulada",
+    "complemento": "sem diferença significativa vs simulada",
     "fonte": "Sihvonen et al., NEJM, 2013"
   },
   "extra": {
