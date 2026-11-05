@@ -1085,8 +1085,9 @@
    "tema": "no atendimento domiciliar, o prontuario fica na casa do paciente",
    "fato": "O Art. 6º, V da Resolução COFFITO 414/2012 determina que, no atendimento domiciliar, o prontuário seja guardado no próprio domicílio do paciente, com orientação de sigilo à família.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre",
-   "interesse": "alto"
+   "status": "publicado",
+   "interesse": "alto",
+   "usado_em": "2026-11-05"
   },
   {
    "id": "regulacao-015",

@@ -326,5 +326,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-05",
+  "janela": "manha",
+  "tema": "Guarda do prontuário no atendimento domiciliar",
+  "pauta": "no atendimento domiciliar, o prontuario fica na casa do paciente",
+  "eixo": "regulacao",
+  "familia": "regulacao",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "A norma prevê guarda no domicílio e orientação de sigilo à família.",
+  "chamada": "No atendimento domiciliar, onde fica o prontuário?",
+  "conceito": "Um prontuário contido no interior de uma casa representa o próprio domicílio do paciente como local de guarda.",
+  "composicao": "calibrado",
+  "estilo": "representacao conceitual do beneficio",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_guarda-do-prontu-rio-no-atendimento-domi_feed_1080x1350.jpg",
+   "fisiosync_guarda-do-prontu-rio-no-atendimento-domi_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
