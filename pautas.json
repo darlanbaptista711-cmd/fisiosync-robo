@@ -1761,12 +1761,12 @@
    "id": "regulacao-106",
    "eixo": "regulacao",
    "familia": "conhecimento",
-   "tema": "ambulatório geral: até 12 pacientes por turno",
-   "fato": "Pelos Parâmetros Assistenciais, no atendimento ambulatorial geral de pacientes de cuidados mínimos o fisioterapeuta faz 2 consultas por hora e atende 12 pacientes por turno de 6 horas (Anexo II).",
+   "tema": "ambulatório geral: 12 pacientes por turno",
+   "fato": "Pelos Parâmetros Assistenciais, no atendimento ambulatorial geral de pacientes de cuidados mínimos o parâmetro é de 2 consultas por hora e um quantitativo de 12 pacientes assistidos por turno de 6 horas (Anexo II).",
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). No ambulatorial diferenciado/especializado (cuidado intermediário) o número é 8 por turno.",
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). No ambulatorial diferenciado/especializado (cuidado intermediário) o número é 8 por turno. Auditoria independente em 05/11/2026: conferido; ajuste de redacao aplicado.",
    "interesse": "alto"
   },
   {
@@ -1774,11 +1774,11 @@
    "eixo": "regulacao",
    "familia": "conhecimento",
    "tema": "atendimento domiciliar: 6 pacientes por turno",
-   "fato": "No atendimento domiciliar/home care, os Parâmetros Assistenciais preveem 1 consulta por hora e 6 pacientes por turno de 6 horas, para pacientes de cuidados mínimos, intermediários ou semi-intensivos (Anexo III).",
+   "fato": "No atendimento domiciliar/home care, os Parâmetros Assistenciais preveem 1 consulta por hora e 6 pacientes por turno de 6 horas (Anexo III).",
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo III",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência).",
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). Auditoria independente em 05/11/2026: conferido; ajuste de redacao aplicado.",
    "interesse": "alto"
   },
   {
@@ -1829,12 +1829,12 @@
    "id": "pilates-101",
    "eixo": "pilates",
    "familia": "conhecimento",
-   "tema": "pilates em grupo: até 6 alunos por hora",
+   "tema": "pilates em grupo: 6 alunos por hora",
    "fato": "Pelos Parâmetros Assistenciais Fisioterapêuticos, o atendimento em grupo (Pilates, reeducação postural, recondicionamento funcional, práticas integrativas e outras) é de 1 consulta por hora com \"Grupo de 6 clientes/pacientes por hora\" (Anexo II).",
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II, atendimento em grupo",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
    "status": "livre",
-   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). Vale para o fisioterapeuta (o Art. 1º diz que não obriga outras classes profissionais).",
+   "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência). Vale para o fisioterapeuta (o Art. 1º diz que não obriga outras classes profissionais). Auditoria independente em 05/11/2026: conferido; ajuste de redacao aplicado.",
    "interesse": "alto"
   },
   {
@@ -2132,11 +2132,11 @@
    "interesse": "alto",
    "tema": "diretriz da OMS para dor lombar crônica",
    "gancho": "OMS: ultrassom, TENS e tração fora da rotina na lombalgia crônica",
-   "fato": "A diretriz da OMS publicada em 7 de dezembro de 2023, para adultos com dor lombar crônica primária na atenção primária e comunitária, recomenda (de forma condicional) que tração, ultrassom terapêutico, TENS e cintas, coletes ou suportes lombares não sejam usados como parte do cuidado de rotina. Na mesma diretriz, exercício estruturado, terapia manipulativa da coluna e massagem 'podem ser oferecidos' (recomendações condicionais, com evidência de certeza baixa ou muito baixa), e 14 intervenções aparecem como não recomendadas para a maioria das pessoas na maioria dos contextos.",
+   "fato": "A diretriz da OMS publicada em 7 de dezembro de 2023, para adultos com dor lombar crônica primária na atenção primária e comunitária, recomenda (de forma condicional) que tração, ultrassom terapêutico, TENS e cintas, coletes ou suportes lombares não sejam usados como parte do cuidado de rotina. Na mesma diretriz, exercício estruturado, terapia manipulativa da coluna e massagem aparecem com recomendação condicional de uso (recomendações condicionais, com evidência de certeza baixa ou muito baixa), e 14 intervenções aparecem como não recomendadas para a maioria das pessoas na maioria dos contextos.",
    "fonte": "OMS, WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings, 2023 (diretriz)",
    "url": "https://www.who.int/publications/i/item/9789240081789",
    "status": "livre",
-   "observacao": "Recomendações lidas no texto integral da diretriz (Tabela 1 do sumário executivo; cópia em gestor.camfic.cat/uploads/ITEM_17997.pdf): ultrassom terapêutico (contra, condicional, certeza baixa); TENS, tração e cintas lombares (contra, condicional, certeza muito baixa); exercício estruturado (a favor, condicional, certeza baixa); manipulação e massagem (a favor, condicional, certeza muito baixa). Confirmado no comunicado oficial da OMS de 07/12/2023 (tração, cintas e as 14 intervenções) e nas reportagens da Healio e da rheuma.com.au (ultrassom e TENS). Vale só para dor lombar crônica primária em adultos na atenção primária/comunitária: não estender para dor aguda, outras condições ou reabilitação hospitalar. É recomendação condicional ('não usar como rotina'), não proibição: não escrever 'a OMS proíbe' nem que esses recursos 'não funcionam'."
+   "observacao": "Recomendações lidas no texto integral da diretriz (Tabela 1 do sumário executivo; cópia em gestor.camfic.cat/uploads/ITEM_17997.pdf): ultrassom terapêutico (contra, condicional, certeza baixa); TENS, tração e cintas lombares (contra, condicional, certeza muito baixa); exercício estruturado (a favor, condicional, certeza baixa); manipulação e massagem (a favor, condicional, certeza muito baixa). Confirmado no comunicado oficial da OMS de 07/12/2023 (tração, cintas e as 14 intervenções) e nas reportagens da Healio e da rheuma.com.au (ultrassom e TENS). Vale só para dor lombar crônica primária em adultos na atenção primária/comunitária: não estender para dor aguda, outras condições ou reabilitação hospitalar. É recomendação condicional ('não usar como rotina'), não proibição: não escrever 'a OMS proíbe' nem que esses recursos 'não funcionam'. Auditoria independente em 05/11/2026: conferido; ajuste de redacao aplicado."
   },
   {
    "id": "evid-007",
@@ -2210,11 +2210,11 @@
    "interesse": "alto",
    "tema": "exercício na artrose de joelho: atualização Cochrane 2024",
    "gancho": "Artrose de joelho: em 139 ensaios, nenhum tipo de exercício foi superior",
-   "fato": "A atualização de 2024 da revisão Cochrane sobre exercício na osteoartrite de joelho reuniu 139 ensaios com 12.468 participantes e não encontrou diferença de efeito entre os tipos de exercício. Comparado a nenhum tratamento, cuidado usual ou educação limitada, o exercício pode melhorar a dor em 13,1 pontos e provavelmente melhora a função física em 12,5 pontos numa escala de 0 a 100, mas os autores consideram esses benefícios de importância clínica incerta (certeza baixa a moderada).",
+   "fato": "A atualização de 2024 da revisão Cochrane sobre exercício na osteoartrite de joelho reuniu 139 ensaios com 12.468 participantes e não encontrou diferença de efeito entre os tipos de exercício. Comparado a nenhum tratamento, cuidado usual ou educação limitada, logo após a intervenção, o exercício pode melhorar a dor em 13,1 pontos e provavelmente melhora a função física em 12,5 pontos numa escala de 0 a 100, mas os autores consideram esses benefícios de importância clínica incerta (certeza baixa a moderada).",
    "fonte": "Lawford et al., Cochrane Database of Systematic Reviews, 2024 (revisão sistemática Cochrane)",
    "url": "https://www.cochrane.org/evidence/CD004376_exercise-osteoarthritis-knee",
    "status": "livre",
-   "observacao": "Conferido no resumo para leigos (cochrane.org) e no resumo oficial em PDF (Cochrane Library, CD004376.pub4): 139 ensaios, 12.468 participantes, dor 13,14 (IC95% 10,36–15,91) e função 12,53 (IC95% 9,74–15,31) pontos melhores, sem diferença entre tipos de exercício; busca até 04/01/2024, publicada em 03/12/2024. Contra placebo/atenção, a dor melhorou 8,70 pontos (certeza baixa). Esta versão substitui a de 2015 (Fransen et al., 54 estudos), da qual vinha a frase 'efeito comparável ao dos anti-inflamatórios (AINEs)': não usar mais essa comparação. Não prometer alívio de dor e não dizer que exercício 'não funciona'. PMID 39625083."
+   "observacao": "Conferido no resumo para leigos (cochrane.org) e no resumo oficial em PDF (Cochrane Library, CD004376.pub4): 139 ensaios, 12.468 participantes, dor 13,14 (IC95% 10,36–15,91) e função 12,53 (IC95% 9,74–15,31) pontos melhores, sem diferença entre tipos de exercício; busca até 04/01/2024, publicada em 03/12/2024. Contra placebo/atenção, a dor melhorou 8,70 pontos (certeza baixa). Esta versão substitui a de 2015 (Fransen et al., 54 estudos), da qual vinha a frase 'efeito comparável ao dos anti-inflamatórios (AINEs)': não usar mais essa comparação. Não prometer alívio de dor e não dizer que exercício 'não funciona'. PMID 39625083. Auditoria independente em 05/11/2026: conferido; ajuste de redacao aplicado."
   },
   {
    "id": "evid-013",

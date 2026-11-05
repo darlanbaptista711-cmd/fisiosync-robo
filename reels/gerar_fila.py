@@ -1447,6 +1447,210 @@ for _r in ROTEIROS:
         _r["legenda"] = [_ab] + list(_r["legenda"])
 
 
+
+# ---------------------------------------------------------------------------
+# CORRECOES DA AUDITORIA INDEPENDENTE (05/11/2026)
+#
+# Um revisor que nao escreveu os roteiros conferiu cada um contra a fonte.
+# Os numeros dos fatos estavam certos; os erros estavam no texto em volta:
+# populacao omitida, contagem de estudos atribuida ao resultado errado,
+# estimativa dita como resultado, associacao dita como efeito e frases sem
+# fonte. Cada troca abaixo PRECISA achar o trecho original: se nao achar,
+# a geracao para (nenhuma correcao se perde em silencio).
+# ---------------------------------------------------------------------------
+AUDITORIA = {
+    "Forca de preensao e mortalidade": {
+        "partes": ["Quanto diz a preensão?",
+                   "Cada cinco quilos a menos se associou a dezesseis por cento mais risco de morte.",
+                   "Previu melhor que a pressão sistólica.",
+                   "Anota essa pra próxima avaliação."],
+        "pergunta": ["Quanto diz", "a força de", "preensão?"],
+        "resposta": {"destaque": "16%", "complemento": "mais risco associado a cada 5 kg a menos",
+                     "fonte": "Leong et al., The Lancet, 2015"},
+        "trocas": [["139.691 adultos de 17 países", "139.691 adultos de 35 a 70 anos, de 17 países"]],
+        "fato_extra": "Participantes de 35 a 70 anos (Leong et al., 2015).",
+    },
+    "Alongamento e lesao esportiva": {
+        "partes": ["Alongamento previne lesão esportiva?",
+                   "Numa metanálise, alongar não mostrou benefício.",
+                   "Treino de força reduziu as lesões a menos de um terço.",
+                   "Na prevenção, a força teve o maior efeito."],
+        "pergunta": ["Alongamento", "previne lesão", "esportiva?"],
+        "trocas": [
+            ["Quando o assunto é prevenir lesão, o alongamento costuma ser a primeira lembrança. Os dados apontam outro caminho.",
+             "Alongar previne lesão esportiva? Uma metanálise olhou para isso."],
+            ["não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas.",
+             "não encontrou efeito benéfico do alongamento na prevenção de lesões esportivas. Esse resultado vem de 3 desses ensaios, 2 deles com recrutas militares."],
+            ["O treino de força teve o maior efeito:", "O treino de força (4 ensaios) teve o maior efeito:"]],
+        "fato_extra": "No estrato de alongamento, 3 ensaios (2 com recrutas militares); no de força, 4 ensaios (manuscrito dos autores).",
+    },
+    "Exercicio e quedas em idosos": {
+        "partes": ["Quanto o exercício reduz quedas em idosos da comunidade?",
+                   "Na Cochrane, vinte e três por cento na taxa de quedas.",
+                   "Combinando tipos, provavelmente trinta e quatro.",
+                   "Equilíbrio e força, juntos."],
+        "pergunta": ["Quanto o exercício", "reduz quedas em idosos", "da comunidade?"],
+    },
+    "Problema cronico de coluna no Brasil": {
+        "partes": ["Mais de um em cada cinco adultos brasileiros",
+                   "relata problema crônico de coluna, segundo a PNS.",
+                   "Nas mulheres, vinte e quatro vírgula cinco por cento.",
+                   "É autorrelato, não diagnóstico."],
+        "pergunta": ["Mais de 1 em", "cada 5 adultos", "brasileiros..."],
+        "trocas": [["Esse é o tamanho da demanda pela fisioterapia no país.",
+                    "É autorrelato: os autores alertam que os valores podem estar superestimados."]],
+        "fato_extra": "Os autores alertam que, por serem prevalências autorreferidas, os valores podem ter sido superestimados (Malta et al., 2022).",
+    },
+    "Regras de Ottawa no tornozelo": {
+        "partes": ["Paciente com entorse pedindo raio-x?",
+                   "Pelas regras de Ottawa, sensibilidade de quase noventa e oito por cento.",
+                   "Estimativa: trinta a quarenta por cento menos raio-x desnecessário.",
+                   "Salva pra próxima entorse."],
+        "extra": {"titulo": "Estimativa: 30% a 40%", "texto": "menos raio-x\ndesnecessário."},
+        "trocas": [["a chance de fratura com a regra negativa ficou abaixo de 1,4%",
+                    "a chance de fratura com a regra negativa seria abaixo de 1,4%"]],
+    },
+    "Hernia extrusa e regressao espontanea": {
+        "partes": ["Laudo com hérnia lombar extrusa assusta?",
+                   "Numa revisão, setenta por cento das extrusões regrediram espontaneamente na imagem.",
+                   "Nos sequestros, noventa e seis.",
+                   "Dado bom pra ter na primeira consulta."],
+        "pergunta": ["Laudo com", "hérnia lombar", "extrusa assusta?"],
+        "resposta": {"destaque": "70%", "complemento": "das extrusões regrediram na imagem",
+                     "fonte": "Chiu et al., Clin Rehabil, 2015"},
+        "trocas": [["e o estudo não diz em quanto tempo ela aconteceu",
+                    "e o resumo do estudo não informa em quanto tempo ela aconteceu"]],
+    },
+    "FIFA 11 mais no futebol amador": {
+        "partes": ["Atende jogador de futebol amador?",
+                   "Com o FIFA onze mais, as lesões caíram trinta e nove por cento.",
+                   "O FIFA onze antigo não mostrou redução.",
+                   "Vale pro aquecimento do time."],
+        "trocas": [["Uma metanálise de autores de Salvador (BA), com 6.344 jogadores,",
+                    "Outra metanálise, com 6.344 jogadores,"]],
+        "fato_trocas": [["Uma metanálise de autores de Salvador (BA), com", "Outra metanálise, com"]],
+        "fato_extra": "O FIFA 11+ é um programa de aquecimento (Sadigursky et al., 2017).",
+    },
+    "Meniscectomia contra cirurgia simulada": {
+        "partes": ["Meniscectomia parcial em lesão degenerativa, sem artrose, funciona?",
+                   "Contra cirurgia simulada, sem diferença em doze meses.",
+                   "Os dois grupos melhoraram parecido.",
+                   "Duplo-cego, no New England Journal."],
+        "pergunta": ["Meniscectomia parcial,", "sem artrose,", "funciona?"],
+        "trocas": [["Um dos estudos mais citados sobre menisco degenerativo.",
+                    "Um ensaio com cirurgia simulada sobre menisco degenerativo."]],
+    },
+    "Fascite plantar e fortalecimento": {
+        "partes": ["Fascite plantar só com alongamento?",
+                   "Com fortalecimento de alta carga, a função ficou melhor em três meses.",
+                   "Depois, os grupos se igualaram.",
+                   "Ensaio pequeno, com quarenta e oito pacientes."],
+        "trocas": [
+            ["Na fascite plantar, o alongamento costuma ser a primeira escolha. Um ensaio testou outra coisa.",
+             "Fascite plantar: alongar ou fortalecer com carga? Um ensaio comparou."],
+            ["fortalecimento progressivo de alta carga em dias alternados: elevação do calcanhar em uma perna só, com uma toalha sob os dedos.",
+             "fortalecimento progressivo de alta carga em dias alternados (elevação do calcanhar em uma perna só, com carga crescente)."]],
+        "fato_extra": "Protocolo de força: começou em 12 RM (3 séries) e progrediu para 10 RM e 8 RM, com carga extra numa mochila (texto completo do artigo).",
+    },
+    "Infiltracao no cotovelo de tenista": {
+        "partes": ["Infiltração no cotovelo de tenista.",
+                   "Em um ano, cinquenta e quatro por cento de recorrência, contra doze no placebo.",
+                   "Melhora inicial nem sempre se sustenta.",
+                   "Bom pra discussão de caso."],
+        "extra": {"titulo": "Melhora inicial", "texto": "nem sempre\nse sustenta."},
+        "trocas": [["Infiltração alivia rápido o cotovelo de tenista. E depois de um ano?",
+                    "Infiltração no cotovelo de tenista: e depois de um ano?"]],
+    },
+    "O que previne dor lombar": {
+        "partes": ["Palmilha ou cinta previnem dor lombar?",
+                   "Não pareceram prevenir.",
+                   "Exercício com educação: risco quarenta e cinco por cento menor no curto prazo.",
+                   "Educação sozinha não pareceu prevenir."],
+        "resposta": {"destaque": "Não", "complemento": "pareceram prevenir (evidência fraca)",
+                     "fonte": "Steffens et al., JAMA Intern Med, 2016"},
+        "trocas": [["Uma metanálise com pesquisadores da UFMG respondeu.",
+                    "Uma metanálise com pesquisadores da UFMG investigou."]],
+        "fato_extra": "Quatro dos oito autores são do Departamento de Fisioterapia da UFMG. No longo prazo (mais de 12 meses, 2 ensaios, qualidade baixa), o efeito de exercício com educação diminuiu (RR 0,73) (texto completo).",
+    },
+    "Patelofemoral quadril e joelho": {
+        "partes": ["Dor patelofemoral: fortalece só o joelho?",
+                   "Numa revisão brasileira, quadril mais joelho foi superior a só joelho.",
+                   "Para dor e atividade, com efeito mantido.",
+                   "Publicada no JOSPT, em 2018."],
+        "trocas": [
+            ["Revisão sistemática com metanálise de pesquisadores da UFMG",
+             "Revisão sistemática com metanálise de pesquisadores brasileiros"],
+            ["com 14 ensaios e 673 participantes: fortalecer quadril e joelho foi eficaz e superior a fortalecer só o joelho",
+             "com 14 ensaios e 673 participantes no total: fortalecer quadril e joelho foi eficaz e, na comparação com fortalecer só o joelho (parte desses ensaios), foi superior"]],
+    },
+    "Descompressao subacromial e placebo": {
+        "frase_tela": "Publicado no Lancet, em 2018.",
+        "trocas": [["Um ensaio com cirurgia placebo mudou a conversa sobre dor subacromial.",
+                    "Um ensaio com cirurgia placebo sobre dor subacromial."]],
+    },
+    "TUG sozinho e risco de queda": {
+        "partes": ["Só o TUG pra risco de queda?",
+                   "Corte de treze e meio segundos: sensibilidade de trinta e um por cento.",
+                   "Em idosos da comunidade, capacidade limitada.",
+                   "Melhor não usar isolado."],
+        "pergunta": ["Só o TUG", "pra risco", "de queda?"],
+        "resposta": {"destaque": "31%", "complemento": "de sensibilidade (corte de 13,5 s)",
+                     "fonte": "Barry et al., BMC Geriatrics, 2014"},
+        "extra": {"titulo": "Idosos da comunidade", "texto": "capacidade\nlimitada."},
+        "trocas": [["O TUG é um dos testes mais usados para risco de queda. Sozinho, ele tem limites.",
+                    "O TUG sozinho prevê bem o risco de queda? Uma metanálise avaliou."]],
+    },
+    "Kinesio Taping e a tensao da fita": {
+        "partes": ["Kinesio Taping: a tensão da fita importa?",
+                   "Em cento e quarenta e oito pacientes com lombalgia crônica, não mudou dor nem incapacidade.",
+                   "Ensaio randomizado.",
+                   "Desafia o mecanismo proposto."],
+        "extra": {"titulo": "Ensaio randomizado", "texto": "Journal of\nPhysiotherapy, 2014."},
+        "trocas": [["A tensão da fita é o centro do método. Um ensaio brasileiro testou isso.",
+                    "A tensão da fita faz diferença? Um ensaio testou isso."]],
+        "fato_trocas": [["Ensaio randomizado brasileiro com", "Ensaio randomizado com"]],
+    },
+    "Depoimento de paciente no post": {
+        "fato_extra": "O Art. 47 do mesmo Código diz: 'A utilização da Rede Mundial de Computadores (Internet) para fins profissionais deve seguir os preceitos deste Código e demais normatizações pertinentes.'",
+        "fonte_extra": "; Art. 47",
+    },
+}
+
+
+def _aplicar_auditoria():
+    por_titulo = {r["titulo"]: r for r in ROTEIROS}
+    for titulo, aj in AUDITORIA.items():
+        if titulo not in por_titulo:
+            raise SystemExit(f"auditoria: roteiro '{titulo}' nao existe")
+        r = por_titulo[titulo]
+        aj = dict(aj)
+        trocas = aj.pop("trocas", [])
+        fato_trocas = aj.pop("fato_trocas", [])
+        fato_extra = aj.pop("fato_extra", None)
+        fonte_extra = aj.pop("fonte_extra", None)
+        r.update(aj)
+        leg = list(r["legenda"])
+        for velho, novo in trocas:
+            achou = False
+            for i, par in enumerate(leg):
+                if velho in par:
+                    leg[i] = par.replace(velho, novo)
+                    achou = True
+            if not achou:
+                raise SystemExit(f"auditoria: '{titulo}': trecho da legenda nao achado: {velho[:60]}")
+        r["legenda"] = leg
+        for velho, novo in fato_trocas:
+            if velho not in r["fato"]:
+                raise SystemExit(f"auditoria: '{titulo}': trecho do fato nao achado: {velho[:60]}")
+            r["fato"] = r["fato"].replace(velho, novo)
+        if fato_extra:
+            r["fato"] = r["fato"].rstrip() + " " + fato_extra
+        if fonte_extra:
+            r["fonte"] = r["fonte"].rstrip() + fonte_extra
+
+
+_aplicar_auditoria()
+
 def slug(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:40]
@@ -1486,13 +1690,14 @@ def main():
             "palavras": palavras,
             "fato": r["fato"],
             "fonte": r["fonte"],
-            "conferido_em": "2026-11-02",
+            "conferido_em": "2026-11-05" if r["titulo"] in AUDITORIA else "2026-11-02",
             "proporcoes": proporcoes,
             "pergunta": {"rotulo": r.get("rotulo", "Você sabia?"), "linhas": r["pergunta"]},
             "resposta": r["resposta"],
             "extra": r["extra"],
             "fecho": {"chamada": "Teste grátis por 7 dias", "site": "app.fisiosync.com.br",
-                      "frase": partes[3] if r.get("interesse") == "alto" else ""},
+                      "frase": (r.get("frase_tela") or partes[3])
+                               if r.get("interesse") == "alto" else ""},
             "capa_ms": 3800,
             "legenda": legenda,
             "interesse": r.get("interesse", ""),

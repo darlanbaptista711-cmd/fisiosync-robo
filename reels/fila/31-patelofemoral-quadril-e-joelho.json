@@ -1,14 +1,14 @@
 {
   "tipo": "dica",
   "titulo": "Patelofemoral quadril e joelho",
-  "narracao": "Dor patelofemoral: fortalece só o joelho? Revisão brasileira com catorze ensaios: quadril mais joelho foi superior. Para dor e atividade, com efeito mantido. Pesquisa da UFMG, vale conhecer.",
-  "palavras": 28,
+  "narracao": "Dor patelofemoral: fortalece só o joelho? Numa revisão brasileira, quadril mais joelho foi superior a só joelho. Para dor e atividade, com efeito mantido. Publicada no JOSPT, em 2018.",
+  "palavras": 29,
   "fato": "Revisão sistemática com metanálise de pesquisadores brasileiros (14 ensaios, 673 participantes com dor patelofemoral) concluiu que fortalecer quadril e joelho é eficaz e superior a fortalecer só o joelho para reduzir a dor (diferença média −1,5; IC95% −2,3 a −0,8) e melhorar a atividade (diferença média padronizada 0,7; IC95% 0,2 a 1,3), com resultados mantidos após o fim da intervenção. Esses ganhos ocorreram sem mudança significativa de força em nenhuma das intervenções.",
   "fonte": "Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018 (revisão sistemática com metanálise)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.265,
-    0.471
+    0.27,
+    0.461
   ],
   "pergunta": {
     "rotulo": "Joelho",
@@ -30,9 +30,9 @@
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
     "site": "app.fisiosync.com.br",
-    "frase": "Pesquisa da UFMG, vale conhecer."
+    "frase": "Publicada no JOSPT, em 2018."
   },
   "capa_ms": 3800,
-  "legenda": "Na dor patelofemoral, fortalecer só o joelho deixa algo de fora.\n\nRevisão sistemática com metanálise de pesquisadores da UFMG (Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018), com 14 ensaios e 673 participantes: fortalecer quadril e joelho foi eficaz e superior a fortalecer só o joelho para reduzir a dor e melhorar a atividade, com resultados mantidos após o fim da intervenção.\n\nOs ganhos aconteceram sem mudança significativa de força em nenhuma das intervenções.\n\nQuadril já entra no seu protocolo de patelofemoral?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #joelho #patelofemoral #fisioterapia",
+  "legenda": "Na dor patelofemoral, fortalecer só o joelho deixa algo de fora.\n\nRevisão sistemática com metanálise de pesquisadores brasileiros (Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018), com 14 ensaios e 673 participantes no total: fortalecer quadril e joelho foi eficaz e, na comparação com fortalecer só o joelho (parte desses ensaios), foi superior para reduzir a dor e melhorar a atividade, com resultados mantidos após o fim da intervenção.\n\nOs ganhos aconteceram sem mudança significativa de força em nenhuma das intervenções.\n\nQuadril já entra no seu protocolo de patelofemoral?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #joelho #patelofemoral #fisioterapia",
   "interesse": "alto"
 }

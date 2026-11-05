@@ -1,11 +1,11 @@
 {
   "tipo": "dica",
   "titulo": "Fascite plantar e fortalecimento",
-  "narracao": "Fascite plantar só com alongamento? Com fortalecimento de alta carga, a função ficou melhor em três meses. Depois, os grupos se igualaram. Elevação de calcanhar, uma perna, toalha nos dedos.",
-  "palavras": 30,
-  "fato": "Ensaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom comparou palmilha mais alongamento diário específico da fáscia plantar com palmilha mais fortalecimento progressivo de alta carga em dias alternados (elevação do calcanhar em uma perna só, com uma toalha sob os dedos). No desfecho principal, aos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (IC95% 6–52; p = 0,016); aos 1, 6 e 12 meses não houve diferença entre os grupos.",
+  "narracao": "Fascite plantar só com alongamento? Com fortalecimento de alta carga, a função ficou melhor em três meses. Depois, os grupos se igualaram. Ensaio pequeno, com quarenta e oito pacientes.",
+  "palavras": 29,
+  "fato": "Ensaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom comparou palmilha mais alongamento diário específico da fáscia plantar com palmilha mais fortalecimento progressivo de alta carga em dias alternados (elevação do calcanhar em uma perna só, com uma toalha sob os dedos). No desfecho principal, aos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (IC95% 6–52; p = 0,016); aos 1, 6 e 12 meses não houve diferença entre os grupos. Protocolo de força: começou em 12 RM (3 séries) e progrediu para 10 RM e 8 RM, com carga extra numa mochila (texto completo do artigo).",
   "fonte": "Rathleff et al., Scandinavian Journal of Medicine & Science in Sports, 2015 (ensaio clínico randomizado)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
     0.257,
     0.515
@@ -30,9 +30,9 @@
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
     "site": "app.fisiosync.com.br",
-    "frase": "Elevação de calcanhar, uma perna, toalha nos dedos."
+    "frase": "Ensaio pequeno, com quarenta e oito pacientes."
   },
   "capa_ms": 3800,
-  "legenda": "Na fascite plantar, o alongamento costuma ser a primeira escolha. Um ensaio testou outra coisa.\n\nEnsaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom (Rathleff et al., Scandinavian Journal of Medicine & Science in Sports, 2015) comparou palmilha com alongamento diário e palmilha com fortalecimento progressivo de alta carga em dias alternados: elevação do calcanhar em uma perna só, com uma toalha sob os dedos.\n\nAos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (melhor). Aos 1, 6 e 12 meses, não houve diferença entre os grupos.\n\nVocê usa fortalecimento de alta carga na fascite?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fasciteplantar #pe #fisioterapia",
+  "legenda": "Fascite plantar: alongar ou fortalecer com carga? Um ensaio comparou.\n\nEnsaio randomizado com 48 pacientes com fascite plantar confirmada por ultrassom (Rathleff et al., Scandinavian Journal of Medicine & Science in Sports, 2015) comparou palmilha com alongamento diário e palmilha com fortalecimento progressivo de alta carga em dias alternados (elevação do calcanhar em uma perna só, com carga crescente).\n\nAos 3 meses, o grupo do fortalecimento teve escore no Foot Function Index 29 pontos menor (melhor). Aos 1, 6 e 12 meses, não houve diferença entre os grupos.\n\nVocê usa fortalecimento de alta carga na fascite?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #fasciteplantar #pe #fisioterapia",
   "interesse": "alto"
 }

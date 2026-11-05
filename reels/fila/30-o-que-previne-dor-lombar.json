@@ -1,11 +1,11 @@
 {
   "tipo": "dica",
   "titulo": "O que previne dor lombar",
-  "narracao": "Palmilha ou cinta previnem dor lombar? Não pareceram prevenir. Exercício com educação: risco quarenta e cinco por cento menor no curto prazo. Na prevenção, movimento e informação.",
+  "narracao": "Palmilha ou cinta previnem dor lombar? Não pareceram prevenir. Exercício com educação: risco quarenta e cinco por cento menor no curto prazo. Educação sozinha não pareceu prevenir.",
   "palavras": 27,
-  "fato": "Revisão sistemática com metanálise de 21 ensaios randomizados (30.850 participantes) encontrou evidência de qualidade moderada de que exercício combinado com educação reduz o risco de um episódio de dor lombar no curto prazo (RR 0,55; IC95% 0,41–0,74, ou seja, risco 45% menor) e evidência de qualidade baixa a muito baixa de que exercício sozinho pode reduzir (RR 0,65; IC95% 0,50–0,86). Educação sozinha (RR 1,03), cintas lombares (RR 1,01) e palmilhas (RR 1,01) não pareceram prevenir dor lombar.",
+  "fato": "Revisão sistemática com metanálise de 21 ensaios randomizados (30.850 participantes) encontrou evidência de qualidade moderada de que exercício combinado com educação reduz o risco de um episódio de dor lombar no curto prazo (RR 0,55; IC95% 0,41–0,74, ou seja, risco 45% menor) e evidência de qualidade baixa a muito baixa de que exercício sozinho pode reduzir (RR 0,65; IC95% 0,50–0,86). Educação sozinha (RR 1,03), cintas lombares (RR 1,01) e palmilhas (RR 1,01) não pareceram prevenir dor lombar. Quatro dos oito autores são do Departamento de Fisioterapia da UFMG. No longo prazo (mais de 12 meses, 2 ensaios, qualidade baixa), o efeito de exercício com educação diminuiu (RR 0,73) (texto completo).",
   "fonte": "Steffens et al., JAMA Internal Medicine, 2016 (revisão sistemática e metanálise)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
     0.273,
     0.165
@@ -20,7 +20,7 @@
   },
   "resposta": {
     "destaque": "Não",
-    "complemento": "palmilhas e cintas não pareceram prevenir",
+    "complemento": "pareceram prevenir (evidência fraca)",
     "fonte": "Steffens et al., JAMA Intern Med, 2016"
   },
   "extra": {
@@ -30,9 +30,9 @@
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
     "site": "app.fisiosync.com.br",
-    "frase": "Na prevenção, movimento e informação."
+    "frase": "Educação sozinha não pareceu prevenir."
   },
   "capa_ms": 3800,
-  "legenda": "O que de fato previne dor lombar? Uma metanálise com pesquisadores da UFMG respondeu.\n\nRevisão sistemática com 21 ensaios e 30.850 participantes (Steffens et al., JAMA Internal Medicine, 2016): exercício combinado com educação reduziu o risco de um episódio de dor lombar no curto prazo (risco 45% menor, evidência de qualidade moderada). Exercício sozinho pode reduzir (qualidade baixa a muito baixa).\n\nEducação sozinha, cintas lombares e palmilhas não pareceram prevenir dor lombar. No longo prazo, o efeito de exercício com educação diminuiu.\n\nPrevenção de dor lombar já faz parte da sua oferta?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #dorlombar #prevencao #fisioterapia",
+  "legenda": "O que de fato previne dor lombar? Uma metanálise com pesquisadores da UFMG investigou.\n\nRevisão sistemática com 21 ensaios e 30.850 participantes (Steffens et al., JAMA Internal Medicine, 2016): exercício combinado com educação reduziu o risco de um episódio de dor lombar no curto prazo (risco 45% menor, evidência de qualidade moderada). Exercício sozinho pode reduzir (qualidade baixa a muito baixa).\n\nEducação sozinha, cintas lombares e palmilhas não pareceram prevenir dor lombar. No longo prazo, o efeito de exercício com educação diminuiu.\n\nPrevenção de dor lombar já faz parte da sua oferta?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #dorlombar #prevencao #fisioterapia",
   "interesse": "alto"
 }

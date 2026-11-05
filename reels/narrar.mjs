@@ -219,11 +219,19 @@ async function main() {
     );
   }
 
+  // Tela final do tamanho da frase final (auditoria de 05/11/2026): com
+  // 2,2s fixos, uma frase final longa deixava as telas 1 a 3 atrasadas
+  // em relacao a voz. O tempo segue a fatia da frase na narracao.
+  const fraseFim = (roteiro.fecho && roteiro.fecho.frase) || "";
+  const fatiaFim = fraseFim ? fraseFim.length / roteiro.narracao.length : 0;
+  const fecho = Math.min(4.5, Math.max(FECHO, fala * fatiaFim + (total - fala) + 0.15));
+  log(`tela final: ${fecho.toFixed(2)}s (frase final: "${fraseFim}")`);
+
   // O miolo e o que sobra entre o gancho e o fecho.
-  const miolo = total - GANCHO - FECHO;
+  const miolo = total - GANCHO - fecho;
   if (miolo < 4) morrer(`so sobraram ${miolo.toFixed(1)}s de miolo.`);
   const porCena = cenas.length ? miolo / cenas.length : miolo;
-  log(`gancho ${GANCHO}s | miolo ${miolo.toFixed(1)}s | fecho ${FECHO}s`);
+  log(`gancho ${GANCHO}s | miolo ${miolo.toFixed(1)}s | fecho ${fecho.toFixed(2)}s`);
 
   await writeFile(
     path.join(PUB, "dados-reel.json"),
@@ -234,7 +242,7 @@ async function main() {
         framesTotal: Math.round(total * FPS),
         framesGancho: Math.round(GANCHO * FPS),
         framesPorCena: Math.round(porCena * FPS),
-        framesFecho: Math.round(FECHO * FPS),
+        framesFecho: Math.round(fecho * FPS),
         narracao: roteiro.narracao,
         gancho: roteiro.gancho ?? null,
         cenas: cenas,

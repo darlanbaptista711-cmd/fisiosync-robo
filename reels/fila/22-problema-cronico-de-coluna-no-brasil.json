@@ -1,21 +1,21 @@
 {
   "tipo": "dica",
   "titulo": "Problema cronico de coluna no Brasil",
-  "narracao": "Mais de um em cada cinco adultos no Brasil. Relata problema crônico de coluna, segundo a PNS. Nas mulheres, vinte e quatro vírgula cinco por cento. Demanda não falta.",
+  "narracao": "Mais de um em cada cinco adultos brasileiros relata problema crônico de coluna, segundo a PNS. Nas mulheres, vinte e quatro vírgula cinco por cento. É autorrelato, não diagnóstico.",
   "palavras": 29,
-  "fato": "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros de 18 anos ou mais relataram problema crônico de coluna, cerca de 34,3 milhões de pessoas. A prevalência foi de 24,5% nas mulheres e 18,3% nos homens, e subiu de 9,3% na faixa de 18 a 24 anos para 31,3% tanto entre 55 e 64 anos quanto a partir dos 65.",
+  "fato": "Na Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros de 18 anos ou mais relataram problema crônico de coluna, cerca de 34,3 milhões de pessoas. A prevalência foi de 24,5% nas mulheres e 18,3% nos homens, e subiu de 9,3% na faixa de 18 a 24 anos para 31,3% tanto entre 55 e 64 anos quanto a partir dos 65. Os autores alertam que, por serem prevalências autorreferidas, os valores podem ter sido superestimados (Malta et al., 2022).",
   "fonte": "Malta et al., Revista Brasileira de Epidemiologia, 2022 (dados da PNS 2019/IBGE)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.297,
-    0.338
+    0.301,
+    0.336
   ],
   "pergunta": {
     "rotulo": "Saúde pública",
     "linhas": [
       "Mais de 1 em",
       "cada 5 adultos",
-      "no Brasil..."
+      "brasileiros..."
     ]
   },
   "resposta": {
@@ -30,9 +30,9 @@
   "fecho": {
     "chamada": "Teste grátis por 7 dias",
     "site": "app.fisiosync.com.br",
-    "frase": "Demanda não falta."
+    "frase": "É autorrelato, não diagnóstico."
   },
   "capa_ms": 3800,
-  "legenda": "Mais de 1 em cada 5 adultos no Brasil relata problema crônico de coluna.\n\nNa Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros com 18 anos ou mais relataram problema crônico de coluna (Malta et al., Revista Brasileira de Epidemiologia, 2022).\n\nForam 24,5% nas mulheres e 18,3% nos homens. Na faixa de 18 a 24 anos eram 9,3%; entre 55 e 64 anos, e a partir dos 65, 31,3%.\n\nEsse é o tamanho da demanda pela fisioterapia no país.\n\nQual queixa de coluna mais aparece no seu consultório?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #coluna #saudepublica #fisioterapia",
+  "legenda": "Mais de 1 em cada 5 adultos no Brasil relata problema crônico de coluna.\n\nNa Pesquisa Nacional de Saúde 2019 (IBGE e Ministério da Saúde), 21,6% dos brasileiros com 18 anos ou mais relataram problema crônico de coluna (Malta et al., Revista Brasileira de Epidemiologia, 2022).\n\nForam 24,5% nas mulheres e 18,3% nos homens. Na faixa de 18 a 24 anos eram 9,3%; entre 55 e 64 anos, e a partir dos 65, 31,3%.\n\nÉ autorrelato: os autores alertam que os valores podem estar superestimados.\n\nQual queixa de coluna mais aparece no seu consultório?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #coluna #saudepublica #fisioterapia",
   "interesse": "alto"
 }

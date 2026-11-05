@@ -1,21 +1,21 @@
 {
   "tipo": "dica",
   "titulo": "Exercicio e quedas em idosos",
-  "narracao": "Quanto o exercício reduz quedas em idosos? Segundo a Cochrane, vinte e três por cento na taxa de quedas. Combinando tipos, provavelmente trinta e quatro. Equilíbrio e força, juntos.",
-  "palavras": 29,
+  "narracao": "Quanto o exercício reduz quedas em idosos da comunidade? Na Cochrane, vinte e três por cento na taxa de quedas. Combinando tipos, provavelmente trinta e quatro. Equilíbrio e força, juntos.",
+  "palavras": 30,
   "fato": "Revisão Cochrane de 108 ensaios randomizados (23.407 participantes de 25 países, com 60 anos ou mais e vivendo na comunidade; média de 76 anos, 77% mulheres) concluiu que o exercício reduz a taxa de quedas em 23% (razão de taxas 0,77; IC95% 0,71–0,83; certeza alta) e o número de pessoas que caem ao menos uma vez em 15% (RR 0,85; IC95% 0,81–0,89). Exercícios de equilíbrio e funcionais reduzem a taxa de quedas em 24%, a combinação de tipos (em geral equilíbrio e funcionais mais resistidos) provavelmente reduz em 34% e o Tai Chi pode reduzir em 19%.",
   "fonte": "Sherrington et al., Cochrane Database of Systematic Reviews, 2019 (revisão sistemática Cochrane)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.278,
-    0.404
+    0.354,
+    0.342
   ],
   "pergunta": {
     "rotulo": "Idosos",
     "linhas": [
       "Quanto o exercício",
-      "reduz quedas",
-      "em idosos?"
+      "reduz quedas em idosos",
+      "da comunidade?"
     ]
   },
   "resposta": {

@@ -1,30 +1,30 @@
 {
   "tipo": "dica",
   "titulo": "TUG sozinho e risco de queda",
-  "narracao": "Usa só o TUG pra risco de queda? Numa metanálise, sensibilidade de trinta e um por cento. Sozinho, ele tem capacidade limitada. Melhor não usar isolado.",
-  "palavras": 26,
+  "narracao": "Só o TUG pra risco de queda? Corte de treze e meio segundos: sensibilidade de trinta e um por cento. Em idosos da comunidade, capacidade limitada. Melhor não usar isolado.",
+  "palavras": 30,
   "fato": "Revisão sistemática com metanálise (25 estudos na revisão, 10 na metanálise) avaliou o Timed Up and Go (TUG) em idosos da comunidade, usando 13,5 segundos ou mais como sinal de maior risco: a sensibilidade agrupada foi de 31% (IC95% 13–57%) e a especificidade de 74% (IC95% 52–88%), e o teste foi mais útil para confirmar do que para descartar risco de queda. Os autores concluem que o TUG tem capacidade limitada de prever quedas nessa população e não deve ser usado isoladamente para identificar idosos com alto risco.",
   "fonte": "Barry et al., BMC Geriatrics, 2014 (revisão sistemática e metanálise)",
-  "conferido_em": "2026-11-02",
+  "conferido_em": "2026-11-05",
   "proporcoes": [
-    0.256,
-    0.448
+    0.194,
+    0.493
   ],
   "pergunta": {
     "rotulo": "Avaliação",
     "linhas": [
-      "Usa só o TUG",
+      "Só o TUG",
       "pra risco",
       "de queda?"
     ]
   },
   "resposta": {
     "destaque": "31%",
-    "complemento": "de sensibilidade para prever quedas",
+    "complemento": "de sensibilidade (corte de 13,5 s)",
     "fonte": "Barry et al., BMC Geriatrics, 2014"
   },
   "extra": {
-    "titulo": "Sozinho",
+    "titulo": "Idosos da comunidade",
     "texto": "capacidade\nlimitada."
   },
   "fecho": {
@@ -33,6 +33,6 @@
     "frase": "Melhor não usar isolado."
   },
   "capa_ms": 3800,
-  "legenda": "O TUG é um dos testes mais usados para risco de queda. Sozinho, ele tem limites.\n\nRevisão sistemática com metanálise (Barry et al., BMC Geriatrics, 2014) avaliou o TUG em idosos da comunidade, com corte de 13,5 segundos: sensibilidade agrupada de 31% e especificidade de 74%. O teste foi mais útil para confirmar do que para descartar risco de queda.\n\nOs autores concluem que o TUG tem capacidade limitada de prever quedas nessa população e não deve ser usado isoladamente.\n\nQue outros testes você combina com o TUG?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #idosos #quedas #avaliacao",
+  "legenda": "O TUG sozinho prevê bem o risco de queda? Uma metanálise avaliou.\n\nRevisão sistemática com metanálise (Barry et al., BMC Geriatrics, 2014) avaliou o TUG em idosos da comunidade, com corte de 13,5 segundos: sensibilidade agrupada de 31% e especificidade de 74%. O teste foi mais útil para confirmar do que para descartar risco de queda.\n\nOs autores concluem que o TUG tem capacidade limitada de prever quedas nessa população e não deve ser usado isoladamente.\n\nQue outros testes você combina com o TUG?\n\nFisioSync: agenda, prontuário e evolução num lugar só. Teste grátis por 7 dias: app.fisiosync.com.br\nDisponível no Google Play e na App Store.\n\n#FisioSync #FisioSyncExplica #idosos #quedas #avaliacao",
   "interesse": "alto"
 }

@@ -83,7 +83,12 @@ function capaMs(roteiro) {
   try {
     const dur = parseFloat(execFileSync("ffprobe", ["-v", "error", "-show_entries",
       "format=duration", "-of", "default=nw=1:nk=1", VIDEO]).toString());
-    const fps = 30, total = Math.round(dur * fps), fecho = Math.round(2.2 * fps);
+    // mesma conta do narrar.mjs: a tela final dura a fatia da frase final
+    const fala = dur - 0.4;
+    const fraseFim = (roteiro.fecho && roteiro.fecho.frase) || "";
+    const fatia = fraseFim && roteiro.narracao ? fraseFim.length / roteiro.narracao.length : 0;
+    const fechoSeg = Math.min(4.5, Math.max(2.2, fala * fatia + 0.4 + 0.15));
+    const fps = 30, total = Math.round(dur * fps), fecho = Math.round(fechoSeg * fps);
     const corpo = total - fecho;
     const [pa, pb] = roteiro.proporcoes ?? [0.3, 0.38];
     const a = Math.round(corpo * pa), b = Math.round(corpo * pb);
