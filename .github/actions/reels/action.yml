@@ -24,6 +24,9 @@ inputs:
     required: true
   gh_token:
     required: true
+  openai_key:
+    description: "chave da OpenAI para a revisao de veracidade do roteiro"
+    required: true
 
 runs:
   using: composite
@@ -47,6 +50,15 @@ runs:
       if: steps.relogio.outputs.publicar == 'sim'
       shell: bash
       run: python3 reels/proximo.py
+
+    - name: Revisar a veracidade do roteiro
+      # Sem aprovacao do revisor, o Reels NAO vai ao ar (05/11/2026). A
+      # falha deste passo faz o workflow mandar o aviso por e-mail.
+      if: steps.relogio.outputs.publicar == 'sim'
+      shell: bash
+      env:
+        OPENAI_API_KEY: ${{ inputs.openai_key }}
+      run: python3 reels/conferir_roteiro.py reels/roteiro-hoje.json
 
     - name: Usar video ja pronto e conferido, se houver
       id: pronto

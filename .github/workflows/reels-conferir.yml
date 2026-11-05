@@ -1,0 +1,20 @@
+name: Reels - revisar a veracidade da fila (nao publica)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install --quiet requests pillow
+      - name: Revisar todos os roteiros que ainda vao ao ar
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 reels/conferir_roteiro.py --todos

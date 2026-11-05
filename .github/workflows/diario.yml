@@ -241,6 +241,7 @@ jobs:
           ig_user_id: ${{ secrets.IG_USER_ID }}
           ig_token: ${{ secrets.IG_ACCESS_TOKEN }}
           gh_token: ${{ secrets.GITHUB_TOKEN }}
+          openai_key: ${{ secrets.OPENAI_API_KEY }}
       - name: Avisar se falhou
         if: failure()
         env:
