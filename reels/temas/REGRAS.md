@@ -119,3 +119,27 @@ ou **mandaria para um colega ou paciente**. Norma que o profissional já
 conhece ("quiropraxia é especialidade") é verdadeira, mas é chata: fica
 fora. Estudos e diretrizes entram, com o número exato da fonte e os
 cuidados ("se associou", não "causa").
+
+## 8. Garantia de veracidade (05/11/2026)
+
+Pedido do Darlan: o perfil é um centro de informação correta. Nada vai ao
+ar sem passar por todas as camadas abaixo.
+
+1. **Entrada no banco:** todo fato precisa da fonte primária (lei,
+   resolução, artigo científico, diretriz) lida no texto original e
+   confirmada numa **segunda fonte**. O que só aparece em uma fonte fica
+   fora. O registro guarda como foi conferido (`observacao`).
+2. **Vigência:** norma é conferida contra lei e resolução mais nova (ex.:
+   a guarda do prontuário é de 20 anos pela Lei 13.787/2018, não os 5 da
+   Res. 414/2012).
+3. **Cuidados:** estudo observacional é "se associou", nunca "causa";
+   nada de promessa de tratamento; o resultado vale só para a população
+   estudada.
+4. **Na hora de publicar (carrossel):** a IA escreve a partir do fato;
+   número sem fonte é barrado; e um **revisor de veracidade**, numa
+   chamada separada, compara cada frase com o fato. Problema → uma
+   correção → nova revisão. Sem aprovação, o post sai só com o texto
+   literal do fato e a fonte.
+5. **Reels:** roteiros escritos a partir do fato, revisados, e auditados
+   por um revisor independente antes de entrar na fila.
+6. **Na dúvida, não publica.**

@@ -703,6 +703,137 @@ def _slides_validos(dados, fato):
     return limpos
 
 
+def _conteudo_so_fato(base, pauta_banco, eixo_banco, familia_banco,
+                      fato_banco, fonte_banco):
+    """
+    Post montado SO com o texto literal do fato conferido e a fonte, sem
+    nenhuma frase escrita pela IA. E a saida quando a IA falha ou quando
+    a revisao de veracidade nao aprova o texto: melhor um post simples e
+    correto do que um bonito com algo que a fonte nao diz.
+    """
+    titulo = base[:1].upper() + base[1:]
+    ref = "a OMS" if "OMS" in fonte_banco else (
+          "a lei" if fonte_banco.lower().startswith(("lei", "decreto"))
+          else "a fonte")
+    return {
+        "tema": base,
+        "pauta": pauta_banco or base,
+        "eixo": eixo_banco,
+        "familia": familia_banco,
+        "fonte": fonte_banco,
+        "objetivo": "salvar",
+        "estilo": ESTILOS_ARTE[0],
+        "layout": "tipografico",
+        "conceito": "",
+        "sobretitulo": "Você sabia?",
+        "titulo": encurtar(titulo, 62, "titulo"),
+        "apoio": f"Veja o que diz {ref}.",
+        "slides": [],
+        "foto": "",
+        "verificacao": "so_fato",
+        "legenda": (f"Você sabia? {titulo}.\n\n"
+                    + (f"{fato_banco}\n\nFonte: {fonte_banco}\n\n"
+                       if fato_banco else "")
+                    + "Salve para consultar depois e mande para um "
+                    "colega.\n\n"
+                    "Conteúdo FisioSync. Teste grátis por 7 dias: "
+                    "app.fisiosync.com.br\n\n"
+                    "#FisioSync #FisioSyncExplica #fisioterapia "
+                    "#fisioterapeuta #conhecimento"),
+    }
+
+
+def _texto_publicado(dados):
+    """Tudo o que vai aparecer na arte, nos slides e na legenda."""
+    partes = [f"SOBRETITULO: {dados.get('sobretitulo', '')}",
+              f"TITULO DA CAPA: {dados.get('titulo', '')}",
+              f"APOIO DA CAPA: {dados.get('apoio', '')}"]
+    for n, sl in enumerate(dados.get("slides") or [], 2):
+        partes.append(f"SLIDE {n}: {sl.get('titulo', '')} | {sl.get('texto', '')}")
+    partes.append(f"LEGENDA: {dados.get('legenda', '')}")
+    return "\n".join(partes)
+
+
+def conferir_veracidade(cfg, dados, fato, fonte, cuidados="", estilo="sabia"):
+    """
+    REVISAO DE VERACIDADE (05/11/2026, pedido do Darlan: "garantir que
+    todas as postagens sejam informacao valida e veridica").
+
+    Um revisor, numa chamada separada da que escreveu o texto, compara
+    cada afirmacao do post com o FATO CONFERIDO. Devolve (ok, problemas).
+    Sem resposta valida do revisor, conta como NAO aprovado: na duvida,
+    nao publica paráfrase.
+    """
+    if not fato:
+        return False, ["post sem fato conferido"]
+    regra_mito = (
+        "FORMATO MITO OU VERDADE: o titulo da capa e uma afirmacao para o "
+        "leitor julgar e pode ser falsa DE PROPOSITO. Nao conte a capa como "
+        "erro; confira, isso sim, se o veredito do slide 2 ('Verdade.' ou "
+        "'Mito.') esta CERTO segundo o fato. Veredito errado e problema "
+        "grave.\n" if estilo == "mito" else "")
+    pedido = (
+        "Voce e um revisor cientifico rigoroso de um perfil de "
+        "fisioterapia. Sua unica referencia de verdade e o FATO CONFERIDO "
+        "abaixo (com a fonte e os cuidados de quem o conferiu).\n\n"
+        f"FATO CONFERIDO: {fato}\nFONTE: {fonte}\n"
+        + (f"CUIDADOS: {cuidados}\n" if cuidados else "")
+        + "\nTEXTO DO POST:\n" + _texto_publicado(dados) + "\n\n"
+        "Aponte TODA afirmacao do post que o fato NAO sustenta, por exemplo: "
+        "informacao nova que nao esta no fato; numero diferente; "
+        "generalizacao alem do que o fato diz (populacao, prazo, tipo de "
+        "lesao); 'causa', 'previne' ou 'aumenta a vida' quando o fato e "
+        "associacao; troca de obrigacao por possibilidade ('devera' virando "
+        "'pode') ou o contrario; fonte citada de forma errada.\n"
+        + regra_mito +
+        "NAO conte como problema: perguntas ao leitor, pedidos para salvar, "
+        "enviar ou comentar, a assinatura da FisioSync, hashtags, e frases "
+        "de contexto obvias que nao afirmam nada tecnico.\n"
+        'Responda SOMENTE um JSON: {"ok": true ou false, "problemas": '
+        '["trecho exato -> por que o fato nao sustenta"]}')
+    bruto = None
+    if cfg.get("OPENAI_API_KEY"):
+        bruto = _openai_texto(cfg["OPENAI_API_KEY"], pedido)
+    if not bruto and cfg.get("GEMINI_API_KEY"):
+        bruto = _gemini_texto(cfg["GEMINI_API_KEY"], pedido)
+    r = _extrair_json(bruto) if bruto else None
+    if not isinstance(r, dict) or "ok" not in r:
+        return False, ["o revisor nao respondeu: sem revisao, sem paráfrase"]
+    problemas = [str(p) for p in (r.get("problemas") or [])]
+    return bool(r.get("ok")) and not problemas, problemas
+
+
+def _corrigir_pelo_revisor(cfg, dados, fato, problemas, estilo):
+    """Pede UMA correcao pontual dos trechos apontados pelo revisor."""
+    campos = {k: dados.get(k) for k in ("sobretitulo", "titulo", "apoio",
+                                       "slides", "legenda")}
+    pedido = (
+        "Corrija o JSON abaixo para que TODA afirmacao fique apoiada no "
+        f"fato conferido. Fato: {fato}\n"
+        "Problemas apontados pelo revisor (corrija todos, reescrevendo ou "
+        "removendo o trecho):\n- " + "\n- ".join(problemas) + "\n"
+        "Mantenha as mesmas chaves, o mesmo numero de slides, o tom e o "
+        "tamanho. Nao acrescente informacao nova. Responda SOMENTE o JSON."
+        + ("\nNo formato Mito ou verdade, o veredito do primeiro slide tem "
+           "que ser o correto segundo o fato." if estilo == "mito" else "")
+        + "\n\n" + json.dumps(campos, ensure_ascii=False))
+    bruto = None
+    if cfg.get("OPENAI_API_KEY"):
+        bruto = _openai_texto(cfg["OPENAI_API_KEY"], pedido)
+    if not bruto and cfg.get("GEMINI_API_KEY"):
+        bruto = _gemini_texto(cfg["GEMINI_API_KEY"], pedido)
+    novo = _extrair_json(bruto) if bruto else None
+    if not isinstance(novo, dict) or not novo.get("titulo"):
+        return None
+    saida = dict(dados)
+    for k in ("sobretitulo", "titulo", "apoio", "legenda"):
+        if novo.get(k):
+            saida[k] = novo[k]
+    if dados.get("slides") and isinstance(novo.get("slides"), list):
+        saida["slides"] = novo["slides"]
+    return saida
+
+
 def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     hist = ler_historico(limite=500)
     pauta_banco, eixo_banco, familia_banco = "", "", "gestao"
@@ -747,36 +878,9 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
         # cabeca, entao nao ha o que conferir.
         log("AVISO: a IA nao devolveu o conteudo esperado. Montando o post "
             "so com o fato conferido, sem ilustracao.")
-        base = tema or escolher_tema()
-        titulo = base[:1].upper() + base[1:]
-        ref = "a OMS" if "OMS" in fonte_banco else (
-              "a lei" if fonte_banco.lower().startswith(("lei", "decreto"))
-              else "a norma")
-        return {
-            "tema": base,
-            "pauta": pauta_banco or base,
-            "eixo": eixo_banco,
-            "familia": familia_banco,
-            "fonte": fonte_banco,
-            "objetivo": "salvar",
-            "estilo": ESTILOS_ARTE[0],
-            "layout": "tipografico",
-            "conceito": "",
-            "sobretitulo": "Você sabia?",
-            "titulo": encurtar(titulo, 62, "titulo"),
-            "apoio": f"Veja o que diz {ref}.",
-            "slides": [],
-            "foto": "",
-            "legenda": (f"Você sabia? {titulo}.\n\n"
-                        + (f"{fato_banco}\n\nFonte: {fonte_banco}\n\n"
-                           if fato_banco else "")
-                        + "Salve para consultar depois e mande para um "
-                        "colega.\n\n"
-                        "Conteúdo FisioSync. Teste grátis por 7 dias: "
-                        "app.fisiosync.com.br\n\n"
-                        "#FisioSync #FisioSyncExplica #fisioterapia "
-                        "#fisioterapeuta #conhecimento"),
-        }
+        return _conteudo_so_fato(tema or escolher_tema(), pauta_banco,
+                                 eixo_banco, familia_banco, fato_banco,
+                                 fonte_banco)
 
     dados.setdefault("tema", tema or "tema livre")
     dados.setdefault("objetivo", "salvar")
@@ -830,6 +934,45 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     dados["eixo"] = eixo_banco
     dados["familia"] = familia_banco
     dados["fonte"] = fonte_banco
+    # REVISAO DE VERACIDADE: nada vai ao ar sem bater com o fato conferido
+    ok, problemas = conferir_veracidade(cfg, dados, fato_banco, fonte_banco,
+                                        cuidados_banco, estilo if carrossel
+                                        else "sabia")
+    if ok:
+        log("Revisao de veracidade: APROVADO (tudo apoiado no fato).")
+        dados["verificacao"] = "aprovado"
+    else:
+        log("Revisao de veracidade: problemas encontrados:")
+        for p in problemas:
+            log(f"  - {p}")
+        corrigido = _corrigir_pelo_revisor(cfg, dados, fato_banco, problemas,
+                                           estilo)
+        ok2 = False
+        if corrigido:
+            if carrossel:
+                corrigido["slides"] = _slides_validos(corrigido, fato_banco)
+            soltos = numeros_soltos([corrigido.get(c, "") for c in
+                                     ("titulo", "apoio", "legenda")], fato_banco)
+            if not soltos:
+                ok2, problemas2 = conferir_veracidade(
+                    cfg, corrigido, fato_banco, fonte_banco, cuidados_banco,
+                    estilo if carrossel else "sabia")
+                if not ok2:
+                    for p in problemas2:
+                        log(f"  - ainda: {p}")
+        if ok2:
+            log("Revisao de veracidade: APROVADO depois da correcao.")
+            corrigido["verificacao"] = "corrigido"
+            dados = corrigido
+            dados["titulo"] = dados["titulo"].strip()
+            dados["apoio"] = encurtar(dados.get("apoio", ""), 118, "apoio")
+        else:
+            log("Revisao de veracidade: NAO aprovado. O post sai so com o "
+                "texto literal do fato e a fonte.")
+            return _conteudo_so_fato(pauta_banco or tema, pauta_banco,
+                                     eixo_banco, familia_banco, fato_banco,
+                                     fonte_banco)
+
     log(f"Tema escolhido: {dados['tema']}")
     if eixo_banco:
         log(f"Eixo: {eixo_banco}  (pauta do banco: {pauta_banco})")
