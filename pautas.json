@@ -2122,8 +2122,9 @@
    "fato": "Análise conjunta de dados individuais de 9 coortes (34.485 idosos da comunidade com 65 anos ou mais; 17.528 mortes) mostrou que cada 0,1 m/s a mais de velocidade de marcha se associou a menor risco de morte (HR 0,88; IC95% 0,87–0,90). Aos 75 anos, a sobrevida prevista em 10 anos variou, ao longo da faixa de velocidades de marcha, de 19% a 87% nos homens e de 35% a 91% nas mulheres.",
    "fonte": "Studenski et al., JAMA, 2011 (análise conjunta de 9 coortes)",
    "url": "https://core.ac.uk/download/357380987.pdf",
-   "status": "livre",
-   "observacao": "Conferido no texto completo do artigo (PDF no CORE, JAMA 2011;305(1):50-58) e na ficha do MitoFit/Bioblast: números idênticos (sobrevida geral de 84,8% em 5 anos e 59,7% em 10 anos). Associação em estudos observacionais: não afirmar que andar mais rápido 'aumenta a vida'. As faixas 19–87% e 35–91% são previsões de modelo (idade, sexo e velocidade) ao longo de toda a faixa de velocidades; não transformar em pontos de corte (ex.: '0,8 m/s' ou '1 m/s'), que não foram conferidos neste lote. PMID 21205966."
+   "status": "publicado",
+   "observacao": "Conferido no texto completo do artigo (PDF no CORE, JAMA 2011;305(1):50-58) e na ficha do MitoFit/Bioblast: números idênticos (sobrevida geral de 84,8% em 5 anos e 59,7% em 10 anos). Associação em estudos observacionais: não afirmar que andar mais rápido 'aumenta a vida'. As faixas 19–87% e 35–91% são previsões de modelo (idade, sexo e velocidade) ao longo de toda a faixa de velocidades; não transformar em pontos de corte (ex.: '0,8 m/s' ou '1 m/s'), que não foram conferidos neste lote. PMID 21205966.",
+   "usado_em": "2026-11-05"
   },
   {
    "id": "evid-006",

@@ -349,5 +349,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-05",
+  "janela": "tarde",
+  "tema": "Velocidade da marcha e sobrevida em idosos",
+  "pauta": "velocidade da marcha e sobrevida em idosos",
+  "eixo": "avaliacao",
+  "familia": "conhecimento",
+  "fonte": "Studenski et al., JAMA, 2011 (análise conjunta de 9 coortes)",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Arraste e confira a resposta.",
+  "chamada": "Marcha mais rápida se associou a menor mortalidade",
+  "conceito": "A composição destaca a associação entre marcha mais rápida e menor mortalidade, revelando os dados sem sugerir uma promessa de longevidade.",
+  "composicao": "calibrado",
+  "estilo": "composicao tipografica",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_velocidade-da-marcha-e-sobrevida-em-idos_feed_1080x1350.jpg",
+   "fisiosync_velocidade-da-marcha-e-sobrevida-em-idos_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
