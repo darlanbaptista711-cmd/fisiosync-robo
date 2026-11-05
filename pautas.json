@@ -1087,7 +1087,8 @@
    "fonte": "Resolução COFFITO nº 414/2012",
    "status": "publicado",
    "interesse": "alto",
-   "usado_em": "2026-11-05"
+   "usado_em": "2026-11-05",
+   "observacao": "Reconferido em 05/11/2026 no texto integral, em duas fontes iguais (normasbrasil e legisweb): Art. 6º, V: 'o prontuário deverá ser guardado no próprio domicílio deste devendo o fisioterapeuta orientar a todos os integrantes do núcleo familiar a manter sigilo'. Incisos VI e VII: o fisioterapeuta pode manter cópia e a assinatura do paciente atestando o atendimento, e copiar o prontuário inteiro ao final. Nenhuma das duas fontes indica revogação."
   },
   {
    "id": "regulacao-015",
@@ -1106,7 +1107,8 @@
    "fato": "O Art. 1º, §1º, VI da Resolução COFFITO 414/2012 exige que o plano terapêutico traga recursos, métodos, técnicas, objetivos e a quantidade provável de atendimentos.",
    "fonte": "Resolução COFFITO nº 414/2012",
    "status": "livre",
-   "interesse": "alto"
+   "interesse": "alto",
+   "observacao": "Reconferido em 05/11/2026 no texto integral, em duas fontes iguais (normasbrasil e legisweb): Art. 1º, § 1º, VI: plano terapêutico com recursos, métodos e técnicas, objetivo(s) terapêutico(s) e 'quantitativo provável de atendimento'."
   },
   {
    "id": "regulacao-017",
