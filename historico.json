@@ -372,5 +372,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-06",
+  "janela": "manha",
+  "tema": "OMS: recomendações condicionais para dor lombar crônica primária",
+  "pauta": "diretriz da OMS para dor lombar crônica",
+  "eixo": "evidencia",
+  "familia": "conhecimento",
+  "fonte": "OMS, WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings, 2023 (diretriz)",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Na dor lombar crônica primária em adultos, a recomendação é condicional.",
+  "chamada": "OMS desaconselha TENS no cuidado de rotina",
+  "conceito": "Um aparelho de TENS isolado identifica o recurso cuja utilização rotineira é desaconselhada, sem símbolos de proibição que distorçam a recomendação condicional.",
+  "composicao": "calibrado",
+  "estilo": "fotografia realista de produto",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_oms-recomendac-es-condicionais-para-dor_feed_1080x1350.jpg",
+   "fisiosync_oms-recomendac-es-condicionais-para-dor_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
