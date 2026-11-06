@@ -395,5 +395,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-06",
+  "janela": "tarde",
+  "tema": "Pilates em grupo: parâmetro de atendimento por hora",
+  "pauta": "pilates em grupo: 6 alunos por hora",
+  "eixo": "pilates",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II, atendimento em grupo",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Arraste e confira a resposta.",
+  "chamada": "Pilates em grupo: 6 clientes/pacientes por hora",
+  "conceito": "Seis colchonetes agrupados representam os integrantes do atendimento, tornando visível a quantidade prevista no parâmetro apresentado na capa.",
+  "composicao": "calibrado",
+  "estilo": "ilustracao 3D minimalista e sofisticada",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_pilates-em-grupo-par-metro-de-atendiment_feed_1080x1350.jpg",
+   "fisiosync_pilates-em-grupo-par-metro-de-atendiment_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
