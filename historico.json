@@ -418,5 +418,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-07",
+  "janela": "manha",
+  "tema": "Terapias manuais: parâmetro por turno no ambulatório especializado",
+  "pauta": "parâmetro para clínica de terapia manual: 8 pacientes por turno",
+  "eixo": "quiropraxia-osteopatia",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "O parâmetro considera turno de 6 horas no ambulatório especializado.",
+  "chamada": "Terapias manuais: 8 pacientes por turno",
+  "conceito": "Uma maca acompanhada de oito fichas de atendimento destaca o parâmetro por turno no ambulatório especializado em terapias manuais.",
+  "composicao": "calibrado",
+  "estilo": "icones lineares discretos",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_terapias-manuais-par-metro-por-turno-no_feed_1080x1350.jpg",
+   "fisiosync_terapias-manuais-par-metro-por-turno-no_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]

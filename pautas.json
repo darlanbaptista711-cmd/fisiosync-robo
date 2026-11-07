@@ -1890,9 +1890,10 @@
    "fato": "Nos Parâmetros Assistenciais, o ambulatório especializado em terapias manuais e práticas afins (osteopatia, quiropraxia, Pilates, acupuntura, entre outras) prevê 2 consultas por hora e 8 pacientes por turno de 6 horas (Anexo II).",
    "fonte": "Resolução COFFITO nº 444/2014 (altera a Res. 387/2011), Anexo II",
    "url": "https://www.legisweb.com.br/legislacao/?id=275977",
-   "status": "livre",
+   "status": "publicado",
    "observacao": "Conferido na Res. 444/2014 (legisweb id=275977) e no texto consolidado da Res. 387/2011 com as alterações da 444 (legisweb id=114887); os dois trazem os mesmos anexos. O Ofício-Circular CREFITO-4 nº 002/2016 confirma que a 444/2014 rege os Parâmetros Assistenciais. Res. 552/2022 manteve no Código de Ética o dever de 'cumprir os Parâmetros Assistenciais'. Não foi encontrada resolução posterior que substitua os anexos (normasbrasil.com.br não abriu para uma terceira conferência).",
-   "interesse": "alto"
+   "interesse": "alto",
+   "usado_em": "2026-11-07"
   },
   {
    "id": "especialidades-101",
