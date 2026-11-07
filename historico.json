@@ -441,5 +441,28 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-07",
+  "janela": "tarde",
+  "tema": "Proibição de prometer terapia infalível",
+  "pauta": "proibido prometer terapia infalível",
+  "eixo": "etica",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética e Deontologia da Fisioterapia), Art. 15, III",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Arraste e confira a resposta.",
+  "chamada": "Fisioterapeuta pode prometer terapia infalível?",
+  "conceito": "A afirmação sobre prometer terapia infalível ocupa o centro da capa, convidando o profissional a confrontá-la com o Código de Ética.",
+  "composicao": "tipografico",
+  "estilo": "composicao tipografica",
+  "objetivo": "comentar",
+  "arquivos": [
+   "fisiosync_proibic-o-de-prometer-terapia-infal-vel_feed_1080x1350.jpg",
+   "fisiosync_proibic-o-de-prometer-terapia-infal-vel_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
