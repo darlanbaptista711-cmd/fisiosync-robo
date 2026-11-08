@@ -464,5 +464,37 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-08",
+  "janela": "manha",
+  "tema": "recomendações de atividade física da oms (2020) para adultos e idosos",
+  "pauta": "recomendações de atividade física da oms (2020) para adultos e idosos",
+  "eixo": "exercicio-saude",
+  "familia": "conhecimento",
+  "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Qual dessas recomendações gera mais dúvidas na prática?",
+  "chamada": "Atividade física: ==OMS 2020==",
+  "conceito": "",
+  "composicao": "carrossel-aula",
+  "estilo": "aula",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_01.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_02.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_03.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_04.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_05.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_06.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_07.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_08.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_09.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_10.jpg",
+   "fisiosync_recomenda-es-de-atividade-f-sica-da-oms_aula_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "aula"
  }
 ]
