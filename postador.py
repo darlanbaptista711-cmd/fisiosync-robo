@@ -597,7 +597,7 @@ def encurtar(texto, limite, rotulo=""):
 NUMEROS_DA_CASA = {"7", "1", "2", "3", "24", "2026"}
 
 
-def numeros_soltos(textos, fato=""):
+def numeros_soltos(textos, fato="", fonte=""):
     """
     Numeros escritos na peca que NAO estao no fato conferido.
 
@@ -605,21 +605,27 @@ def numeros_soltos(textos, fato=""):
     conteudo de curiosidade: a IA escreve "desde 1969" ou "em 68% dos
     casos" com total confianca e aquilo vai ao ar no perfil de um
     produto de saude. Numero sem lastro nao sai.
+
+    Numero da FONTE citada tem lastro (07/11/2026): o carrossel sobre a
+    Resolucao COFFITO 424/2013 caiu porque "424" e "2013" estavam so na
+    fonte, nao no texto do fato, e foi ao ar so a capa pedindo para
+    arrastar.
     """
-    permitidos = set(re.findall(r"\d+", fato or "")) | NUMEROS_DA_CASA
+    permitidos = (set(re.findall(r"\d+", f"{fato or ''} {fonte or ''}"))
+                  | NUMEROS_DA_CASA)
     achados = set()
     for t in textos:
         achados |= set(re.findall(r"\d+", t or ""))
     return sorted(achados - permitidos)
 
 
-def conferir_numeros(cfg, dados, fato):
+def conferir_numeros(cfg, dados, fato, fonte=""):
     """
     Confere os numeros da peca; se houver invencao, pede UMA reescrita.
     Se insistir, devolve a lista do que sobrou para o chamador abortar.
     """
     campos = ("titulo", "apoio", "legenda")
-    soltos = numeros_soltos([dados.get(c, "") for c in campos], fato)
+    soltos = numeros_soltos([dados.get(c, "") for c in campos], fato, fonte)
     if not soltos:
         return []
 
@@ -632,6 +638,8 @@ def conferir_numeros(cfg, dados, fato):
         + (f"O unico fato com fonte e: {fato}\n" if fato else
            "Nao existe fato com fonte para este post: escreva sem "
            "numero nenhum.\n")
+        + (f"Fonte do fato (os numeros dela podem ser citados): {fonte}\n"
+           if fato and fonte else "")
         + "Responda SOMENTE um JSON com as chaves titulo, apoio e legenda.\n\n"
         + json.dumps({c: dados.get(c, "") for c in campos},
                      ensure_ascii=False))
@@ -645,7 +653,7 @@ def conferir_numeros(cfg, dados, fato):
             if novo.get(c):
                 dados[c] = novo[c]
 
-    return numeros_soltos([dados.get(c, "") for c in campos], fato)
+    return numeros_soltos([dados.get(c, "") for c in campos], fato, fonte)
 
 
 # Ultimo slide do carrossel. Todas pedem salvar e enviar; a parte em
@@ -664,28 +672,28 @@ FECHOS_MITO = [
 ]
 
 
-def _slides_validos(dados, fato):
+def _slides_validos(dados, fato, fonte=""):
     """
-    Confere os slides do carrossel. Qualquer problema derruba SO o
-    carrossel: o post sai como imagem unica, que ja passou nas travas.
+    Confere os slides do carrossel. Devolve [] em qualquer problema, e
+    quem chama troca o post pelo "so fato": a capa de carrossel pede para
+    arrastar e nao pode ir ao ar sozinha (07/11/2026).
     """
     slides = dados.get("slides")
     if not isinstance(slides, list) or not 2 <= len(slides) <= 5:
-        log("AVISO: a IA nao mandou slides validos. Saindo como post unico.")
+        log("AVISO: a IA nao mandou slides validos.")
         return []
     limpos = []
     for s in slides:
         if not isinstance(s, dict) or not s.get("titulo") or not s.get("texto"):
-            log("AVISO: slide sem titulo ou texto. Saindo como post unico.")
+            log("AVISO: slide sem titulo ou texto.")
             return []
         limpos.append({"titulo": str(s["titulo"]).strip(),
                        "texto": str(s["texto"]).strip()})
     textos = [x for s in limpos for x in (s["titulo"], s["texto"])]
     textos.append(dados.get("fechamento", ""))
-    soltos = numeros_soltos(textos, fato)
+    soltos = numeros_soltos(textos, fato, fonte)
     if soltos:
-        log(f"AVISO: slide com numero sem fonte ({', '.join(soltos)}). "
-            "Saindo como post unico.")
+        log(f"AVISO: slide com numero sem fonte ({', '.join(soltos)}).")
         return []
     # Pedido do Darlan (02/11/2026): TODO carrossel termina pedindo para
     # salvar e enviar para um colega de profissao. Frase fixa, nao fica a
@@ -741,6 +749,22 @@ def _conteudo_so_fato(base, pauta_banco, eixo_banco, familia_banco,
                     "#FisioSync #FisioSyncExplica #fisioterapia "
                     "#fisioterapeuta #conhecimento"),
     }
+
+
+def _sem_carrossel(c, motivo):
+    """
+    Carrossel que perdeu os slides (slide invalido, sem ilustracao, slide
+    que nao coube). A capa dele pede para arrastar e, no "Mito ou
+    verdade?", traz so a pergunta: sozinha ela nao se sustenta. Em
+    07/11/2026 foi ao ar "Arraste e confira a resposta" sem resposta
+    nenhuma, no feed e no story. Volta o post so com o fato e a fonte.
+    """
+    log(f"AVISO: {motivo}. A capa do carrossel nao sai sozinha: o post "
+        "sai so com o fato conferido e a fonte.")
+    return _conteudo_so_fato(c.get("pauta") or c.get("tema", ""),
+                             c.get("pauta", ""), c.get("eixo", ""),
+                             c.get("familia", "gestao"), c.get("_fato", ""),
+                             c.get("fonte", ""))
 
 
 def _texto_publicado(dados):
@@ -935,7 +959,7 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
         log(f"AVISO: a proposta repete o historico ({motivo}).")
         log("Mantendo o tema do banco de pautas e seguindo.")
         dados["tema"] = tema or dados.get("tema", "")
-    sobraram = conferir_numeros(cfg, dados, fato_banco)
+    sobraram = conferir_numeros(cfg, dados, fato_banco, fonte_banco)
     if sobraram:
         erro("A peca cita numero que nao tem fonte, e a reescrita nao "
              f"resolveu: {', '.join(sobraram)}.\n"
@@ -944,7 +968,16 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
 
     if carrossel:
         dados["_estilo"] = estilo
-        dados["slides"] = _slides_validos(dados, fato_banco)
+        dados["slides"] = _slides_validos(dados, fato_banco, fonte_banco)
+        if not dados["slides"]:
+            # 07/11/2026: sem slides, a capa foi ao ar sozinha ("Arraste e
+            # confira a resposta", sem resposta nenhuma). Capa de
+            # carrossel nao se sustenta sozinha.
+            return _sem_carrossel({**dados, "pauta": pauta_banco or tema,
+                                   "eixo": eixo_banco,
+                                   "familia": familia_banco,
+                                   "fonte": fonte_banco, "_fato": fato_banco},
+                                  "carrossel sem slides validos")
     else:
         dados["slides"] = []
 
@@ -977,10 +1010,15 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
         ok2 = False
         if corrigido:
             if carrossel:
-                corrigido["slides"] = _slides_validos(corrigido, fato_banco)
+                corrigido["slides"] = _slides_validos(corrigido, fato_banco,
+                                                      fonte_banco)
             soltos = numeros_soltos([corrigido.get(c, "") for c in
-                                     ("titulo", "apoio", "legenda")], fato_banco)
-            if not soltos:
+                                     ("titulo", "apoio", "legenda")],
+                                    fato_banco, fonte_banco)
+            if carrossel and not corrigido["slides"]:
+                # sem slides a capa iria sozinha: cai no "so fato" abaixo
+                log("AVISO: a correcao derrubou os slides do carrossel.")
+            elif not soltos:
                 ok2, problemas2 = conferir_veracidade(
                     cfg, corrigido, fato_banco, fonte_banco, cuidados_banco,
                     estilo if carrossel else "sabia")
@@ -1002,6 +1040,9 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
 
     dados["legenda"] = legenda_com_fonte(dados.get("legenda", ""), fonte_banco,
                                          url_banco)
+    # o fato viaja junto: se o carrossel cair depois (ilustracao, slide
+    # que nao coube), o main remonta o post "so fato" com ele
+    dados["_fato"] = fato_banco
     log(f"Tema escolhido: {dados['tema']}")
     if eixo_banco:
         log(f"Eixo: {eixo_banco}  (pauta do banco: {pauta_banco})")
@@ -1674,7 +1715,11 @@ def main():
         try:
             gerar_foto(cfg, c, foto, c["layout"])
         except SystemExit:
-            # sem imagem o post ainda sai: tipografico, sem carrossel
+            # sem imagem o post ainda sai, em layout tipografico. Se era
+            # carrossel, a capa (que pede para arrastar) nao vai sozinha.
+            if c.get("slides"):
+                c = _sem_carrossel(c, "sem ilustracao para a capa")
+                tema = c["tema"]
             log("AVISO: sem ilustracao hoje. Saindo em layout tipografico.")
             c["layout"], c["slides"], foto = "tipografico", [], ""
 
@@ -1685,6 +1730,28 @@ def main():
                      tema.lower().replace("ç", "c"))[:40].strip("-")
     base_feed = os.path.join(PASTA_SAIDA, f"fisiosync_{apelido}_feed")
     base_story = os.path.join(PASTA_SAIDA, f"fisiosync_{apelido}_stories")
+
+    # Carrossel PRIMEIRO: capa sem assinatura + slides do fato +
+    # fechamento. Nunca corta texto: se algum slide nao couber, o post
+    # vira o "so fato" ANTES de montar feed e story, para nenhuma peca
+    # sair com a capa que pede para arrastar (07/11/2026).
+    slides_arq = []
+    if quer_feed and c.get("slides"):
+        import carrossel
+        try:
+            capa = molde.montar(foto, c["titulo"], c["apoio"],
+                                base_feed + "_capa", "feed",
+                                layout="calibrado",
+                                sobretitulo=c.get("sobretitulo", ""),
+                                capa=True, fonte=c.get("fonte", ""))
+            total = len(c["slides"]) + 2
+            slides_arq = [capa] + carrossel.montar(
+                c["slides"], c["fechamento"], c.get("fonte", ""),
+                base_feed, primeiro_numero=2, total=total)
+            log(f"Carrossel montado: {len(slides_arq)} imagens")
+        except layouts.TextoNaoCabe as falha:
+            c = _sem_carrossel(c, f"slide nao coube ({falha})")
+            tema, foto, slides_arq = c["tema"], "", []
 
     arq_feed = arq_story = None
     try:
@@ -1716,27 +1783,6 @@ def main():
              f"  {falha}\n"
              "  A peca NAO foi publicada. Rode de novo: a IA escreve "
              "outro texto, mais curto.")
-
-    # Carrossel: capa sem assinatura + slides do fato + fechamento. Se
-    # qualquer slide nao couber, o post sai como imagem unica (a arte
-    # acima ja passou em todas as travas). Nunca corta texto.
-    slides_arq = []
-    if quer_feed and c.get("slides"):
-        import carrossel
-        try:
-            capa = molde.montar(foto, c["titulo"], c["apoio"],
-                                base_feed + "_capa", "feed",
-                                layout="calibrado",
-                                sobretitulo=c.get("sobretitulo", ""),
-                                capa=True, fonte=c.get("fonte", ""))
-            total = len(c["slides"]) + 2
-            slides_arq = [capa] + carrossel.montar(
-                c["slides"], c["fechamento"], c.get("fonte", ""),
-                base_feed, primeiro_numero=2, total=total)
-            log(f"Carrossel montado: {len(slides_arq)} imagens")
-        except layouts.TextoNaoCabe as falha:
-            log(f"AVISO: slide nao coube ({falha}). Saindo como post unico.")
-            slides_arq = []
 
     if molde.avisos:
         print("\n" + "!" * 56)
