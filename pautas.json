@@ -2949,6 +2949,209 @@
    "interesse": "alto",
    "status": "livre",
    "observacao": "Consenso lido no PDF de acesso aberto (versão online-first da BJSM) do repositório da Keele University. A citação final (56(15):837-846) foi conferida no repositório de Southampton. Cada trecho foi conferido por verificação de string exata. Artefatos de hifenização do PDF ('Muscle- strengthening', 'low- level') foram normalizados, e as aspas curvas e o espaçamento de ‘roll down ‘and foram mantidos como no PDF. O consenso marca cada recomendação como [E] (baseada na evidência revisada) ou [C] (consenso de especialistas, quando havia pouca ou nenhuma evidência). Fortalecimento = [E]; impacto, limite de impacto com fratura vertebral, equilíbrio e Pilates = [C]. Os fatos 1 e 2 vêm do resumo, que não tem marcação. Fato 3: as frases sobre treino progressivo e 8–12 repetições formam um item [E] do Box 1. Fato 7: 'these activities' se refere aos itens anteriores do Box 3, ou seja, movimentos com flexão sustentada, repetida ou no fim da amplitude ou que curvam demais as costas com carga, que devem ser modificados ou evitados [C]; a frase completa termina com 'as long as they are fit enough to manage them with ease'. Lidos e não usados por falta de espaço: começar com intensidade menor e boa técnica antes de progredir [E]; para quem tem fratura vertebral, impacto até caminhada rápida mirando 150 min/semana (20 min/dia) [C]; exercícios para os músculos das costas, 3–5 repetições sustentadas por 3–5 s, pelo menos 2x/semana [C]; rotação é segura se feita de forma suave e confortável [C]; 'hip hinge' e 'pense reto' (parte superior das costas reta) para se curvar e levantar, ensinando como levantar em vez de proibir [C]; quem tem risco de quedas deve começar com treino específico de força e equilíbrio (resumo). Too Fit To Fracture: lido apenas o resumo, na página da McMaster (o texto completo no PMC não abriu), então nenhuma frequência específica do TFTF foi usada. No resumo do TFTF, o método é GRADE e o texto diz que não há evidência suficiente para quantificar os riscos do exercício na osteoporose ou fratura vertebral. Não busquei o documento separado da Royal Osteoporosis Society; usei a versão publicada na BJSM."
+  },
+  {
+   "id": "aula-teste-cadeira-30s",
+   "eixo": "avaliacao",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "teste da cadeira de 30 segundos: como aplicar e interpretar",
+   "fato": "Um escore abaixo da média para a idade e o sexo no teste da cadeira de 30 segundos indica risco de quedas (ex.: 65–69 anos: menos de 12 repetições em homens e menos de 11 em mulheres).",
+   "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+   "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf",
+   "fatos": [
+    {
+     "texto": "O teste de levantar e sentar da cadeira em 30 segundos avalia a força e a resistência das pernas.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "Purpose: To test leg strength and endurance",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Material: cadeira de encosto reto, sem apoio para os braços, com assento a 17 polegadas (cerca de 43 cm) de altura, e um cronômetro.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "Equipment: A chair with a straight back without arm rests (seat 17” high), and a stopwatch. [nota: 43 cm é conversão de 17 polegadas]",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Posição: sentado no meio da cadeira, pés apoiados no chão, costas retas, braços cruzados nos punhos, mãos nos ombros opostos e braços junto ao peito.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "Sit in the middle of the chair. | Place your hands on the opposite shoulder crossed, at the wrists. | Keep your feet flat on the floor. | Keep your back straight, and keep your arms against your chest.",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Ao comando “Vai”, o paciente fica totalmente em pé e volta a sentar, repetindo por 30 s. Conte quantas vezes fica totalmente em pé; se passou da metade da subida ao fim dos 30 s, conta.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "On “Go,” rise to a full standing position, then sit back down again. | Repeat this for 30 seconds. […] Count the number of times the patient comes to a full standing position in 30 seconds. | If the patient is over halfway to a standing position when 30 seconds have elapsed, count it as a stand.",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Se o paciente precisar usar os braços para se levantar, interrompa o teste e registre 0.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "If the patient must use his/her arms to stand, stop the test. | Record “0” for the number and score.",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Abaixo da média (indica risco de quedas), em repetições, homens/mulheres: 60–64: <14/<12; 65–69: <12/<11; 70–74: <12/<10; 75–79: <11/<10; 80–84: <10/<9; 85–89: <8/<8; 90–94: <7/<4.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "A below average score indicates a risk for falls. […] Chair Stand Below Average Scores | AGE MEN WOMEN | 60-64 < 14 < 12 | 65-69 < 12 < 11 | 70-74 < 12 < 10 | 75-79 < 11 < 10 | 80-84 < 10 < 9 | 85-89 < 8 < 8 | 90-94 < 7 < 4",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    },
+    {
+     "texto": "Em 76 idosos da comunidade (homens/mulheres): ICC teste-reteste 0,84/0,92 e r = 0,78/0,71 com o leg press. Indicador razoavelmente confiável e válido de força de MMII em idosos em geral ativos.",
+     "fonte": "Jones et al., Research Quarterly for Exercise and Sport, 1999",
+     "trecho_original": "Seventy-six […] Test-retest intraclass correlations of .84 for men and .92 for women […] weight-adjusted leg-press performance […] (r = .78 and .71, respectively) […] reasonably reliable and valid indicator of lower body strength in generally active, community-dwelling older adults [nota: 76 = 'Seventy-six'; 0,84 e 0,92 = '.84' e '.92']",
+     "url": "https://scilit.com/publications/6dae4210c6a1f9c48763ec61c0ca5289"
+    },
+    {
+     "texto": "Por segurança, fique ao lado do paciente durante o teste.",
+     "fonte": "CDC, STEADI – 30-Second Chair Stand, 2017",
+     "trecho_original": "Stand next to the patient for safety.",
+     "url": "https://stacks.cdc.gov/view/cdc/157303/cdc_157303_DS1.pdf"
+    }
+   ],
+   "referencias": [
+    "Centers for Disease Control and Prevention, National Center for Injury Prevention and Control. STEADI – Assessment: 30-Second Chair Stand [Internet]. CDC; 2017 [citado 8 nov 2026]. Disponível em: https://stacks.cdc.gov/view/cdc/157303",
+    "Jones CJ, Rikli RE, Beam WC. A 30-s chair-stand test as a measure of lower body strength in community-residing older adults. Res Q Exerc Sport. 1999;70(2):113-9. doi:10.1080/02701367.1999.10608028"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Conferido no PDF oficial da CDC (CDC Stacks, 'ASSESSMENT: 30-Second Chair Stand', 2017) e numa cópia idêntica no site do governo de Nova Jersey: instruções e tabela batem. Jones et al. (1999): só o resumo foi lido (Scilit, conferido em um segundo indexador, data.zhenzhi.com); a página da Taylor & Francis bloqueou o acesso, então nenhum passo do protocolo vem do artigo original. '43 cm' é conversão nossa de 17 polegadas (43,18 cm); a fonte só diz 17”. A tabela da CDC cobre 60 a 94 anos e diz apenas que escore abaixo da média 'indica risco de quedas': não transformar em probabilidade, diagnóstico ou causa. A validação de Jones foi em idosos da comunidade em geral ativos; o 'leg press' do fato é o desempenho máximo ajustado ao peso corporal. Não confundir com o teste de sentar e levantar do chão (evid-004). Fora do carrossel (verificado, não incluído): o algoritmo STEADI lista o 30-Second Chair Stand entre as avaliações comuns de marcha, força e equilíbrio, com o Timed Up & Go e o 4-Stage Balance Test. Nos trechos, ' | ' marca quebra de linha/célula do PDF e '[…]' marca corte."
+  },
+  {
+   "id": "aula-teste-caminhada-6min",
+   "eixo": "avaliacao",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "teste de caminhada de 6 minutos: como aplicar, quando parar e como interpretar",
+   "fato": "Em adultos com doença respiratória crônica, as evidências indicam diferença mínima importante de 30 m na distância do TC6 (entre 25 e 33 m).",
+   "fonte": "Holland et al. (ERS/ATS), Eur Respir J, 2014",
+   "url": "https://publications.ersnet.org/lookup/pmid/25359355",
+   "fatos": [
+    {
+     "texto": "O TC6 mede a distância que o paciente consegue caminhar rapidamente, em superfície plana e dura, em 6 minutos. É autocadenciado e avalia o nível submáximo de capacidade funcional.",
+     "fonte": "ATS Statement, Am J Respir Crit Care Med, 2002",
+     "trecho_original": "This test measures the distance that a patient can quickly walk on a flat, hard surface in a period of 6 minutes (the 6MWD). […] The self-paced 6MWT assesses the submaximal level of functional capacity.",
+     "url": "https://thoracic.org/statements/resources/pfet/sixminute.pdf"
+    },
+    {
+     "texto": "Local: corredor interno, longo, plano, reto, fechado, pouco movimentado e de piso duro. O percurso deve ter 30 m, marcado a cada 3 m, com cones nos pontos de retorno.",
+     "fonte": "ATS Statement, Am J Respir Crit Care Med, 2002",
+     "trecho_original": "The 6MWT should be performed indoors, along a long, flat, straight, enclosed corridor with a hard surface that is seldom traveled. […] The walking course must be 30 m in length. […] The length of the corridor should be marked every 3 m. […] The turnaround points should be marked with a cone",
+     "url": "https://thoracic.org/statements/resources/pfet/sixminute.pdf"
+    },
+    {
+     "texto": "Antes do teste, o paciente fica sentado em repouso por pelo menos 10 minutos perto do ponto de partida. Não se deve fazer aquecimento.",
+     "fonte": "ATS Statement, Am J Respir Crit Care Med, 2002",
+     "trecho_original": "The patient should sit at rest in a chair, located near the starting position, for at least 10 minutes before the test starts. […] A “warm-up” period before the test should not be performed.",
+     "url": "https://thoracic.org/statements/resources/pfet/sixminute.pdf"
+    },
+    {
+     "texto": "Após cada minuto, use só as frases padronizadas (ex.: “Você está indo bem. Faltam 5 minutos.”), sem outro incentivo nem linguagem corporal para acelerar. Se o paciente parar, o cronômetro não para.",
+     "fonte": "ATS Statement, Am J Respir Crit Care Med, 2002",
+     "trecho_original": "After the first minute […] You are doing well. You have 5 minutes to go. […] Do not use other words of encouragement (or body language to speed up). […] You can lean against the wall if you would like; then continue walking whenever you feel able. […] Do not stop the timer.",
+     "url": "https://thoracic.org/statements/resources/pfet/sixminute.pdf"
+    },
+    {
+     "texto": "Além da distância, relate a menor SpO2, a FC ao final e os escores de sintomas antes e depois do teste. A oximetria de pulso contínua é recomendada para captar a menor SpO2.",
+     "fonte": "Holland et al. (ERS/ATS), Eur Respir J, 2014",
+     "trecho_original": "Continuous pulse oximetry is recommended during the 6MWT, to ensure that the lowest SpO2 is recorded. […] Lowest SpO2, end-test HR and symptom scores obtained before and after the test should also be reported.",
+     "url": "https://publications.ersnet.org/lookup/pmid/25359355"
+    },
+    {
+     "texto": "Contraindicações absolutas: angina instável ou infarto do miocárdio no mês anterior. Relativas: FC de repouso acima de 120; PA sistólica acima de 180 mmHg; diastólica acima de 100 mmHg.",
+     "fonte": "ATS Statement, Am J Respir Crit Care Med, 2002",
+     "trecho_original": "Absolute […] unstable angina during the previous month and myocardial infarction during the previous month. Relative contraindications include a resting heart rate of more than 120, a systolic blood pressure of more than 180 mm Hg, and a diastolic blood pressure of more than 100 mm Hg.",
+     "url": "https://thoracic.org/statements/resources/pfet/sixminute.pdf"
+    },
+    {
+     "texto": "Pare a caminhada se a SpO2 cair para <80% (pode retomar se voltar a ≥85%) ou se houver dor no peito, dispneia intolerável, cãibras nas pernas, cambaleio, diaforese ou palidez/aspecto acinzentado.",
+     "fonte": "Holland et al. (ERS/ATS), Eur Respir J, 2014",
+     "trecho_original": "directs test cessation when SpO2 falls to <80% […] If SpO2 recovers to ≥85% during the 6MWT, the patient may be asked to recommence walking. […] Other reasons for test cessation include chest pain, intolerable dyspnoea, leg cramps, staggering, diaphoresis, and a pale or ashen appearance.",
+     "url": "https://publications.ersnet.org/lookup/pmid/25359355"
+    },
+    {
+     "texto": "Para medir mudança, faça 2 testes: há efeito de aprendizado (na DPOC, o 2º teste rende em média 26,3 m a mais). Em doença respiratória crônica, a diferença mínima importante é 30 m (25 a 33 m).",
+     "fonte": "Holland et al. (ERS/ATS), Eur Respir J, 2014",
+     "trecho_original": "learning effect for the 6MWD […] patients with COPD show a pooled mean improvement on the second 6MWT of 26.3 m […] Two tests should be performed when the 6MWT or ISWT are used to measure change […] (MID) of 30 m for the 6MWD in adults with chronic respiratory disease […] between 25 and 33 m.",
+     "url": "https://publications.ersnet.org/lookup/pmid/25359355"
+    }
+   ],
+   "referencias": [
+    "ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories. ATS statement: guidelines for the six-minute walk test. Am J Respir Crit Care Med. 2002;166(1):111-7. doi:10.1164/ajrccm.166.1.at1102",
+    "Holland AE, Spruit MA, Troosters T, Puhan MA, Pepin V, Saey D, et al. An official European Respiratory Society/American Thoracic Society technical standard: field walking tests in chronic respiratory disease. Eur Respir J. 2014;44(6):1428-46. doi:10.1183/09031936.00150314"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "ATS 2002 lido no PDF oficial hospedado pela ATS (thoracic.org); ERS/ATS 2014 lido no HTML da editora (publications.ersnet.org) e conferido no PDF do repositório da Universidade de Hasselt. No texto extraído do PDF da ERJ os símbolos < e ≥ saem trocados (',80%' e 'o85%'): os valores <80% e ≥85% foram conferidos no HTML. As frases de incentivo em português são tradução livre, não versão validada; as cinco frases originais da ATS, em ordem: 'You are doing well. You have 5 minutes to go.' / 'Keep up the good work. You have 4 minutes to go.' / 'You are doing well. You are halfway done.' / 'Keep up the good work. You have only 2 minutes left.' / 'You are doing well. You have only 1 minute to go.' A ATS escreve a FC de repouso sem unidade ('more than 120'). O corte de SpO2 <80% vem da seção 'Reasons for the assessor to stop an exercise test' da ERS/ATS 2014, que justifica: protocolo de TC6 que manda parar com SpO2 <80% se associa a taxa extremamente baixa de eventos adversos. A diferença mínima importante de 30 m (25 a 33 m) vale para adultos com doença respiratória crônica, e os 26,3 m de aprendizado são média combinada de 13 estudos em DPOC: não generalizar para outras populações. Fora do carrossel (verificado, não incluído): 'A low 6MWD is nonspecific and nondiagnostic.' (ATS 2002); a ERS/ATS 2014 aceita percurso de 30 m ou mais e não recomenda esteira com ritmo imposto. O DOI impresso no PDF da ATS (10.1164/rccm.166/1/111) difere do DOI registrado na editora (10.1164/ajrccm.166.1.at1102), usado na referência. Nos trechos, '[…]' marca corte."
+  },
+  {
+   "id": "aula-sppb",
+   "eixo": "avaliacao",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "sppb: componentes, pontuação de 0 a 12 e ponto de corte ≤8",
+   "fato": "No SPPB (0 a 12 pontos), pontuação ≤8 indica baixo desempenho físico, segundo o consenso europeu de sarcopenia (EWGSOP2).",
+   "fonte": "Cruz-Jentoft et al. (EWGSOP2), Age and Ageing, 2019",
+   "url": "https://academic.oup.com/ageing/article/48/1/16/5126243",
+   "fatos": [
+    {
+     "texto": "Bateria curta que avalia a função dos membros inferiores: equilíbrio (pés lado a lado, semi-tandem e tandem), marcha (8 pés, ≈2,4 m, no original) e levantar e sentar da cadeira 5 vezes.",
+     "fonte": "Guralnik et al., J Gerontol, 1994",
+     "trecho_original": "A short battery of physical performance tests was used to assess lower extremity function […] stand with the feet together in the side-by-side, semi-tandem, and tandem positions, time to walk 8 feet, and time to rise from a chair and return to the seated position 5 times. [nota: ≈2,4 m é conversão de 8 pés]",
+     "url": "https://academic.oup.com/geronj/article/49/2/M85/595537"
+    },
+    {
+     "texto": "Marcha em velocidade habitual (pode usar bengala ou outro auxílio de marcha, se precisar), valendo o menor de 2 tempos. Levantar 5 vezes o mais rápido possível, sem parar, braços cruzados no peito.",
+     "fonte": "PhenX Toolkit, ficha do SPPB (Guralnik/NIA)",
+     "trecho_original": "at your usual speed […] If you use a cane or other walking aid […] you may use it. […] Record the shorter of the two times […] Please stand up straight as QUICKLY as you can five times, without stopping in between. […] Keep your arms folded across your chest.",
+     "url": "https://www.phenxtoolkit.org/protocols/view/150501"
+    },
+    {
+     "texto": "Cada componente vale 0 se o paciente não consegue realizá-lo e de 1 a 4 se completa. A pontuação total máxima é 12.",
+     "fonte": "LIFE Study (NIA), Manual de Procedimentos, 2013",
+     "trecho_original": "Inability to perform any individual component of the battery results in a score of 0, while completion of the maneuver results in a score of 1 to 4. The maximum aggregate score is therefore 12.",
+     "url": "https://agingresearchbiobank.nia.nih.gov/studies/life/documents/download/Manual_of_Procedures_Main_Trial/Chapter_16_Physical_Measurements_v5.0.pdf/"
+    },
+    {
+     "texto": "Equilíbrio (10 s em cada posição): pés lado a lado = 1 ponto; semi-tandem = +1; tandem = +2 (se mantiver de 3 a 9,99 s, +1).",
+     "fonte": "LIFE Study (NIA), Manual de Procedimentos, 2013",
+     "trecho_original": "stand for 10 seconds with their feet together in a side-by-side position […] receive 1 point […] semi-tandem position for 10 seconds are given 1 additional point […] the tandem position. […] for 10 seconds are awarded 2 additional points. […] for 3 to 9.99 seconds are given 1 additional point.",
+     "url": "https://agingresearchbiobank.nia.nih.gov/studies/life/documents/download/Manual_of_Procedures_Main_Trial/Chapter_16_Physical_Measurements_v5.0.pdf/"
+    },
+    {
+     "texto": "Marcha de 4 m: menos de 4,82 s = 4 pontos; 4,82–6,20 s = 3; 6,21–8,70 s = 2; mais de 8,70 s = 1; não consegue = 0.",
+     "fonte": "PhenX Toolkit, ficha do SPPB (Guralnik/NIA)",
+     "trecho_original": "For 4-Meter Walk: […] If the participant was unable to do the walk: [ ] 0 points […] [ ] 1 point If time is more than 8.70 sec […] [ ] 2 points If time is 6.21 to 8.70 sec […] [ ] 3 points If time is 4.82 to 6.20 sec […] [ ] 4 points If time is less than 4.82 sec",
+     "url": "https://www.phenxtoolkit.org/protocols/view/150501"
+    },
+    {
+     "texto": "Levantar 5 vezes: até 11,19 s = 4 pontos; 11,20–13,69 s = 3; 13,70–16,69 s = 2; 16,70 s ou mais (até 60 s) = 1; mais de 60 s = 0.",
+     "fonte": "PhenX Toolkit, ficha do SPPB (Guralnik/NIA)",
+     "trecho_original": "0 [ ] points […] 5 chair stands or completes stands in >60 sec | 1 [ ] point If chair stand time is 16.70 sec or more | 2 [ ] points If chair stand time is 13.70 to 16.69 sec | 3 [ ] points If chair stand time is 11.20 to 13.69 sec | 4 [ ] points If chair stand time is 11.19 sec or less",
+     "url": "https://www.phenxtoolkit.org/protocols/view/150501"
+    },
+    {
+     "texto": "No consenso europeu de sarcopenia (EWGSOP2), SPPB ≤8 pontos (de 12) indica baixo desempenho físico. Prediz desfechos, mas é mais usado em pesquisa do que na clínica: leva pelo menos 10 min.",
+     "fonte": "Cruz-Jentoft et al. (EWGSOP2), Age and Ageing, 2019",
+     "trecho_original": "The maximum score is 12 points, and a score of ≤ 8 points indicates poor physical performance […] The SPPB also predicts outcomes [90], but it is more often used in research than in clinical assessment because the battery of tests takes at least 10 min to administer.",
+     "url": "https://academic.oup.com/ageing/article/48/1/16/5126243"
+    },
+    {
+     "texto": "Na coorte original (mais de 5.000 pessoas com 71 anos ou mais), os testes predisseram mortalidade e admissão em ILPI no curto prazo, mesmo em quem relatava quase nenhuma incapacidade.",
+     "fonte": "Guralnik et al., J Gerontol, 1994",
+     "trecho_original": "more than 5,000 persons age 71 years and older […] performance tests were independent predictors of short-term mortality and nursing home admission […] who reported almost no disability, the performance test scores distinguished a gradient of risk for mortality and nursing home admission. [nota: 5.000 (5000) = '5,000']",
+     "url": "https://academic.oup.com/geronj/article/49/2/M85/595537"
+    }
+   ],
+   "referencias": [
+    "Guralnik JM, Simonsick EM, Ferrucci L, Glynn RJ, Berkman LF, Blazer DG, et al. A short physical performance battery assessing lower extremity function: association with self-reported disability and prediction of mortality and nursing home admission. J Gerontol. 1994;49(2):M85-94. doi:10.1093/geronj/49.2.M85",
+    "Cruz-Jentoft AJ, Bahat G, Bauer J, Boirie Y, Bruyère O, Cederholm T, et al. Sarcopenia: revised European consensus on definition and diagnosis. Age Ageing. 2019;48(1):16-31. doi:10.1093/ageing/afy169",
+    "LIFE Study. Manual of Procedures – Main Trial. Chapter 16: Physical Measurements. Versão 5.0 [Internet]. National Institute on Aging, Aging Research Biobank; 2013 [citado 8 nov 2026]. Disponível em: https://agingresearchbiobank.nia.nih.gov/studies/life/documents/download/Manual_of_Procedures_Main_Trial/Chapter_16_Physical_Measurements_v5.0.pdf/",
+    "PhenX Toolkit. Physical Functioning - Objective (protocolo 150501): Short Physical Performance Battery [Internet]. Protocolo de origem: Guralnik JM. Assessing physical performance in the older patient. National Institute on Aging; 2013 [citado 8 nov 2026]. Disponível em: https://www.phenxtoolkit.org/protocols/view/150501"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Guralnik 1994: lido o resumo na página da editora (OUP); o PDF completo não abriu, então nenhuma faixa de tempo vem do artigo de 1994. No original a marcha era de 8 pés (≈2,4 m é conversão nossa); as faixas de tempo daqui são da ficha do NIA para percurso de 4 m, reproduzida no PhenX Toolkit (que cita Guralnik/NIA, 2013). A ficha tem outras faixas para 3 m: não misturar. Pontuação geral (0 a 4 por componente, máximo 12) e equilíbrio conferidos no Manual de Procedimentos do LIFE Study (NIA Aging Research Biobank, cap. 16, v5.0, 2013), coerente com o PhenX; no PhenX a linha de 1 ponto do tandem aparece como 'Not held for 3 to 9.99 sec' (provável erro de digitação), por isso o equilíbrio vem do LIFE. O manual do LIFE também manda cruzar os braços no peito no levantar da cadeira. EWGSOP2 lido no texto completo da OUP (o original escreve '≤ 8', com espaço). A predição de mortalidade e de admissão em ILPI (nursing home) vem de coorte (preditores independentes em análise multivariada, junto com itens autorrelatados): é associação/predição, não dizer que melhorar o SPPB reduz mortalidade. 'Mesmo em quem relatava quase nenhuma incapacidade' = nesse grupo, os escores distinguiram um gradiente de risco. Fora do carrossel (verificado, não incluído): no EWGSOP2, baixo desempenho físico somado a baixa força e baixa quantidade/qualidade muscular caracteriza sarcopenia grave ('If Criteria 1, 2 and 3 are all met, sarcopenia is considered severe.'). Nos trechos, ' | ' marca quebra de linha da ficha e '[…]' marca corte."
   }
  ]
 }
