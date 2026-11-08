@@ -640,10 +640,31 @@ def para_revisao(spec, pauta, estilo):
 
 
 # ----------------------------------------------------------------- render
+_JS_ENCAIXE = """
+(() => {
+  // 08/11/2026: no post das 9h o segundo bloco "75-150 min" saiu cortado na
+  // borda. Caixa de valor nao cresce com o texto; o numero e que encolhe.
+  document.querySelectorAll('.duas .card').forEach(e => { e.style.minWidth = '0'; });
+  for (const e of document.querySelectorAll('.duas .val, .big, .veredito')) {
+    let fs = parseFloat(getComputedStyle(e).fontSize);
+    while (e.scrollWidth > e.clientWidth + 1 && fs > 48) {
+      fs -= 4; e.style.fontSize = fs + 'px';
+    }
+  }
+  return true;
+})()
+"""
+
 _JS_ESTOURO = """
 (() => {
   const c = document.querySelector('.conteudo');
   if (!c) return null;
+  // nada pode passar da margem da arte
+  for (const e of document.querySelectorAll('.conteudo *, .base *')) {
+    const r = e.getBoundingClientRect();
+    if (r.width && (r.right > innerWidth - 40 || r.left < 40))
+      return 'passa da margem: ' + (e.innerText || e.tagName).slice(0, 40);
+  }
   const fim = c.getBoundingClientRect().bottom;
   const tetos = [...document.querySelectorAll('.base,.rodape')].map(e => e.getBoundingClientRect().top);
   const teto = tetos.length ? Math.min(...tetos) : innerHeight;
@@ -711,6 +732,7 @@ def renderizar(paginas, destino_base, largura=1080, altura=1350, ajustaveis=()):
                         extra = f"<style>:root{{--fr:{tam}px}}</style>" if tam else ""
                         pag.set_content(_documento(corpo + extra, largura, altura, fontes_css))
                         pag.evaluate("document.fonts.ready")
+                        pag.evaluate(_JS_ENCAIXE)
                         estouro = pag.evaluate(_JS_ESTOURO)
                         if not estouro:
                             break
