@@ -434,9 +434,9 @@ def _tam_capa(t):
     return 124 if n <= 24 else (108 if n <= 32 else 94)
 
 
-def _capa(spec, pauta, estilo, total, logo):
+def _capa(spec, pauta, estilo, total, logo, ilu_tam=560):
     capa = spec["capa"]
-    ilu = capa.get("ilustracao", "")
+    ilu = capa.get("ilustracao", "") if ilu_tam else ""
     if estilo == "mito":
         afirm = pauta["afirmacao"].rstrip(".?! ") + "?"
         corpo = (f'<div class="pill">Mito ou verdade?</div>'
@@ -455,7 +455,7 @@ def _capa(spec, pauta, estilo, total, logo):
                  + f'<div style="font-size:42px;line-height:1.32;margin-top:34px;'
                    f'color:var(--navy)">{promessa}</div>')
         secao = spec.get("secao") or "Avaliação"
-    ilu_html = (f'<div class="ilu" style="bottom:140px">{_svg(ilu, 560)}</div>' if ilu else "")
+    ilu_html = (f'<div class="ilu" style="bottom:140px">{_svg(ilu, ilu_tam)}</div>' if ilu else "")
     return (f'<div class="pg"><div class="conteudo">{_topo(secao)}{corpo}</div></div>'
             f'{ilu_html}<div class="base"><div class="puxa">Arraste →</div></div>'
             + _rodape(1, total, logo))
@@ -700,13 +700,20 @@ def renderizar(paginas, destino_base, largura=1080, altura=1350, ajustaveis=()):
         try:
             pag = nav.new_page(viewport={"width": largura, "height": altura},
                                device_scale_factor=1)
-            for i, corpo in enumerate(paginas, 1):
+            for i, entrada in enumerate(paginas, 1):
+                # uma pagina pode vir com alternativas (capa com ilustracao
+                # menor ou sem ela): vale a primeira em que o texto cabe
+                opcoes = entrada if isinstance(entrada, (list, tuple)) else (entrada,)
                 tamanhos = (29, 26, 23, 21, 19) if (i - 1) in ajustaveis else (None,)
-                for tam in tamanhos:
-                    extra = f"<style>:root{{--fr:{tam}px}}</style>" if tam else ""
-                    pag.set_content(_documento(corpo + extra, largura, altura, fontes_css))
-                    pag.evaluate("document.fonts.ready")
-                    estouro = pag.evaluate(_JS_ESTOURO)
+                estouro = "sem opcao"
+                for corpo in opcoes:
+                    for tam in tamanhos:
+                        extra = f"<style>:root{{--fr:{tam}px}}</style>" if tam else ""
+                        pag.set_content(_documento(corpo + extra, largura, altura, fontes_css))
+                        pag.evaluate("document.fonts.ready")
+                        estouro = pag.evaluate(_JS_ESTOURO)
+                        if not estouro:
+                            break
                     if not estouro:
                         break
                 if estouro:
@@ -726,7 +733,8 @@ def paginas_carrossel(spec, pauta, estilo):
     if total > MAX_SLIDES:
         raise EspecInvalida(f"{total} slides passam do limite de {MAX_SLIDES}")
     secao = spec.get("secao") or ("Evidência" if estilo == "mito" else "Avaliação")
-    paginas = [_capa(spec, pauta, estilo, total, logo)]
+    # texto comprido na capa: tenta a ilustracao menor e, por fim, sem ela
+    paginas = [tuple(_capa(spec, pauta, estilo, total, logo, t) for t in (560, 430, 0))]
     for k, s in enumerate(slides, 2):
         if s["tipo"] == "veredito":
             corpo = _s_veredito(s, pauta.get("veredito", ""))
@@ -740,11 +748,11 @@ def paginas_carrossel(spec, pauta, estilo):
     return paginas
 
 
-def pagina_story(spec, pauta, estilo):
+def pagina_story(spec, pauta, estilo, ilu_tam=640):
     """Story 9:16. No mito mostra a resposta: quem so ve o story nao sai com o mito."""
     logo = _logo_b64()
     capa = spec["capa"]
-    ilu = _svg(capa.get("ilustracao", ""), 640)
+    ilu = _svg(capa.get("ilustracao", ""), ilu_tam) if ilu_tam else ""
     if estilo == "mito":
         vered = pauta.get("veredito", "").rstrip(".")
         classe = "mito" if vered.lower().startswith("mito") else "verdade"
@@ -778,6 +786,6 @@ def montar(spec, pauta, estilo, base_feed, base_story):
         raise EspecInvalida("; ".join(problemas))
     paginas = paginas_carrossel(spec, pauta, estilo)
     feed = renderizar(paginas, base_feed, ajustaveis=(len(paginas) - 2,))
-    story = renderizar([pagina_story(spec, pauta, estilo)], base_story,
-                       largura=1080, altura=1920)[0]
+    story = renderizar([tuple(pagina_story(spec, pauta, estilo, t) for t in (640, 480, 0))],
+                       base_story, largura=1080, altura=1920)[0]
     return feed, story

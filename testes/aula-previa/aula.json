@@ -55,5 +55,6 @@
  "fato": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
  "interesse": "alto",
  "status": "livre",
- "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014)."
+ "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014).",
+ "rodada_de_teste": "2026-11-08T04:51"
 }

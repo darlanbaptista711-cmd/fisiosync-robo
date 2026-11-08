@@ -57,5 +57,6 @@
  "fato": "Força baixa indica sarcopenia provável; confirma-se com massa ou qualidade muscular baixa; com desempenho físico baixo, é grave.",
  "interesse": "alto",
  "status": "livre",
- "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014)."
+ "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014).",
+ "rodada_de_teste": "2026-11-08T04:51"
 }
