@@ -2272,6 +2272,293 @@
    "url": "https://bjsm.bmj.com/content/56/17/975",
    "status": "reservada-reels",
    "observacao": "Conferido no resumo da página do BJSM e no repositório da University of Leicester (figshare): números idênticos; autor correspondente Claudio Gil Araujo (Clinimex Medicina do Exercício, Rio de Janeiro). Estudo observacional: associação, não prova que treinar equilíbrio reduz a mortalidade. Amostra majoritariamente masculina, de 51 a 75 anos: não generalizar para idosos frágeis nem sugerir o teste como autoavaliação sem supervisão (risco de queda). É do mesmo grupo do teste de sentar e levantar (evid-004): evitar publicar os dois em sequência."
+  },
+  {
+   "id": "aula-preensao-palmar",
+   "eixo": "avaliacao",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "força de preensão palmar: como medir e interpretar",
+   "fato": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/",
+   "fatos": [
+    {
+     "texto": "A força de preensão é simples e barata de medir e é indicada para uso de rotina no hospital, em clínicas especializadas e na comunidade.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "grip strength is simple and inexpensive. [...] Because of its ease of use, grip strength is advised for routine use in hospital practice, in specialty clinical settings, and in community healthcare",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "A força de preensão serve como substituto confiável de medidas mais complicadas de força de braços e pernas.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "Grip strength correlates moderately with strength in other body compartments, so it serves as a reliable surrogate for more complicated measures of arm and leg strength.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "Medir com precisão exige dinamômetro manual calibrado e condições de teste bem definidas.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "Accurate measurement of grip strength requires use of a calibrated handheld dynamometer under well-defined test conditions with interpretive data from appropriate reference populations",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "O dinamômetro Jamar é validado e o mais usado para medir a força de preensão.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "The Jamar dynamometer is validated and widely used for measuring grip strength",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "No protocolo de Southampton, a força é medida três vezes em cada mão, com incentivo padronizado, e registra-se o maior valor, em kg.",
+     "fonte": "Roberts et al., Age and Ageing, 2014",
+     "trecho_original": "Grip strength was measured three times with each hand using a Jamar hand dynamometer [...] according to a standard protocol with standardised encouragement. Maximum grip strength was recorded to the nearest 1 kg.",
+     "url": "https://eprints.soton.ac.uk/363183/2/Grip_20strength_20and_20its_20determinants_20among_20older_20people_20in_20different_20healthcare_20settings.pdf"
+    },
+    {
+     "texto": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "EWGSOP2 sarcopenia cut-off points for low strength by chair stand and grip strength. Grip strength <27 kg (men) <16 kg (women)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "Força baixa indica sarcopenia provável; confirma-se com massa ou qualidade muscular baixa; com desempenho físico baixo, é grave.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "Probable sarcopenia is identified by Criterion 1. Diagnosis is confirmed by additional documentation of Criterion 2. If Criteria 1, 2 and 3 are all met, sarcopenia is considered severe.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "No estudo PURE (139.691 adultos de 17 países, mediana de 4 anos), cada 5 kg a menos de força se associou a 16% mais risco de morte por qualquer causa.",
+     "fonte": "Leong et al., The Lancet, 2015",
+     "trecho_original": "139 691 participants [...] 17 countries [...] median follow-up of 4.0 years [...] all-cause mortality (hazard ratio per 5 kg reduction in grip strength 1.16, 95% CI 1.13-1.20",
+     "url": "https://ecommons.aku.edu/pakistan_fhs_mc_chs_chs/338"
+    },
+    {
+     "texto": "Quando não dá para medir a preensão (artrite avançada, AVC), o consenso indica medir a força dos membros inferiores.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "When measurement of grip is not possible due to hand disability (e.g. with advanced arthritis or stroke), isometric torque methods can be used to measure lower limb strength.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    },
+    {
+     "texto": "No teste de sentar e levantar, mais de 15 segundos para 5 repetições indica força baixa.",
+     "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+     "trecho_original": "Chair stand >15 s for five rises",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6322506/"
+    }
+   ],
+   "referencias": [
+    "Cruz-Jentoft AJ et al. Sarcopenia: revised European consensus on definition and diagnosis. Age and Ageing. 2019;48(1):16–31. doi:10.1093/ageing/afy169",
+    "Leong DP et al. Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study. The Lancet. 2015;386(9990):266–273. doi:10.1016/S0140-6736(14)62000-6",
+    "Roberts HC et al. A review of the measurement of grip strength in clinical and epidemiological studies: towards a standardised approach. Age and Ageing. 2011;40(4):423–429. doi:10.1093/ageing/afr051",
+    "Roberts HC et al. Grip strength and its determinants among older people in different healthcare settings. Age and Ageing. 2014;43(2):241–246. doi:10.1093/ageing/aft118"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Amostra aprovada pelo Darlan em 08/11/2026. EWGSOP2 lido no texto integral (PMC6322506, Tabelas 1 e 3); PURE no resumo (Aga Khan University eCommons); protocolo no artigo de 2014 do grupo de Southampton. PURE e associacao, nao causa. Os cortes sao europeus: o consenso recomenda referencias regionais quando houver."
+  },
+  {
+   "id": "aula-recomendacoes-oms-atividade-fisica",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "recomendações de atividade física da oms (2020) para adultos e idosos",
+   "fato": "Adultos (18 a 64 anos): pelo menos 150 a 300 min/semana de atividade aeróbica moderada, ou pelo menos 75 a 150 min de vigorosa, ou uma combinação equivalente, para benefícios substanciais à saúde.",
+   "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/",
+   "fatos": [
+    {
+     "texto": "Adultos (18 a 64 anos): pelo menos 150 a 300 min/semana de atividade aeróbica moderada, ou pelo menos 75 a 150 min de vigorosa, ou uma combinação equivalente, para benefícios substanciais à saúde.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "ADULTS (aged 18–64 years) [...] Adults should do at least 150–300 minutes of moderate-intensity aerobic physical activity; or at least 75–150 minutes of vigorous-intensity aerobic physical activity; or an equivalent combination of moderate- and vigorous-intensity activity throughout the week, for substantial health benefits.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Adultos também devem fazer fortalecimento muscular de intensidade moderada ou maior, envolvendo todos os grandes grupos musculares, em 2 ou mais dias por semana.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "Adults should also do muscle-strengthening activities at moderate or greater intensity that involve all major muscle groups on 2 or more days a week, as these provide additional health benefits.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Para benefícios adicionais, adultos podem passar de 300 min/semana de atividade moderada ou de 150 min de vigorosa. Essa é uma recomendação condicional da OMS.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "Adults may increase moderate-intensity aerobic physical activity to more than 300 minutes; or do more than 150 minutes of vigorous-intensity aerobic physical activity; [...] for additional health benefits. [...] Conditional recommendation, moderate certainty evidence",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Idosos (65+) seguem as mesmas metas dos adultos: pelo menos 150 a 300 min/semana de aeróbico moderado (ou pelo menos 75 a 150 de vigoroso) e fortalecimento muscular em 2 ou mais dias por semana.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "OLDER ADULTS (aged 65 years and older) [...] Older adults should do at least 150–300 minutes of moderate-intensity aerobic physical activity; or at least 75–150 minutes of vigorous-intensity aerobic physical activity [...] Older adults should also do muscle-strengthening activities [...] on 2 or more days a week",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Idosos devem incluir atividade multicomponente com ênfase em equilíbrio funcional e treino de força, de intensidade moderada ou maior, 3 ou mais dias/semana, para prevenir quedas.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "As part of their weekly physical activity, older adults should do varied multicomponent physical activity that emphasizes functional balance and strength training at moderate or greater intensity, on 3 or more days a week, to enhance functional capacity and to prevent falls.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Adultos e idosos devem limitar o tempo sedentário. Trocar esse tempo por atividade física de qualquer intensidade, inclusive leve, traz benefícios à saúde.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "Adults should limit the amount of time spent being sedentary. Replacing sedentary time with physical activity of any intensity (including light intensity) provides health benefits. [...] Older adults should limit the amount of time spent being sedentary.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "A OMS não definiu um limite máximo de tempo sedentário: a evidência foi insuficiente para quantificar um limiar de comportamento sedentário.",
+     "fonte": "Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "Additionally, reducing sedentary behaviours is recommended across all age groups and abilities, although evidence was insufficient to quantify a sedentary behaviour threshold.",
+     "url": "https://ueaeprints.uea.ac.uk/id/eprint/77844/1/Published_Version.pdf"
+    },
+    {
+     "texto": "Fazer alguma atividade física é melhor do que nenhuma: mesmo quem não atinge as metas se beneficia ao fazer um pouco.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "Doing some physical activity is better than doing none. [...] If adults are not meeting these recommendations, doing some physical activity will benefit their health.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    }
+   ],
+   "referencias": [
+    "World Health Organization. WHO guidelines on physical activity and sedentary behaviour. Geneva: World Health Organization; 2020. ISBN 978-92-4-001512-8. Disponível em: https://iris.who.int/handle/10665/336656",
+    "Bull FC, Al-Ansari SS, Biddle S, Borodulin K, Buman MP, Cardon G, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. Br J Sports Med. 2020;54(24):1451-62. doi:10.1136/bjsports-2020-102955"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Recomendações conferidas no texto oficial da diretriz da OMS (cap. 4 'Recommendations', espelhado no NCBI Bookshelf, NBK566046) e no artigo de Bull et al. (versão publicada CC BY no repositório da UEA; abstract também conferido na página da BJSM). O PDF do IRIS/OMS não abriu diretamente; o NCBI Bookshelf reproduz o documento da OMS. '[...]' marca partes omitidas entre trechos do mesmo documento. Rótulos conferidos: metas de aeróbico, força, multicomponente e sedentarismo para adultos e idosos = 'Strong recommendation, moderate certainty evidence'; >300 min = 'Conditional recommendation'. Sobre sedentarismo, a fonte fala em associação ('higher amounts of sedentary behaviour are associated with detrimental effects'), não em causa; a diretriz não traz limite numérico de tempo sedentário. Ficaram de fora por limite de slides: 'adults should aim to do more than the recommended levels of moderate- to vigorous-intensity physical activity' para reduzir os efeitos do sedentarismo elevado (recomendação forte) e as boas práticas 'start by doing small amounts of physical activity, and gradually increase...' e, para idosos, 'be as physically active as their functional ability allows'. Faixas etárias: adultos 18–64 anos; idosos 65+."
+  },
+  {
+   "id": "mito-fcmax-220-menos-idade",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "FC máxima = 220 − idade é a fórmula exata",
+   "veredito": "Mito",
+   "tema": "frequência cardíaca máxima e a fórmula 220 − idade",
+   "fato": "Estimar a FC máxima pela idade tem erro grande: pesquisas de mais de duas décadas mostram erro-padrão da estimativa de 7 a 11 bpm.",
+   "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+   "url": "https://www.asep.org/asep/asep/Robergs2.pdf",
+   "fatos": [
+    {
+     "texto": "A fórmula 220 − idade não veio de pesquisa original: resultou da observação de dados de cerca de 11 referências, entre estudos publicados e compilações não publicadas.",
+     "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+     "trecho_original": "[título do artigo: The surprising history of the \"HRmax=220-age\" equation] Ironically, inquiry into the history of this formula reveals that it was not developed from original research, but resulted from observation based on data from approximately 11 references consisting of published research or unpublished scientific compilations.",
+     "url": "https://www.asep.org/asep/asep/Robergs2.pdf"
+    },
+    {
+     "texto": "No trabalho de origem não houve análise de regressão: na legenda da figura, os autores escreveram que nenhuma linha única representaria adequadamente os dados.",
+     "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+     "trecho_original": "No regression analysis was performed on this data, and in the figure legend the authors stated that; “….no single line will adequately represent the data on the apparent decline of maximal heart rate with age.",
+     "url": "https://www.asep.org/asep/asep/Robergs2.pdf"
+    },
+    {
+     "texto": "Pesquisas de mais de duas décadas mostram grande erro na estimativa da FCmáx: erro-padrão da estimativa (Sxy) de 7 a 11 batimentos por minuto.",
+     "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+     "trecho_original": "Despite the acceptance of this formula, research spanning more than two decades reveals the large error inherent in the estimation of HRmax (Sxy=7-11 b/min).",
+     "url": "https://www.asep.org/asep/asep/Robergs2.pdf"
+    },
+    {
+     "texto": "Tanaka et al. (2001), em meta-análise de 351 estudos com 18.712 pessoas, chegaram à equação FCmáx = 208 − 0,7 × idade.",
+     "fonte": "Tanaka et al., J Am Coll Cardiol, 2001",
+     "trecho_original": "First, a meta-analytic approach was used to collect group mean HRmax values from 351 studies involving 492 groups and 18,712 subjects. [...] In the meta-analysis, HRmax was strongly related to age (r = −0.90), using the equation of 208 − 0.7 × age.",
+     "url": "https://webs.um.es/jlyuste/documts/tanaka.pdf"
+    },
+    {
+     "texto": "Comparada à nova equação, a 220 − idade superestima a FCmáx em jovens, se iguala por volta dos 40 anos e passa a subestimá-la cada vez mais com o avanço da idade.",
+     "fonte": "Tanaka et al., J Am Coll Cardiol, 2001",
+     "trecho_original": "[a equação tradicional do artigo é 220 − idade] the traditional equation overestimates HRmax in young adults, intersects with the present equation at age 40 years [...] then increasingly underestimates HRmax with further increases in age.",
+     "url": "https://webs.um.es/jlyuste/documts/tanaka.pdf"
+    },
+    {
+     "texto": "Aos 70 anos, as duas equações diferem em cerca de 10 bpm; com a variação individual (DP de ~10 bpm), a 220 − idade pode subestimar a FCmáx em mais de 20 bpm em alguns idosos.",
+     "fonte": "Tanaka et al., J Am Coll Cardiol, 2001",
+     "trecho_original": "[a equação tradicional do artigo é 220 − idade] For example, at age 70 years, the difference between the two equations is ∼10 beats/min. Considering the wide range of individual subject values around the regression line for HRmax (SD ∼10 beats/min), the underestimation of HRmax could be >20 beats/min for some older adults.",
+     "url": "https://webs.um.es/jlyuste/documts/tanaka.pdf"
+    },
+    {
+     "texto": "Nem a equação de Tanaka é exata para todos: mais precisa na média, pode errar a FCmáx de alguns indivíduos. Os autores recomendam usar a FCmáx medida diretamente sempre que possível.",
+     "fonte": "Tanaka et al., J Am Coll Cardiol, 2001",
+     "trecho_original": "Although the present HRmax equation provides a more accurate estimation of HRmax on average, [...] it may not precisely predict true HRmax in some individuals, because of the standard deviation. [...] direct measurements of HRmax should be used as an indicator of physical stress whenever possible.",
+     "url": "https://webs.um.es/jlyuste/documts/tanaka.pdf"
+    },
+    {
+     "texto": "Conclusão de Robergs & Landwehr: hoje não há método aceitável para estimar a FCmáx; se for preciso estimar, devem-se usar fórmulas específicas para cada população.",
+     "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+     "trecho_original": "Currently, there is no acceptable method to estimate HRmax. [...] If HRmax needs to be estimated, then population specific formulae should be used.",
+     "url": "https://www.asep.org/asep/asep/Robergs2.pdf"
+    }
+   ],
+   "referencias": [
+    "Robergs RA, Landwehr R. The surprising history of the \"HRmax=220-age\" equation. J Exerc Physiol Online. 2002;5(2):1-10.",
+    "Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. J Am Coll Cardiol. 2001;37(1):153-6. doi:10.1016/S0735-1097(00)01054-8"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Robergs & Landwehr lido no PDF oficial do JEPonline (asep.org). Tanaka et al. lido numa cópia do PDF original hospedada na Univ. de Murcia (webs.um.es); PubMed e o site do JACC não estavam acessíveis. Na camada de texto desse PDF os símbolos matemáticos saem trocados: '5' = '=', '2' = '−', '3' = '×', ';' = '∼' e '.' = '>' (ex.: 'SD ;10 beats/min', 'could be .20 beats/min'). A troca de '=', '−' e '×' foi confirmada numa cópia HTML do resumo ('r = −0.90', '208 − 0.7 × age'); '∼' e '>' foram decodificados pelo mesmo padrão e pelo contexto. Os números (10, 20, 40, 70) conferem. 'Sxy' = erro-padrão da estimativa; 'SD' = desvio-padrão. A origem identificada por Robergs & Landwehr é Fox et al. (1971). Tanaka et al. estudaram adultos saudáveis. Verificados e não usados por limite de slides: (a) Robergs: a maioria das equações univariadas por idade também tem erros >10 b/min; a de Inbar (HRmax=205.8-0.685(age)) seria a mais precisa entre as gerais, mas com Sxy=6.4 b/min ainda 'unacceptably large'; (b) Tanaka: validação em laboratório com 514 adultos saudáveis (209 − 0,7 × idade, 'virtually identical'); FCmáx independente de sexo e de nível de atividade física. Atenção ao publicar: a 208 − 0,7 × idade também é estimativa, não valor exato."
+  },
+  {
+   "id": "mito-idoso-treino-de-forca",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Idoso não deve fazer treino de força",
+   "veredito": "Mito",
+   "tema": "treino de força para idosos",
+   "fato": "A OMS (2020) recomenda que idosos façam fortalecimento muscular de intensidade moderada ou maior, envolvendo todos os grandes grupos musculares, em 2 ou mais dias por semana.",
+   "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/",
+   "fatos": [
+    {
+     "texto": "A OMS recomenda a idosos fortalecimento muscular de intensidade moderada ou maior, envolvendo todos os grandes grupos musculares, em 2 ou mais dias por semana (recomendação forte).",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "Older adults should also do muscle-strengthening activities at moderate or greater intensity that involve all major muscle groups on 2 or more days a week, as these provide additional health benefits. Strong recommendation, moderate certainty evidence",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "A OMS também orienta, para idosos, atividade multicomponente com ênfase em equilíbrio funcional e treino de força, 3 ou mais dias por semana, para prevenir quedas.",
+     "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+     "trecho_original": "As part of their weekly physical activity, older adults should do varied multicomponent physical activity that emphasizes functional balance and strength training at moderate or greater intensity, on 3 or more days a week, to enhance functional capacity and to prevent falls.",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK566046/"
+    },
+    {
+     "texto": "Segundo a NSCA, um programa de treino resistido bem planejado, com instrução da técnica e auxílio (spotting) adequados, é seguro para idosos saudáveis.",
+     "fonte": "Fragala et al. (NSCA), J Strength Cond Res, 2019",
+     "trecho_original": "1. A properly designed resistance training program with appropriate instructions for exercise technique and proper spotting is safe for healthy, older adults.",
+     "url": "https://www.nsca.com/contentassets/2a4112fb355a4a48853bbafbe070fb8e/resistance_training_for_older_adults__position.1.pdf"
+    },
+    {
+     "texto": "A NSCA recomenda progredir para 2–3 séries de 1–2 exercícios multiarticulares por grande grupo muscular, a 70–85% de 1RM, 2–3x/semana, com potência (concêntrica rápida, 40–60% de 1RM).",
+     "fonte": "Fragala et al. (NSCA), J Strength Cond Res, 2019",
+     "trecho_original": "[...] working toward 2–3 sets of 1–2 multijoint exercises per major muscle group, achieving intensities of 70–85% of 1 repetition maximum (1RM), 2–3 times per week, including power exercises performed at higher velocities in concentric movements with moderate intensities (i.e., 40–60% of 1RM)",
+     "url": "https://www.nsca.com/contentassets/2a4112fb355a4a48853bbafbe070fb8e/resistance_training_for_older_adults__position.1.pdf"
+    },
+    {
+     "texto": "Para a NSCA, um treino resistido bem planejado pode contrapor mudanças do envelhecimento no músculo esquelético: na função contrátil, na atrofia e na morfologia.",
+     "fonte": "Fragala et al. (NSCA), J Strength Cond Res, 2019",
+     "trecho_original": "4. A properly designed resistance training program can counteract the age-related changes in contractile function, atrophy, and morphology of aging human skeletal muscle.",
+     "url": "https://www.nsca.com/contentassets/2a4112fb355a4a48853bbafbe070fb8e/resistance_training_for_older_adults__position.1.pdf"
+    },
+    {
+     "texto": "O treino resistido bem planejado pode melhorar mobilidade, função física e desempenho nas atividades de vida diária, e preservar a independência do idoso (NSCA).",
+     "fonte": "Fragala et al. (NSCA), J Strength Cond Res, 2019",
+     "trecho_original": "7. A properly designed resistance training program can improve mobility, physical functioning, performance in activities of daily living (ADL), and preserve the independence of older adults.",
+     "url": "https://www.nsca.com/contentassets/2a4112fb355a4a48853bbafbe070fb8e/resistance_training_for_older_adults__position.1.pdf"
+    },
+    {
+     "texto": "Programas de treino resistido podem ser adaptados para idosos com fragilidade, limitações de mobilidade, comprometimento cognitivo ou outras condições crônicas (NSCA).",
+     "fonte": "Fragala et al. (NSCA), J Strength Cond Res, 2019",
+     "trecho_original": "10. Resistance training programs can be adapted for older adults with frailty, mobility limitations, cognitive impairment, or other chronic conditions.",
+     "url": "https://www.nsca.com/contentassets/2a4112fb355a4a48853bbafbe070fb8e/resistance_training_for_older_adults__position.1.pdf"
+    },
+    {
+     "texto": "Diretriz internacional de sarcopenia (ICFSR, 2018): para tratar a sarcopenia, recomenda-se fortemente prescrever atividade física baseada em exercício resistido.",
+     "fonte": "Dent et al. (ICFSR), J Nutr Health Aging, 2018",
+     "trecho_original": "To treat sarcopenia, we strongly recommend the prescription of resistance-based physical activity,",
+     "url": "https://web4.library.adelaide.edu.au/dspace/handle/2440/118052"
+    }
+   ],
+   "referencias": [
+    "World Health Organization. WHO guidelines on physical activity and sedentary behaviour. Geneva: World Health Organization; 2020. ISBN 978-92-4-001512-8. Disponível em: https://iris.who.int/handle/10665/336656",
+    "Fragala MS, Cadore EL, Dorgo S, Izquierdo M, Kraemer WJ, Peterson MD, et al. Resistance training for older adults: position statement from the National Strength and Conditioning Association. J Strength Cond Res. 2019;33(8):2019-52. doi:10.1519/JSC.0000000000003230",
+    "Dent E, Morley JE, Cruz-Jentoft AJ, Arai H, Kritchevsky SB, Guralnik J, et al. International Clinical Practice Guidelines for Sarcopenia (ICFSR): screening, diagnosis and management. J Nutr Health Aging. 2018;22(10):1148-61. doi:10.1007/s12603-018-1139-9"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: OMS 2020 (recomendação forte de fortalecimento muscular em 2+ dias/semana para 65+), NSCA 2019 e diretriz ICFSR 2018 (recomendação forte de atividade física resistida para tratar sarcopenia). Texto da NSCA lido no PDF do próprio site da NSCA; a seção 'Summary Statements' tem 11 itens; foram usados os nº 1, 2, 4, 7 e 10, cada um conferido quanto à contiguidade do texto. A segurança (nº 1) é afirmada para idosos SAUDÁVEIS, com instrução de técnica e spotting; não estender a qualquer condição clínica. O corpo do texto da NSCA também trata de triagem médica antes do treino, mas esse trecho não foi lido literalmente e ficou de fora. ICFSR: apenas o abstract foi lido (repositório da Univ. de Adelaide). Também verificados e não usados por limite de slides: NSCA nº 3 (princípios de individualização, periodização e progressão), nº 5 (força, potência e função neuromuscular), nº 8 ('resistance to injuries and catastrophic events such as falls'), nº 9 (bem-estar psicossocial) e nº 11 (adaptação, com equipamento portátil e exercícios sentados, para instituições de longa permanência)."
   }
  ]
 }
