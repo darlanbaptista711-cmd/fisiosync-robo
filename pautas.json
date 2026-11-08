@@ -986,7 +986,8 @@
    "tema": "prontuario eletronico e permitido pela norma",
    "fato": "O Art. 2º da Resolução COFFITO 414/2012 diz que o registro pode ser manuscrito ou eletrônico, conforme a instituição.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre"
+   "status": "substituida",
+   "observacao": "08/11/2026: substituida pela aula 'prontuário eletrônico e digitalização de prontuários' (varios fatos)."
   },
   {
    "id": "regulacao-004",
@@ -2559,6 +2560,395 @@
    "interesse": "alto",
    "status": "livre",
    "observacao": "Veredito 'Mito' decidido pelas fontes: OMS 2020 (recomendação forte de fortalecimento muscular em 2+ dias/semana para 65+), NSCA 2019 e diretriz ICFSR 2018 (recomendação forte de atividade física resistida para tratar sarcopenia). Texto da NSCA lido no PDF do próprio site da NSCA; a seção 'Summary Statements' tem 11 itens; foram usados os nº 1, 2, 4, 7 e 10, cada um conferido quanto à contiguidade do texto. A segurança (nº 1) é afirmada para idosos SAUDÁVEIS, com instrução de técnica e spotting; não estender a qualquer condição clínica. O corpo do texto da NSCA também trata de triagem médica antes do treino, mas esse trecho não foi lido literalmente e ficou de fora. ICFSR: apenas o abstract foi lido (repositório da Univ. de Adelaide). Também verificados e não usados por limite de slides: NSCA nº 3 (princípios de individualização, periodização e progressão), nº 5 (força, potência e função neuromuscular), nº 8 ('resistance to injuries and catastrophic events such as falls'), nº 9 (bem-estar psicossocial) e nº 11 (adaptação, com equipamento portátil e exercícios sentados, para instituições de longa permanência)."
+  },
+  {
+   "id": "aula-teleconsulta-telemonitoramento-teleconsultoria",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "formato": "aula",
+   "tema": "teleconsulta, telemonitoramento e teleconsultoria na fisioterapia",
+   "fato": "A Res. COFFITO 516/2020, editada na pandemia, foi revogada. Hoje vale a Res. COFFITO 619/2025, que regulamenta de forma permanente teleconsulta, teleatendimento, telemonitoramento e teleconsultoria.",
+   "fonte": "Resolução COFFITO nº 619/2025, ementa e Art. 7º",
+   "url": "https://www.coffito.gov.br/nsite/?p=34571",
+   "fatos": [
+    {
+     "texto": "A Res. COFFITO 516/2020, editada na pandemia, foi revogada. Hoje vale a Res. COFFITO 619/2025, que regulamenta de forma permanente teleconsulta, teleatendimento, telemonitoramento e teleconsultoria.",
+     "fonte": "Resolução COFFITO nº 619/2025, ementa e Art. 7º",
+     "trecho_original": "Regulamenta a prestação de serviços de Fisioterapia e de Terapia Ocupacional nas modalidades de Teleconsulta, Teleatendimento, Telemonitoramento e Teleconsultoria de forma permanente (...) Art. 7º Revoga-se a Resolução-COFFITO nº 516, de 20 de março de 2020 (...)",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "O Código de Ética proíbe dar consulta ou prescrever tratamento de forma não presencial, salvo em casos regulamentados pelo COFFITO.",
+     "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética), Art. 15, II",
+     "trecho_original": "Artigo 15 – É proibido ao fisioterapeuta: (...) II – dar consulta ou prescrever tratamento fisioterapêutico de forma não presencial, salvo em casos regulamentados pelo Conselho Federal de Fisioterapia e de Terapia Ocupacional;",
+     "url": "https://www.coffito.gov.br/nsite/?p=3187"
+    },
+    {
+     "texto": "O atendimento remoto é opcional e deve ser usado quando não puder ser presencial, garantindo que seja eficaz e seguro para a condição clínica do paciente.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 1º, I",
+     "trecho_original": "I – o atendimento remoto é opcional, devendo ser utilizado quando não puder ser realizado presencialmente, garantindo-se que seja eficaz e seguro para a condição clínica do paciente;",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "O profissional deverá obter o consentimento do paciente e/ou de seu representante legal, garantindo sigilo e privacidade.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 1º, II",
+     "trecho_original": "II – o profissional deverá obter o consentimento do paciente e/ou de seu(s) representante(s) legal(is), garantindo sigilo e privacidade;",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "O atendimento remoto não deve substituir consultas e avaliações presenciais sempre que forem indispensáveis ao diagnóstico, ao tratamento e ao prognóstico do paciente.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 1º, III",
+     "trecho_original": "III – o atendimento remoto não deve substituir consultas e avaliações clínicas presenciais, sempre que estas forem indispensáveis ao diagnóstico, tratamento e prognóstico do paciente;",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "O profissional deve manter o prontuário atualizado a cada atendimento, registrando de forma detalhada as condutas aplicadas, a evolução e demais informações pertinentes.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 5º",
+     "trecho_original": "Art. 5º O profissional deve manter atualizado o prontuário do paciente a cada atendimento realizado, registrando de forma detalhada as condutas aplicadas, a evolução e demais informações pertinentes, em conformidade com as diretrizes éticas e normativas vigentes.",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "O atendimento remoto é prerrogativa de fisioterapeutas e terapeutas ocupacionais legalmente habilitados e inscritos no CREFITO da respectiva jurisdição.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 1º, parágrafo único",
+     "trecho_original": "Parágrafo único. As atribuições regulamentadas nesta Resolução constituem prerrogativa do Fisioterapeuta e do Terapeuta Ocupacional legalmente habilitados e inscritos no Conselho Regional de Fisioterapia e Terapia Ocupacional em sua respectiva jurisdição.",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    },
+    {
+     "texto": "Os serviços a distância deverão atender a requisitos de infraestrutura, recursos humanos e materiais adequados e às normas de guarda, manuseio e transmissão de dados, com confidencialidade e sigilo.",
+     "fonte": "Resolução COFFITO nº 619/2025, Art. 4º",
+     "trecho_original": "Art. 4º Os serviços prestados a distância (...) deverão atender aos requisitos de infraestrutura, recursos humanos e materiais adequados, assim como obedecer às normas relativas à guarda, manuseio e transmissão de dados, garantindo confidencialidade, privacidade e sigilo profissional.",
+     "url": "https://www.coffito.gov.br/nsite/?p=34571"
+    }
+   ],
+   "referencias": [
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 619, de 28 de maio de 2025. Regulamenta a prestação de serviços de Fisioterapia e de Terapia Ocupacional nas modalidades de Teleconsulta, Teleatendimento, Telemonitoramento e Teleconsultoria de forma permanente e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, ed. 127, p. 137, 9 jul. 2025. Disponível em: https://www.coffito.gov.br/nsite/?p=34571. Acesso em: 8 nov. 2026.",
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 516, de 20 de março de 2020. Dispõe sobre a suspensão temporária do Artigo 15, inciso II e Artigo 39 da Resolução COFFITO nº 424/2013 e Artigo 15, inciso II e Artigo 39 da Resolução COFFITO nº 425/2013 e estabelece outras providências durante o enfrentamento da crise provocada pela Pandemia do COVID-19. Diário Oficial da União: seção 1, Brasília, DF, n. 56, p. 184, 23 mar. 2020. Revogada pela Resolução COFFITO nº 619/2025. Disponível em: https://www.coffito.gov.br/nsite/?p=15825. Acesso em: 8 nov. 2026.",
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 424, de 8 de julho de 2013. Estabelece o Código de Ética e Deontologia da Fisioterapia. Diário Oficial da União: seção 1, Brasília, DF, n. 147, 1 ago. 2013. Disponível em: https://www.coffito.gov.br/nsite/?p=3187. Acesso em: 8 nov. 2026.",
+    "BRASIL. Lei nº 14.510, de 27 de dezembro de 2022. Altera a Lei nº 8.080, de 19 de setembro de 1990, para autorizar e disciplinar a prática da telessaúde em todo o território nacional, e a Lei nº 13.146, de 6 de julho de 2015; e revoga a Lei nº 13.989, de 15 de abril de 2020. Diário Oficial da União, Brasília, DF, 28 dez. 2022. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14510.htm. Acesso em: 8 nov. 2026."
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "VIGÊNCIA: a Res. COFFITO 516/2020 está REVOGADA pela Res. COFFITO 619/2025 (Art. 7º da 619; a página oficial da 516 traz '* Revogada pela RESOLUÇÃO-COFFITO Nº 619, DE 28 DE MAIO DE 2025'). A 619 vigora desde a publicação (Art. 8º): DOU de 09/07/2025, ed. 127, Seção 1, p. 137 (lido na cópia do DOU em PDF publicada no site do COFFITO; não consegui abrir o in.gov.br). Busca no site do COFFITO em 08/11/2026 ('619', 'teleatendimento', 'teleconsulta', 'telessaúde') não mostrou alteração da 619. ATENÇÃO: a 619 cita quatro modalidades na ementa (inclui 'teleatendimento'), mas NÃO as define; as definições de teleconsulta, telemonitoramento e teleconsultoria eram da 516 (art. 2º, §§ 1º a 3º), revogada — não apresentá-las como regra vigente. Código de Ética (Res. 424/2013): art. 15, II em vigor (os arts. 37 e 39 foram revogados por decisão do CADE, sem relação com o tema); o trecho 'hoje, pela Res. 619/2025' no fato 2 é ligação editorial (a 619 é a norma do COFFITO que regulamenta o atendimento remoto). Lei 8.080/1990, arts. 26-A a 26-H (incluídos pela Lei 14.510/2022; sem alteração posterior no planalto), também exige consentimento livre e esclarecido do paciente ou representante legal (art. 26-G, I), garante ao paciente o direito de recusa com atendimento presencial quando solicitado (art. 26-A, III) e ao profissional a decisão de usar ou não a telessaúde (art. 26-C). Fato extra verificado, fora por limite de 8: Res. 619, Art. 6º dispensa inscrição secundária ou complementar para quem atua em outra jurisdição exclusivamente por telessaúde (Lei 8.080, art. 26-H). Textos lidos nas páginas oficiais em 08/11/2026; trechos com espaços normalizados; '(...)' marca supressão."
+  },
+  {
+   "id": "aula-pilates-recurso-fisioterapeutico",
+   "eixo": "pilates",
+   "familia": "regulacao",
+   "formato": "aula",
+   "tema": "pilates como recurso da fisioterapia",
+   "fato": "Pela Res. COFFITO 386/2011, compete ao fisioterapeuta, no método Pilates, prescrever, induzir o tratamento e avaliar o resultado com recursos cinesioterapêuticos e/ou mecanoterapêuticos.",
+   "fonte": "Resolução COFFITO nº 386/2011, Art. 1º",
+   "url": "https://www.coffito.gov.br/nsite/?p=3149",
+   "fatos": [
+    {
+     "texto": "Pela Res. COFFITO 386/2011, compete ao fisioterapeuta, no método Pilates, prescrever, induzir o tratamento e avaliar o resultado com recursos cinesioterapêuticos e/ou mecanoterapêuticos.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º",
+     "trecho_original": "Artigo 1° – Compete ao Fisioterapeuta, para o exercício do método Pilates, prescrever, induzir o tratamento e avaliar o resultado a partir da utilização de recursos cinesioterapêuticos e/ou mecanoterapeuticos, devendo observar:",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "A norma define o Pilates como recurso cinesioterapêutico e mecanoterapêutico de educação e reeducação do movimento corporal, com exercícios de promoção, prevenção e recuperação da saúde.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea a",
+     "trecho_original": "a) Que o método Pilates é um recurso cinesioterapêutico e mecanoterapêutico que promove a educação e reeducação do movimento corporal, composto por exercícios terapêuticos de promoção, prevenção e recuperação da saúde físico funcional;",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "Objetivos citados na norma: estabilização postural, força muscular para as atividades de vida diária, mobilidade articular, equilíbrio corporal e harmonia das cadeias musculares, entre outros.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea b",
+     "trecho_original": "b) Que o objetivo da utilização do método Pilates, é a estabilização postural, melhoria da força muscular para desempenho das atividades de vida diária, mobilidade articular, equilíbrio corporal e harmonia das cadeias musculares, entre outras (...)",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "A avaliação do paciente serve para eleger o melhor recurso do método e definir tempo, intensidade e frequência do tratamento, individual ou em grupo.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea c",
+     "trecho_original": "c) Que a avaliação dos seus clientes/pacientes ocorrerá para eleger o melhor recurso do método Pilates e propedêutica apropriada, tais como: tempo, intensidade e freqüência do tratamento individualizado ou em grupo, de forma que garanta a qualidade da assistência fisioterapêutica.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "Avaliação, prescrição e evolução constarão em prontuário, e a responsabilidade deverá ser assumida pelo fisioterapeuta, inclusive quanto ao sigilo profissional.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 1º, alínea d",
+     "trecho_original": "d) Que a avaliação, prescrição e a evolução da intervenção fisioterapêutica constarão em prontuário, cuja responsabilidade deverá ser assumida pelo Fisioterapeuta, inclusive quanto ao sigilo profissional, bem como a observância dos princípios éticos, bioéticos, técnicos e científicos.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "Pilates indicado e aplicado por fisioterapeuta fica sob controle ético e fiscalizatório do Sistema COFFITO/CREFITOs: é necessário registrar o consultório ou a empresa no CREFITO da circunscrição.",
+     "fonte": "Resolução COFFITO nº 386/2011, Art. 2º",
+     "trecho_original": "Artigo 2° (...) o método Pilates sempre que indicado e administrado por profissional fisioterapeuta estará vinculado ao controle ético e fiscalizatório do Sistema COFFITO/CREFITOs, sendo, portanto, necessário o registro (...) do seu consultório ou empresas no CREFITO de sua circunscrição.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3149"
+    },
+    {
+     "texto": "O Código de Ética proíbe o fisioterapeuta de substituir a titulação de fisioterapeuta por expressões genéricas — e cita 'pilatista' entre elas.",
+     "fonte": "Resolução COFFITO nº 424/2013 (Código de Ética), Art. 30, IV",
+     "trecho_original": "Artigo 30 – É proibido ao fisioterapeuta: (...) IV – substituir a titulação de fisioterapeuta por expressões genéricas, tais como: terapeuta corporal, terapeuta de mão, (...) quiropraxista, osteopata, pilatista, bobatiano, esteticista, entre outros;",
+     "url": "https://www.coffito.gov.br/nsite/?p=3187"
+    },
+    {
+     "texto": "O Referencial Brasileiro de Procedimentos Fisioterapêuticos (RBPF), atualizado pela Res. COFFITO 618/2025, inclui o Pilates como procedimento, em grupo e individual.",
+     "fonte": "Resolução COFFITO nº 618/2025, Anexo (RBPF 2025), códigos 131069403 e 131069404",
+     "trecho_original": "131069403 Pilates – Grupo [...] 131069404 Pilates – Individual",
+     "url": "https://www.coffito.gov.br/nsite/wp-content/uploads/2025/07/anexo-rbpf-2025.pdf"
+    }
+   ],
+   "referencias": [
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 386, de 8 de junho de 2011. Dispõe sobre a utilização do método Pilates pelo fisioterapeuta e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, n. 113, p. 182, 14 jun. 2011. Disponível em: https://www.coffito.gov.br/nsite/?p=3149. Acesso em: 8 nov. 2026.",
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 424, de 8 de julho de 2013. Estabelece o Código de Ética e Deontologia da Fisioterapia. Diário Oficial da União: seção 1, Brasília, DF, n. 147, 1 ago. 2013. Disponível em: https://www.coffito.gov.br/nsite/?p=3187. Acesso em: 8 nov. 2026.",
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 618, de 25 de junho de 2025. Dispõe sobre a atualização do Referencial Brasileiro de Procedimentos Fisioterapêuticos (RBPF) e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, ed. 124, p. 381, 4 jul. 2025. Anexo (RBPF 2025) disponível em: https://www.coffito.gov.br/nsite/wp-content/uploads/2025/07/anexo-rbpf-2025.pdf. Acesso em: 8 nov. 2026."
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "VIGÊNCIA: Res. COFFITO 386/2011 sem nota de revogação ou alteração na página oficial (lida em 08/11/2026); buscas no site do COFFITO ('386/2011', 'método Pilates', 'PILATES') não encontraram ato revogador nem resolução mais nova sobre Pilates. ATENÇÃO: a norma regula o uso do Pilates PELO FISIOTERAPEUTA; não diz que o Pilates é exclusivo da Fisioterapia. Notícias do próprio COFFITO (24/04/2025 e 22/08/2025) relatam decisões judiciais que tratam o Pilates como técnica da Fisioterapia e da Educação Física, não como profissão autônoma — não afirmar exclusividade. Usar só o texto oficial do COFFITO: transcrições não oficiais trazem 'portando' (o oficial é 'portanto') e uma nota do CREFITO-8 (2021) insere na alínea d uma menção à Res. 414/2012 que não existe no original. O original grafa 'mecanoterapeuticos' (sem acento) no caput e diz 'consultório ou empresas'; o Art. 2º usa 'necessário o registro' (não 'deverá'). RBPF: Res. 618/2025 em vigor (DOU 04/07/2025, ed. 124, Seção 1, p. 381, conforme cópia do DOU no site do COFFITO; revogou a Res. 561/2022; atualização bienal prevista no Art. 5º); o trecho junta duas linhas da tabela do anexo, lidas via WebFetch e conferidas na camada de texto do PDF; os valores em R$ são referenciais (Art. 11) e ficaram fora do texto do fato (a 618 cita decisão do CADE nos considerandos). Fato do 'pilatista' (Código de Ética, art. 30, IV, em vigor) toca o tema de identificação profissional — cortar se já usado no carrossel de anúncios."
+  },
+  {
+   "id": "aula-prontuario-eletronico-digitalizacao",
+   "eixo": "regulacao",
+   "familia": "regulacao",
+   "formato": "aula",
+   "tema": "prontuário eletrônico e digitalização de prontuários",
+   "fato": "O prontuário fisioterapêutico deve ser legível e claro, com terminologia da profissão, e pode ser manuscrito ou em meio eletrônico, a critério da instituição.",
+   "fonte": "Resolução COFFITO nº 414/2012, Art. 2º",
+   "url": "https://www.coffito.gov.br/nsite/?p=3177",
+   "fatos": [
+    {
+     "texto": "O prontuário fisioterapêutico deve ser legível e claro, com terminologia da profissão, e pode ser manuscrito ou em meio eletrônico, a critério da instituição.",
+     "fonte": "Resolução COFFITO nº 414/2012, Art. 2º",
+     "trecho_original": "Artigo 2° O registro em prontuário fisioterapêutico das informações de que trata o Artigo 1° desta Resolução deve ser redigido de forma legível e clara com terminologia própria da profissão, podendo ser manuscrito ou em meio eletrônico, a critério da instituição.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3177"
+    },
+    {
+     "texto": "No prontuário eletrônico, o fisioterapeuta deverá consignar nome completo e número de registro no CREFITO imediatamente após cada registro.",
+     "fonte": "Resolução COFFITO nº 414/2012, Art. 2º, parágrafo único",
+     "trecho_original": "Parágrafo único: quando a instituição adotar o prontuário eletrônico o fisioterapeuta, imediatamente após seu registro, deverá consignar seu nome completo e seu número de registro no CREFITO.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3177"
+    },
+    {
+     "texto": "A digitalização e os sistemas informatizados de guarda, armazenamento e manuseio de prontuários são regidos pela Lei 13.787/2018 e pela LGPD (Lei 13.709/2018).",
+     "fonte": "Lei nº 13.787/2018, Art. 1º",
+     "trecho_original": "Art. 1º A digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente são regidas por esta Lei e pela Lei nº 13.709, de 14 de agosto de 2018",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm"
+    },
+    {
+     "texto": "Na digitalização de prontuários (do papel para o digital), será utilizado certificado digital ICP-Brasil ou outro padrão legalmente aceito.",
+     "fonte": "Lei nº 13.787/2018, Art. 2º, § 2º",
+     "trecho_original": "§ 2º No processo de digitalização será utilizado certificado digital emitido no âmbito da Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil) ou outro padrão legalmente aceito.",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm"
+    },
+    {
+     "texto": "Os originais em papel poderão ser destruídos após a digitalização, observados os requisitos da lei e após análise obrigatória de comissão permanente de revisão de prontuários.",
+     "fonte": "Lei nº 13.787/2018, Art. 3º",
+     "trecho_original": "Art. 3º Os documentos originais poderão ser destruídos após a sua digitalização, observados os requisitos constantes do art. 2º desta Lei, e após análise obrigatória de comissão permanente de revisão de prontuários e avaliação de documentos, especificamente criada para essa finalidade.",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm"
+    },
+    {
+     "texto": "O prontuário digitalizado conforme a lei e seus regulamentos terá o mesmo valor probatório do documento original para todos os fins de direito.",
+     "fonte": "Lei nº 13.787/2018, Art. 5º",
+     "trecho_original": "Art. 5º O documento digitalizado em conformidade com as normas estabelecidas nesta Lei e nos respectivos regulamentos terá o mesmo valor probatório do documento original para todos os fins de direito.",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm"
+    },
+    {
+     "texto": "A Res. COFFITO 414/2012 fala em guarda mínima de 5 anos, ampliável nos casos previstos em lei; a Lei 13.787/2018 só permite eliminar prontuários em papel e digitalizados após 20 anos do último registro.",
+     "fonte": "Res. COFFITO nº 414/2012, Art. 6º, I; Lei nº 13.787/2018, Art. 6º",
+     "trecho_original": "I – O período de guarda do prontuário do cliente/paciente deve ser de no mínimo cinco anos a contar do último registro, podendo ser ampliado nos casos previstos em lei, por determinação judicial ou ainda em casos específicos em que seja necessária a manutenção da guarda por maior tempo. | Art. 6º Decorrido o prazo mínimo de 20 (vinte) anos a partir do último registro, os prontuários em suporte de papel e os digitalizados poderão ser eliminados.",
+     "url": "https://www.coffito.gov.br/nsite/?p=3177 ; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm"
+    }
+   ],
+   "referencias": [
+    "CONSELHO FEDERAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL. Resolução nº 414/2012. Dispõe sobre a obrigatoriedade do registro em prontuário pelo fisioterapeuta, da guarda e do seu descarte e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, n. 99, 23 maio 2012. Disponível em: https://www.coffito.gov.br/nsite/?p=3177. Acesso em: 8 nov. 2026.",
+    "BRASIL. Lei nº 13.787, de 27 de dezembro de 2018. Dispõe sobre a digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente. Diário Oficial da União, Brasília, DF, 28 dez. 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm. Acesso em: 8 nov. 2026."
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "VIGÊNCIA: Res. COFFITO 414/2012 sem nota de revogação ou alteração na página oficial; a Res. COFFITO 565/2022 (Atenção Domiciliar) a cita como vigente (art. 5º). Lei 13.787/2018 sem notas de alteração no planalto (lida em 08/11/2026; DOU de 28/12/2018). ATENÇÃO AO PRAZO DE GUARDA: a Res. 414 fala em mínimo de 5 anos, 'podendo ser ampliado nos casos previstos em lei'; a Lei 13.787/2018 (lei federal posterior) só permite eliminar prontuários em papel ou digitalizados após 20 anos do último registro, e o art. 6º, § 5º estende a regra a todos os prontuários, inclusive os gerados originalmente em meio eletrônico. Não publicar '5 anos' isolado: manter os fatos 7 e 8 juntos, nessa ordem (a leitura de que prevalece o prazo da lei é editorial — confirmar com jurídico/CREFITO se preciso). Os arts. 2º a 5º da Lei 13.787 tratam da DIGITALIZAÇÃO (papel → digital): a exigência de certificado ICP-Brasil (art. 2º, § 2º) é desse processo — não afirmar que todo prontuário eletrônico exige ICP-Brasil. Regulamentos citados na lei (arts. 2º, § 3º; 4º, p. ú.; 6º, § 1º) não foram verificados. A página oficial da Res. 414 não traz a data de assinatura (deliberada na 219ª Reunião Ordinária, 19/01/2012; DOU nº 99, Seção 1, 23/05/2012). Temas evitados: prontuário domiciliar (art. 6º, V–VII) e plano terapêutico (art. 1º, § 1º, VI). Extras verificados, fora por limite de 8: Lei 13.787, art. 4º (meios de armazenamento deverão proteger os documentos de acesso, uso, alteração, reprodução e destruição não autorizados); Res. 414, art. 5º (é vedado negar ao paciente acesso ao prontuário); Res. 618/2025, art. 10 (CBDF e RBPF devem ser usados nos registros fisioterapêuticos, com registro no prontuário)."
+  },
+  {
+   "id": "aula-pilates-dor-lombar-cronica",
+   "eixo": "pilates",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "o que a evidência diz sobre pilates para lombalgia",
+   "fato": "Comparado a uma intervenção mínima, o Pilates provavelmente é mais efetivo para dor e incapacidade no curto e no médio prazo. Comparado a outros exercícios, provavelmente não é mais efetivo.",
+   "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+   "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain",
+   "fatos": [
+    {
+     "texto": "Revisão Cochrane (Yamato et al., 2015): 10 ensaios clínicos randomizados, com 510 participantes, todos com dor lombar crônica. As buscas foram feitas até março de 2014.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "We only included randomised controlled trials [...] 10 fulfilled the inclusion criteria and we included them in the review (a total sample of 510 participants). [...] The studies only included participants with chronic low back pain. [...] We conducted searches up to March 2014.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Comparado a uma intervenção mínima, o Pilates provavelmente é mais efetivo para dor e incapacidade no curto e no médio prazo. Comparado a outros exercícios, provavelmente não é mais efetivo.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "The included studies demonstrated that Pilates is probably more effective than minimal intervention in the short and intermediate term for pain and disability outcomes [...] Pilates is probably not more effective than other exercises for pain and disability in the short and intermediate term.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Dor no curto prazo, Pilates vs. intervenção mínima: diferença média de −14,05 pontos numa escala de 0 a 100 (IC95% −18,91 a −9,19). Efeito de tamanho médio; evidência de baixa qualidade.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "low quality evidence that Pilates reduces pain compared with minimal intervention, with a medium effect size at short-term follow-up [...] (MD -14.05, 95% confidence interval (CI) -18.91 to -9.19) [...] We converted outcome measures to a common 0 to 100 scale when different scales were used.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Incapacidade (vs. intervenção mínima): efeito pequeno no curto prazo (DM −7,95; IC95% −13,23 a −2,67; evidência baixa) e médio no médio prazo (DM −11,17; IC95% −18,41 a −3,92; evidência moderada).",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "low quality evidence that Pilates improves disability compared with minimal intervention, with a small effect size at short-term follow-up (MD -7.95, 95% CI -13.23 to -2.67) [...] moderate quality evidence for an intermediate-term effect with a medium effect size (MD -11.17, 95% CI -18.41 to -3.92)",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Nenhuma comparação, desfecho ou período de seguimento teve evidência de alta qualidade. No conjunto, a qualidade da evidência variou de baixa a moderada.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "We did not find any high quality evidence for any of the treatment comparisons, outcomes or follow-up periods investigated. [...] The overall quality of the evidence in this review ranged from low to moderate.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Segurança: só 2 ensaios avaliaram eventos adversos. Um não encontrou nenhum; o outro relatou eventos menores.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "Two trials assessed adverse events in this review, one did not find any adverse events, and another reported minor events.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Para os autores, a decisão de usar Pilates na dor lombar pode se basear na preferência do paciente ou do profissional e nos custos.",
+     "fonte": "Yamato et al., Cochrane Database Syst Rev, 2015",
+     "trecho_original": "The decision to use Pilates for low back pain may be based on the patient's or care provider's preferences, and costs.",
+     "url": "https://www.cochrane.org/CD010265/BACK_pilates-low-back-pain"
+    },
+    {
+     "texto": "Meta-análise em rede de 2021: Pilates, McKenzie e restauração funcional foram mais efetivos que outros tipos de exercício para dor e limitação funcional (certeza moderada na maioria das comparações).",
+     "fonte": "Hayden et al., J Physiother, 2021",
+     "trecho_original": "This review found evidence that Pilates, McKenzie therapy and functional restoration were more effective than other types of exercise treatment for reducing pain intensity and functional limitations. [...] The evidence available for most treatment comparisons was judged to be of moderate certainty,",
+     "url": "https://bin.yhdistysavain.fi/1552526/DfmQsgYv3Lkg6uetUe9U0WhT0x/HaydenJA_selk%C3%A4_meta-analyysi_10-2021.pdf"
+    }
+   ],
+   "referencias": [
+    "Yamato TP, Maher CG, Saragiotto BT, Hancock MJ, Ostelo RWJG, Cabral CMN, et al. Pilates for low back pain. Cochrane Database Syst Rev. 2015;(7):CD010265. doi:10.1002/14651858.CD010265.pub2",
+    "Hayden JA, Ellis J, Ogilvie R, Stewart SA, Bagg MK, Stanojevic S, et al. Some types of exercise are more effective than others in people with chronic low back pain: a network meta-analysis. J Physiother. 2021;67(4):252-62. doi:10.1016/j.jphys.2021.09.004"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Fatos 1 a 7 lidos na página oficial da Cochrane (cochrane.org/CD010265), que traz o resumo em linguagem simples e o resumo científico completo. Cada trecho foi conferido por verificação de string exata. '[...]' marca texto omitido entre trechos literais. Na revisão, curto prazo = menos de 3 meses e médio prazo = 3 a menos de 12 meses após a randomização. As medidas foram convertidas para uma escala de 0 a 100. Os critérios de seleção aceitavam dor aguda, subaguda ou crônica, mas os 10 estudos incluídos só tinham dor crônica. 7 estudos tinham baixo risco de viés e 3, alto. A página não define 'intervenção mínima'. A busca foi até março de 2014; a página diz que foi atualizada em junho de 2015 sem incorporar os resultados. A revisão é antiga. Omitido dos slides por espaço: vs. outros exercícios, a dor no curto prazo teve resultados mistos (2 ensaios a favor do Pilates, 1 sem diferença; evidência baixa). A incapacidade não teve diferença significativa (DM −3,29; IC95% −6,82 a 0,24; evidência moderada). Para função no médio prazo, outros exercícios foram melhores (DM −3,60; IC95% −7,00 a −0,20). Fato 8: Hayden et al. 2021 (217 ECRs, 20.969 participantes, dor lombar há 12 semanas ou mais). A conclusão foi lida no resumo (registro PEDro 67164 e PDF). A frase sobre certeza moderada está na seção Strengths and limitations do texto completo, que atribui as limitações a risco de viés e heterogeneidade; a certeza foi avaliada com CINeMA. O PDF é a versão da editora (revista de acesso aberto) hospedada em bin.yhdistysavain.fi, porque o site da revista não abriu. Esse PDF codifica o sinal de menos como '2' (ex.: 'MD 218.7'), então não usei nenhum número dele. Atenção editorial: a Cochrane 2015 (poucos ensaios) não achou superioridade do Pilates sobre outros exercícios. A meta-análise em rede de 2021 (muito maior) o colocou entre os tipos mais efetivos. Apresente como evolução da evidência, não como contradição. Existe um protocolo Cochrane de meta-análise em rede sobre o tema (CD015608), ainda sem resultados."
+  },
+  {
+   "id": "mito-repouso-dor-lombar-aguda",
+   "eixo": "evidencia",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Na dor lombar aguda, o melhor é repouso na cama",
+   "veredito": "Mito",
+   "tema": "repouso na cama na dor lombar aguda",
+   "fato": "Na dor lombar aguda, quem é orientado a se manter ativo pode ter pequenas melhoras na dor e nas atividades do dia a dia, comparado a quem é orientado a repousar na cama (evidência moderada).",
+   "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+   "url": "https://www.cochrane.org/CD007612",
+   "fatos": [
+    {
+     "texto": "Revisão Cochrane (Dahm et al., 2010) comparou orientar repouso na cama vs. orientar a se manter ativo na dor lombar aguda (menos de 6 semanas) ou ciática: 10 ensaios randomizados, N = 1.923.",
+     "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+     "trecho_original": "To determine the effects of advice to rest in bed or stay active for patients with acute low-back pain or sciatica. [...] This blended, updated review included 10 randomised trials (N = 1923). [...] acute low-back pain (pain lasting for less than 6 weeks)",
+     "url": "https://www.cochrane.org/CD007612"
+    },
+    {
+     "texto": "Na dor lombar aguda, quem é orientado a se manter ativo pode ter pequenas melhoras na dor e nas atividades do dia a dia, comparado a quem é orientado a repousar na cama (evidência moderada).",
+     "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+     "trecho_original": "Moderate quality evidence shows that patients with acute LBP may experience small improvements in pain relief and ability to perform everyday activities if they receive advice to stay active compared to advice to rest in bed.",
+     "url": "https://www.cochrane.org/CD007612"
+    },
+    {
+     "texto": "Dor lombar aguda (2 ensaios, N = 401): orientar a ficar ativo trouxe pequena melhora vs. repouso. Diferença média padronizada (DMP): dor 0,22 (IC95% 0,02 a 0,41); função 0,29 (IC95% 0,09 a 0,49).",
+     "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+     "trecho_original": "For patients with acute LBP, results from two trials (N = 401) suggest small improvements in pain relief (SMD 0.22 (95% CI: 0.02 to 0.41) and functional status (SMD 0.29 (95% CI: 0.09 to 0.49) in favour of advice to stay active.",
+     "url": "https://www.cochrane.org/CD007612"
+    },
+    {
+     "texto": "Na ciática, evidência de qualidade moderada mostra pouca ou nenhuma diferença entre orientar repouso na cama ou manter-se ativo, tanto na dor (DMP −0,03) quanto na função (DMP 0,19).",
+     "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+     "trecho_original": "For patients with sciatica, there is moderate quality evidence of little or no difference in pain relief (SMD -0.03 (95% CI: -0.24 to 0.18)) or functional status (SMD 0.19 (95% CI: -0.02 to 0.41)), between advice to rest in bed or stay active.",
+     "url": "https://www.cochrane.org/CD007612"
+    },
+    {
+     "texto": "O NICE (NG59) recomenda orientar e informar a pessoa para autogerenciar a dor lombar, com ou sem ciática, em todas as etapas do tratamento, incluindo incentivo a continuar as atividades normais.",
+     "fonte": "NICE, diretriz NG59, 2016",
+     "trecho_original": "Provide people with advice and information, tailored to their needs and capabilities, to help them self-manage their low back pain with or without sciatica, at all steps of the treatment pathway. Include: [...] encouragement to continue with normal activities.",
+     "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendation"
+    },
+    {
+     "texto": "O NICE (NG59) também recomenda considerar um programa de exercícios em grupo (biomecânico, aeróbico, mente-corpo ou combinação) para quem tem um episódio ou crise de dor lombar, com ou sem ciática.",
+     "fonte": "NICE, diretriz NG59, 2016",
+     "trecho_original": "Consider a group exercise programme (biomechanical, aerobic, mind–body or a combination of approaches) within the NHS for people with a specific episode or flare-up of low back pain with or without sciatica.",
+     "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendation"
+    }
+   ],
+   "referencias": [
+    "Dahm KT, Brurberg KG, Jamtvedt G, Hagen KB. Advice to rest in bed versus advice to stay active for acute low-back pain and sciatica. Cochrane Database Syst Rev. 2010;(6):CD007612. doi:10.1002/14651858.CD007612.pub2",
+    "National Institute for Health and Care Excellence. Low back pain and sciatica in over 16s: assessment and management [Internet]. London: NICE; 2016 [updated 2020; cited 2026 Nov 8]. (NICE guideline [NG59]). Available from: https://www.nice.org.uk/guidance/ng59"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes. Na Cochrane (Dahm 2010; busca até maio de 2009), orientar a se manter ativo deu pequenos benefícios em dor e função vs. orientar repouso na cama na dor lombar aguda (evidência moderada). Na ciática houve pouca ou nenhuma diferença. Em nenhum dos cenários o repouso foi melhor. Os efeitos são pequenos (DMP 0,22 e 0,29); evite exagerar o benefício. Trechos conferidos por verificação de string exata em cochrane.org/CD007612. O IC da função (0,09 a 0,49) foi conferido em duas páginas da Cochrane. A versão publicada é de 16/06/2010 (conferido na Cochrane Library); o número do fascículo (6) foi deduzido da data. Atenção: as recomendações do NICE NG59 NÃO mencionam 'bed rest' (conferido na página de recomendações). Não atribua ao NICE nenhuma frase sobre repouso. O NICE recomenda incentivar a continuar as atividades normais (rec. 1.2.1, [2016]) e considerar exercício em grupo (rec. 1.2.2, [2016]); a rec. 1.2.2 também diz para levar em conta necessidades, preferências e capacidades ao escolher o exercício. A página não mostra datas de publicação/atualização; há recomendações marcadas [2016] e [2020], daí o 'updated 2020' na referência. Não usei: a frase de contexto da Cochrane sobre repouso prolongado ser 'potentially harmful' (é hipótese de fundo, não resultado); a comparação secundária com exercícios/fisioterapia (evidência baixa); e a frase dos autores de que novas pesquisas podem mudar a estimativa."
+  },
+  {
+   "id": "aula-exercicio-osteoporose",
+   "eixo": "evidencia",
+   "familia": "conhecimento",
+   "formato": "aula",
+   "tema": "exercício na osteoporose",
+   "fato": "Consenso do Reino Unido (2022): na osteoporose, fazer exercício resistido e de impacto (força óssea), atividades de força e equilíbrio (menos quedas) e exercício de extensão da coluna (postura).",
+   "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+   "url": "https://keele-repository.worktribe.com/OutputFile/463884",
+   "fatos": [
+    {
+     "texto": "Consenso do Reino Unido (2022): na osteoporose, fazer exercício resistido e de impacto (força óssea), atividades de força e equilíbrio (menos quedas) e exercício de extensão da coluna (postura).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "people with osteoporosis should undertake (1) resistance and impact exercise to maximise bone strength [...] (2) activities to improve strength and balance to reduce falls [...] (3) spinal extension exercise to improve posture and potentially reduce risk of falls and vertebral fractures",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Há pouca evidência de dano significativo pela atividade física; em geral, os benefícios superam os riscos. Por segurança, evite posturas com flexão acentuada da coluna no exercício e no dia a dia.",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "For safety, we recommend avoiding postures involving a high degree of spinal flexion during exercise or daily life. [...] There is little evidence that physical activity is associated with significant harm, and the benefits, in general, outweigh the risks.",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Fortalecimento em 2 ou 3 dias por semana, com treino resistido progressivo: na prática, a carga máxima que se levanta 8 a 12 vezes, chegando a 3 séries por exercício (baseado em evidência).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "Muscle-strengthening physical activity and exercise is recommended on two or three days of the week to maintain bone strength. [E] [...] progressive muscle resistance training. In practice, this is the maximum that can be lifted 8–12 times (building up to three sets for each exercise).",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Impacto moderado na maioria dos dias (ex.: pisar forte, trotar, saltos baixos, saltitos), com pelo menos 50 impactos por sessão (consenso de especialistas).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "Moderate impact exercise is recommended on most days to promote bone strength (eg, stamping, jogging, low-level jumping, hopping) to include at least 50 impacts per session (jogs, hops etc). [C]",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Com fratura vertebral ou múltiplas fraturas por baixo trauma: impacto na maioria dos dias, só até o nível de uma caminhada rápida. É precaução por riscos teóricos, não comprovados (consenso).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "For people with osteoporosis who have vertebral fractures or multiple low trauma fractures [...] Impact exercise on most days at a level up to brisk walking is recommended [...] This a precautionary measure because of theoretical (unproved) risks of further vertebral fracture in this group. [C]",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Exercícios de equilíbrio e força (como Tai Chi, dança, yoga e Pilates) pelo menos 2 vezes por semana, para reduzir o risco de quedas, sobretudo com o avançar da idade (consenso).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "Balance and muscle strength exercise (including activities such as Tai Chi, dance, yoga and Pilates) are recommended at least twice a week to reduce the risk of falls especially in older age. [C]",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "Por precaução, considere alternativas ao “roll down” e ao “curl up” do Pilates. Quem é experiente, tem flexibilidade na coluna e os executa com conforto e suavidade pode continuar (consenso).",
+     "fonte": "Brooke-Wavell et al., Br J Sports Med, 2022",
+     "trecho_original": "People who are experienced, demonstrate flexibility in the spine and can manage the moves comfortably and smoothly [...] can continue with these activities [...] As a precaution, alternatives to exercises such as the ‘roll down ‘and ‘curl up’ in Pilates should be considered. [C]",
+     "url": "https://keele-repository.worktribe.com/OutputFile/463884"
+    },
+    {
+     "texto": "O painel Too Fit To Fracture recomenda fortemente programa multicomponente, com exercício resistido e de equilíbrio. Em idosos com osteoporose ou fratura vertebral, o aeróbico não deve substituí-los.",
+     "fonte": "Giangregorio et al., Osteoporos Int, 2014",
+     "trecho_original": "The panel strongly recommends a multicomponent exercise program including resistance and balance training [...] older adults with osteoporosis or vertebral fracture do not engage in aerobic training to the exclusion of resistance or balance training.",
+     "url": "https://experts.mcmaster.ca/scholarly-works/180769"
+    }
+   ],
+   "referencias": [
+    "Brooke-Wavell K, Skelton DA, Barker KL, Clark EM, De Biase S, Arnold S, et al. Strong, steady and straight: UK consensus statement on physical activity and exercise for osteoporosis. Br J Sports Med. 2022;56(15):837-46. doi:10.1136/bjsports-2021-104634",
+    "Giangregorio LM, Papaioannou A, MacIntyre NJ, Ashe MC, Heinonen A, Shipp K, et al. Too Fit To Fracture: exercise recommendations for individuals with osteoporosis or osteoporotic vertebral fracture. Osteoporos Int. 2014;25(3):821-35. doi:10.1007/s00198-013-2523-2"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Consenso lido no PDF de acesso aberto (versão online-first da BJSM) do repositório da Keele University. A citação final (56(15):837-846) foi conferida no repositório de Southampton. Cada trecho foi conferido por verificação de string exata. Artefatos de hifenização do PDF ('Muscle- strengthening', 'low- level') foram normalizados, e as aspas curvas e o espaçamento de ‘roll down ‘and foram mantidos como no PDF. O consenso marca cada recomendação como [E] (baseada na evidência revisada) ou [C] (consenso de especialistas, quando havia pouca ou nenhuma evidência). Fortalecimento = [E]; impacto, limite de impacto com fratura vertebral, equilíbrio e Pilates = [C]. Os fatos 1 e 2 vêm do resumo, que não tem marcação. Fato 3: as frases sobre treino progressivo e 8–12 repetições formam um item [E] do Box 1. Fato 7: 'these activities' se refere aos itens anteriores do Box 3, ou seja, movimentos com flexão sustentada, repetida ou no fim da amplitude ou que curvam demais as costas com carga, que devem ser modificados ou evitados [C]; a frase completa termina com 'as long as they are fit enough to manage them with ease'. Lidos e não usados por falta de espaço: começar com intensidade menor e boa técnica antes de progredir [E]; para quem tem fratura vertebral, impacto até caminhada rápida mirando 150 min/semana (20 min/dia) [C]; exercícios para os músculos das costas, 3–5 repetições sustentadas por 3–5 s, pelo menos 2x/semana [C]; rotação é segura se feita de forma suave e confortável [C]; 'hip hinge' e 'pense reto' (parte superior das costas reta) para se curvar e levantar, ensinando como levantar em vez de proibir [C]; quem tem risco de quedas deve começar com treino específico de força e equilíbrio (resumo). Too Fit To Fracture: lido apenas o resumo, na página da McMaster (o texto completo no PMC não abriu), então nenhuma frequência específica do TFTF foi usada. No resumo do TFTF, o método é GRADE e o texto diz que não há evidência suficiente para quantificar os riscos do exercício na osteoporose ou fratura vertebral. Não busquei o documento separado da Royal Osteoporosis Society; usei a versão publicada na BJSM."
   }
  ]
 }
