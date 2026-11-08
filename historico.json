@@ -496,5 +496,35 @@
   ],
   "status": "publicado",
   "modo": "aula"
+ },
+ {
+  "data": "2026-11-08",
+  "janela": "tarde",
+  "tema": "repouso na cama na dor lombar aguda",
+  "pauta": "repouso na cama na dor lombar aguda",
+  "eixo": "evidencia",
+  "familia": "conhecimento",
+  "fonte": "Dahm et al., Cochrane Database Syst Rev, 2010",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Como você orienta a atividade na dor lombar aguda?",
+  "chamada": "Na dor lombar aguda, o melhor é repouso na cama",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_01.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_02.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_03.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_04.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_05.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_06.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_07.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_08.jpg",
+   "fisiosync_repouso-na-cama-na-dor-lombar-aguda_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
