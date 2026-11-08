@@ -1051,6 +1051,291 @@ def gerar_conteudo(cfg, tema=None, carrossel=False, estilo="sabia"):
     return dados
 
 
+# ======================================================= CARROSSEL NOVO
+# Formato aprovado pelo Darlan em 08/11/2026: "aula" as 9h e "mito ou
+# verdade" as 15h, no visual de serie (aula.py). A pauta traz VARIOS fatos
+# conferidos (campo "fatos"); a IA so organiza os fatos em slides e diz
+# quais fatos cada slide usa. A fonte de cada slide sai desses fatos.
+
+_EXTENSO = {"um": 1, "uma": 1, "dois": 2, "duas": 2, "tres": 3, "três": 3,
+            "quatro": 4, "cinco": 5, "seis": 6, "sete": 7, "oito": 8,
+            "nove": 9, "dez": 10, "onze": 11, "doze": 12, "quinze": 15,
+            "vinte": 20, "trinta": 30, "quarenta": 40, "cinquenta": 50,
+            "sessenta": 60, "cem": 100, "one": 1, "two": 2, "three": 3,
+            "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8,
+            "nine": 9, "ten": 10, "twelve": 12, "fifteen": 15, "twenty": 20,
+            "thirty": 30, "sixty": 60, "hundred": 100, "twice": 2, "dobro": 2}
+
+_HASHTAG_EIXO = {"avaliacao": "#avaliacaofuncional",
+                 "evidencia": "#fisioterapiabaseadaemevidencias",
+                 "exercicio-saude": "#exerciciofisico", "pilates": "#pilates",
+                 "regulacao": "#coffito", "etica": "#eticaprofissional"}
+
+
+def _lastro_aula(fatos):
+    """Texto com tudo que da lastro a um numero: fato, trecho original e
+    fonte, mais os numeros que o original escreve por extenso."""
+    texto = " ".join(" ".join((f.get("texto", ""), f.get("trecho_original", ""),
+                               f.get("fonte", ""))) for f in fatos)
+    extra = [str(n) for w, n in _EXTENSO.items()
+             if re.search(rf"\b{w}\b", texto, re.I)]
+    return texto + " " + " ".join(extra)
+
+
+def _numeros_aula(spec, pauta):
+    """Todo numero de um slide tem que estar nos fatos que ESSE slide cita."""
+    import aula
+    fatos = pauta.get("fatos") or []
+    problemas = []
+    for k, s in enumerate(spec.get("slides") or [], 2):
+        if not isinstance(s, dict):
+            continue
+        usados = [fatos[i - 1] for i in (s.get("fatos") or [])
+                  if isinstance(i, int) and 1 <= i <= len(fatos)]
+        soltos = numeros_soltos(aula.textos_do_slide(s), _lastro_aula(usados))
+        if soltos:
+            problemas.append(f"slide {k}: o numero {', '.join(soltos)} nao esta "
+                             "nos fatos que esse slide cita")
+    capa = spec.get("capa") or {}
+    textos = [capa.get("titulo", ""), *(capa.get("promessa") or []),
+              spec.get("chamada_final", ""), spec.get("pergunta_final", ""),
+              spec.get("legenda", "")]
+    geral = _lastro_aula(fatos) + " " + " ".join(pauta.get("referencias") or [])
+    soltos = numeros_soltos([aula._limpo(t) for t in textos if t], geral)
+    if soltos:
+        problemas.append("capa, fechamento ou legenda com numero sem fonte: "
+                         + ", ".join(soltos))
+    return problemas
+
+
+def _pedido_aula(pauta, estilo, aviso=""):
+    fatos = "\n".join(f"{i}. {f['texto']} (fonte: {f['fonte']})"
+                      for i, f in enumerate(pauta["fatos"], 1))
+    mito = estilo == "mito"
+    lo, hi = (4, 6) if mito else (5, 7)
+    return (
+        "Voce e editor de conteudo de um perfil de fisioterapia no Instagram. "
+        "O publico e fisioterapeuta e instrutor de Pilates. Monte um CARROSSEL "
+        + ("'MITO OU VERDADE?'" if mito else "'AULA'")
+        + " usando SOMENTE os fatos conferidos abaixo.\n\n"
+        f"TEMA: {pauta['tema']}\n"
+        + (f"AFIRMACAO DA CAPA (ja escrita, nao mude): {pauta['afirmacao']}\n"
+           f"VEREDITO (decidido pelas fontes, nao mude): {pauta['veredito']}\n"
+           if mito else "")
+        + f"FATOS CONFERIDOS (cite pelo numero):\n{fatos}\n"
+        + (f"CUIDADOS DE QUEM CONFERIU: {pauta['observacao']}\n"
+           if pauta.get("observacao") else "")
+        + "\nREGRAS\n"
+        "- Cada slide usa 1 ou 2 fatos e diz quais em \"fatos\": [numeros]. "
+        "Nada que o fato nao diga: nenhum numero, dado, exemplo clinico, "
+        "beneficio, prazo ou regra fora dos fatos. Associacao continua "
+        "associacao; 'pode' nao vira 'deve' nem o contrario.\n"
+        "- Titulo de cada slide: UMA pergunta curta ou frase de comando, ate "
+        "40 caracteres, na ordem em que a pessoa entende (o que e, por que "
+        "importa, como fazer, como interpretar, cuidados). Marque com ==...== "
+        "a parte final que fica em ciano. Ex.: 'O que o teste ==mede?=='.\n"
+        "- Texto curto, de fisioterapeuta para fisioterapeuta, frases "
+        "completas, portugues do Brasil com acentos. **negrito** so no "
+        "essencial. Sem emoji nos slides.\n"
+        "- Varie os tipos. 'numero' quando o fato tiver um numero forte; "
+        "'duas' para comparar dois valores; 'passos' para protocolo; 'fluxo' "
+        "para criterio em etapas; 'cards' ou 'lista' para itens; 'destaque' "
+        "para definicao.\n"
+        "- 'puxa' (opcional, ate 30 caracteres): provocacao para o proximo "
+        "slide, sem afirmar nada. Ex.: 'E como interpretar'.\n"
+        "- Proibido: sensacionalismo, promessa de resultado, preco, desconto, "
+        "Black Friday, falar da FisioSync nos slides.\n\n"
+        "TIPOS DE SLIDE E CAMPOS\n"
+        "- destaque: titulo, destaque (frase principal, ate 90), texto "
+        "(opcional, ate 190), card (opcional: {titulo, texto})\n"
+        "- numero: titulo, numero (ate 12, ex.: '+16%', '≤ 0,8 m/s', '150 "
+        "min'), texto (o que o numero significa, ate 190), card (opcional), "
+        "nota (opcional, ressalva, ate 150)\n"
+        "- cards: titulo, itens (2 ou 3 de {titulo ate 40, texto ate 170, "
+        "destaque: true opcional}), nota (opcional)\n"
+        "- lista: titulo, texto (opcional), itens (2 a 5 frases de ate 110), "
+        "nota (opcional)\n"
+        "- passos: titulo, itens (2 a 4 passos de ate 110), nota (opcional)\n"
+        "- duas: titulo, itens (exatamente 2 de {rotulo ate 12, valor ate 8, "
+        "unidade ate 5}), nota (opcional)\n"
+        "- fluxo: titulo, itens (2 ou 3 de {texto ate 110, selo ate 12}), "
+        "nota (opcional)\n"
+        + ("- veredito (SO no primeiro slide): veredito (exatamente "
+           f"'{pauta['veredito']}'), texto (por que, com o fato que decide, "
+           "ate 190), card (opcional)\n" if mito else "")
+        + "Todo slide tem tambem: tipo, fatos e, se quiser, puxa.\n\n"
+        "RESPONDA SOMENTE UM JSON:\n"
+        "{\n"
+        ' "secao": "rotulo curto do cabecalho, ex.: Avaliação funcional",\n'
+        ' "capa": {'
+        + ('"ilustracao": "..."}' if mito else
+           '"titulo": "o tema em ate 32 caracteres, com ==destaque==", '
+           '"promessa": ["2 ou 3 linhas curtas do que o carrossel entrega, '
+           'ex.: Como medir.", "..."], "ilustracao": "..."}')
+        + ",\n"
+        f' "slides": [{lo} a {hi} slides' + (", o primeiro do tipo veredito"
+                                             if mito else "") + "],\n"
+        ' "chamada_final": "pedido para salvar ou mandar a um colega, ate 45 '
+        'caracteres, com ==destaque==",\n'
+        ' "pergunta_final": "pergunta curta para os comentarios, ligada ao '
+        'tema, ate 60 caracteres",\n'
+        ' "legenda": "legenda do post"\n'
+        "}\n"
+        "ilustracao: uma de dinamometro, cronometro, cadeira, percurso, "
+        "haltere, coracao, coluna, documento, balanca, osso, aro, grafico, "
+        "alvo, ou vazio se nenhuma combinar.\n"
+        "LEGENDA: gancho na primeira linha (pergunta ou frase forte tirada "
+        "dos fatos); 2 ou 3 paragrafos curtos so com o que os fatos dizem; "
+        "uma linha 'Neste carrossel: ...'; '👉 Salve para consultar depois e "
+        "mande para um colega.'; '💬 ' e a pergunta final. NAO escreva "
+        "fontes, hashtags nem assinatura: o robo poe. Ate 1.200 caracteres."
+        + (f"\n\nATENCAO, a versao anterior foi recusada:\n{aviso}" if aviso else ""))
+
+
+def _legenda_aula(spec, pauta):
+    """Legenda da IA + fontes, assinatura e hashtags fixas do robo."""
+    linhas = [l for l in spec["legenda"].strip().split("\n")
+              if not l.strip().lower().startswith(
+                  ("fonte", "📚", "#", "conteúdo fisiosync", "conteudo fisiosync"))]
+    corpo = re.sub(r"\n{3,}", "\n\n", "\n".join(linhas)).strip()
+    fontes = "; ".join(dict.fromkeys(f["fonte"] for f in pauta["fatos"]
+                                     if f.get("fonte")))
+    tags = ["#fisioterapia", "#fisioterapeuta",
+            _HASHTAG_EIXO.get(pauta.get("eixo", ""), ""), "#FisioSync"]
+    return (f"{corpo}\n\n📚 Fontes: {fontes}. Referências completas no "
+            "penúltimo slide.\n\nConteúdo FisioSync. Teste grátis por 7 dias: "
+            "app.fisiosync.com.br\n\n" + " ".join(t for t in tags if t))
+
+
+def gerar_aula(cfg, pauta, estilo, base_feed, base_story):
+    """
+    Escreve, confere e monta o carrossel novo. Ate 3 tentativas; cada
+    recusa volta para a IA com o motivo. Devolve (spec, feed, story) ou
+    None se nada passar nas travas.
+    """
+    import aula
+    fatos_txt = "\n".join(f"{i}. {f['texto']}"
+                          for i, f in enumerate(pauta["fatos"], 1))
+    fontes_txt = "; ".join(dict.fromkeys(f["fonte"] for f in pauta["fatos"]))
+    aviso = ""
+    for tentativa in (1, 2, 3):
+        pedido = _pedido_aula(pauta, estilo, aviso)
+        bruto = None
+        if cfg.get("OPENAI_API_KEY"):
+            bruto = _openai_texto(cfg["OPENAI_API_KEY"], pedido)
+        if not bruto and cfg.get("GEMINI_API_KEY"):
+            bruto = _gemini_texto(cfg["GEMINI_API_KEY"], pedido)
+        spec = _extrair_json(bruto) if bruto else None
+        if not isinstance(spec, dict):
+            log(f"AVISO: a IA nao devolveu o carrossel (tentativa {tentativa}).")
+            aviso = "A resposta nao era o JSON pedido. Responda SOMENTE o JSON."
+            continue
+        if spec.get("legenda"):
+            spec["legenda"] = revisar_legenda(cfg, spec["legenda"])
+        problemas = aula.validar(spec, pauta, estilo) + _numeros_aula(spec, pauta)
+        if not problemas:
+            ok, probs = conferir_veracidade(
+                cfg, aula.para_revisao(spec, pauta, estilo), fatos_txt,
+                fontes_txt, pauta.get("observacao", ""),
+                "mito" if estilo == "mito" else "sabia")
+            if not ok:
+                problemas = [f"revisor de veracidade: {p}" for p in probs]
+        if problemas:
+            log(f"Carrossel {estilo}, tentativa {tentativa}: recusado.")
+            for p in problemas[:8]:
+                log(f"  - {p}")
+            aviso = "Corrija TODOS estes problemas:\n- " + "\n- ".join(problemas[:12])
+            continue
+        log("Revisao de veracidade do carrossel: APROVADO (tudo apoiado nos fatos).")
+        try:
+            feed, story = aula.montar(spec, pauta, estilo, base_feed, base_story)
+        except (layouts.TextoNaoCabe, aula.EspecInvalida) as falha:
+            log(f"AVISO: {falha}")
+            aviso = (f"O texto nao coube na arte ({falha}). Encurte esse slide "
+                     "e os textos mais longos.")
+            continue
+        return spec, feed, story
+    return None
+
+
+def _fluxo_aula(cfg, args, carimbo):
+    """
+    Post das 9h ("aula") ou das 15h ("mito") no formato novo. Devolve
+    False sem publicar nada quando nao ha pauta de varios fatos ou quando
+    o formato novo falha antes de publicar: o main segue no formato de
+    antes, e o post do dia nao se perde.
+    """
+    estilo = args.estilo
+    if args.pauta_json:
+        if not args.previa:
+            erro("--pauta-json e so para teste: use junto com --previa.")
+        with open(args.pauta_json, encoding="utf-8") as f:
+            p = json.load(f)
+        log(f"Pauta de teste: {p['tema']}")
+    else:
+        try:
+            p = PT.proxima_pauta(ler_historico(limite=500), log, formato=estilo)
+        except Exception as e:  # noqa: BLE001 - o post do dia nao pode cair
+            log(f"AVISO: nao consegui escolher a pauta do formato novo ({e}).")
+            p = None
+    if not p:
+        log(f"Sem pauta de varios fatos para o formato '{estilo}'. "
+            "Seguindo no formato de antes.")
+        return False
+    log(f"Formato novo ({estilo}): {p['tema']} "
+        f"({len(p.get('fatos') or [])} fatos conferidos)")
+    apelido = re.sub(r"[^a-z0-9]+", "-", p["tema"].lower())[:40].strip("-")
+    base_feed = os.path.join(PASTA_SAIDA, f"fisiosync_{apelido}_{estilo}")
+    try:
+        r = gerar_aula(cfg, p, estilo, base_feed, base_feed + "_story")
+    except Exception as e:  # noqa: BLE001 - Chrome que nao abre etc.
+        log(f"AVISO: o formato novo falhou ({type(e).__name__}: {e}). "
+            "Seguindo no formato de antes.")
+        return False
+    if not r:
+        log("AVISO: o carrossel novo nao passou nas travas em 3 tentativas. "
+            "Seguindo no formato de antes.")
+        return False
+    spec, feed, story = r
+    legenda = _legenda_aula(spec, p)
+    with open(os.path.join(PASTA_SAIDA, f"legenda-{carimbo}.txt"), "w",
+              encoding="utf-8") as f:
+        f.write(legenda + "\n\n----- slides -----\n"
+                + json.dumps(spec, ensure_ascii=False, indent=1))
+    log(f"Carrossel {estilo} montado: {len(feed)} imagens + story")
+    print("\n--- LEGENDA ---\n" + legenda + "\n---------------\n")
+
+    if args.previa:
+        print("PREVIA PRONTA. Nada foi publicado.")
+        for a in feed + [story]:
+            print("  " + a)
+        return True
+
+    if os.environ.get("FORCAR") != "1":
+        no_ar = feed_recente_no_instagram(cfg)
+        if no_ar:
+            erro(f"Outro processo publicou enquanto eu montava ({no_ar}). "
+                 "Nao publico duplicado.")
+    if not args.so_story:
+        links = [subir_para_github(cfg, a, f"feed-{carimbo}-{n}.jpg")
+                 for n, a in enumerate(feed, 1)]
+        publicar_carrossel(cfg, links, legenda)
+    if not args.so_feed:
+        link = subir_para_github(cfg, story, f"story-{carimbo}.jpg")
+        publicar(cfg, link, story=True)
+
+    capa = spec.get("capa") or {}
+    c = {"tema": p["tema"], "pauta": p["tema"], "eixo": p.get("eixo", ""),
+         "familia": p.get("familia", ""), "fonte": p.get("fonte", ""),
+         "apoio": spec.get("pergunta_final", ""),
+         "titulo": p.get("afirmacao") if estilo == "mito" else capa.get("titulo", ""),
+         "layout": f"carrossel-{estilo}", "estilo": estilo, "objetivo": "salvar"}
+    gravar_historico(registro_completo(c, p["tema"], feed + [story],
+                                       "publicado", estilo))
+    print("\n" + "=" * 56 + "\n  TUDO PUBLICADO COM SUCESSO\n" + "=" * 56)
+    return True
+
+
 def revisar_legenda(cfg, legenda):
     """
     Limpa a legenda e, se sobrar vicio de IA, pede UMA reescrita ao modelo.
@@ -1623,8 +1908,10 @@ def main():
                     help="arquivo .json com o briefing pronto da peca")
     ap.add_argument("--carrossel", action="store_true",
                     help="feed em carrossel: capa + slides do fato + fechamento")
-    ap.add_argument("--estilo", choices=["sabia", "mito"], default="sabia",
-                    help="carrossel 'Voce sabia?' (12h) ou 'Mito ou verdade?' (18h)")
+    ap.add_argument("--estilo", choices=["sabia", "mito", "aula"], default="sabia",
+                    help="carrossel 'aula' ou 'Voce sabia?' (9h), 'Mito ou verdade?' (15h)")
+    ap.add_argument("--pauta-json", default=None,
+                    help="so para teste com --previa: pauta de varios fatos num arquivo")
     ap.add_argument("--molde", action="store_true",
                     help="forca o modo molde (texto perfeito)")
     args = ap.parse_args()
@@ -1662,6 +1949,16 @@ def main():
             "Ainda nao publicada: seguindo.")
 
     atualizar_logo(cfg)
+
+    # Formato novo (08/11/2026): aula as 9h e mito as 15h, quando o banco
+    # tem pauta de varios fatos. Sem ela, ou se o formato novo falhar
+    # antes de publicar, segue tudo como antes.
+    if (args.carrossel and args.estilo in ("aula", "mito")
+            and not (args.brief or args.tema)):
+        if _fluxo_aula(cfg, args, carimbo):
+            return
+        if args.estilo == "aula":
+            args.estilo = "sabia"
 
     if args.brief:
         with open(args.brief, encoding="utf-8") as f:

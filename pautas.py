@@ -226,14 +226,28 @@ def assunto_repetido(texto, lista):
     return next((t for t in lista if semelhanca(texto, t) >= LIMITE_TEMA), None)
 
 
-def proxima_pauta(historico, log=print):
+FATOS_MINIMOS = {"aula": 4, "mito": 3}
+
+
+def proxima_pauta(historico, log=print, formato=None):
     """
     Escolhe a proxima pauta livre, evitando repetir o eixo dos ultimos
     dias, respeitando a mistura de familias e pulando o que ja foi feito.
+
+    formato="aula" ou "mito" (08/11/2026): so pautas de VARIOS fatos
+    conferidos feitas para o carrossel novo. Sem formato, so as pautas de
+    um fato (as de varios fatos ficam guardadas para o formato novo).
     """
     dados = carregar()
     livres = [p for p in dados["pautas"]
               if p.get("status") == "livre" and _tem_fato(p)]
+    if formato:
+        livres = [p for p in livres if p.get("formato") == formato
+                  and len(p.get("fatos") or []) >= FATOS_MINIMOS.get(formato, 3)]
+        if not livres:
+            return None
+    else:
+        livres = [p for p in livres if not p.get("formato")]
     if not livres:
         log("BANCO DE PAUTAS VAZIO. Nenhum tema novo disponivel.")
         return None
@@ -326,6 +340,9 @@ def situacao(log=print):
     for eixo in sorted({p["eixo"] for p in uteis}):
         n = sum(1 for p in livres if p["eixo"] == eixo)
         log(f"  {eixo}: {n} livres")
+    for formato in ("aula", "mito"):
+        n = sum(1 for p in livres if p.get("formato") == formato)
+        log(f"  carrossel novo '{formato}': {n} livres")
     if len(livres) <= 15:
         log("\nATENCAO: menos de 15 pautas livres. Hora de conferir fatos "
             "novos em fonte oficial antes que o robo fique sem tema.")

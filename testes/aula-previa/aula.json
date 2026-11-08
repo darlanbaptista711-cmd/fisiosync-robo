@@ -1,0 +1,59 @@
+{
+ "tema": "força de preensão palmar: como medir e interpretar",
+ "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+ "fatos": [
+  {
+   "texto": "A força de preensão é simples e barata de medir e é indicada para uso de rotina no hospital, em clínicas especializadas e na comunidade.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "A força de preensão serve como substituto confiável de medidas mais complicadas de força de braços e pernas.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "Medir com precisão exige dinamômetro manual calibrado e condições de teste bem definidas.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "O dinamômetro Jamar é validado e o mais usado para medir a força de preensão.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "No protocolo de Southampton, a força é medida três vezes em cada mão, com incentivo padronizado, e registra-se o maior valor, em kg.",
+   "fonte": "Roberts et al., Age and Ageing, 2014"
+  },
+  {
+   "texto": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "Força baixa indica sarcopenia provável; confirma-se com massa ou qualidade muscular baixa; com desempenho físico baixo, é grave.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "No estudo PURE (139.691 adultos de 17 países, mediana de 4 anos), cada 5 kg a menos de força se associou a 16% mais risco de morte por qualquer causa.",
+   "fonte": "Leong et al., The Lancet, 2015"
+  },
+  {
+   "texto": "Quando não dá para medir a preensão (artrite avançada, AVC), o consenso indica medir a força dos membros inferiores.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  },
+  {
+   "texto": "No teste de sentar e levantar, mais de 15 segundos para 5 repetições indica força baixa.",
+   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+  }
+ ],
+ "referencias": [
+  "Cruz-Jentoft AJ et al. Sarcopenia: revised European consensus on definition and diagnosis. Age and Ageing. 2019;48(1):16–31. doi:10.1093/ageing/afy169",
+  "Leong DP et al. Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study. The Lancet. 2015;386(9990):266–273. doi:10.1016/S0140-6736(14)62000-6",
+  "Roberts HC et al. A review of the measurement of grip strength in clinical and epidemiological studies: towards a standardised approach. Age and Ageing. 2011;40(4):423–429. doi:10.1093/ageing/afr051",
+  "Roberts HC et al. Grip strength and its determinants among older people in different healthcare settings. Age and Ageing. 2014;43(2):241–246. doi:10.1093/ageing/aft118"
+ ],
+ "formato": "aula",
+ "eixo": "avaliacao",
+ "familia": "conhecimento",
+ "fato": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
+ "interesse": "alto",
+ "status": "livre",
+ "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014)."
+}

@@ -1,0 +1,48 @@
+name: Previa do carrossel novo (nao publica)
+
+# Monta o carrossel "aula" e o "mito" com as pautas de teste de
+# testes/aula-previa/, exatamente como o robo faria, mas NAO publica.
+# As imagens e o log vao para o branch previa-aula.
+# Dispara sozinho quando muda algo em testes/aula-previa/.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [evolutionapi]
+    paths: ["testes/aula-previa/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  previa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow playwright
+      - run: python -m playwright install chromium
+      - name: Gerar sem publicar
+        env:
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p gerado
+          python postador.py --previa --carrossel --estilo aula --pauta-json testes/aula-previa/aula.json 2>&1 | tee gerado/log-aula.txt || true
+          python postador.py --previa --carrossel --estilo mito --pauta-json testes/aula-previa/mito.json 2>&1 | tee gerado/log-mito.txt || true
+      - name: Guardar no branch previa-aula
+        if: always()
+        run: |
+          git config user.name "FisioSync Robo"
+          git config user.email "robo@users.noreply.github.com"
+          git checkout -B previa-aula
+          git add -f gerado/
+          git commit -qm "previa do carrossel novo $(date -u +%F-%H%M)" || exit 0
+          git push -qf origin previa-aula
