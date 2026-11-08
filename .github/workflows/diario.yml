@@ -1,6 +1,6 @@
 name: Posts diarios da FisioSync
 
-# Desde 03/11/2026: 09:00 carrossel "Voce sabia?", 15:00 carrossel
+# Desde 03/11/2026: 09:00 carrossel (desde 08/11 no formato "aula"), 15:00 carrossel
 # "Mito ou verdade?" e 19:00 Reels, em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
 # consome 1 pauta de conhecimento conferida do banco.
 #
@@ -122,6 +122,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install requests pillow
+      - name: Chrome para o carrossel novo (se falhar, o robo usa o formato de antes)
+        continue-on-error: true
+        run: pip install playwright && python -m playwright install chromium
 
       - name: Esperar as 09:00
         id: relogio
@@ -136,8 +139,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # 9h carrossel "Voce sabia?"; 15h carrossel "Mito ou verdade?"
-        run: python postador.py --carrossel
+        # 9h carrossel "aula" (formato novo de 08/11/2026; sem pauta de
+        # varios fatos, sai o "Voce sabia?" de antes); 15h "Mito ou verdade?"
+        run: python postador.py --carrossel --estilo aula
 
       - name: Avisar se falhou
         if: failure()
@@ -183,6 +187,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install requests pillow
+      - name: Chrome para o carrossel novo (se falhar, o robo usa o formato de antes)
+        continue-on-error: true
+        run: pip install playwright && python -m playwright install chromium
 
       - name: Esperar as 15:00
         id: relogio
