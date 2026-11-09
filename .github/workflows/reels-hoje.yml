@@ -1,0 +1,50 @@
+name: Reels de hoje (avulso)
+
+# So a etapa do Reels da rodada diaria, respeitando o relogio: monta as
+# 18:45 e publica as 19:00, se o Reels de hoje ainda nao saiu. NUNCA
+# publica carrossel nem story: serve para trocar a etapa do Reels sem
+# arriscar post repetido no feed.
+#
+# Criado em 09/11/2026 para o Reels novo (o carrossel do dia em video)
+# valer ja no mesmo dia, no lugar de uma rodada que tinha o codigo antigo.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+# mesmo grupo da rodada diaria: as duas nunca rodam juntas
+concurrency:
+  group: post-diario
+  cancel-in-progress: false
+
+env:
+  FORCAR: "0"
+
+jobs:
+  reels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: ./.github/actions/reels
+        with:
+          formato: carrossel
+          etapa: reels
+          publicar_as: "19:00"
+          janela: noite
+          elevenlabs_key: ${{ secrets.ELEVENLABS_API_KEY }}
+          voice_id: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ig_user_id: ${{ secrets.IG_USER_ID }}
+          ig_token: ${{ secrets.IG_ACCESS_TOKEN }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          openai_key: ${{ secrets.OPENAI_API_KEY }}
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash aviso_falha.sh

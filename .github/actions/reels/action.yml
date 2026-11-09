@@ -45,6 +45,15 @@ runs:
     - shell: bash
       run: pip install --quiet requests pillow numpy scipy
 
+    - name: Instalar o ffmpeg antes de dormir
+      # O apt do runner as vezes demora: em 09/11/2026 levou 13 minutos.
+      # Instalando agora, na hora de montar (18:45) o video sai em segundos.
+      shell: bash
+      run: |
+        command -v ffmpeg >/dev/null && exit 0
+        { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; } \
+          || echo "ffmpeg nao instalou agora; tento de novo na hora de montar"
+
     - name: Esperar a hora de montar
       id: relogio
       shell: bash
@@ -93,7 +102,7 @@ runs:
         ROTEIRO: reels/roteiro-hoje.json
       run: |
         set -e
-        sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
         node reels/narrar.mjs
         python3 reels/musica.py
         ( cd remotion && bun install )
@@ -113,7 +122,7 @@ runs:
       shell: bash
       run: |
         set -e
-        sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
         git pull -q --rebase --autostash origin "$GITHUB_REF_NAME" || git pull -q origin "$GITHUB_REF_NAME" || true
         python3 reels/carrossel_video.py
 
