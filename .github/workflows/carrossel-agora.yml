@@ -1,0 +1,61 @@
+name: Carrossel agora (avulso)
+
+# Publica UM carrossel na hora, fora do relogio. Criado em 09/11/2026 para
+# refazer o post das 15h, que saiu como imagem unica porque a rodada do
+# dia ainda usava a chave antiga da OpenAI.
+#
+# Grupo de concorrencia proprio: nao espera nem atrapalha a rodada diaria.
+# Cada disparo e uma rodada nova, entao usa as chaves atuais do cofre.
+
+on:
+  workflow_dispatch:
+    inputs:
+      estilo:
+        description: "mito (o das 15h) ou aula (o das 9h)"
+        type: choice
+        options: [mito, aula]
+        default: mito
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: carrossel-agora
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - name: Chrome para o carrossel novo (se falhar, o robo usa o formato de antes)
+        continue-on-error: true
+        run: pip install playwright && python -m playwright install chromium
+
+      - name: Gerar e publicar
+        env:
+          FORCAR: "1"
+          ID: ${{ secrets.IG_USER_ID }}
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python postador.py --carrossel --estilo ${{ inputs.estilo }}
+
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash aviso_falha.sh
+
+      - name: Guardar historico e pautas
+        run: bash guardar.sh
