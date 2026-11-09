@@ -572,5 +572,36 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-09",
+  "janela": "tarde",
+  "tema": "frequência cardíaca máxima e a fórmula 220 − idade",
+  "pauta": "frequência cardíaca máxima e a fórmula 220 − idade",
+  "eixo": "exercicio-saude",
+  "familia": "conhecimento",
+  "fonte": "Robergs & Landwehr, J Exerc Physiol Online, 2002",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Você usa equações para estimar a FCmáx?",
+  "chamada": "FC máxima = 220 − idade é a fórmula exata",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_01.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_02.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_03.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_04.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_05.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_06.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_07.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_08.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_09.jpg",
+   "fisiosync_frequ-ncia-card-aca-m-xima-e-a-f-rmula-2_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
