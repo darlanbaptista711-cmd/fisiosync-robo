@@ -1,62 +1,69 @@
 {
- "tema": "força de preensão palmar: como medir e interpretar",
- "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019",
+ "id": "mito-dor-sempre-e-lesao",
+ "eixo": "evidencia",
+ "familia": "conhecimento",
+ "formato": "mito",
+ "afirmacao": "Dor sempre significa lesão no tecido",
+ "veredito": "Mito",
+ "tema": "dor, nocicepção e lesão: a definição de dor da IASP",
+ "fato": "Segundo a IASP (2020), dor e nocicepção são fenômenos diferentes: a dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.",
+ "fonte": "IASP, definição revisada de dor, 2020",
+ "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/",
  "fatos": [
   {
-   "texto": "A força de preensão é simples e barata de medir e é indicada para uso de rotina no hospital, em clínicas especializadas e na comunidade.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "Em 2020, a IASP revisou a definição de dor pela primeira vez desde 1979.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "For the first time since 1979, IASP introduced a revised definition of pain",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "A força de preensão serve como substituto confiável de medidas mais complicadas de força de braços e pernas.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "Pela nova definição, dor é uma experiência sensitiva e emocional desagradável associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "Medir com precisão exige dinamômetro manual calibrado e condições de teste bem definidas.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "Dor e nocicepção são fenômenos diferentes: a dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "O dinamômetro Jamar é validado e o mais usado para medir a força de preensão.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "A dor é sempre uma experiência pessoal, influenciada em graus variados por fatores biológicos, psicológicos e sociais.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "No protocolo de Southampton, a força é medida três vezes em cada mão, com incentivo padronizado, e registra-se o maior valor, em kg.",
-   "fonte": "Roberts et al., Age and Ageing, 2014"
+   "texto": "O relato de uma pessoa de que sente dor deve ser respeitado.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "A person's report of an experience as pain should be respected.",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "Pontos de corte do EWGSOP2 para força baixa: preensão < 27 kg em homens e < 16 kg em mulheres.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "Embora a dor geralmente tenha papel adaptativo, ela pode ter efeitos adversos sobre a função e o bem-estar social e psicológico.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "trecho_original": "Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
   },
   {
-   "texto": "Força baixa indica sarcopenia provável; confirma-se com massa ou qualidade muscular baixa; com desempenho físico baixo, é grave.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "Achados de artrose na ressonância são comuns em joelhos sem sintomas e sem lesão: em meta-análise de 63 estudos (4.751 adultos), houve defeito de cartilagem em 11% abaixo dos 40 anos e em 43% a partir dos 40.",
+   "fonte": "Culvenor et al., Br J Sports Med, 2019",
+   "trecho_original": "to provide summary estimates of the prevalence of MRI features of osteoarthritis in asymptomatic uninjured knees [...] We included 63 studies (5397 knees of 4751 adults). [...] cartilage defect <40 years 11% (6% to 17%) and ≥40 years 43% (29% to 57%)",
+   "url": "https://www.pubmed.gov/29886437/"
   },
   {
-   "texto": "No estudo PURE (139.691 adultos de 17 países, mediana de 4 anos), cada 5 kg a menos de força se associou a 16% mais risco de morte por qualquer causa.",
-   "fonte": "Leong et al., The Lancet, 2015"
-  },
-  {
-   "texto": "Quando não dá para medir a preensão (artrite avançada, AVC), o consenso indica medir a força dos membros inferiores.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
-  },
-  {
-   "texto": "No teste de sentar e levantar, mais de 15 segundos para 5 repetições indica força baixa.",
-   "fonte": "Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019"
+   "texto": "No mesmo estudo, ruptura de menisco apareceu em 4% dos joelhos sem sintomas abaixo dos 40 anos e em 19% a partir dos 40; os autores pedem que os achados sejam interpretados junto com o quadro clínico.",
+   "fonte": "Culvenor et al., Br J Sports Med, 2019",
+   "trecho_original": "meniscal tear <40 years 4% (2% to 7%) and ≥40 years 19% (13% to 26%) [...] should be interpreted in the context of clinical presentations and considered in clinical decision-making",
+   "url": "https://www.pubmed.gov/29886437/"
   }
  ],
  "referencias": [
-  "Cruz-Jentoft AJ et al. Sarcopenia: revised European consensus on definition and diagnosis. Age and Ageing. 2019;48(1):16–31. doi:10.1093/ageing/afy169",
-  "Leong DP et al. Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study. The Lancet. 2015;386(9990):266–273. doi:10.1016/S0140-6736(14)62000-6",
-  "Roberts HC et al. A review of the measurement of grip strength in clinical and epidemiological studies: towards a standardised approach. Age and Ageing. 2011;40(4):423–429. doi:10.1093/ageing/afr051",
-  "Roberts HC et al. Grip strength and its determinants among older people in different healthcare settings. Age and Ageing. 2014;43(2):241–246. doi:10.1093/ageing/aft118"
+  "Raja SN, Carr DB, Cohen M, Finnerup NB, Flor H, Gibson S, et al. The revised International Association for the Study of Pain definition of pain: concepts, challenges, and compromises. Pain. 2020;161(9):1976-82. doi:10.1097/j.pain.0000000000001939",
+  "Culvenor AG, Øiestad BE, Hart HF, Stefanik JJ, Guermazi A, Crossley KM. Prevalence of knee osteoarthritis features on magnetic resonance imaging in asymptomatic uninjured adults: a systematic review and meta-analysis. Br J Sports Med. 2019;53(20):1268-78. doi:10.1136/bjsports-2018-099257"
  ],
- "afirmacao": "Força baixa já confirma sarcopenia",
- "veredito": "Mito",
- "formato": "mito",
- "eixo": "avaliacao",
- "familia": "conhecimento",
- "fato": "Força baixa indica sarcopenia provável; confirma-se com massa ou qualidade muscular baixa; com desempenho físico baixo, é grave.",
  "interesse": "alto",
  "status": "livre",
- "observacao": "Pauta de TESTE (previa no GitHub). Fatos conferidos em 08/11/2026: EWGSOP2 (PMC6322506, Tabelas 1 e 3), PURE (Lancet 2015, resumo), Southampton (Age Ageing 2011 e 2014).",
- "rodada_de_teste": "2026-11-08T04:51"
+ "observacao": "Veredito 'Mito' decidido pelas fontes: a definição da IASP fala em dor 'associada, ou semelhante àquela associada' a lesão real ou POTENCIAL, e a nota 2 separa dor de nocicepção. NÃO dizer que a dor 'é psicológica', 'está na cabeça' ou 'não tem relação com o tecido': a definição inclui fatores biológicos e a dor pode vir com lesão; o mito é o 'sempre'. Não dizer que achados de exame 'não importam': Culvenor pede interpretação junto com o quadro clínico. Os números de Culvenor são de joelhos SEM sintomas e SEM lesão prévia. Definição e notas lidas no anúncio oficial da IASP; Culvenor no resumo do PubMed. Não usados: notas 3 (aprendizado do conceito de dor) e 6 (descrição verbal), e prevalências de lesão de medula óssea (18%) e osteófitos (25%)."
 }

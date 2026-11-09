@@ -3157,6 +3157,495 @@
    "interesse": "alto",
    "status": "livre",
    "observacao": "Guralnik 1994: lido o resumo na página da editora (OUP); o PDF completo não abriu, então nenhuma faixa de tempo vem do artigo de 1994. No original a marcha era de 8 pés (≈2,4 m é conversão nossa); as faixas de tempo daqui são da ficha do NIA para percurso de 4 m, reproduzida no PhenX Toolkit (que cita Guralnik/NIA, 2013). A ficha tem outras faixas para 3 m: não misturar. Pontuação geral (0 a 4 por componente, máximo 12) e equilíbrio conferidos no Manual de Procedimentos do LIFE Study (NIA Aging Research Biobank, cap. 16, v5.0, 2013), coerente com o PhenX; no PhenX a linha de 1 ponto do tandem aparece como 'Not held for 3 to 9.99 sec' (provável erro de digitação), por isso o equilíbrio vem do LIFE. O manual do LIFE também manda cruzar os braços no peito no levantar da cadeira. EWGSOP2 lido no texto completo da OUP (o original escreve '≤ 8', com espaço). A predição de mortalidade e de admissão em ILPI (nursing home) vem de coorte (preditores independentes em análise multivariada, junto com itens autorrelatados): é associação/predição, não dizer que melhorar o SPPB reduz mortalidade. 'Mesmo em quem relatava quase nenhuma incapacidade' = nesse grupo, os escores distinguiram um gradiente de risco. Fora do carrossel (verificado, não incluído): no EWGSOP2, baixo desempenho físico somado a baixa força e baixa quantidade/qualidade muscular caracteriza sarcopenia grave ('If Criteria 1, 2 and 3 are all met, sarcopenia is considered severe.'). Nos trechos, ' | ' marca quebra de linha da ficha e '[…]' marca corte."
+  },
+  {
+   "id": "mito-10-mil-passos",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Só 10 mil passos por dia trazem benefício",
+   "veredito": "Mito",
+   "tema": "a meta de 10 mil passos por dia e o risco de morte",
+   "fato": "Em meta-análise de 15 coortes, a queda do risco de morte se estabilizou por volta de 6.000 a 8.000 passos por dia em quem tem 60 anos ou mais, e de 8.000 a 10.000 abaixo dos 60.",
+   "fonte": "Paluch et al., Lancet Public Health, 2022",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/",
+   "fatos": [
+    {
+     "texto": "A meta de 10 mil passos por dia é muito divulgada, mas há pouca evidência que a sustente.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "Although 10 000 steps per day is widely promoted to have health benefits [...] there is little evidence to support this recommendation.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "O número provavelmente vem do nome comercial de um pedômetro vendido em 1965 no Japão, o Manpo-kei, que significa “medidor de 10 mil passos”.",
+     "fonte": "Lee et al., JAMA Intern Med, 2019",
+     "trecho_original": "However, the origin of the goal of 10 000 steps per day is unclear. It likely derives from the trade name of a pedometer sold in 1965 by Yamasa Clock and Instrument Company in Japan called Manpo-kei, which translates to “10 000 steps meter” in Japanese.",
+     "url": "https://whish.stanford.edu/wp-content/uploads/2019/10/Step-Volume-Intensity-Mortality_JAMA-IntMedicine-2019-.pdf"
+    },
+    {
+     "texto": "Uma meta-análise de 15 coortes reuniu 47.471 adultos, com 3.013 mortes em mediana de 7,1 anos de acompanhamento.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "We identified 15 studies, of which seven were published and eight were unpublished [...] 47 471 adults, among whom there were 3013 deaths (10·1 per 1000 participant-years) over a median follow-up of 7·1 years",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "Mais passos por dia se associaram a risco de morte progressivamente menor, mas só até um ponto, que variou com a idade.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "Taking more steps per day was associated with a progressively lower risk of all-cause mortality, up to a level [...]",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "Em adultos com 60 anos ou mais, a queda do risco se estabilizou por volta de 6.000 a 8.000 passos por dia.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "among adults aged 60 years and older with increasing number of steps per day until 6000-8000 steps per day",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "Em adultos com menos de 60 anos, a estabilização veio por volta de 8.000 a 10.000 passos por dia.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "among adults younger than 60 years until 8000-10 000 steps per day",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "Comparado ao quartil com menos passos (mediana de 3.553 por dia), o risco de morte foi 40% menor com mediana de 5.801 passos, 45% menor com 7.842 e 53% menor com 10.901.",
+     "fonte": "Paluch et al., Lancet Public Health, 2022",
+     "trecho_original": "Quartile median steps per day were 3553 for quartile 1, 5801 for quartile 2, 7842 for quartile 3, and 10 901 for quartile 4. [...] the adjusted HR for all-cause mortality was 0·60 (95% CI 0·51-0·71) for quartile 2, 0·55 (0·49-0·62) for quartile 3, and 0·47 (0·39-0·57) for quartile 4",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+    },
+    {
+     "texto": "Em 16.741 mulheres idosas (média de 72 anos), cerca de 4.400 passos por dia já se associaram a menor mortalidade que cerca de 2.700; a queda se estabilizou perto de 7.500 passos.",
+     "fonte": "Lee et al., JAMA Intern Med, 2019",
+     "trecho_original": "Of the 16 741 women who met inclusion criteria, the mean (SD) age was 72.0 (5.7) years [...] as few as approximately 4400 steps/d was significantly related to lower mortality rates [...] compared with approximately 2700 steps/d. With more steps per day, mortality rates progressively decreased before leveling at approximately 7500 steps/d.",
+     "url": "https://whish.stanford.edu/wp-content/uploads/2019/10/Step-Volume-Intensity-Mortality_JAMA-IntMedicine-2019-.pdf"
+    }
+   ],
+   "referencias": [
+    "Paluch AE, Bajpai S, Bassett DR, Carnethon MR, Ekelund U, Evenson KR, et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health. 2022;7(3):e219-28. doi:10.1016/S2468-2667(21)00302-9",
+    "Lee IM, Shiroma EJ, Kamada M, Bassett DR, Matthews CE, Buring JE. Association of step volume and intensity with all-cause mortality in older women. JAMA Intern Med. 2019;179(8):1105-12. doi:10.1001/jamainternmed.2019.0899"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: em Paluch (2022) o benefício cresce com os passos e se estabiliza ABAIXO de 10 mil a partir dos 60 anos (6.000 a 8.000) e entre 8.000 e 10.000 abaixo dos 60; em Lee (2019) cerca de 4.400 passos já se associaram a menor mortalidade. São estudos observacionais: dizer 'associado a menor risco de morte', nunca 'passos fazem viver mais' nem 'garantem'. Não dizer que 10 mil passos não servem ou fazem mal: o mito é achar que só a partir de 10 mil há benefício. Lee (2019) estudou só mulheres idosas (média de 72 anos). As porcentagens de risco menor vêm das razões de risco ajustadas por quartil (0,60; 0,55; 0,47). Paluch lido no resumo do PubMed; Lee no PDF do artigo (site do estudo WHISH, Stanford). Não usado: a intensidade (cadência) perdeu força depois de considerar o total de passos."
+  },
+  {
+   "id": "mito-gestante-exercicio",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Gestante deve evitar exercício físico",
+   "veredito": "Mito",
+   "tema": "exercício físico na gestação e no pós-parto",
+   "fato": "A OMS (2020) recomenda que toda gestante e puérpera sem contraindicação faça atividade física regular, com pelo menos 150 minutos semanais de atividade aeróbica moderada.",
+   "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+   "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf",
+   "fatos": [
+    {
+     "texto": "A OMS recomenda que toda gestante e puérpera sem contraindicação faça atividade física regular durante a gestação e o pós-parto (recomendação forte).",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "all pregnant and postpartum women without contraindication should: undertake regular physical activity throughout pregnancy and post partum; [...] Strong recommendation",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "A meta da OMS é de pelo menos 150 minutos por semana de atividade aeróbica de intensidade moderada.",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "do at least 150 min of moderate-intensity aerobic physical activity throughout the week",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "A OMS orienta incluir atividades aeróbicas e de fortalecimento muscular; acrescentar alongamento leve também pode ser benéfico.",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "incorporate a variety of aerobic and muscle-strengthening activities. Adding gentle stretching may also be beneficial.",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "Quem já fazia atividade aeróbica vigorosa ou era fisicamente ativa antes da gestação pode continuar durante a gestação e o pós-parto.",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "Women who, before pregnancy, habitually engaged in vigorous-intensity aerobic activity or who were physically active can continue these activities during pregnancy and the postpartum period.",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "Segundo a OMS, a atividade física na gestação reduz o risco de pré-eclâmpsia, hipertensão gestacional, diabetes gestacional, ganho de peso excessivo, complicações no parto e depressão pós-parto.",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "confers benefits for the following maternal and fetal health outcomes: reduced risk of preeclampsia, gestational hypertension, gestational diabetes, excessive gestational weight gain, delivery complications and postpartum depression",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "E não aumenta o risco de natimorto nem de complicações no recém-nascido, sem efeitos adversos sobre o peso ao nascer.",
+     "fonte": "OMS 2020, em Bull et al., Br J Sports Med, 2020",
+     "trecho_original": "and no increase in risk of stillbirth, newborn complications or adverse effects on birth weight",
+     "url": "https://chiro.org/Graphics_Box_RESEARCH/GRAPHICS_20/THE_ROLE/WHO_2020_Guidelines_on_Physical_Activity_and_Sedentary_Behaviour.pdf"
+    },
+    {
+     "texto": "A diretriz canadense de 2019 pede pelo menos 150 minutos semanais de atividade moderada, distribuídos em no mínimo três dias, com variedade de aeróbico e treino resistido.",
+     "fonte": "Diretriz canadense de atividade física na gestação (Mottola et al.), 2019",
+     "trecho_original": "should accumulate at least 150 minutes of moderate-intensity physical activity each week [...] should be accumulated over a minimum of three days per week [...] Pregnant women should incorporate a variety of aerobic and resistance training activities to achieve greater benefits.",
+     "url": "https://www.gov.nl.ca/tcar/files/Canadian-Guideline-for-Physical-Activity-Throughout-Pregnancy.pdf"
+    },
+    {
+     "texto": "O treino dos músculos do assoalho pélvico (por exemplo, exercícios de Kegel) pode ser feito diariamente para reduzir o risco de incontinência urinária.",
+     "fonte": "Diretriz canadense de atividade física na gestação (Mottola et al.), 2019",
+     "trecho_original": "Pelvic floor muscle training (e.g., Kegel exercises) may be performed on a daily basis to reduce the risk of urinary incontinence.",
+     "url": "https://www.gov.nl.ca/tcar/files/Canadian-Guideline-for-Physical-Activity-Throughout-Pregnancy.pdf"
+    },
+    {
+     "texto": "Gestantes que sentem tontura, náusea ou mal-estar ao se exercitar deitadas de barriga para cima devem mudar a posição e evitar o decúbito dorsal.",
+     "fonte": "Diretriz canadense de atividade física na gestação (Mottola et al.), 2019",
+     "trecho_original": "Pregnant women who experience lightheadedness, nausea or feel unwell when they exercise flat on their back should modify their exercise position to avoid the supine position.",
+     "url": "https://www.gov.nl.ca/tcar/files/Canadian-Guideline-for-Physical-Activity-Throughout-Pregnancy.pdf"
+    }
+   ],
+   "referencias": [
+    "World Health Organization. WHO guidelines on physical activity and sedentary behaviour. Geneva: World Health Organization; 2020. ISBN 978-92-4-001512-8. Disponível em: https://iris.who.int/handle/10665/336656",
+    "Bull FC, Al-Ansari SS, Biddle S, Borodulin K, Buman MP, Cardon G, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. Br J Sports Med. 2020;54(24):1451-62. doi:10.1136/bjsports-2020-102955",
+    "Mottola MF, Davenport MH, Ruchat SM, Davies GA, Poitras VJ, Gray CE, et al. 2019 Canadian guideline for physical activity throughout pregnancy. Br J Sports Med. 2018;52(21):1339-46. doi:10.1136/bjsports-2018-100056"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: OMS 2020 (recomendação forte) e diretriz canadense de 2019. Vale para gestantes SEM contraindicação: a diretriz canadense lista contraindicações absolutas e relativas (não detalhadas nos fatos), então nunca escrever 'toda gestante pode' sem 'sem contraindicação', e não prescrever nada além dos fatos (nada de frequência cardíaca-alvo, cargas ou esportes específicos). Os benefícios são de risco reduzido, não garantia. Texto da OMS lido no PDF do artigo da BJSM que apresenta as diretrizes (Bull et al., 2020), cópia em chiro.org; diretriz canadense lida no PDF publicado pelo governo de Terra Nova e Labrador. Não usados: a orientação da OMS de limitar o tempo sedentário e a lista de contraindicações."
+  },
+  {
+   "id": "mito-dor-sempre-e-lesao",
+   "eixo": "evidencia",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Dor sempre significa lesão no tecido",
+   "veredito": "Mito",
+   "tema": "dor, nocicepção e lesão: a definição de dor da IASP",
+   "fato": "Segundo a IASP (2020), dor e nocicepção são fenômenos diferentes: a dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.",
+   "fonte": "IASP, definição revisada de dor, 2020",
+   "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/",
+   "fatos": [
+    {
+     "texto": "Em 2020, a IASP revisou a definição de dor pela primeira vez desde 1979.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "For the first time since 1979, IASP introduced a revised definition of pain",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "Pela nova definição, dor é uma experiência sensitiva e emocional desagradável associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "Dor e nocicepção são fenômenos diferentes: a dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "Pain and nociception are different phenomena. Pain cannot be inferred solely from activity in sensory neurons.",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "A dor é sempre uma experiência pessoal, influenciada em graus variados por fatores biológicos, psicológicos e sociais.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "Pain is always a personal experience that is influenced to varying degrees by biological, psychological, and social factors.",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "O relato de uma pessoa de que sente dor deve ser respeitado.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "A person's report of an experience as pain should be respected.",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "Embora a dor geralmente tenha papel adaptativo, ela pode ter efeitos adversos sobre a função e o bem-estar social e psicológico.",
+     "fonte": "IASP, definição revisada de dor, 2020",
+     "trecho_original": "Although pain usually serves an adaptive role, it may have adverse effects on function and social and psychological well-being.",
+     "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+    },
+    {
+     "texto": "Achados de artrose na ressonância são comuns em joelhos sem sintomas e sem lesão: em meta-análise de 63 estudos (4.751 adultos), houve defeito de cartilagem em 11% abaixo dos 40 anos e em 43% a partir dos 40.",
+     "fonte": "Culvenor et al., Br J Sports Med, 2019",
+     "trecho_original": "to provide summary estimates of the prevalence of MRI features of osteoarthritis in asymptomatic uninjured knees [...] We included 63 studies (5397 knees of 4751 adults). [...] cartilage defect <40 years 11% (6% to 17%) and ≥40 years 43% (29% to 57%)",
+     "url": "https://www.pubmed.gov/29886437/"
+    },
+    {
+     "texto": "No mesmo estudo, ruptura de menisco apareceu em 4% dos joelhos sem sintomas abaixo dos 40 anos e em 19% a partir dos 40; os autores pedem que os achados sejam interpretados junto com o quadro clínico.",
+     "fonte": "Culvenor et al., Br J Sports Med, 2019",
+     "trecho_original": "meniscal tear <40 years 4% (2% to 7%) and ≥40 years 19% (13% to 26%) [...] should be interpreted in the context of clinical presentations and considered in clinical decision-making",
+     "url": "https://www.pubmed.gov/29886437/"
+    }
+   ],
+   "referencias": [
+    "Raja SN, Carr DB, Cohen M, Finnerup NB, Flor H, Gibson S, et al. The revised International Association for the Study of Pain definition of pain: concepts, challenges, and compromises. Pain. 2020;161(9):1976-82. doi:10.1097/j.pain.0000000000001939",
+    "Culvenor AG, Øiestad BE, Hart HF, Stefanik JJ, Guermazi A, Crossley KM. Prevalence of knee osteoarthritis features on magnetic resonance imaging in asymptomatic uninjured adults: a systematic review and meta-analysis. Br J Sports Med. 2019;53(20):1268-78. doi:10.1136/bjsports-2018-099257"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: a definição da IASP fala em dor 'associada, ou semelhante àquela associada' a lesão real ou POTENCIAL, e a nota 2 separa dor de nocicepção. NÃO dizer que a dor 'é psicológica', 'está na cabeça' ou 'não tem relação com o tecido': a definição inclui fatores biológicos e a dor pode vir com lesão; o mito é o 'sempre'. Não dizer que achados de exame 'não importam': Culvenor pede interpretação junto com o quadro clínico. Os números de Culvenor são de joelhos SEM sintomas e SEM lesão prévia. Definição e notas lidas no anúncio oficial da IASP; Culvenor no resumo do PubMed. Não usados: notas 3 (aprendizado do conceito de dor) e 6 (descrição verbal), e prevalências de lesão de medula óssea (18%) e osteófitos (25%)."
+  },
+  {
+   "id": "mito-musculacao-tira-flexibilidade",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Musculação tira a flexibilidade",
+   "veredito": "Mito",
+   "tema": "musculação, alongamento e flexibilidade",
+   "fato": "Meta-análise de 55 estudos mostrou que o treino de força aumenta a amplitude de movimento, sem diferença significativa em relação ao treino de alongamento.",
+   "fonte": "Alizadeh et al., Sports Med, 2023",
+   "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button",
+   "fatos": [
+    {
+     "texto": "Uma revisão sistemática com meta-análise incluiu 55 estudos e 2.756 participantes, com média de 23,9 anos.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "Therefore, in total, 55 papers were included in this systematic review and meta-analysis. [...] In summary, 2756 participants with a mean age of 23.9±6.3 years",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "O treino de força aumentou a amplitude de movimento.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "Resistance training increased range of motion (effect size [ES]=0.73; p<0.001)",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "Não houve diferença significativa entre o treino de força e o treino de alongamento nos ganhos de amplitude.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "There were no significant differences between resistance training versus stretch training (ES=0.08; p=0.79)",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "Pessoas destreinadas e sedentárias tiveram ganhos de amplitude significativamente maiores.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "“untrained and sedentary” individuals had significantly (p=0.005) higher magnitude range of motion changes",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "A exceção foi o treino só com o peso do corpo, que não melhorou significativamente a amplitude.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "with the exception of no significant range of motion improvement with resistance training using only body mass.",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "Para os autores, como o treino de força com carga externa melhora a amplitude, alongar antes ou depois dele pode não ser necessário; o alongamento ainda pode ser defendido como parte do treino.",
+     "fonte": "Alizadeh et al., Sports Med, 2023",
+     "trecho_original": "As RT with external loads can improve ROM, additional stretching prior to or after RT may not be necessary [...] can still be advocated as a fitness and training component for much of the population",
+     "url": "https://link.springer.com/content/pdf/10.1007/s40279-022-01804-x.pdf?pdf=button"
+    },
+    {
+     "texto": "Outra meta-análise, só com ensaios clínicos randomizados (11 estudos, 452 participantes), também não encontrou diferença entre força e alongamento na amplitude de movimento.",
+     "fonte": "Afonso et al., Healthcare, 2021",
+     "trecho_original": "Eleven articles (n = 452 participants) were included. [...] ST and stretching were not different in their effects on ROM",
+     "url": "https://estudogeral.sib.uc.pt/bitstream/10316/104612/1/Strength-training-versus-stretching-for-improving-range-of-motion-A-systematic-review-and-metaanalysisHealthcare-Switzerland.pdf"
+    },
+    {
+     "texto": "Nessa meta-análise, as análises por risco de viés e por amplitude ativa ou passiva também não mostraram diferença entre os protocolos.",
+     "fonte": "Afonso et al., Healthcare, 2021",
+     "trecho_original": "Sub-group analyses based on risk of bias, active vs. passive ROM [...] showed no between-protocol differences in ROM gains",
+     "url": "https://estudogeral.sib.uc.pt/bitstream/10316/104612/1/Strength-training-versus-stretching-for-improving-range-of-motion-A-systematic-review-and-metaanalysisHealthcare-Switzerland.pdf"
+    }
+   ],
+   "referencias": [
+    "Alizadeh S, Daneshjoo A, Zahiri A, et al. Resistance training induces improvements in range of motion: a systematic review and meta-analysis. Sports Med. 2023;53:707-22. doi:10.1007/s40279-022-01804-x",
+    "Afonso J, Ramirez-Campillo R, Moscão J, et al. Strength training versus stretching for improving range of motion: a systematic review and meta-analysis. Healthcare (Basel). 2021;9(4):427. doi:10.3390/healthcare9040427"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: duas meta-análises (Alizadeh 2023; Afonso 2021) acharam ganho de amplitude com treino de força e nenhuma diferença significativa contra o alongamento. Os participantes de Alizadeh tinham em média 23,9 anos: não estender a idosos nem a condições clínicas. Não dizer que alongamento 'não serve' ou 'é inútil': os autores dizem que ele ainda pode ser defendido. O treino só com o peso do corpo não melhorou significativamente a amplitude. Não usar tamanho de efeito nem valor de p nos slides. Alizadeh lido no PDF de acesso aberto da Springer (o PDF perde as ligaduras 'ff' e 'fi', repostas nos trechos); Afonso no PDF do repositório da Universidade de Coimbra."
+  },
+  {
+   "id": "mito-artrose-joelho-evitar-exercicio",
+   "eixo": "evidencia",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Quem tem artrose no joelho deve evitar exercício",
+   "veredito": "Mito",
+   "tema": "exercício terapêutico na artrose de joelho",
+   "fato": "A diretriz do NICE (2022) recomenda oferecer exercício terapêutico, adaptado às necessidades, a todas as pessoas com artrose.",
+   "fonte": "NICE, diretriz NG226 (artrose), 2022",
+   "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations",
+   "fatos": [
+    {
+     "texto": "A diretriz do NICE recomenda oferecer exercício terapêutico adaptado às necessidades a todas as pessoas com artrose (por exemplo, fortalecimento muscular local e condicionamento aeróbico geral).",
+     "fonte": "NICE, diretriz NG226 (artrose), 2022",
+     "trecho_original": "For all people with osteoarthritis, offer therapeutic exercise tailored to their needs (for example, local muscle strengthening, general aerobic fitness).",
+     "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations"
+    },
+    {
+     "texto": "O NICE orienta considerar sessões de exercício terapêutico supervisionado.",
+     "fonte": "NICE, diretriz NG226 (artrose), 2022",
+     "trecho_original": "Consider supervised therapeutic exercise sessions for people with osteoarthritis.",
+     "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations"
+    },
+    {
+     "texto": "A dor articular pode aumentar quando a pessoa começa o exercício terapêutico, e isso deve ser explicado: a adesão a longo prazo aumenta os benefícios, reduzindo a dor.",
+     "fonte": "NICE, diretriz NG226 (artrose), 2022",
+     "trecho_original": "Advise people with osteoarthritis that joint pain may increase when they start therapeutic exercise. Explain that: [...] long-term adherence to an exercise plan increases its benefits by reducing pain",
+     "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations"
+    },
+    {
+     "texto": "O NICE recomenda não oferecer lavagem ou desbridamento artroscópico a pessoas com artrose.",
+     "fonte": "NICE, diretriz NG226 (artrose), 2022",
+     "trecho_original": "Do not offer arthroscopic lavage or debridement to people with osteoarthritis.",
+     "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations"
+    },
+    {
+     "texto": "Uma revisão Cochrane de 2024 reuniu 139 ensaios clínicos com 12.468 participantes com artrose de joelho.",
+     "fonte": "Lawford et al., Cochrane Database Syst Rev, 2024",
+     "trecho_original": "We included 139 trials (12,468 participants)",
+     "url": "https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004376.pub4/pdf/CDSR/CD004376/CD004376_abstract.pdf"
+    },
+    {
+     "texto": "O exercício provavelmente melhora a função física (evidência de certeza moderada).",
+     "fonte": "Lawford et al., Cochrane Database Syst Rev, 2024",
+     "trecho_original": "Moderate-certainty evidence indicates exercise likely results in an improvement in physical function",
+     "url": "https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004376.pub4/pdf/CDSR/CD004376/CD004376_abstract.pdf"
+    },
+    {
+     "texto": "Logo após o tratamento, o exercício pode trazer pequena melhora da dor (evidência de certeza baixa).",
+     "fonte": "Lawford et al., Cochrane Database Syst Rev, 2024",
+     "trecho_original": "low-certainty evidence indicates exercise may result in a slight improvement in pain immediately post-intervention",
+     "url": "https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004376.pub4/pdf/CDSR/CD004376/CD004376_abstract.pdf"
+    },
+    {
+     "texto": "O exercício pode não aumentar os eventos adversos (evidência de certeza baixa).",
+     "fonte": "Lawford et al., Cochrane Database Syst Rev, 2024",
+     "trecho_original": "There was low-certainty evidence that exercise may not increase adverse events",
+     "url": "https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004376.pub4/pdf/CDSR/CD004376/CD004376_abstract.pdf"
+    }
+   ],
+   "referencias": [
+    "National Institute for Health and Care Excellence. Osteoarthritis in over 16s: diagnosis and management. NICE guideline NG226. London: NICE; 2022. Disponível em: https://www.nice.org.uk/guidance/ng226",
+    "Lawford BJ, Hall M, Hinman RS, et al. Exercise for osteoarthritis of the knee. Cochrane Database Syst Rev. 2024;12:CD004376. doi:10.1002/14651858.CD004376.pub4"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: o NICE (NG226, 2022) recomenda exercício terapêutico para TODAS as pessoas com artrose, e a Cochrane 2024 mostra melhora provável da função sem aumento de eventos adversos. CUIDADO: a Cochrane conclui que os benefícios têm importância clínica INCERTA pelos limiares de diferença mínima importante e são de curto prazo; não dizer que o exercício 'cura', 'elimina a dor' ou 'reverte a artrose'. A melhora da dor tem certeza baixa. O NICE avisa que a dor pode aumentar no início: não prometer exercício sem dor. Não usados: as recomendações do NICE de não oferecer acupuntura, agulhamento seco e eletroterapia (TENS, ultrassom, interferencial, laser, ondas curtas pulsadas, NMES) e de perda de peso. NICE lido na página oficial de recomendações; Cochrane no PDF do resumo na Cochrane Library."
+  },
+  {
+   "id": "mito-crianca-musculacao-crescimento",
+   "eixo": "exercicio-saude",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Musculação atrapalha o crescimento da criança",
+   "veredito": "Mito",
+   "tema": "treino resistido para crianças e adolescentes",
+   "fato": "Segundo o consenso internacional de 2014, não há evidência científica de que o treino resistido prejudique o crescimento em altura.",
+   "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+   "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf",
+   "fatos": [
+    {
+     "texto": "O consenso internacional de 2014 apoia o treino resistido para crianças e adolescentes, desde que planejado por profissionais qualificados.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "The use of resistance training by children and adolescents is supported on the proviso that qualified professionals design [...]",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "O medo de que o treino resistido lesione as placas de crescimento não é sustentado por relatos científicos nem por observações clínicas.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "Fears that resistance training would injure the growth plates of youths are not supported by scientific reports or clinical observations",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "Não há evidência científica de que o treino resistido tenha efeito adverso sobre o crescimento em altura.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "Furthermore, no scientific evidence indicates that resistance training will have an adverse effect on linear growth",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "Os estímulos do treino resistido, ou de esportes de alta exigência como ginástica e levantamento de peso, podem ser benéficos para a formação e o crescimento ósseo.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "[...] from resistance exercise, or high strain eliciting sports such as gymnastics or weightlifting, may be beneficial for bone formation and growth",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "Há relatos de lesões ligadas ao treino resistido, mas elas em geral ocorreram quando os jovens estavam sem supervisão.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "Despite specific case study reports highlighting acute resistance training-related injuries, such injuries have generally occurred when youth are unsupervised",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "O treino resistido pode aumentar a densidade mineral óssea e melhorar a saúde do esqueleto.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "[...] can enhance bone-mineral density and improve skeletal health",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "Também pode gerar ganhos significativos de força muscular e provavelmente reduz o risco de lesões esportivas em jovens atletas.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "[...] can elicit significant performance improvements in muscular strength [...] and likely reduce sports-related injury risk in young athletes",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    },
+    {
+     "texto": "A criança precisa ter maturidade emocional para aceitar e seguir orientações.",
+     "fonte": "Lloyd et al., Br J Sports Med, 2014 (consenso internacional)",
+     "trecho_original": "[...] any child engaging in a form of resistance training is emotionally mature enough to accept and follow directions",
+     "url": "https://g-se.com/uploads/blog_adjuntos/br_j_sports_med_2014_lloyd_498_505.pdf"
+    }
+   ],
+   "referencias": [
+    "Lloyd RS, Faigenbaum AD, Stone MH, et al. Position statement on youth resistance training: the 2014 International Consensus. Br J Sports Med. 2014;48(7):498-505. doi:10.1136/bjsports-2013-092952"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pela fonte: consenso internacional de 2014 (Lloyd et al., BJSM), que afirma não haver evidência de efeito adverso no crescimento em altura e que o medo de lesão nas placas de crescimento não tem respaldo. SEMPRE com a condição: programas planejados e supervisionados por profissionais qualificados; as lesões relatadas ocorreram em geral sem supervisão. Não dar idade mínima, cargas, séries ou exercícios (não estão nos fatos) e não falar em cargas máximas. Texto lido no PDF do artigo hospedado em g-se.com (cópia do artigo da BJSM). Nos trechos com [...] o início da frase não foi copiado; o sentido foi conferido na seção do artigo sobre treino resistido e esqueleto em crescimento."
+  },
+  {
+   "id": "mito-hernia-de-disco-cirurgia",
+   "eixo": "evidencia",
+   "familia": "conhecimento",
+   "formato": "mito",
+   "afirmacao": "Hérnia de disco sempre precisa de cirurgia",
+   "veredito": "Mito",
+   "tema": "hérnia de disco lombar: reabsorção espontânea e indicação de cirurgia",
+   "fato": "Em meta-análise de 31 estudos com 2.233 pacientes em tratamento conservador, a hérnia de disco lombar reabsorveu espontaneamente em 70,39% dos casos.",
+   "fonte": "Zou et al., Clin Spine Surg, 2024",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/",
+   "fatos": [
+    {
+     "texto": "Uma meta-análise reuniu 31 estudos com 2.233 pacientes com hérnia de disco lombar em tratamento conservador.",
+     "fonte": "Zou et al., Clin Spine Surg, 2024",
+     "trecho_original": "Thirty-one studies with 2233 patients who received conservative treatment were included for this analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/"
+    },
+    {
+     "texto": "A reabsorção espontânea da hérnia ocorreu em 70,39% dos casos.",
+     "fonte": "Zou et al., Clin Spine Surg, 2024",
+     "trecho_original": "the pooled overall incidence of disk resorption was 70.39%",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/"
+    },
+    {
+     "texto": "A reabsorção variou com o tipo de hérnia: 87,77% no sequestro, 66,91% na extrusão, 37,53% na protrusão e 13,33% no abaulamento.",
+     "fonte": "Zou et al., Clin Spine Surg, 2024",
+     "trecho_original": "87.77% for disk sequestration, 66.91% for disk extrusion, 37.53% for disk protrusion, and 13.33% for disk bugle [sic]",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/"
+    },
+    {
+     "texto": "Hérnias rotas reabsorveram mais do que as contidas.",
+     "fonte": "Zou et al., Clin Spine Surg, 2024",
+     "trecho_original": "the resorption incidence of ruptured LDH is higher than that of contained LDH",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/"
+    },
+    {
+     "texto": "A reabsorção ocorreu principalmente nos 6 primeiros meses de tratamento conservador.",
+     "fonte": "Zou et al., Clin Spine Surg, 2024",
+     "trecho_original": "The resorption process mainly occurred within 6 months of conservative treatment.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559207/"
+    },
+    {
+     "texto": "A diretriz do NICE orienta considerar a descompressão cirúrgica na ciatalgia quando o tratamento não cirúrgico não melhorou a dor ou a função e os achados de imagem são compatíveis com os sintomas.",
+     "fonte": "NICE, diretriz NG59 (lombalgia e ciatalgia)",
+     "trecho_original": "Consider spinal decompression for people with sciatica when non-surgical treatment has not improved pain or function and their radiological findings are consistent with sciatic symptoms.",
+     "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendation"
+    },
+    {
+     "texto": "O NICE recomenda não pedir exame de imagem de rotina, fora do serviço especializado, para lombalgia com ou sem ciatalgia.",
+     "fonte": "NICE, diretriz NG59 (lombalgia e ciatalgia)",
+     "trecho_original": "Do not routinely offer imaging in a non-specialist setting for people with low back pain with or without sciatica.",
+     "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendation"
+    },
+    {
+     "texto": "Entre as orientações de autocuidado, o NICE inclui o incentivo a continuar as atividades normais.",
+     "fonte": "NICE, diretriz NG59 (lombalgia e ciatalgia)",
+     "trecho_original": "Provide people with advice and information, tailored to their needs and capabilities, to help them self-manage their low back pain [...] encouragement to continue with normal activities.",
+     "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendation"
+    }
+   ],
+   "referencias": [
+    "Zou T, Liu XY, Wang PC, Chen H, Wu PG, Feng XM, et al. Incidence of spontaneous resorption of lumbar disc herniation: a meta-analysis. Clin Spine Surg. 2024;37(6):256-69. doi:10.1097/BSD.0000000000001490",
+    "National Institute for Health and Care Excellence. Low back pain and sciatica in over 16s: assessment and management. NICE guideline NG59. London: NICE; 2016 (atualizada em 2020). Disponível em: https://www.nice.org.uk/guidance/ng59"
+   ],
+   "interesse": "alto",
+   "status": "livre",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: a maioria das hérnias lombares em tratamento conservador reabsorveu (70,39%, meta-análise de Zou et al.) e o NICE reserva a descompressão para quando o tratamento não cirúrgico não melhorou e a imagem é compatível com os sintomas. NÃO dizer que hérnia 'nunca' precisa de cirurgia nem desaconselhar avaliação médica: há indicação cirúrgica em casos selecionados, e sinais de alerta pedem avaliação urgente (não detalhados nos fatos; não inventar). As porcentagens são de pacientes em tratamento conservador; o abaulamento reabsorveu pouco (13,33%). O resumo escreve 'disk bugle', erro de digitação de 'bulge' (abaulamento). Zou lido no resumo do PubMed; NICE na página oficial de recomendações. Não usados: não oferecer artrodese para lombalgia fora de ensaio clínico, tração ou injeções na coluna para lombalgia."
   }
  ]
 }

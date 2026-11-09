@@ -157,12 +157,14 @@ def _tem_fato(p):
     return bool(p.get("fato") and p.get("fonte"))
 
 
-def temas_dos_reels(dias=None, proximos=2):
+def temas_dos_reels(dias=None, proximos=0):
     """
     Titulos dos Reels recentes e dos proximos da fila.
 
     O feed nao repete NUNCA o assunto de um Reels ja publicado (dias=None
-    olha o historico inteiro), nem o dos proximos da fila. Em 02/11/2026 o feed das 18h ia sair com "os oito itens
+    olha o historico inteiro). Os proximos da fila so contam com
+    proximos > 0: desde 09/11/2026 o Reels e o carrossel do dia em video
+    e nao usa mais a fila. Em 02/11/2026 o feed das 18h ia sair com "os oito itens
     do prontuario", o mesmo tema do Reels das 20h.
     """
     base = os.path.join(PASTA, "reels")
