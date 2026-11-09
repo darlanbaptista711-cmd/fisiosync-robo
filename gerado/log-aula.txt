@@ -1,0 +1,43 @@
+========================================================
+  ROBO FISIOSYNC - 2026-11-09
+========================================================
+[20:20:56] Pauta de teste: força de preensão palmar: como medir e interpretar
+[20:20:56] Formato novo (aula): força de preensão palmar: como medir e interpretar (10 fatos conferidos)
+[20:21:23] Texto escrito pela OpenAI (gpt-6-astra)
+[20:21:23] Revisando a legenda...
+[20:21:23]   1 correção(ões) de tipografia
+[20:21:27] Texto escrito pela OpenAI (gpt-6-astra)
+[20:21:27] Revisao de veracidade do carrossel: APROVADO (tudo apoiado nos fatos).
+[20:21:29] Carrossel aula montado: 10 imagens + story
+
+--- LEGENDA ---
+Força baixa indica sarcopenia provável, não confirmada.
+
+A força de preensão é simples e barata de medir e substitui, de forma confiável, medidas mais complicadas de força de braços e pernas. A precisão exige dinamômetro manual calibrado e condições de teste bem definidas.
+
+No protocolo de Southampton, são três medições em cada mão, com incentivo padronizado e registro do maior valor em kg. No EWGSOP2, preensão < 27 kg em homens e < 16 kg em mulheres indica força baixa. A sarcopenia é confirmada com massa ou qualidade muscular baixa; com desempenho físico também baixo, é grave.
+
+Neste carrossel: como medir a preensão, interpretar os pontos de corte e avaliar quando não é possível medi-la.
+
+👉 Salve para consultar depois e mande para um colega.
+💬 Como você mede a preensão na sua prática?
+
+📚 Fontes: Cruz-Jentoft et al., EWGSOP2, Age and Ageing, 2019; Roberts et al., Age and Ageing, 2014; Leong et al., The Lancet, 2015. Referências completas no penúltimo slide.
+
+Conteúdo FisioSync. Teste grátis por 7 dias: app.fisiosync.com.br
+
+#fisioterapia #fisioterapeuta #avaliacaofuncional #FisioSync
+---------------
+
+PREVIA PRONTA. Nada foi publicado.
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_01.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_02.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_03.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_04.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_05.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_06.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_07.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_08.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_09.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_10.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_for-a-de-preens-o-palmar-como-medir-e-in_aula_story_01.jpg

@@ -1,0 +1,126 @@
+Dor e nocicepção são fenômenos diferentes.
+
+A definição de dor inclui uma experiência sensitiva e emocional desagradável associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial. O mito está no "sempre": dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.
+
+A dor é pessoal e influenciada por fatores biológicos, psicológicos e sociais. O relato de quem sente dor deve ser respeitado. Na meta-análise de joelhos sem sintomas e sem lesão prévia, os autores pedem que os achados de imagem sejam interpretados junto com o quadro clínico.
+
+Neste carrossel: definição de dor, diferença entre dor e nocicepção e interpretação dos achados de imagem.
+
+👉 Salve para consultar depois e mande para um colega.
+💬 Como você explica a diferença entre dor e nocicepção?
+
+📚 Fontes: IASP, definição revisada de dor, 2020; Culvenor et al., Br J Sports Med, 2019. Referências completas no penúltimo slide.
+
+Conteúdo FisioSync. Teste grátis por 7 dias: app.fisiosync.com.br
+
+#fisioterapia #fisioterapeuta #fisioterapiabaseadaemevidencias #FisioSync
+
+----- slides -----
+{
+ "secao": "Dor e nocicepção",
+ "capa": {
+  "ilustracao": "documento"
+ },
+ "slides": [
+  {
+   "tipo": "veredito",
+   "titulo": "Qual é o ==veredito?==",
+   "veredito": "Mito",
+   "texto": "O mito é o **sempre**. A definição inclui dor associada, ou semelhante àquela associada, a uma lesão real ou potencial. Dor e nocicepção são fenômenos diferentes.",
+   "fatos": [
+    2,
+    3
+   ],
+   "puxa": "Como a dor é definida?"
+  },
+  {
+   "tipo": "destaque",
+   "titulo": "O que é ==dor?==",
+   "destaque": "Dor é uma experiência **sensitiva e emocional** desagradável.",
+   "texto": "Ela é associada, ou semelhante àquela associada, a uma lesão tecidual **real ou potencial**.",
+   "card": {
+    "titulo": "Definição revisada",
+    "texto": "Em 2020, a IASP revisou a definição de dor pela primeira vez desde 1979."
+   },
+   "fatos": [
+    1,
+    2
+   ]
+  },
+  {
+   "tipo": "cards",
+   "titulo": "Por que fazer essa ==distinção?==",
+   "itens": [
+    {
+     "titulo": "Dor não é nocicepção",
+     "texto": "A dor **não pode ser inferida apenas** pela atividade dos neurônios sensoriais.",
+     "destaque": true
+    },
+    {
+     "titulo": "A experiência é pessoal",
+     "texto": "A dor é influenciada, em graus variados, por fatores **biológicos, psicológicos e sociais**."
+    }
+   ],
+   "fatos": [
+    3,
+    4
+   ],
+   "puxa": "E os achados de imagem?"
+  },
+  {
+   "tipo": "duas",
+   "titulo": "O que aparece ==sem sintomas?==",
+   "itens": [
+    {
+     "rotulo": "<40 anos",
+     "valor": "11",
+     "unidade": "%"
+    },
+    {
+     "rotulo": "≥40 anos",
+     "valor": "43",
+     "unidade": "%"
+    }
+   ],
+   "nota": "Defeitos de cartilagem na ressonância de joelhos sem sintomas e sem lesão prévia. Meta-análise de 63 estudos, com 4.751 adultos.",
+   "fatos": [
+    7
+   ],
+   "puxa": "Como interpretar os achados?"
+  },
+  {
+   "tipo": "cards",
+   "titulo": "Como interpretar o ==exame?==",
+   "itens": [
+    {
+     "titulo": "Rupturas de menisco",
+     "texto": "No mesmo estudo, apareceram em **4%** dos joelhos abaixo dos 40 anos e em **19%** a partir dos 40, sem sintomas e sem lesão prévia."
+    },
+    {
+     "titulo": "Exame e quadro clínico",
+     "texto": "Os autores pedem que os achados sejam interpretados **junto com o quadro clínico**.",
+     "destaque": true
+    }
+   ],
+   "fatos": [
+    8
+   ]
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que lembrar ao ==acolher?==",
+   "itens": [
+    "O relato de uma pessoa de que sente dor **deve ser respeitado**.",
+    "A dor geralmente tem papel adaptativo.",
+    "Ela pode ter efeitos adversos sobre a função e o bem-estar social e psicológico."
+   ],
+   "fatos": [
+    5,
+    6
+   ]
+  }
+ ],
+ "chamada_final": "Salve e envie a um ==colega==.",
+ "pergunta_final": "Como você explica a diferença entre dor e nocicepção?",
+ "legenda": "Dor e nocicepção são fenômenos diferentes.\n\nA definição de dor inclui uma experiência sensitiva e emocional desagradável associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial. O mito está no \"sempre\": dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.\n\nA dor é pessoal e influenciada por fatores biológicos, psicológicos e sociais. O relato de quem sente dor deve ser respeitado. Na meta-análise de joelhos sem sintomas e sem lesão prévia, os autores pedem que os achados de imagem sejam interpretados junto com o quadro clínico.\n\nNeste carrossel: definição de dor, diferença entre dor e nocicepção e interpretação dos achados de imagem.\n\n👉 Salve para consultar depois e mande para um colega.\n💬 Como você explica a diferença entre dor e nocicepção?"
+}

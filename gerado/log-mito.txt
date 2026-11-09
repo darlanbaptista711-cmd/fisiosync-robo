@@ -1,0 +1,42 @@
+========================================================
+  ROBO FISIOSYNC - 2026-11-09
+========================================================
+[20:21:29] Pauta de teste: dor, nocicepção e lesão: a definição de dor da IASP
+[20:21:29] Formato novo (mito): dor, nocicepção e lesão: a definição de dor da IASP (8 fatos conferidos)
+[20:22:01] Texto escrito pela OpenAI (gpt-6-astra)
+[20:22:01] Revisando a legenda...
+[20:22:01]   2 correção(ões) de tipografia
+[20:22:04] Texto escrito pela OpenAI (gpt-6-astra)
+[20:22:04] Revisao de veracidade do carrossel: APROVADO (tudo apoiado nos fatos).
+[20:22:06] Carrossel mito montado: 9 imagens + story
+
+--- LEGENDA ---
+Dor e nocicepção são fenômenos diferentes.
+
+A definição de dor inclui uma experiência sensitiva e emocional desagradável associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial. O mito está no "sempre": dor não pode ser inferida apenas pela atividade dos neurônios sensoriais.
+
+A dor é pessoal e influenciada por fatores biológicos, psicológicos e sociais. O relato de quem sente dor deve ser respeitado. Na meta-análise de joelhos sem sintomas e sem lesão prévia, os autores pedem que os achados de imagem sejam interpretados junto com o quadro clínico.
+
+Neste carrossel: definição de dor, diferença entre dor e nocicepção e interpretação dos achados de imagem.
+
+👉 Salve para consultar depois e mande para um colega.
+💬 Como você explica a diferença entre dor e nocicepção?
+
+📚 Fontes: IASP, definição revisada de dor, 2020; Culvenor et al., Br J Sports Med, 2019. Referências completas no penúltimo slide.
+
+Conteúdo FisioSync. Teste grátis por 7 dias: app.fisiosync.com.br
+
+#fisioterapia #fisioterapeuta #fisioterapiabaseadaemevidencias #FisioSync
+---------------
+
+PREVIA PRONTA. Nada foi publicado.
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_01.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_02.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_03.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_04.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_05.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_06.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_07.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_08.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_09.jpg
+  /home/runner/work/fisiosync-robo/fisiosync-robo/gerado/fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_story_01.jpg
