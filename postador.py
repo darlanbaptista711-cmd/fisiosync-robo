@@ -2113,6 +2113,16 @@ def main():
         print(f"\nVeja os arquivos na pasta: {PASTA_SAIDA}")
         return
 
+    # 09/11/2026: o post das 15h saiu como imagem unica porque a IA estava
+    # fora (a rodada ainda usava a chave antiga da OpenAI). Horario de
+    # carrossel nunca vira imagem unica: se os slides nao ficaram prontos
+    # (sem IA, sem ilustracao, slide que nao coube), nada vai ao ar, o job
+    # falha, o aviso abre e a proxima largada tenta de novo.
+    if args.carrossel and quer_feed and not slides_arq:
+        erro("O carrossel nao ficou pronto e o horario do carrossel nao sai "
+             "como imagem unica.\n  NADA foi publicado. A proxima largada "
+             "tenta de novo (confira a chave e o credito da OpenAI).")
+
     if molde.avisos:
         erro("Nao publiquei porque a peca esta incompleta. Resolva os avisos "
              "acima e rode de novo. Para ver a peca sem publicar, use --previa.")
