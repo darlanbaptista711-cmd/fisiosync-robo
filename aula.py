@@ -792,12 +792,18 @@ def pagina_story(spec, pauta, estilo, ilu_tam=640):
                  + f'<div style="font-size:46px;line-height:1.32;margin-top:36px;color:var(--navy)">'
                  + "".join(f"<div>{_rico(x)}</div>" for x in capa["promessa"]) + "</div>")
     secao = spec.get("secao") or ("Evidência" if estilo == "mito" else "Avaliação")
-    return (f'<div class="pg" style="padding-top:120px"><div class="conteudo">{_topo(secao)}{corpo}'
+    # 09/11/2026: o Instagram cobre o topo do story (foto e nome do perfil,
+    # ~170px) e a base (campo de mensagem e botoes, ~270px). O cabecalho, o
+    # convite e o logo saiam embaixo dessas faixas; agora ficam fora delas.
+    # Link clicavel no story nao existe pela API: o convite manda tocar no
+    # nome do perfil, que abre o perfil com o post do dia no topo.
+    return (f'<div class="pg" style="padding-top:230px"><div class="conteudo">{_topo(secao)}{corpo}'
             f'</div></div>'
-            + (f'<div class="ilu" style="bottom:330px;right:220px">{ilu}</div>' if ilu else "")
-            + '<div class="base" style="bottom:200px"><div class="puxa" style="align-self:center;'
-              'font-size:40px">Veja o post completo no feed</div></div>'
-            + f'<div class="rodape" style="bottom:90px;justify-content:center">'
+            + (f'<div class="ilu" style="bottom:500px;right:220px">{ilu}</div>' if ilu else "")
+            + '<div class="base" style="bottom:380px"><div class="puxa" style="align-self:center;'
+              'text-align:center;font-size:40px;line-height:1.3">↑ Toque em @fisiosyncapp, lá em cima,<br>'
+              'e veja o post completo</div></div>'
+            + f'<div class="rodape" style="bottom:290px;justify-content:center">'
               f'<img src="data:image/png;base64,{logo}" style="height:64px"></div>')
 
 
