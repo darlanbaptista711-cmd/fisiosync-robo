@@ -526,5 +526,28 @@
   ],
   "status": "publicado",
   "modo": "mito"
+ },
+ {
+  "data": "2026-11-09",
+  "janela": "manha",
+  "tema": "Quantidade provável de atendimentos no plano terapêutico",
+  "pauta": "plano terapeutico tem que dizer quantos atendimentos",
+  "eixo": "regulacao",
+  "familia": "regulacao",
+  "fonte": "Resolução COFFITO nº 414/2012",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "A norma exige a quantidade provável, além dos recursos, métodos, técnicas e objetivos.",
+  "chamada": "Seu plano precisa prever quantos atendimentos",
+  "conceito": "Um checklist destaca uma sequência de marcadores de atendimento para mostrar que o plano terapêutico também deve registrar uma quantidade provável.",
+  "composicao": "calibrado",
+  "estilo": "checklist visual",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_quantidade-prov-vel-de-atendimentos-no-p_feed_1080x1350.jpg",
+   "fisiosync_quantidade-prov-vel-de-atendimentos-no-p_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]

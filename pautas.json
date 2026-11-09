@@ -1107,9 +1107,10 @@
    "tema": "plano terapeutico tem que dizer quantos atendimentos",
    "fato": "O Art. 1º, §1º, VI da Resolução COFFITO 414/2012 exige que o plano terapêutico traga recursos, métodos, técnicas, objetivos e a quantidade provável de atendimentos.",
    "fonte": "Resolução COFFITO nº 414/2012",
-   "status": "livre",
+   "status": "publicado",
    "interesse": "alto",
-   "observacao": "Reconferido em 05/11/2026 no texto integral, em duas fontes iguais (normasbrasil e legisweb): Art. 1º, § 1º, VI: plano terapêutico com recursos, métodos e técnicas, objetivo(s) terapêutico(s) e 'quantitativo provável de atendimento'."
+   "observacao": "Reconferido em 05/11/2026 no texto integral, em duas fontes iguais (normasbrasil e legisweb): Art. 1º, § 1º, VI: plano terapêutico com recursos, métodos e técnicas, objetivo(s) terapêutico(s) e 'quantitativo provável de atendimento'.",
+   "usado_em": "2026-11-09"
   },
   {
    "id": "regulacao-017",
