@@ -1,10 +1,15 @@
 name: "Reels do dia"
 description: >
-  Espera a hora, pega o proximo roteiro conferido da fila, monta o video
-  (ou usa um ja pronto e conferido em reels/prontos), espera o minuto
-  exato e publica. Usado de manha (9h) e de noite (20h).
+  Espera a hora, monta o video, espera o minuto exato e publica.
+  formato carrossel (padrao desde 09/11/2026): o carrossel do dia em
+  video, slide a slide, com a trilha do robo. Sem voz e sem imagem de IA.
+  formato fila: o roteiro conferido da fila, narrado (o formato antigo).
 
 inputs:
+  formato:
+    description: "carrossel ou fila"
+    required: false
+    default: carrossel
   etapa:
     description: "reels_manha ou reels"
     required: true
@@ -47,14 +52,14 @@ runs:
 
     - name: Escolher o roteiro
       id: fila
-      if: steps.relogio.outputs.publicar == 'sim'
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'fila'
       shell: bash
       run: python3 reels/proximo.py
 
     - name: Revisar a veracidade do roteiro
       # Sem aprovacao do revisor, o Reels NAO vai ao ar (05/11/2026). A
       # falha deste passo faz o workflow mandar o aviso por e-mail.
-      if: steps.relogio.outputs.publicar == 'sim'
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'fila'
       shell: bash
       env:
         OPENAI_API_KEY: ${{ inputs.openai_key }}
@@ -62,7 +67,7 @@ runs:
 
     - name: Usar video ja pronto e conferido, se houver
       id: pronto
-      if: steps.relogio.outputs.publicar == 'sim'
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'fila'
       shell: bash
       run: |
         P="reels/prontos/${{ steps.fila.outputs.nome }}.mp4"
@@ -75,12 +80,12 @@ runs:
         fi
 
     - uses: oven-sh/setup-bun@v2
-      if: steps.relogio.outputs.publicar == 'sim' && steps.pronto.outputs.tem != 'sim'
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'fila' && steps.pronto.outputs.tem != 'sim'
       with:
         bun-version: latest
 
     - name: Montar e conferir o video
-      if: steps.relogio.outputs.publicar == 'sim' && steps.pronto.outputs.tem != 'sim'
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'fila' && steps.pronto.outputs.tem != 'sim'
       shell: bash
       env:
         ELEVENLABS_API_KEY: ${{ inputs.elevenlabs_key }}
@@ -101,6 +106,17 @@ runs:
         done
         [ "$limpo" = sim ] || { echo "FALHOU: tres renders com quadro quebrado"; exit 1; }
 
+    - name: Montar o video com o carrossel do dia
+      # Os slides sao os que o postador subiu para imagens/. Este job fez o
+      # checkout bem antes (dorme ate 18:45), entao busca o que chegou depois.
+      if: steps.relogio.outputs.publicar == 'sim' && inputs.formato == 'carrossel'
+      shell: bash
+      run: |
+        set -e
+        sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        git pull -q --rebase --autostash origin "$GITHUB_REF_NAME" || git pull -q origin "$GITHUB_REF_NAME" || true
+        python3 reels/carrossel_video.py
+
     - name: Conferir contra as regras do Reels
       if: steps.relogio.outputs.publicar == 'sim'
       shell: bash
@@ -114,7 +130,9 @@ runs:
         AUD=$(ffprobe -v error -select_streams a -show_entries stream=codec_name \
               -of csv=p=0 "$S" | head -1)
         echo "duracao ${DUR}s | ${DIM} | audio ${AUD:-NENHUM}"
-        awk -v d="$DUR" 'BEGIN{ if (d<8 || d>15.05) exit 1 }' || { echo "FALHOU: passou de 15s"; exit 1; }
+        # narrado: ate 15s. Carrossel em video: 9 slides dao uns 25s.
+        MAX=15.05; [ "${{ inputs.formato }}" = carrossel ] && MAX=60
+        awk -v d="$DUR" -v m="$MAX" 'BEGIN{ if (d<8 || d>m) exit 1 }' || { echo "FALHOU: duracao fora de 8 a ${MAX}s"; exit 1; }
         [ "$DIM" = "1080,1920" ] || { echo "FALHOU: nao e 1080x1920"; exit 1; }
         [ -n "$AUD" ] || { echo "FALHOU: sem audio"; exit 1; }
 

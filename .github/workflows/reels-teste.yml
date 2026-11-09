@@ -1,14 +1,21 @@
 name: Reels - montar sem publicar
 
-# Monta um Reels da fila exatamente como o robo faz as 19:45, confere
-# quadro a quadro e as regras, e guarda o mp4 no branch previa-reels.
-# NAO publica nada.
+# Monta um Reels como o robo faz as 18:45, confere as regras e guarda o
+# mp4 no branch previa-reels. NAO publica nada.
+#   carrossel: o ultimo carrossel do dia em video (o formato desde 09/11/2026)
+#   fila: um roteiro de reels/fila, narrado (o formato antigo)
 on:
   workflow_dispatch:
     inputs:
+      formato:
+        description: "carrossel ou fila"
+        type: choice
+        options: [carrossel, fila]
+        default: carrossel
       roteiro:
-        description: "nome do roteiro em reels/fila, sem .json"
-        required: true
+        description: "so no formato fila: nome do roteiro em reels/fila, sem .json"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -16,6 +23,8 @@ permissions:
 jobs:
   montar:
     runs-on: ubuntu-latest
+    env:
+      NOME: ${{ inputs.formato == 'fila' && inputs.roteiro || 'carrossel-do-dia' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,10 +34,27 @@ jobs:
         with:
           node-version: "20"
       - run: pip install --quiet requests pillow numpy scipy
+      - name: Montar o carrossel do dia em video e conferir
+        if: inputs.formato == 'carrossel'
+        run: |
+          set -e
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 reels/carrossel_video.py
+          cat reels/roteiro-hoje.json
+          S=reels/saida-hoje.mp4
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$S")
+          DIM=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$S" | tr -d '\r\n ' | sed 's/,*$//')
+          AUD=$(ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 "$S" | head -1)
+          echo "duracao ${DUR}s | ${DIM} | audio ${AUD:-NENHUM}"
+          awk -v d="$DUR" 'BEGIN{ if (d<8 || d>60) exit 1 }' || { echo "FALHOU: duracao fora de 8 a 60s"; exit 1; }
+          [ "$DIM" = "1080,1920" ] || { echo "FALHOU: nao e 1080x1920"; exit 1; }
+          [ -n "$AUD" ] || { echo "FALHOU: sem audio"; exit 1; }
       - uses: oven-sh/setup-bun@v2
+        if: inputs.formato == 'fila'
         with:
           bun-version: latest
       - name: Montar e conferir
+        if: inputs.formato == 'fila'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
@@ -56,7 +82,8 @@ jobs:
           git config user.email "robo@users.noreply.github.com"
           git checkout -B previa-reels
           mkdir -p previa
-          cp reels/saida-hoje.mp4 "previa/${{ inputs.roteiro }}.mp4"
+          cp reels/saida-hoje.mp4 "previa/$NOME.mp4"
+          if [ -f reels/roteiro-hoje.json ]; then cp reels/roteiro-hoje.json "previa/$NOME.json"; fi
           git add -f previa
-          git commit -qm "previa reels ${{ inputs.roteiro }}"
+          git commit -qm "previa reels $NOME"
           git push -qf origin previa-reels

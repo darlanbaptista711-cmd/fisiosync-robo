@@ -80,6 +80,9 @@ async function jaNoInstagram(legenda) {
  * pegou a contagem no 7.
  */
 function capaMs(roteiro) {
+  // Reels feito com o carrossel do dia: a capa e o primeiro slide, sem
+  // narracao para medir
+  if (roteiro.tipo === "carrossel") return roteiro.capa_ms ?? 600;
   try {
     const dur = parseFloat(execFileSync("ffprobe", ["-v", "error", "-show_entries",
       "format=duration", "-of", "default=nw=1:nk=1", VIDEO]).toString());

@@ -1,7 +1,8 @@
 name: Posts diarios da FisioSync
 
 # Desde 03/11/2026: 09:00 carrossel (desde 08/11 no formato "aula"), 15:00 carrossel
-# "Mito ou verdade?" e 19:00 Reels, em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
+# "Mito ou verdade?" e 19:00 Reels (desde 09/11 o carrossel do dia em video,
+# sem IA), em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
 # consome 1 pauta de conhecimento conferida do banco.
 #
 # O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
@@ -221,10 +222,11 @@ jobs:
   # Um Reels forte rende mais que dois medianos e a fila de fatos rende o
   # dobro.)
   #
-  # Cada um pega o proximo roteiro da fila (reels/fila), que so tem fato
-  # conferido em fonte oficial; monta, confere quadro a quadro e as regras
-  # do Reels, espera o minuto exato e publica. A logica fica em
-  # .github/actions/reels, a mesma para os dois horarios.
+  # Desde 09/11/2026 o Reels e o carrossel do dia em video: os slides
+  # passando, com a trilha do robo, sem voz e sem imagem de IA (os
+  # carrosseis rendem mais que os videos de IA). Confere as regras do
+  # Reels, espera o minuto exato e publica. A logica fica em
+  # .github/actions/reels; formato: fila volta ao roteiro narrado.
   # ---------------------------------------------------------------------
   reels:
     needs: tarde
@@ -240,6 +242,7 @@ jobs:
           ref: ${{ github.ref_name }}
       - uses: ./.github/actions/reels
         with:
+          formato: carrossel
           etapa: reels
           publicar_as: "19:00"
           janela: noite

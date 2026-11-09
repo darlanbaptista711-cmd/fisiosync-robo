@@ -8,5 +8,6 @@ __pycache__/
 # Reels: arquivos do dia, gerados no runner
 reels/roteiro-hoje.json
 reels/saida-hoje.mp4
+reels/tmp-carrossel/
 remotion/node_modules/
 remotion/public/audio/

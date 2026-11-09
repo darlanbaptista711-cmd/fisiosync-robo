@@ -4,11 +4,12 @@ Quantos dias de conteudo conferido ainda existem.
 
   feed  : pautas de conhecimento livres (2 por dia), sem as que o
           Reels ja cobriu
-  reels : roteiros da fila ainda nao publicados (1 por dia), sem os
-          que o feed ja cobriu
+  reels : roteiros da fila ainda nao publicados, sem os que o feed ja
+          cobriu. So informativo: desde 09/11/2026 o Reels e o carrossel
+          do dia em video e nao gasta a fila.
 
-Sai com codigo 2 quando algum dos dois tem menos de LIMITE_DIAS: o
-workflow abre um aviso (issue), que chega por e-mail.
+Sai com codigo 2 quando o feed tem menos de LIMITE_DIAS: o workflow
+abre um aviso (issue), que chega por e-mail.
 """
 import glob
 import json
@@ -47,11 +48,11 @@ def main():
     dias_reels = len(fila)
 
     linhas = [f"Feed: {len(livres)} pautas conferidas livres = {dias_feed} dias (2 carrosseis/dia)",
-              f"Reels: {len(fila)} roteiros conferidos na fila = {dias_reels} dias (1 por dia)"]
+              f"Reels: carrossel do dia em video (fila antiga: {dias_reels} roteiros, sem uso)"]
     print("\n".join(linhas))
     with open(os.environ.get("GITHUB_OUTPUT", os.devnull), "a") as f:
         f.write(f"resumo={' | '.join(linhas)}\n")
-    if min(dias_feed, dias_reels) < LIMITE_DIAS:
+    if dias_feed < LIMITE_DIAS:
         print(f"ESTOQUE BAIXO: menos de {LIMITE_DIAS} dias.")
         sys.exit(2)
 
