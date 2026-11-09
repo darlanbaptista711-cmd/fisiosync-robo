@@ -1,7 +1,7 @@
-# Instagram @fisiosyncapp — 2026-11-02
+# Instagram @fisiosyncapp — 2026-11-09
 
-- Seguidores: **749**
-- Posts publicados: 236
+- Seguidores: **660**
+- Posts publicados: 259
 
 > **Falta a permissão de métricas** (`instagram_manage_insights`). Sem ela, só dá para ler curtidas e comentários. Alcance, visualizações, salvamentos e envios precisam de um token novo com essa permissão.
 
@@ -9,37 +9,37 @@
 
 | data | tipo | post | curt. | coment. |
 |---|---|---|---|---|
-| 2026-10-15 15:24 | REELS | [Seu estúdio de Pilates merece uma gestão mais simples, organ](https://www.instagram.com/reel/DehRblyhcpE/) | 2 | 0 |
+| 2026-11-06 18:02 | FEED | [Pilates em grupo: 6 clientes/pacientes por hora? Responda no](https://www.instagram.com/p/DfaNB7Wj4kb/) | 1 | 0 |
+| 2026-11-05 12:06 | FEED | [O local de guarda do prontuário também está previsto na norm](https://www.instagram.com/p/DfW_lu_HCw6/) | 1 | 0 |
+| 2026-11-04 22:00 | REELS | [Disco degenerado no laudo nem sempre explica a dor.](https://www.instagram.com/reel/DfVerknjECn/) | 1 | 0 |
+| 2026-11-03 18:02 | FEED | [Aplicar testes quiropráxicos está previsto pelo COFFITO?](https://www.instagram.com/p/DfSeqGSD2CP/) | 1 | 0 |
+| 2026-11-03 12:02 | FEED | [Você associa os objetivos do Pilates apenas à força muscular](https://www.instagram.com/p/DfR1e89gXHo/) | 1 | 0 |
+| 2026-11-02 23:00 | REELS | [O prontuário fisioterapêutico tem oito itens obrigatórios (R](https://www.instagram.com/reel/DfQb9NJEycE/) | 1 | 0 |
+| 2026-11-02 21:02 | FEED | [A norma prevê solicitar e interpretar espirometria?](https://www.instagram.com/p/DfQObgdkvsM/) | 1 | 0 |
+| 2026-11-02 12:00 | REELS | [A fisioterapia tem 16 especialidades reconhecidas pelo COFFI](https://www.instagram.com/reel/DfPQbTgj7Qw/) | 1 | 0 |
 | 2026-11-02 05:18 | REELS | [O prazo para guardar o prontuário do paciente mudou, e muita](https://www.instagram.com/reel/DfOibT4j2FI/) | 1 | 0 |
 | 2026-11-01 21:00 | FEED | [Prontuário não é uma questão de preferência.](https://www.instagram.com/p/DfNpc25jJVm/) | 1 | 0 |
-| 2026-10-28 18:36 | FEED | [Cresça com a FisioSync! 💙](https://www.instagram.com/p/DfDFzUUBF1w/) | 1 | 0 |
-| 2026-10-16 15:17 | FEED | [Sua clínica de fisioterapia ou estúdio de Pilates merece uma](https://www.instagram.com/p/Dej1dLSFq6T/) | 1 | 0 |
-| 2026-10-13 20:07 | REELS | [Sua clínica organizada, do primeiro agendamento ao controle ](https://www.instagram.com/reel/DecoVD6hFwO/) | 1 | 0 |
-| 2026-10-05 15:42 | FEED | [Seu Pilates. Sua gestão. Tudo em um só lugar. 💙](https://www.instagram.com/p/DeHjqe_Fj5w/) | 1 | 0 |
-| 2026-11-02 21:02 | FEED | [A norma prevê solicitar e interpretar espirometria?](https://www.instagram.com/p/DfQObgdkvsM/) | 0 | 0 |
+| 2026-11-09 22:00 | REELS | [Mito ou verdade? FC máxima = 220 − idade é a fórmula exata?](https://www.instagram.com/reel/DfiWp6hkZu3/) | 0 | 0 |
+| 2026-11-09 19:11 | FEED | [220 − idade não é uma fórmula exata.](https://www.instagram.com/p/DfiDZRxmhMN/) | 0 | 0 |
+| 2026-11-09 12:47 | FEED | [Seu plano descreve as técnicas, mas também informa a quantid](https://www.instagram.com/p/DfhXZL6l2PO/) | 0 | 0 |
+| 2026-11-08 22:00 | REELS | [Exercício para prevenir quedas: quanto ele reduz de verdade?](https://www.instagram.com/reel/Dffx2_MAItp/) | 0 | 0 |
+| 2026-11-08 18:01 | FEED | [Repouso na cama é a melhor orientação na dor lombar aguda?](https://www.instagram.com/p/DffWi6NFAOP/) | 0 | 0 |
+| 2026-11-08 12:02 | FEED | [Fazer alguma atividade física é melhor do que nenhuma.](https://www.instagram.com/p/DfetdNMG3uL/) | 0 | 0 |
+| 2026-11-07 22:00 | REELS | [Um único exercício aparece com força na prevenção de lesão d](https://www.instagram.com/reel/DfdNEK2iCun/) | 0 | 0 |
+| 2026-11-07 18:00 | FEED | [Fisioterapeuta pode prometer terapia infalível?](https://www.instagram.com/p/Dfcxpx7l5ZQ/) | 0 | 0 |
+| 2026-11-07 12:02 | FEED | [O parâmetro por turno para esse tipo de ambulatório tem um c](https://www.instagram.com/p/DfcInFsl1Vg/) | 0 | 0 |
+| 2026-11-06 22:00 | REELS | [Alongar previne lesão esportiva? Uma metanálise olhou para i](https://www.instagram.com/reel/DfaoTJlE-Ps/) | 0 | 0 |
+| 2026-11-06 12:02 | FEED | [Não usar como rotina não significa proibir. Essa diferença i](https://www.instagram.com/p/DfZj1x9CSl4/) | 0 | 0 |
+| 2026-11-05 22:00 | REELS | [Um dinamômetro de mão pode dizer mais do que parece.](https://www.instagram.com/reel/DfYDed6n65w/) | 0 | 0 |
+| 2026-11-05 18:02 | FEED | [Marcha mais rápida se associou a menor mortalidade?](https://www.instagram.com/p/DfXoPjBjSNC/) | 0 | 0 |
+| 2026-11-04 20:20 | FEED | [A integração com a TotalPass chegou à FisioSync!](https://www.instagram.com/p/DfVTRadhAnV/) | 0 | 0 |
+| 2026-11-04 18:02 | FEED | [Reabilitação pode beneficiar cerca de 2,4 bilhões de pessoas](https://www.instagram.com/p/DfVDcGplBKv/) | 0 | 0 |
+| 2026-11-04 12:02 | FEED | [A identificação obrigatória não fica só na placa: a norma ta](https://www.instagram.com/p/DfUaPKnmLpG/) | 0 | 0 |
+| 2026-11-03 23:45 | REELS | [Pesquisadores da CLINIMEX (Rio de Janeiro) acompanharam 1.70](https://www.instagram.com/reel/DfTF8AoESdf/) | 0 | 0 |
 | 2026-11-02 15:01 | FEED | [Nem toda dificuldade de adesão é falta de disposição. Às vez](https://www.instagram.com/p/DfPlLRfGKdS/) | 0 | 0 |
-| 2026-11-02 12:00 | REELS | [A fisioterapia tem 16 especialidades reconhecidas pelo COFFI](https://www.instagram.com/reel/DfPQbTgj7Qw/) | 0 | 0 |
 | 2026-11-01 16:56 | FEED | [Pacote fechado não é sinônimo de plano terapêutico.](https://www.instagram.com/p/DfNNilzl_ca/) | 0 | 0 |
 | 2026-10-31 21:49 | FEED | [O horário estava livre. Mas só em uma das agendas.](https://www.instagram.com/p/DfLKO8iF1Gg/) | 0 | 0 |
-| 2026-10-31 18:53 | FEED | [Confirmar na véspera ou dois dias antes? O cuidado também es](https://www.instagram.com/p/DfK2LfuGPEd/) | 0 | 0 |
-| 2026-10-31 03:41 | FEED | [Registre a evolução com a sua voz](https://www.instagram.com/p/DfJNysKlmOG/) | 0 | 0 |
-| 2026-10-20 21:20 | FEED | [Cada sessão de Pilates tem detalhes que merecem ser registra](https://www.instagram.com/p/DeuyQVbGZNG/) | 0 | 0 |
-| 2026-10-19 20:53 | FEED | [🦴 Sua osteopatia. Sua gestão em dia!](https://www.instagram.com/p/DesKX3PGfT_/) | 0 | 0 |
-| 2026-10-19 14:52 | FEED | [A consulta ainda nem começou, mas o cuidado com seu paciente](https://www.instagram.com/p/DerhA0BFloZ/) | 0 | 0 |
-| 2026-10-18 20:06 | FEED | [O último atendimento terminou, mas você ainda está resolvend](https://www.instagram.com/p/DepgIy1GaHG/) | 0 | 0 |
-| 2026-10-17 21:58 | REELS | [Menos tempo digitando, mais tempo cuidando dos seus paciente](https://www.instagram.com/reel/DenIIp6BrdR/) | 0 | 0 |
-| 2026-10-16 21:07 | FEED | [🎙️ DA VOZ AO PRONTUÁRIO!](https://www.instagram.com/p/DekdmVPGUtN/) | 0 | 0 |
-| 2026-10-14 20:22 | FEED | [Sua clínica conectada à sua rotina.](https://www.instagram.com/p/DefO17aGSZI/) | 0 | 0 |
-| 2026-10-14 15:03 | FEED | [Seu Pilates em dia, da primeira aula ao fechamento do mês.](https://www.instagram.com/p/DeeqSOZFnaj/) | 0 | 0 |
-| 2026-10-13 14:23 | FEED | [Cuidar do movimento é transformar vidas.](https://www.instagram.com/p/DecA7zAFkrm/) | 0 | 0 |
-| 2026-10-12 17:15 | FEED | [Chega de perder tempo com agendas desorganizadas, prontuário](https://www.instagram.com/p/DeZv4uiifuT/) | 0 | 0 |
-| 2026-10-09 21:26 | FEED | [Do atestado ao contrato, seus documentos em um só lugar. 💙](https://www.instagram.com/p/DeSeH32GTtI/) | 0 | 0 |
-| 2026-10-09 14:47 | FEED | [Desmarcou. E agora? 📅](https://www.instagram.com/p/DeRwkPuloBN/) | 0 | 0 |
-| 2026-10-08 15:09 | FEED | [Antes de assinar, experimente. 💙](https://www.instagram.com/p/DePORHxFo4h/) | 0 | 0 |
-| 2026-10-07 19:36 | FEED | [Sua agenda também pode virar Story! ](https://www.instagram.com/p/DeNIBlXmZTG/) | 0 | 0 |
-| 2026-10-07 15:43 | FEED | [Abra espaço para uma rotina mais organizada. 💙](https://www.instagram.com/p/DeMtUHlFtsh/) | 0 | 0 |
-| 2026-10-06 17:55 | FEED | [A papelada está ocupando mais espaço que os equipamentos? 📋😅](https://www.instagram.com/p/DeKXpxXiUUu/) | 0 | 0 |
 
-**REELS** (5 posts): média de 0.8 curtidas e 0.0 comentários por post.
+**REELS** (10 posts): média de 0.4 curtidas e 0.0 comentários por post.
 
-**FEED** (25 posts): média de 0.2 curtidas e 0.0 comentários por post.
+**FEED** (20 posts): média de 0.3 curtidas e 0.0 comentários por post.
