@@ -19,6 +19,13 @@ jobs:
           for k in IG_USER_ID IG_ACCESS_TOKEN OPENAI_API_KEY ELEVENLABS_API_KEY ELEVENLABS_VOICE_ID; do
             if [ -n "${!k}" ]; then echo "$k: OK"; else echo "$k: FALTANDO"; fi
           done
+          # OpenAI: 200 = chave aceita; 401 = chave errada ou revogada. So o codigo HTTP aparece.
+          if [ -n "$OPENAI_API_KEY" ]; then
+            code=$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $OPENAI_API_KEY" https://api.openai.com/v1/models)
+            echo "OpenAI responde: HTTP $code"
+            code=$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $OPENAI_API_KEY" https://api.openai.com/v1/models/gpt-6-astra)
+            echo "OpenAI modelo do robo (gpt-6-astra): HTTP $code"
+          fi
           if [ -n "$ELEVENLABS_API_KEY" ]; then
             code=$(curl -s -o /dev/null -w '%{http_code}' -H "xi-api-key: $ELEVENLABS_API_KEY" https://api.elevenlabs.io/v1/user/subscription)
             echo "ElevenLabs responde: HTTP $code"
