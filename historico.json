@@ -603,5 +603,28 @@
   ],
   "status": "publicado",
   "modo": "mito"
+ },
+ {
+  "data": "2026-11-10",
+  "janela": "manha",
+  "tema": "Autorização prévia para uso de casos clínicos",
+  "pauta": "caso clínico em aula ou pesquisa exige autorização escrita",
+  "eixo": "etica",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 424/2013, Art. 41, II",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "A autorização por escrito deve vir antes, inclusive na pesquisa.",
+  "chamada": "Vai levar um caso clínico para aula?",
+  "conceito": "O destaque tipográfico em «autorização por escrito» e «antes» comunica que o consentimento deve preceder o uso do caso.",
+  "composicao": "calibrado",
+  "estilo": "composicao tipografica",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_autorizac-o-pr-via-para-uso-de-casos-cl_feed_1080x1350.jpg",
+   "fisiosync_autorizac-o-pr-via-para-uso-de-casos-cl_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
