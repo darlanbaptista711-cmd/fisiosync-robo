@@ -3370,8 +3370,9 @@
     "Culvenor AG, Øiestad BE, Hart HF, Stefanik JJ, Guermazi A, Crossley KM. Prevalence of knee osteoarthritis features on magnetic resonance imaging in asymptomatic uninjured adults: a systematic review and meta-analysis. Br J Sports Med. 2019;53(20):1268-78. doi:10.1136/bjsports-2018-099257"
    ],
    "interesse": "alto",
-   "status": "livre",
-   "observacao": "Veredito 'Mito' decidido pelas fontes: a definição da IASP fala em dor 'associada, ou semelhante àquela associada' a lesão real ou POTENCIAL, e a nota 2 separa dor de nocicepção. NÃO dizer que a dor 'é psicológica', 'está na cabeça' ou 'não tem relação com o tecido': a definição inclui fatores biológicos e a dor pode vir com lesão; o mito é o 'sempre'. Não dizer que achados de exame 'não importam': Culvenor pede interpretação junto com o quadro clínico. Os números de Culvenor são de joelhos SEM sintomas e SEM lesão prévia. Definição e notas lidas no anúncio oficial da IASP; Culvenor no resumo do PubMed. Não usados: notas 3 (aprendizado do conceito de dor) e 6 (descrição verbal), e prevalências de lesão de medula óssea (18%) e osteófitos (25%)."
+   "status": "publicado",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: a definição da IASP fala em dor 'associada, ou semelhante àquela associada' a lesão real ou POTENCIAL, e a nota 2 separa dor de nocicepção. NÃO dizer que a dor 'é psicológica', 'está na cabeça' ou 'não tem relação com o tecido': a definição inclui fatores biológicos e a dor pode vir com lesão; o mito é o 'sempre'. Não dizer que achados de exame 'não importam': Culvenor pede interpretação junto com o quadro clínico. Os números de Culvenor são de joelhos SEM sintomas e SEM lesão prévia. Definição e notas lidas no anúncio oficial da IASP; Culvenor no resumo do PubMed. Não usados: notas 3 (aprendizado do conceito de dor) e 6 (descrição verbal), e prevalências de lesão de medula óssea (18%) e osteófitos (25%).",
+   "usado_em": "2026-11-10"
   },
   {
    "id": "mito-musculacao-tira-flexibilidade",

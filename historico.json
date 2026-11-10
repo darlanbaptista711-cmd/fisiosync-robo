@@ -626,5 +626,36 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-10",
+  "janela": "tarde",
+  "tema": "dor, nocicepção e lesão: a definição de dor da IASP",
+  "pauta": "dor, nocicepção e lesão: a definição de dor da IASP",
+  "eixo": "evidencia",
+  "familia": "conhecimento",
+  "fonte": "IASP, definição revisada de dor, 2020",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Como você explica a diferença entre dor e nocicepção?",
+  "chamada": "Dor sempre significa lesão no tecido",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_01.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_02.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_03.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_04.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_05.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_06.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_07.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_08.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_09.jpg",
+   "fisiosync_dor-nocicep-o-e-les-o-a-defini-o-de-dor_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
