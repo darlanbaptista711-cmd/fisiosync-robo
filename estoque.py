@@ -48,7 +48,7 @@ def main():
     dias_reels = len(fila)
 
     linhas = [f"Feed: {len(livres)} pautas conferidas livres = {dias_feed} dias (2 carrosseis/dia)",
-              f"Reels: carrossel do dia em video (fila antiga: {dias_reels} roteiros, sem uso)"]
+              f"Reels: parado desde 10/11/2026 (fila antiga: {dias_reels} roteiros, sem uso)"]
     print("\n".join(linhas))
     with open(os.environ.get("GITHUB_OUTPUT", os.devnull), "a") as f:
         f.write(f"resumo={' | '.join(linhas)}\n")

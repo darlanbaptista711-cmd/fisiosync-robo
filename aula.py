@@ -1,5 +1,5 @@
 """
-CARROSSEL NO FORMATO NOVO: "aula" (9h) e "mito ou verdade" (15h).
+CARROSSEL NO FORMATO NOVO: "aula" (10h) e "mito ou verdade" (18h).
 
 Aprovado pelo Darlan em 08/11/2026, a partir de carrosseis que deram
 resultado em perfis de fisioterapia (NAIUEPA, @cinesio.lab):

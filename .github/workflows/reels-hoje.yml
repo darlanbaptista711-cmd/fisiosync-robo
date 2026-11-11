@@ -7,6 +7,9 @@ name: Reels de hoje (avulso)
 #
 # Criado em 09/11/2026 para o Reels novo (o carrossel do dia em video)
 # valer ja no mesmo dia, no lugar de uma rodada que tinha o codigo antigo.
+#
+# ATENCAO: desde 10/11/2026 o Darlan parou os videos (so carrosseis).
+# Nao disparar sem ele pedir.
 
 on:
   workflow_dispatch:

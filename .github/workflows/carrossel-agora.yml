@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       estilo:
-        description: "mito (o das 15h) ou aula (o das 9h)"
+        description: "mito (o das 18h) ou aula (o das 10h)"
         type: choice
         options: [mito, aula]
         default: mito

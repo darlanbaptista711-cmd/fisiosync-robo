@@ -171,10 +171,15 @@ especificar enquadramento, materiais, iluminação, sombras e composição.
 
 ## Janelas de publicação
 
-Duas por dia, em horário de Brasília:
+Duas por dia, em horário de Brasília (pedido do Darlan em 10/11/2026,
+valendo desde 11/11):
 
-- **manhã**, das 10h às 16h, alvo 12h
-- **tarde**, das 17h às 23h, alvo 18h30
+- **manhã**: carrossel "aula" às **10h** (vale publicar atrasado até 14h59)
+- **tarde**: carrossel "Mito ou verdade?" às **18h** (vale até 21h59)
+
+**Sem vídeo.** O Reels saiu da rodada diária em 10/11/2026: só
+carrosséis estáticos, cada um com seu story. O Reels só volta se o
+Darlan pedir; a lógica continua em `.github/actions/reels`, sem horário.
 
 O agendador do GitHub é melhor esforço, não promessa: em 31/10/2026 ele
 atrasou a janela da manhã em quase quatro horas e pulou a da tarde. Por

@@ -1,9 +1,10 @@
 name: Posts diarios da FisioSync
 
-# Desde 03/11/2026: 09:00 carrossel (desde 08/11 no formato "aula"), 15:00 carrossel
-# "Mito ou verdade?" e 19:00 Reels (desde 09/11 o carrossel do dia em video,
-# sem IA), em Brasilia. Cada um leva 1 post no feed + 1 story do mesmo tema, e
-# consome 1 pauta de conhecimento conferida do banco.
+# Desde 11/11/2026 (pedido do Darlan em 10/11): 10:00 carrossel "aula" e
+# 18:00 carrossel "Mito ou verdade?", em Brasilia. SEM VIDEO: o Reels saiu
+# da rodada (a logica continua em .github/actions/reels, so no botao
+# manual "Reels de hoje"). Cada post leva 1 carrossel no feed + 1 story do
+# mesmo tema, e consome 1 pauta de conhecimento conferida do banco.
 #
 # O CRON DO GITHUB NAO MARCA A HORA. Medido neste repositorio:
 #
@@ -21,10 +22,9 @@ name: Posts diarios da FisioSync
 #
 #   madrugada   dorme ate 05:00
 #   manha_cedo  dorme ate 07:00
-#   manha       dorme ate 09:00  e PUBLICA (carrossel)
-#   tarde_cedo  dorme ate 12:00
-#   tarde       dorme ate 15:00  e PUBLICA (carrossel)
-#   reels       monta 18:45     e PUBLICA o Reels as 19:00
+#   manha       dorme ate 10:00  e PUBLICA (carrossel "aula")
+#   tarde_cedo  dorme ate 14:00
+#   tarde       dorme ate 18:00  e PUBLICA (carrossel "Mito ou verdade?")
 #
 # Uma largada a 01:00 cobre os dois posts do dia. Largada mais tarde
 # entra no meio da corrente. Cada etapa roda mesmo se a anterior
@@ -45,11 +45,11 @@ on:
     - cron: "0 8 * * *"      # 05:00
     - cron: "30 9 * * *"     # 06:30
     # se nenhuma largada da madrugada pegou: antes de cada post
-    - cron: "30 10 * * *"    # 07:30 (carrossel das 9h)
+    - cron: "30 10 * * *"    # 07:30 (carrossel das 10h)
     - cron: "15 11 * * *"    # 08:15
-    - cron: "0 14 * * *"     # 11:00 (carrossel das 15h)
+    - cron: "0 14 * * *"     # 11:00 (carrossel das 18h)
     - cron: "30 16 * * *"    # 13:30
-    - cron: "0 19 * * *"     # 16:00 (Reels das 19h)
+    - cron: "0 19 * * *"     # 16:00
   workflow_dispatch:
     inputs:
       agora:
@@ -127,7 +127,7 @@ jobs:
         continue-on-error: true
         run: pip install playwright && python -m playwright install chromium
 
-      - name: Esperar as 09:00
+      - name: Esperar as 10:00
         id: relogio
         run: python espera.py --etapa manha
 
@@ -192,7 +192,7 @@ jobs:
         continue-on-error: true
         run: pip install playwright && python -m playwright install chromium
 
-      - name: Esperar as 15:00
+      - name: Esperar as 18:00
         id: relogio
         run: python espera.py --etapa tarde
 
@@ -218,53 +218,12 @@ jobs:
         run: bash guardar.sh
 
   # ---------------------------------------------------------------------
-  # REELS, UM POR DIA: 19h (decisao de 02/11/2026: 1 Reels + 2 carrosseis.
-  # Um Reels forte rende mais que dois medianos e a fila de fatos rende o
-  # dobro.)
-  #
-  # Desde 09/11/2026 o Reels e o carrossel do dia em video: os slides
-  # passando, com a trilha do robo, sem voz e sem imagem de IA (os
-  # carrosseis rendem mais que os videos de IA). Confere as regras do
-  # Reels, espera o minuto exato e publica. A logica fica em
-  # .github/actions/reels; formato: fila volta ao roteiro narrado.
-  # ---------------------------------------------------------------------
-  reels:
-    needs: tarde
-    if: ${{ !cancelled() }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 330
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          # o estado MAIS RECENTE do branch, nao o do momento em que a
-          # rodada foi criada: em 02/11/2026 uma largada de reserva leu
-          # um historico velho e o Reels das 20h saiu duplicado
-          ref: ${{ github.ref_name }}
-      - uses: ./.github/actions/reels
-        with:
-          formato: carrossel
-          etapa: reels
-          publicar_as: "19:00"
-          janela: noite
-          elevenlabs_key: ${{ secrets.ELEVENLABS_API_KEY }}
-          voice_id: ${{ secrets.ELEVENLABS_VOICE_ID }}
-          ig_user_id: ${{ secrets.IG_USER_ID }}
-          ig_token: ${{ secrets.IG_ACCESS_TOKEN }}
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
-          openai_key: ${{ secrets.OPENAI_API_KEY }}
-      - name: Avisar se falhou
-        if: failure()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash aviso_falha.sh
-
-  # ---------------------------------------------------------------------
   # ESTOQUE: no fim do dia, conta quantos dias de conteudo conferido
-  # sobram. Abaixo de 10 dias (feed ou Reels), abre um aviso que chega
-  # por e-mail, uma vez so, ate alguem abastecer.
+  # sobram. Abaixo de 10 dias de feed, abre um aviso que chega por
+  # e-mail, uma vez so, ate alguem abastecer.
   # ---------------------------------------------------------------------
   estoque:
-    needs: reels
+    needs: tarde
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:

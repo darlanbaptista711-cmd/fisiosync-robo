@@ -275,8 +275,8 @@ STATUS = ("rascunho", "aprovado", "publicado", "rejeitado")
 # -------------------------------------------------------------------
 
 JANELAS = {
-    "manha": (8, 13),    # alvo 09:00 em Brasilia (desde 03/11/2026)
-    "tarde": (14, 18),   # alvo 15:00 em Brasilia
+    "manha": (9, 14),    # alvo 10:00 em Brasilia (desde 11/11/2026)
+    "tarde": (15, 21),   # alvo 18:00 em Brasilia (desde 11/11/2026)
 }
 
 
@@ -1916,7 +1916,7 @@ def main():
     ap.add_argument("--carrossel", action="store_true",
                     help="feed em carrossel: capa + slides do fato + fechamento")
     ap.add_argument("--estilo", choices=["sabia", "mito", "aula"], default="sabia",
-                    help="carrossel 'aula' ou 'Voce sabia?' (9h), 'Mito ou verdade?' (15h)")
+                    help="carrossel 'aula' ou 'Voce sabia?' (10h), 'Mito ou verdade?' (18h)")
     ap.add_argument("--pauta-json", default=None,
                     help="so para teste com --previa: pauta de varios fatos num arquivo")
     ap.add_argument("--molde", action="store_true",
