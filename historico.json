@@ -657,5 +657,28 @@
   ],
   "status": "publicado",
   "modo": "mito"
+ },
+ {
+  "data": "2026-11-11",
+  "janela": "manha",
+  "tema": "Atestado do fisioterapeuta e afastamento do trabalho",
+  "pauta": "atestado do fisioterapeuta e afastamento do trabalho",
+  "eixo": "regulacao",
+  "familia": "conhecimento",
+  "fonte": "Resolução COFFITO nº 464/2016, Art. 1º, alíneas a, b e c",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "O afastamento previsto é para a eficácia do tratamento fisioterapêutico.",
+  "chamada": "Fisioterapeuta pode emitir atestado para afastamento",
+  "conceito": "Um documento ligado a uma cadeira de escritório por uma seta de saída representa a emissão de atestado para afastamento do ambiente de trabalho.",
+  "composicao": "calibrado",
+  "estilo": "icones lineares discretos",
+  "objetivo": "compartilhar",
+  "arquivos": [
+   "fisiosync_atestado-do-fisioterapeuta-e-afastamento_feed_1080x1350.jpg",
+   "fisiosync_atestado-do-fisioterapeuta-e-afastamento_stories_1080x1920.jpg"
+  ],
+  "status": "publicado",
+  "modo": "molde"
  }
 ]
