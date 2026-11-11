@@ -680,5 +680,36 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-11",
+  "janela": "tarde",
+  "tema": "treino de força para idosos",
+  "pauta": "treino de força para idosos",
+  "eixo": "exercicio-saude",
+  "familia": "conhecimento",
+  "fonte": "OMS, WHO guidelines on physical activity and sedentary behaviour, 2020",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Como você organiza o treino de força para idosos?",
+  "chamada": "Idoso não deve fazer treino de força",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_treino-de-for-a-para-idosos_mito_01.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_02.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_03.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_04.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_05.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_06.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_07.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_08.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_09.jpg",
+   "fisiosync_treino-de-for-a-para-idosos_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
