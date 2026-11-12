@@ -734,5 +734,35 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-12",
+  "janela": "tarde",
+  "tema": "exercício terapêutico na artrose de joelho",
+  "pauta": "exercício terapêutico na artrose de joelho",
+  "eixo": "evidencia",
+  "familia": "conhecimento",
+  "fonte": "NICE, diretriz NG226 (artrose), 2022",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Como você explica a dor no início do exercício?",
+  "chamada": "Quem tem artrose no joelho deve evitar exercício",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_01.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_02.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_03.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_04.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_05.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_06.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_07.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_08.jpg",
+   "fisiosync_exerc-cio-terap-utico-na-artrose-de-joel_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]

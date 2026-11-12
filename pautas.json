@@ -3512,8 +3512,9 @@
     "Lawford BJ, Hall M, Hinman RS, et al. Exercise for osteoarthritis of the knee. Cochrane Database Syst Rev. 2024;12:CD004376. doi:10.1002/14651858.CD004376.pub4"
    ],
    "interesse": "alto",
-   "status": "livre",
-   "observacao": "Veredito 'Mito' decidido pelas fontes: o NICE (NG226, 2022) recomenda exercício terapêutico para TODAS as pessoas com artrose, e a Cochrane 2024 mostra melhora provável da função sem aumento de eventos adversos. CUIDADO: a Cochrane conclui que os benefícios têm importância clínica INCERTA pelos limiares de diferença mínima importante e são de curto prazo; não dizer que o exercício 'cura', 'elimina a dor' ou 'reverte a artrose'. A melhora da dor tem certeza baixa. O NICE avisa que a dor pode aumentar no início: não prometer exercício sem dor. Não usados: as recomendações do NICE de não oferecer acupuntura, agulhamento seco e eletroterapia (TENS, ultrassom, interferencial, laser, ondas curtas pulsadas, NMES) e de perda de peso. NICE lido na página oficial de recomendações; Cochrane no PDF do resumo na Cochrane Library."
+   "status": "publicado",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: o NICE (NG226, 2022) recomenda exercício terapêutico para TODAS as pessoas com artrose, e a Cochrane 2024 mostra melhora provável da função sem aumento de eventos adversos. CUIDADO: a Cochrane conclui que os benefícios têm importância clínica INCERTA pelos limiares de diferença mínima importante e são de curto prazo; não dizer que o exercício 'cura', 'elimina a dor' ou 'reverte a artrose'. A melhora da dor tem certeza baixa. O NICE avisa que a dor pode aumentar no início: não prometer exercício sem dor. Não usados: as recomendações do NICE de não oferecer acupuntura, agulhamento seco e eletroterapia (TENS, ultrassom, interferencial, laser, ondas curtas pulsadas, NMES) e de perda de peso. NICE lido na página oficial de recomendações; Cochrane no PDF do resumo na Cochrane Library.",
+   "usado_em": "2026-11-12"
   },
   {
    "id": "mito-crianca-musculacao-crescimento",
