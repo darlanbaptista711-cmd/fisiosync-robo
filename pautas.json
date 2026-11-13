@@ -1690,9 +1690,10 @@
    "fato": "A Resolução COFFITO nº 552/2022 revogou os Arts. 37 e 39 do Código de Ética (Art. 4º, II). O Art. 39 proibia prestar assistência gratuita ou \"a preço ínfimo\", entendido como valor abaixo do Referencial Nacional. A mesma norma passou o Art. 9º, VII a exigir apenas \"cumprir os Parâmetros Assistenciais\".",
    "fonte": "Resolução COFFITO nº 552/2022, Arts. 2º e 4º, II; Resolução COFFITO nº 424/2013, Arts. 9º, VII, 37 e 39",
    "url": "https://ses.sp.bvs.br/wp-content/uploads/2022/08/U_RS-COFFITO-552_120822.pdf",
-   "status": "livre",
+   "status": "publicado",
    "observacao": "Lido na publicação da Res. 552/2022 (cópia do DOU no BVS SES-SP) e confirmado no texto consolidado do Código em normasbrasil e legisweb (notas 'Revogado pela Resolução COFFITO Nº 552 DE 12/08/2022'). ATENÇÃO: a página do Código no site do COFFITO (page_id=2346) está desatualizada e ainda mostra os Arts. 37 e 39 e a redação antiga do Art. 9º, VII. O Art. 38 (quando pode deixar de cobrar, usado em etica-005) segue em vigor. A 552 também diz que o Referencial de honorários 'não obriga ao profissional' (alteração da Res. 367/2009), mas isso foi lido em uma fonte só.",
-   "interesse": "alto"
+   "interesse": "alto",
+   "usado_em": "2026-11-13"
   },
   {
    "id": "etica-108",
