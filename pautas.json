@@ -3229,8 +3229,9 @@
     "Lee IM, Shiroma EJ, Kamada M, Bassett DR, Matthews CE, Buring JE. Association of step volume and intensity with all-cause mortality in older women. JAMA Intern Med. 2019;179(8):1105-12. doi:10.1001/jamainternmed.2019.0899"
    ],
    "interesse": "alto",
-   "status": "livre",
-   "observacao": "Veredito 'Mito' decidido pelas fontes: em Paluch (2022) o benefício cresce com os passos e se estabiliza ABAIXO de 10 mil a partir dos 60 anos (6.000 a 8.000) e entre 8.000 e 10.000 abaixo dos 60; em Lee (2019) cerca de 4.400 passos já se associaram a menor mortalidade. São estudos observacionais: dizer 'associado a menor risco de morte', nunca 'passos fazem viver mais' nem 'garantem'. Não dizer que 10 mil passos não servem ou fazem mal: o mito é achar que só a partir de 10 mil há benefício. Lee (2019) estudou só mulheres idosas (média de 72 anos). As porcentagens de risco menor vêm das razões de risco ajustadas por quartil (0,60; 0,55; 0,47). Paluch lido no resumo do PubMed; Lee no PDF do artigo (site do estudo WHISH, Stanford). Não usado: a intensidade (cadência) perdeu força depois de considerar o total de passos."
+   "status": "publicado",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: em Paluch (2022) o benefício cresce com os passos e se estabiliza ABAIXO de 10 mil a partir dos 60 anos (6.000 a 8.000) e entre 8.000 e 10.000 abaixo dos 60; em Lee (2019) cerca de 4.400 passos já se associaram a menor mortalidade. São estudos observacionais: dizer 'associado a menor risco de morte', nunca 'passos fazem viver mais' nem 'garantem'. Não dizer que 10 mil passos não servem ou fazem mal: o mito é achar que só a partir de 10 mil há benefício. Lee (2019) estudou só mulheres idosas (média de 72 anos). As porcentagens de risco menor vêm das razões de risco ajustadas por quartil (0,60; 0,55; 0,47). Paluch lido no resumo do PubMed; Lee no PDF do artigo (site do estudo WHISH, Stanford). Não usado: a intensidade (cadência) perdeu força depois de considerar o total de passos.",
+   "usado_em": "2026-11-13"
   },
   {
    "id": "mito-gestante-exercicio",

@@ -787,5 +787,35 @@
   ],
   "status": "publicado",
   "modo": "molde"
+ },
+ {
+  "data": "2026-11-13",
+  "janela": "tarde",
+  "tema": "a meta de 10 mil passos por dia e o risco de morte",
+  "pauta": "a meta de 10 mil passos por dia e o risco de morte",
+  "eixo": "exercicio-saude",
+  "familia": "conhecimento",
+  "fonte": "Paluch et al., Lancet Public Health, 2022",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "A meta de 10 mil passos aparece nas suas consultas?",
+  "chamada": "Só 10 mil passos por dia trazem benefício",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_01.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_02.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_03.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_04.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_05.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_06.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_07.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_08.jpg",
+   "fisiosync_a-meta-de-10-mil-passos-por-dia-e-o-risc_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
