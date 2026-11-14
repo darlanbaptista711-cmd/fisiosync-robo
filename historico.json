@@ -817,5 +817,37 @@
   ],
   "status": "publicado",
   "modo": "mito"
+ },
+ {
+  "data": "2026-11-14",
+  "janela": "manha",
+  "tema": "pilates como recurso da fisioterapia",
+  "pauta": "pilates como recurso da fisioterapia",
+  "eixo": "pilates",
+  "familia": "regulacao",
+  "fonte": "Resolução COFFITO nº 386/2011, Art. 1º",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Qual ponto sobre Pilates você quer discutir?",
+  "chamada": "Pilates na ==Fisioterapia==",
+  "conceito": "",
+  "composicao": "carrossel-aula",
+  "estilo": "aula",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_01.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_02.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_03.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_04.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_05.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_06.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_07.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_08.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_09.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_10.jpg",
+   "fisiosync_pilates-como-recurso-da-fisioterapia_aula_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "aula"
  }
 ]
