@@ -3653,8 +3653,9 @@
     "National Institute for Health and Care Excellence. Low back pain and sciatica in over 16s: assessment and management. NICE guideline NG59. London: NICE; 2016 (atualizada em 2020). Disponível em: https://www.nice.org.uk/guidance/ng59"
    ],
    "interesse": "alto",
-   "status": "livre",
-   "observacao": "Veredito 'Mito' decidido pelas fontes: a maioria das hérnias lombares em tratamento conservador reabsorveu (70,39%, meta-análise de Zou et al.) e o NICE reserva a descompressão para quando o tratamento não cirúrgico não melhorou e a imagem é compatível com os sintomas. NÃO dizer que hérnia 'nunca' precisa de cirurgia nem desaconselhar avaliação médica: há indicação cirúrgica em casos selecionados, e sinais de alerta pedem avaliação urgente (não detalhados nos fatos; não inventar). As porcentagens são de pacientes em tratamento conservador; o abaulamento reabsorveu pouco (13,33%). O resumo escreve 'disk bugle', erro de digitação de 'bulge' (abaulamento). Zou lido no resumo do PubMed; NICE na página oficial de recomendações. Não usados: não oferecer artrodese para lombalgia fora de ensaio clínico, tração ou injeções na coluna para lombalgia."
+   "status": "publicado",
+   "observacao": "Veredito 'Mito' decidido pelas fontes: a maioria das hérnias lombares em tratamento conservador reabsorveu (70,39%, meta-análise de Zou et al.) e o NICE reserva a descompressão para quando o tratamento não cirúrgico não melhorou e a imagem é compatível com os sintomas. NÃO dizer que hérnia 'nunca' precisa de cirurgia nem desaconselhar avaliação médica: há indicação cirúrgica em casos selecionados, e sinais de alerta pedem avaliação urgente (não detalhados nos fatos; não inventar). As porcentagens são de pacientes em tratamento conservador; o abaulamento reabsorveu pouco (13,33%). O resumo escreve 'disk bugle', erro de digitação de 'bulge' (abaulamento). Zou lido no resumo do PubMed; NICE na página oficial de recomendações. Não usados: não oferecer artrodese para lombalgia fora de ensaio clínico, tração ou injeções na coluna para lombalgia.",
+   "usado_em": "2026-11-14"
   }
  ]
 }

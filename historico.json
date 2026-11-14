@@ -849,5 +849,35 @@
   ],
   "status": "publicado",
   "modo": "aula"
+ },
+ {
+  "data": "2026-11-14",
+  "janela": "tarde",
+  "tema": "hérnia de disco lombar: reabsorção espontânea e indicação de cirurgia",
+  "pauta": "hérnia de disco lombar: reabsorção espontânea e indicação de cirurgia",
+  "eixo": "evidencia",
+  "familia": "conhecimento",
+  "fonte": "Zou et al., Clin Spine Surg, 2024",
+  "publico": "fisioterapeutas e gestores de clinica",
+  "situacao": "",
+  "mensagem": "Como você explica a reabsorção da hérnia ao paciente?",
+  "chamada": "Hérnia de disco sempre precisa de cirurgia",
+  "conceito": "",
+  "composicao": "carrossel-mito",
+  "estilo": "mito",
+  "objetivo": "salvar",
+  "arquivos": [
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_01.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_02.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_03.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_04.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_05.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_06.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_07.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_08.jpg",
+   "fisiosync_h-rnia-de-disco-lombar-reabsor-o-espont_mito_story_01.jpg"
+  ],
+  "status": "publicado",
+  "modo": "mito"
  }
 ]
